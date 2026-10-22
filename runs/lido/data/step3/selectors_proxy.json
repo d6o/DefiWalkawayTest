@@ -1,0 +1,94 @@
+{
+ "summary": {
+  "label": "stETH proxy 0xae7ab965\u20267fE84",
+  "code_bytes": 1035,
+  "push4_total": 7,
+  "dispatcher_selectors": 5,
+  "named_basic": 0,
+  "named_wordlist": 0,
+  "unnamed": 5,
+  "non_dispatcher_push4": 2
+ },
+ "selectors": [
+  {
+   "selector": "0x4555d5c9",
+   "pcs": [
+    53
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x48a0c8dd",
+   "pcs": [
+    65
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x5c60da1b",
+   "pcs": [
+    76
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x80afdea8",
+   "pcs": [
+    87
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd4aae0c4",
+   "pcs": [
+    98
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xbe00bbd8",
+   "pcs": [
+    828
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xffffffff",
+   "pcs": [
+    13
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  }
+ ]
+}

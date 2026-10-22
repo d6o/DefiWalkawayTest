@@ -1,0 +1,98 @@
+[
+ {
+  "batch": "0xec75ab443a42fc887b10bd0ddb6002725817c34b546b6b8c942c0ca15a1ecedd",
+  "block": 26197882,
+  "test": "outer: original EOA -> its contract",
+  "from": "0x4d3ad7e8e591d389b612fc063f53837e284d3f86",
+  "to": "0xd524101c3c40f71fce7b9312d299603880a06bdb",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0xec75ab443a42fc887b10bd0ddb6002725817c34b546b6b8c942c0ca15a1ecedd",
+  "block": 26197882,
+  "test": "outer: RANDOM -> same contract",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0xd524101c3c40f71fce7b9312d299603880a06bdb",
+  "result": "REVERT: execution reverted | revert data 0x1db3b859\u2026 (4 bytes)"
+ },
+ {
+  "batch": "0xec75ab443a42fc887b10bd0ddb6002725817c34b546b6b8c942c0ca15a1ecedd",
+  "block": 26197882,
+  "test": "inner: original contract -> 0x852d",
+  "from": "0xd524101c3c40f71fce7b9312d299603880a06bdb",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0xec75ab443a42fc887b10bd0ddb6002725817c34b546b6b8c942c0ca15a1ecedd",
+  "block": 26197882,
+  "test": "inner: RANDOM -> 0x852d",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "REVERT: execution reverted | revert data 0x23dada53\u2026 (4 bytes)"
+ },
+ {
+  "batch": "0x3e1b3b738eae88219da52f18550644af487af56c9d174d27eb395924d058ba2c",
+  "block": 26226596,
+  "test": "outer: original EOA -> its contract",
+  "from": "0x82a821e8a2585d1ac8f346be7da6995490d21ca6",
+  "to": "0xc77d0bf3aa4778e36a89cdc8bbc9c34d8060637d",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0x3e1b3b738eae88219da52f18550644af487af56c9d174d27eb395924d058ba2c",
+  "block": 26226596,
+  "test": "outer: RANDOM -> same contract",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0xc77d0bf3aa4778e36a89cdc8bbc9c34d8060637d",
+  "result": "REVERT: execution reverted | revert data 0x1db3b859\u2026 (4 bytes)"
+ },
+ {
+  "batch": "0x3e1b3b738eae88219da52f18550644af487af56c9d174d27eb395924d058ba2c",
+  "block": 26226596,
+  "test": "inner: original contract -> 0x852d",
+  "from": "0xc77d0bf3aa4778e36a89cdc8bbc9c34d8060637d",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0x3e1b3b738eae88219da52f18550644af487af56c9d174d27eb395924d058ba2c",
+  "block": 26226596,
+  "test": "inner: RANDOM -> 0x852d",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "REVERT: execution reverted | revert data 0x23dada53\u2026 (4 bytes)"
+ },
+ {
+  "batch": "0x234e3a638a79fc0945a1104667ce04420490c5e10aec1e626e482bdc73917166",
+  "block": 26248129,
+  "test": "outer: original EOA -> its contract",
+  "from": "0x565f04cb319ec2295e1fcbbbe5f708687ffcce75",
+  "to": "0x4e3f2deeb59eb9a205d82d17647b3e56422e0fee",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0x234e3a638a79fc0945a1104667ce04420490c5e10aec1e626e482bdc73917166",
+  "block": 26248129,
+  "test": "outer: RANDOM -> same contract",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0x4e3f2deeb59eb9a205d82d17647b3e56422e0fee",
+  "result": "REVERT: execution reverted | revert data 0x1db3b859\u2026 (4 bytes)"
+ },
+ {
+  "batch": "0x234e3a638a79fc0945a1104667ce04420490c5e10aec1e626e482bdc73917166",
+  "block": 26248129,
+  "test": "inner: original contract -> 0x852d",
+  "from": "0x4e3f2deeb59eb9a205d82d17647b3e56422e0fee",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "SUCCESS"
+ },
+ {
+  "batch": "0x234e3a638a79fc0945a1104667ce04420490c5e10aec1e626e482bdc73917166",
+  "block": 26248129,
+  "test": "inner: RANDOM -> 0x852d",
+  "from": "0x1234567890abcdef1234567890abcdef12345678",
+  "to": "0x852ded011285fe67063a08005c71a85690503cee",
+  "result": "REVERT: execution reverted | revert data 0x23dada53\u2026 (4 bytes)"
+ }
+]

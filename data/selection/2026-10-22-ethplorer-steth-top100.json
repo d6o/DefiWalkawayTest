@@ -1,0 +1,609 @@
+{
+ "source": "https://api.ethplorer.io/getTopTokenHolders/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84?apiKey=freekey&limit=100",
+ "token": "stETH",
+ "token_address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+ "fetched": "2026-10-22",
+ "approx_block": 26248199,
+ "holders": [
+  {
+   "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "balance": 4.604390292559607e+24,
+   "share": 47.66,
+   "rawBalance": "4604390292559606876978474"
+  },
+  {
+   "address": "0x1b7a4c3797236a1c37f8741c0be35c2c72736fff",
+   "balance": 4.916659942808833e+23,
+   "share": 5.09,
+   "rawBalance": "491665994280883336852101"
+  },
+  {
+   "address": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+   "balance": 2.390068926119045e+23,
+   "share": 2.47,
+   "rawBalance": "239006892611904498345172"
+  },
+  {
+   "address": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+   "balance": 2.183053155476711e+23,
+   "share": 2.26,
+   "rawBalance": "218305315547671089065272"
+  },
+  {
+   "address": "0x000000000073f8f0541e942d85ef5fb5d0e84844",
+   "balance": 1.7890503936050586e+23,
+   "share": 1.85,
+   "rawBalance": "178905039360505856225042"
+  },
+  {
+   "address": "0x58180016d0f07815f75c1e6835f31b1addab81e6",
+   "balance": 1.40017351650572e+23,
+   "share": 1.45,
+   "rawBalance": "140017351650571999654583"
+  },
+  {
+   "address": "0xccc5eeebe15291620be733997af60735618548d7",
+   "balance": 6.095481424501052e+22,
+   "share": 0.63,
+   "rawBalance": "60954814245010523007178"
+  },
+  {
+   "address": "0xcab3f132a11e5b723fc20ddab8bb1b858d00a8e8",
+   "balance": 6.021245050859943e+22,
+   "share": 0.62,
+   "rawBalance": "60212450508599432095087"
+  },
+  {
+   "address": "0xe53fff67f9f384d20ebea36f43b93dc49ed22753",
+   "balance": 4.642638411332636e+22,
+   "share": 0.48,
+   "rawBalance": "46426384113326364733848"
+  },
+  {
+   "address": "0x4d72bff1beac69925f8bd12526a39baab069e5da",
+   "balance": 3.3397749748742236e+22,
+   "share": 0.35,
+   "rawBalance": "33397749748742236273228"
+  },
+  {
+   "address": "0xbca21dcf63ee2da92fd4a6871148a86bfdb9648b",
+   "balance": 2.9549293413763866e+22,
+   "share": 0.31,
+   "rawBalance": "29549293413763865774919"
+  },
+  {
+   "address": "0x6663613fbd927ce78abbf7f5ca7e2c3fe0d96d18",
+   "balance": 2.9304609129417388e+22,
+   "share": 0.3,
+   "rawBalance": "29304609129417389363488"
+  },
+  {
+   "address": "0x5fad9e2ee7aebffac0a909264f85b1eeb216e3dd",
+   "balance": 2.8371975191311988e+22,
+   "share": 0.29,
+   "rawBalance": "28371975191311987063438"
+  },
+  {
+   "address": "0x1fa6d78bc5c5336164563f7e9d3f5ccabea4f5a9",
+   "balance": 2.639383419012195e+22,
+   "share": 0.27,
+   "rawBalance": "26393834190121950250013"
+  },
+  {
+   "address": "0x77a8283206e4b8d4cafcf6ad14f876bc5a6361b6",
+   "balance": 2.3560933635387755e+22,
+   "share": 0.24,
+   "rawBalance": "23560933635387756894770"
+  },
+  {
+   "address": "0x3e40d73eb977dc6a537af587d48316fee66e9c8c",
+   "balance": 2.3134062051446758e+22,
+   "share": 0.24,
+   "rawBalance": "23134062051446756646929"
+  },
+  {
+   "address": "0xa0d3707c569ff8c87fa923d3823ec5d81c98be78",
+   "balance": 2.295231488088143e+22,
+   "share": 0.24,
+   "rawBalance": "22952314880881427949051"
+  },
+  {
+   "address": "0x3c22ec75ea5d745c78fc84762f7f1e6d82a2c5bf",
+   "balance": 2.1563541703531375e+22,
+   "share": 0.22,
+   "rawBalance": "21563541703531374879149"
+  },
+  {
+   "address": "0xc13abcdeed78efcade757371beabbbdfebe0b932",
+   "balance": 2.1423228449577817e+22,
+   "share": 0.22,
+   "rawBalance": "21423228449577816361303"
+  },
+  {
+   "address": "0xfe08d40eee53d64936d3128838867c867602665c",
+   "balance": 2.054651565966105e+22,
+   "share": 0.21,
+   "rawBalance": "20546515659661051351067"
+  },
+  {
+   "address": "0x714352a845400a6ff9b9719b3c6622a6797f6d22",
+   "balance": 2.0330171317319113e+22,
+   "share": 0.21,
+   "rawBalance": "20330171317319113785650"
+  },
+  {
+   "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+   "balance": 2.0213809943880992e+22,
+   "share": 0.21,
+   "rawBalance": "20213809943880994264890"
+  },
+  {
+   "address": "0xe6badca2d7d5bcf08f2daeba1be725d0e03ea8ee",
+   "balance": 1.956094727544176e+22,
+   "share": 0.2,
+   "rawBalance": "19560947275441760301562"
+  },
+  {
+   "address": "0x866c9a77d8ab71d2874703e80cb7ad809b301e8e",
+   "balance": 1.9534612097953973e+22,
+   "share": 0.2,
+   "rawBalance": "19534612097953972177990"
+  },
+  {
+   "address": "0xb5700e7b179df1b1f4ef8b740b634875306668a8",
+   "balance": 1.7488194940460513e+22,
+   "share": 0.18,
+   "rawBalance": "17488194940460513608224"
+  },
+  {
+   "address": "0xac72ed3390cfb7bf0f101262648a6afc2bef99c1",
+   "balance": 1.6435397064273028e+22,
+   "share": 0.17,
+   "rawBalance": "16435397064273028836551"
+  },
+  {
+   "address": "0x2e20ddbf39b813693cae0ec78ae393dc060460e2",
+   "balance": 1.604626487587227e+22,
+   "share": 0.17,
+   "rawBalance": "16046264875872270597205"
+  },
+  {
+   "address": "0xee5b5b923ffce93a870b3104b7ca09c3db80047a",
+   "balance": 1.5844604883057787e+22,
+   "share": 0.16,
+   "rawBalance": "15844604883057787525470"
+  },
+  {
+   "address": "0xf013ab0a24390447d0bab4c850def030ee549c4b",
+   "balance": 1.5578504478777732e+22,
+   "share": 0.16,
+   "rawBalance": "15578504478777732681988"
+  },
+  {
+   "address": "0x6bb8bc41e668b7c8ef3850486c9455b5c86830b3",
+   "balance": 1.510741873598045e+22,
+   "share": 0.16,
+   "rawBalance": "15107418735980451589227"
+  },
+  {
+   "address": "0xafcac4e2dd30fd39a6055a7a068e62d76644763a",
+   "balance": 1.4766715269820042e+22,
+   "share": 0.15,
+   "rawBalance": "14766715269820041618408"
+  },
+  {
+   "address": "0x05bc11f64c6515bb384b05bfd3e0d0424fa65aa4",
+   "balance": 1.4394799616559619e+22,
+   "share": 0.15,
+   "rawBalance": "14394799616559618501382"
+  },
+  {
+   "address": "0x9fb6c242fffd11a5594ac58ab97b9eaa52a8eefe",
+   "balance": 1.3951246734473348e+22,
+   "share": 0.14,
+   "rawBalance": "13951246734473347512517"
+  },
+  {
+   "address": "0xa2c0f1083ea1c5279a0111d8886989fb5299d483",
+   "balance": 1.2121280584267904e+22,
+   "share": 0.13,
+   "rawBalance": "12121280584267904313032"
+  },
+  {
+   "address": "0x96f49d0e9724dfd8780fa667ac37a993f005cb94",
+   "balance": 1.1806665762427697e+22,
+   "share": 0.12,
+   "rawBalance": "11806665762427695989230"
+  },
+  {
+   "address": "0x070aae112e45bccacce47586bddefc8b240f9eff",
+   "balance": 1.1236449000203833e+22,
+   "share": 0.12,
+   "rawBalance": "11236449000203834259638"
+  },
+  {
+   "address": "0x36ed8dda673bec4f95babe8f122e6f88cf72d0fb",
+   "balance": 1.119992582866048e+22,
+   "share": 0.12,
+   "rawBalance": "11199925828660478694004"
+  },
+  {
+   "address": "0x444419d805adb0507123d35a7b61d01d8233efd2",
+   "balance": 1.1180497458484828e+22,
+   "share": 0.12,
+   "rawBalance": "11180497458484827557254"
+  },
+  {
+   "address": "0x7f3f54201a60a3b221e6ed486caf9f0e9b73adb4",
+   "balance": 1.115204174102367e+22,
+   "share": 0.12,
+   "rawBalance": "11152041741023670403123"
+  },
+  {
+   "address": "0x8b9f7fcf8338b1dc9d0bc8be1558dbef6e0c481d",
+   "balance": 1.1094470940863693e+22,
+   "share": 0.11,
+   "rawBalance": "11094470940863694231837"
+  },
+  {
+   "address": "0xc7c732d64fd14887cf924cb5d72409924c58bb24",
+   "balance": 1.0755231243208648e+22,
+   "share": 0.11,
+   "rawBalance": "10755231243208648298955"
+  },
+  {
+   "address": "0x50411ecf77f9a222fab5887018e3048741859027",
+   "balance": 1.0754693530040672e+22,
+   "share": 0.11,
+   "rawBalance": "10754693530040672984319"
+  },
+  {
+   "address": "0xe7cf0c9165099a76a988e0dd72db110fa2abc43b",
+   "balance": 1.0754585987407078e+22,
+   "share": 0.11,
+   "rawBalance": "10754585987407077921392"
+  },
+  {
+   "address": "0xb95aea8c12c20d40683d3a4bac4f9597890d6849",
+   "balance": 1.0754048274239102e+22,
+   "share": 0.11,
+   "rawBalance": "10754048274239102606755"
+  },
+  {
+   "address": "0x777d392672a8576302ef8bde93b5f3c4608a61f8",
+   "balance": 1.0749949902708791e+22,
+   "share": 0.11,
+   "rawBalance": "10749949902708790238216"
+  },
+  {
+   "address": "0xa4dcca03a8f25b825f72ac9c6d199acb8ebbb0c5",
+   "balance": 1.0749842412883847e+22,
+   "share": 0.11,
+   "rawBalance": "10749842412883847395169"
+  },
+  {
+   "address": "0xb63a16e0d38c123509f8a23db7a134c415d10951",
+   "balance": 1.0749089984109248e+22,
+   "share": 0.11,
+   "rawBalance": "10749089984109247493845"
+  },
+  {
+   "address": "0x37b3431bf0e785fcf2c5ceeea7ab8df01522fb71",
+   "balance": 1.0693331974358898e+22,
+   "share": 0.11,
+   "rawBalance": "10693331974358897531989"
+  },
+  {
+   "address": "0x03d4969997a6f6cf8b8695c33087aa175a8463d6",
+   "balance": 9.808308298699938e+21,
+   "share": 0.1,
+   "rawBalance": "9808308298699937877079"
+  },
+  {
+   "address": "0xf36dfdbd503ccd43338f644261b22e97353c59e0",
+   "balance": 9.63745677072672e+21,
+   "share": 0.1,
+   "rawBalance": "9637456770726720655206"
+  },
+  {
+   "address": "0x4d21fcce817355dfcc792b07a57fc48b818e8a8a",
+   "balance": 9.207176654181313e+21,
+   "share": 0.1,
+   "rawBalance": "9207176654181313459273"
+  },
+  {
+   "address": "0x0632dcc37b1fabf2cad20538a5390d23c830962e",
+   "balance": 9.01310919470278e+21,
+   "share": 0.09,
+   "rawBalance": "9013109194702780006400"
+  },
+  {
+   "address": "0xeb9c1ce881f0bdb25eac4d74fccbacf4dd81020a",
+   "balance": 9.009215424452905e+21,
+   "share": 0.09,
+   "rawBalance": "9009215424452905105194"
+  },
+  {
+   "address": "0xcafea91714e55756c125b509274ede9bc91697cb",
+   "balance": 8.868058370949157e+21,
+   "share": 0.09,
+   "rawBalance": "8868058370949156677981"
+  },
+  {
+   "address": "0x882e747c5c2e0366d4fd6f9f95780467c6549732",
+   "balance": 8.476264880550897e+21,
+   "share": 0.09,
+   "rawBalance": "8476264880550896552635"
+  },
+  {
+   "address": "0x78e99ed484605ba66ca9804b0b6fe700242c85bc",
+   "balance": 8.26741282245456e+21,
+   "share": 0.09,
+   "rawBalance": "8267412822454559890479"
+  },
+  {
+   "address": "0xc3c09403a4e222856327a3d7e1e8d20afad1b882",
+   "balance": 8.140380208491798e+21,
+   "share": 0.08,
+   "rawBalance": "8140380208491798160739"
+  },
+  {
+   "address": "0xd4f962494c3f70244bf3dd3a2c55132da56da880",
+   "balance": 8.134328808390375e+21,
+   "share": 0.08,
+   "rawBalance": "8134328808390374813590"
+  },
+  {
+   "address": "0x33c0b106c459d86841e96d58db211ae8554132d2",
+   "balance": 8.022346495878497e+21,
+   "share": 0.08,
+   "rawBalance": "8022346495878497459304"
+  },
+  {
+   "address": "0xcaacf7d9e40d0f4db66419d678a8d46de74b0c02",
+   "balance": 7.927641977526881e+21,
+   "share": 0.08,
+   "rawBalance": "7927641977526881045471"
+  },
+  {
+   "address": "0xd840a21f0cd283c23585e8d23a2612beab4e8190",
+   "balance": 7.780223173672211e+21,
+   "share": 0.08,
+   "rawBalance": "7780223173672211576640"
+  },
+  {
+   "address": "0x3c0aea3576b0d70e581ff613248a74d56cde0853",
+   "balance": 7.766190735462534e+21,
+   "share": 0.08,
+   "rawBalance": "7766190735462534302357"
+  },
+  {
+   "address": "0x3cc936b795a188f0e246cbb2d74c5bd190aecf18",
+   "balance": 7.638816340962545e+21,
+   "share": 0.08,
+   "rawBalance": "7638816340962545129817"
+  },
+  {
+   "address": "0x7785ddcece9e3c7d86279cd5e79e4e155f8eb816",
+   "balance": 7.589709462140087e+21,
+   "share": 0.08,
+   "rawBalance": "7589709462140087106418"
+  },
+  {
+   "address": "0x04f6fe1e64a63ffc6f8b2c7f199fcfe18c41e893",
+   "balance": 7.45812633499948e+21,
+   "share": 0.08,
+   "rawBalance": "7458126334999480354123"
+  },
+  {
+   "address": "0xeed42ee7e775f0b0865976c3b2491d4e077dece1",
+   "balance": 7.426337394672216e+21,
+   "share": 0.08,
+   "rawBalance": "7426337394672215895278"
+  },
+  {
+   "address": "0xdf1ac1ac255d91f5f4b1e3b4aef57c5350f64c7a",
+   "balance": 7.386252078780045e+21,
+   "share": 0.08,
+   "rawBalance": "7386252078780044167590"
+  },
+  {
+   "address": "0xcb9173670ccbc288982cae1f2e51c887ccfc3bdf",
+   "balance": 7.354407341891588e+21,
+   "share": 0.08,
+   "rawBalance": "7354407341891587381710"
+  },
+  {
+   "address": "0xbe6db5f6b4656d4f85bc91c741b84ede77fa89cf",
+   "balance": 7.298763847555049e+21,
+   "share": 0.08,
+   "rawBalance": "7298763847555048871190"
+  },
+  {
+   "address": "0xed0eebb4d520a6b0eccc4df8e5214e7a6697c111",
+   "balance": 6.996545647463216e+21,
+   "share": 0.07,
+   "rawBalance": "6996545647463215815727"
+  },
+  {
+   "address": "0x8b3f33234abd88493c0cd28de33d583b70bede35",
+   "balance": 6.800997496112648e+21,
+   "share": 0.07,
+   "rawBalance": "6800997496112647130238"
+  },
+  {
+   "address": "0x61feb91701f1dcf14737a58d28ced4f43ad78aa8",
+   "balance": 6.793242041849022e+21,
+   "share": 0.07,
+   "rawBalance": "6793242041849022207065"
+  },
+  {
+   "address": "0x5490689fd12b18a761c0337f2937e1e168746c4c",
+   "balance": 6.655613412346498e+21,
+   "share": 0.07,
+   "rawBalance": "6655613412346497448266"
+  },
+  {
+   "address": "0x043f8524f87efb25990b65ff4918f9128acf742e",
+   "balance": 6.585926796653346e+21,
+   "share": 0.07,
+   "rawBalance": "6585926796653346429854"
+  },
+  {
+   "address": "0x7b3fb1d813814e63d2389b3e731bb03ddd9b6813",
+   "balance": 6.51657245640966e+21,
+   "share": 0.07,
+   "rawBalance": "6516572456409660222443"
+  },
+  {
+   "address": "0xda4963f60052f100ab14886ffcae1b7587def2ae",
+   "balance": 6.466632129964342e+21,
+   "share": 0.07,
+   "rawBalance": "6466632129964341953840"
+  },
+  {
+   "address": "0x16bca40b467200ea9b74d23f2c24057f4952fb31",
+   "balance": 6.452450473070181e+21,
+   "share": 0.07,
+   "rawBalance": "6452450473070180576637"
+  },
+  {
+   "address": "0x1beff56ea3991e075252751bd83053bd0e300f69",
+   "balance": 6.401926389839941e+21,
+   "share": 0.07,
+   "rawBalance": "6401926389839941036472"
+  },
+  {
+   "address": "0x543a0ac38ad4b72aebfcab9e655e372ebf8dcdd8",
+   "balance": 6.158830309653046e+21,
+   "share": 0.06,
+   "rawBalance": "6158830309653046668739"
+  },
+  {
+   "address": "0x3fa9cbf709c5946d66e0e77bdbc8a1ecccf21d54",
+   "balance": 6.093791346367169e+21,
+   "share": 0.06,
+   "rawBalance": "6093791346367168883509"
+  },
+  {
+   "address": "0x0b739e2ad0219d22c5b3a4a2fd11c2c9f965c92c",
+   "balance": 5.902790792056466e+21,
+   "share": 0.06,
+   "rawBalance": "5902790792056465336776"
+  },
+  {
+   "address": "0x2cbfe40ba0b715097f0392cea55b28be3eca3812",
+   "balance": 5.888312340104192e+21,
+   "share": 0.06,
+   "rawBalance": "5888312340104192493022"
+  },
+  {
+   "address": "0x651641299c7ec0aa44ad7ed9b7e12702fed2022f",
+   "balance": 5.831099196108301e+21,
+   "share": 0.06,
+   "rawBalance": "5831099196108301471201"
+  },
+  {
+   "address": "0x6b66293e33c28712660544b3fef3c9c10595773f",
+   "balance": 5.723486292850418e+21,
+   "share": 0.06,
+   "rawBalance": "5723486292850417998616"
+  },
+  {
+   "address": "0x74de5afa21985ae302b7fe1aef11cc205a38a2a4",
+   "balance": 5.662379204046682e+21,
+   "share": 0.06,
+   "rawBalance": "5662379204046681136377"
+  },
+  {
+   "address": "0xce4a5cab47f9490eb4258564037a386663b4ca9d",
+   "balance": 5.651823988340087e+21,
+   "share": 0.06,
+   "rawBalance": "5651823988340086553643"
+  },
+  {
+   "address": "0xff72243c5d7373f8ac9ccf4ccd226301dc213a70",
+   "balance": 5.596383075110417e+21,
+   "share": 0.06,
+   "rawBalance": "5596383075110417236617"
+  },
+  {
+   "address": "0xa0f70b0fccf0945f6adc4955c83d54ddf0ed3eaf",
+   "balance": 5.520796307294036e+21,
+   "share": 0.06,
+   "rawBalance": "5520796307294036106409"
+  },
+  {
+   "address": "0x4005000d00d06992e475df00dd6e9b91f6aade2e",
+   "balance": 5.475972219894563e+21,
+   "share": 0.06,
+   "rawBalance": "5475972219894563412519"
+  },
+  {
+   "address": "0x839f654749f493f5407bde26556e5052376f144e",
+   "balance": 5.46842525506929e+21,
+   "share": 0.06,
+   "rawBalance": "5468425255069289715974"
+  },
+  {
+   "address": "0xd1eeb369f312d0de3dd4812cfaabe052327d6b54",
+   "balance": 5.380747062130926e+21,
+   "share": 0.06,
+   "rawBalance": "5380747062130925872311"
+  },
+  {
+   "address": "0x7e97f06c4123c201111e5d4ef25733d1ea3d79d0",
+   "balance": 5.313872948178226e+21,
+   "share": 0.06,
+   "rawBalance": "5313872948178225677940"
+  },
+  {
+   "address": "0x21e27a5e5513d6e65c4f830167390997aa84843a",
+   "balance": 5.311450103434659e+21,
+   "share": 0.05,
+   "rawBalance": "5311450103434658946638"
+  },
+  {
+   "address": "0x278f97579f5ea3e29c9c62921fab28b298d4f482",
+   "balance": 5.299525723760763e+21,
+   "share": 0.05,
+   "rawBalance": "5299525723760762631607"
+  },
+  {
+   "address": "0x8ff263c1eef8e150af5c3469a97ef339cd89d7b9",
+   "balance": 5.2951441190278e+21,
+   "share": 0.05,
+   "rawBalance": "5295144119027799491237"
+  },
+  {
+   "address": "0x10d34b5dec4025b96c3b2d4773f2c0984d987d95",
+   "balance": 5.259834118995747e+21,
+   "share": 0.05,
+   "rawBalance": "5259834118995746380260"
+  },
+  {
+   "address": "0xc57d819356aea8ddce1a5c09836bedfbd1a827b7",
+   "balance": 5.15150153536323e+21,
+   "share": 0.05,
+   "rawBalance": "5151501535363229966246"
+  },
+  {
+   "address": "0xee8d8ababb63bcd41e70a30b187cbaaa4e5d7ec6",
+   "balance": 5.148597763233577e+21,
+   "share": 0.05,
+   "rawBalance": "5148597763233576758220"
+  },
+  {
+   "address": "0xebe1495ed58d91c75e79f2d20d21e7f9c4bced5d",
+   "balance": 5.140914613547004e+21,
+   "share": 0.05,
+   "rawBalance": "5140914613547004423585"
+  },
+  {
+   "address": "0xde804e46f67ebeecbe4c0a54efe33143cb7ab9e2",
+   "balance": 5.083955505243984e+21,
+   "share": 0.05,
+   "rawBalance": "5083955505243984258493"
+  }
+ ]
+}

@@ -1,0 +1,1437 @@
+{
+ "summary": {
+  "label": "stETH logic 0x028271e3\u2026cdb0",
+  "code_bytes": 23855,
+  "push4_total": 114,
+  "dispatcher_selectors": 87,
+  "named_basic": 9,
+  "named_wordlist": 0,
+  "unnamed": 78,
+  "non_dispatcher_push4": 27
+ },
+ "selectors": [
+  {
+   "selector": "0x06fdde03",
+   "pcs": [
+    59
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "name()"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x095ea7b3",
+   "pcs": [
+    103
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "approve(address,uint256)"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x18160ddd",
+   "pcs": [
+    158
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "totalSupply()"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x23b872dd",
+   "pcs": [
+    213
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "transferFrom(address,address,uint256)"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x313ce567",
+   "pcs": [
+    257
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "decimals()"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x70a08231",
+   "pcs": [
+    466
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "balanceOf(address)"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x95d89b41",
+   "pcs": [
+    675
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "symbol()"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0xa9059cbb",
+   "pcs": [
+    763
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "transfer(address,uint256)"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0xdd62ed3e",
+   "pcs": [
+    840
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [
+    "allowance(address,address)"
+   ],
+   "name_source": "basic"
+  },
+  {
+   "selector": "0x0103349c",
+   "pcs": [
+    26
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x046f7da2",
+   "pcs": [
+    37
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x06f187a4",
+   "pcs": [
+    48
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x07da68f5",
+   "pcs": [
+    70
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x0803fac0",
+   "pcs": [
+    81
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x08c37d55",
+   "pcs": [
+    92
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x136dd43c",
+   "pcs": [
+    114
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x14457a32",
+   "pcs": [
+    125
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x1574d953",
+   "pcs": [
+    136
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x1794bb3c",
+   "pcs": [
+    147
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x19208451",
+   "pcs": [
+    169
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x1b250097",
+   "pcs": [
+    180
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x1ea7ca89",
+   "pcs": [
+    191
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x2087400e",
+   "pcs": [
+    202
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x2914b9bd",
+   "pcs": [
+    224
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x2cb5f784",
+   "pcs": [
+    235
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x2de03aa1",
+   "pcs": [
+    246
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x32f0a3b5",
+   "pcs": [
+    268,
+    6752
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x3644e515",
+   "pcs": [
+    279
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x37cfdaca",
+   "pcs": [
+    290
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x389ed267",
+   "pcs": [
+    301
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x38ac3c55",
+   "pcs": [
+    312
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x39509351",
+   "pcs": [
+    323
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x3b19e84a",
+   "pcs": [
+    334
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x3f683b6a",
+   "pcs": [
+    345
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x47b714e0",
+   "pcs": [
+    356
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x4ad509b2",
+   "pcs": [
+    367
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x528c198a",
+   "pcs": [
+    378
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x56396715",
+   "pcs": [
+    389,
+    7396
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x574ff50d",
+   "pcs": [
+    400
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x609c4c6c",
+   "pcs": [
+    411
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x63021d8b",
+   "pcs": [
+    422
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x648c51e7",
+   "pcs": [
+    433
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x665b4b0b",
+   "pcs": [
+    444
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x6d780459",
+   "pcs": [
+    455
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x72e62e56",
+   "pcs": [
+    477
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x7475f913",
+   "pcs": [
+    488
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x752f77f1",
+   "pcs": [
+    499
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x78ffcfe2",
+   "pcs": [
+    510
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x7a28fb88",
+   "pcs": [
+    521
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x7c8d9e38",
+   "pcs": [
+    532
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x7e7db6e1",
+   "pcs": [
+    543
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x7ecebe00",
+   "pcs": [
+    554
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x80afdea8",
+   "pcs": [
+    565
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x84b0196e",
+   "pcs": [
+    576
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x853c637d",
+   "pcs": [
+    587
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8831f09e",
+   "pcs": [
+    598
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8a5e5688",
+   "pcs": [
+    609
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8aa10435",
+   "pcs": [
+    620
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8b3dd749",
+   "pcs": [
+    631
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8ee1c0a8",
+   "pcs": [
+    642
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8fcb4e5b",
+   "pcs": [
+    653
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9271e3e6",
+   "pcs": [
+    664
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9861f8e5",
+   "pcs": [
+    686
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9ca5a3d0",
+   "pcs": [
+    697
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9d4941d8",
+   "pcs": [
+    708
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xa1658fad",
+   "pcs": [
+    719
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xa1903eab",
+   "pcs": [
+    730
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xa457c2d7",
+   "pcs": [
+    741
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xa479e508",
+   "pcs": [
+    752
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xae2e3538",
+   "pcs": [
+    774
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xb3320d9a",
+   "pcs": [
+    785
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xced72f87",
+   "pcs": [
+    796
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd4aae0c4",
+   "pcs": [
+    807
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd5002f2e",
+   "pcs": [
+    818
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd505accf",
+   "pcs": [
+    829
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xde4796ed",
+   "pcs": [
+    851
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xe16a9065",
+   "pcs": [
+    862
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xe654ff17",
+   "pcs": [
+    873
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xe78a5875",
+   "pcs": [
+    884
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xeb85262f",
+   "pcs": [
+    895
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf0bfd7e8",
+   "pcs": [
+    906
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf2cfa87d",
+   "pcs": [
+    917
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf352e17e",
+   "pcs": [
+    928
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf5eb42dc",
+   "pcs": [
+    939
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf999c506",
+   "pcs": [
+    950
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xfa64ebac",
+   "pcs": [
+    961
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xffffffff",
+   "pcs": [
+    19,
+    6010,
+    6104,
+    6237,
+    6591,
+    6618,
+    6761,
+    6879,
+    7084,
+    7128,
+    7269,
+    7405,
+    8088,
+    8117,
+    8791,
+    9943,
+    10558,
+    10887,
+    11019,
+    11133,
+    11236,
+    11638,
+    12023,
+    12266,
+    12418,
+    13205,
+    13850,
+    14194,
+    14235,
+    14323,
+    14580,
+    14666,
+    14748,
+    15156,
+    15195,
+    15656,
+    15895,
+    16143,
+    16254,
+    16340,
+    16401,
+    16628,
+    16666,
+    16714,
+    16779,
+    16817,
+    17008,
+    17145,
+    17459,
+    17940,
+    18048,
+    18148,
+    18184,
+    18230,
+    18263,
+    18285,
+    18501,
+    18531,
+    18580,
+    19084,
+    19137,
+    19611,
+    19627,
+    19761,
+    19900,
+    20034,
+    20168,
+    20475,
+    20492,
+    20534,
+    20595,
+    20656,
+    21009,
+    21549,
+    21757,
+    21833,
+    21853,
+    21900,
+    22072,
+    22102,
+    22170,
+    22372,
+    22450,
+    22480,
+    22619,
+    22650,
+    22781,
+    22928
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x04bf2a7f",
+   "pcs": [
+    6227
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x13ae8460",
+   "pcs": [
+    6094
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x271662ec",
+   "pcs": [
+    8782
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x27810b6e",
+   "pcs": [
+    16392,
+    19891
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x2b95b781",
+   "pcs": [
+    13196
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x3194528a",
+   "pcs": [
+    11009
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x37d5fe99",
+   "pcs": [
+    16331
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x5a2031f9",
+   "pcs": [
+    20159
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x61d027b3",
+   "pcs": [
+    7119
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x69d42148",
+   "pcs": [
+    20647
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x6dd6e80b",
+   "pcs": [
+    14739
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x72f79b13",
+   "pcs": [
+    22772
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x804e5eb3",
+   "pcs": [
+    12891
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x8f7797c2",
+   "pcs": [
+    10549
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9342c8f4",
+   "pcs": [
+    10877
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9624e83e",
+   "pcs": [
+    20525
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x9fbb7bae",
+   "pcs": [
+    8930,
+    12409
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xb6013cef",
+   "pcs": [
+    11121
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xb8f120b3",
+   "pcs": [
+    6869
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xbe00bbd8",
+   "pcs": [
+    12175
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd0fb84e8",
+   "pcs": [
+    20025
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xe441d25f",
+   "pcs": [
+    20586
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xe70a50c0",
+   "pcs": [
+    23836
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xef6c064c",
+   "pcs": [
+    16808
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xefcdcc0e",
+   "pcs": [
+    9074
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf4409319",
+   "pcs": [
+    9933
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xfdef9106",
+   "pcs": [
+    11618
+   ],
+   "dispatcher": false,
+   "compare_ops": [],
+   "names": [],
+   "name_source": null
+  }
+ ]
+}

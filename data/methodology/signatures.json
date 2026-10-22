@@ -1,0 +1,9395 @@
+{
+ "verbs": [
+  "withdraw",
+  "redeem",
+  "unstake",
+  "claim",
+  "exit",
+  "burn",
+  "unwrap",
+  "release",
+  "collect",
+  "harvest",
+  "close",
+  "repay",
+  "remove",
+  "cancel",
+  "unlock",
+  "leave",
+  "deposit",
+  "stake",
+  "wrap",
+  "mint"
+ ],
+ "types": [
+  "uint256",
+  "address",
+  "uint256[]",
+  "bool",
+  "bytes"
+ ],
+ "max_args": 3,
+ "signatures": 3120,
+ "selectors": {
+  "0x000c6b98": [
+   "mint(uint256,uint256[],bool)"
+  ],
+  "0x00257612": [
+   "mint(bytes,uint256)"
+  ],
+  "0x0030b10d": [
+   "redeem(uint256[],bytes)"
+  ],
+  "0x00659bf6": [
+   "unlock(bool,address,bytes)"
+  ],
+  "0x007db80b": [
+   "wrap(bytes,bool,bytes)"
+  ],
+  "0x007e515d": [
+   "remove(address,bool)"
+  ],
+  "0x008c49c9": [
+   "unwrap(bytes,bytes,uint256[])"
+  ],
+  "0x00963f34": [
+   "burn(bool,bool,uint256[])"
+  ],
+  "0x009ec928": [
+   "redeem(uint256[],uint256,uint256)"
+  ],
+  "0x00a46200": [
+   "collect(bytes,bool,bool)"
+  ],
+  "0x00aeef8a": [
+   "deposit(uint256,uint256,uint256)"
+  ],
+  "0x00b18067": [
+   "harvest(bytes,bool,uint256[])"
+  ],
+  "0x00cfbb85": [
+   "claim(address,uint256[],bytes)"
+  ],
+  "0x00e5cb10": [
+   "release(address,bytes,uint256[])"
+  ],
+  "0x00ebf5dd": [
+   "withdraw(uint256,address,bool)"
+  ],
+  "0x00eebd01": [
+   "leave(bytes,uint256,uint256)"
+  ],
+  "0x00efa895": [
+   "cancel(uint256,uint256)"
+  ],
+  "0x00f714ce": [
+   "withdraw(uint256,address)"
+  ],
+  "0x00ff2f0a": [
+   "harvest(uint256[],uint256[],address)"
+  ],
+  "0x010bfedc": [
+   "cancel(bool,address)"
+  ],
+  "0x0122f2a2": [
+   "redeem(bool,bool,bytes)"
+  ],
+  "0x0144bc3a": [
+   "claim(uint256[],uint256)"
+  ],
+  "0x0152a13f": [
+   "leave(uint256,bool,address)"
+  ],
+  "0x0154eb2a": [
+   "deposit(bytes,uint256[],bool)"
+  ],
+  "0x01600add": [
+   "harvest(address,bool,uint256[])"
+  ],
+  "0x01621b35": [
+   "withdraw(uint256[],bool,address)"
+  ],
+  "0x0174f2e9": [
+   "harvest(bool,uint256,address)"
+  ],
+  "0x018ee9b7": [
+   "harvest(address,uint256)"
+  ],
+  "0x0191b74b": [
+   "unwrap(uint256[],uint256[],address)"
+  ],
+  "0x019af468": [
+   "unwrap(bool,uint256[],bytes)"
+  ],
+  "0x01b7277f": [
+   "burn(uint256,uint256[])"
+  ],
+  "0x01b93072": [
+   "redeem(bool,bool,uint256[])"
+  ],
+  "0x01c39bf8": [
+   "stake(bytes,uint256,uint256[])"
+  ],
+  "0x01c6089a": [
+   "repay(uint256[],uint256[],uint256)"
+  ],
+  "0x01d5d8b1": [
+   "unstake(bytes,bytes,uint256[])"
+  ],
+  "0x01e48260": [
+   "deposit(address,bytes,uint256)"
+  ],
+  "0x0209c8d3": [
+   "withdraw(address,bytes,uint256)"
+  ],
+  "0x021480a5": [
+   "exit(address,address,uint256[])"
+  ],
+  "0x022fee62": [
+   "stake(bool,address)"
+  ],
+  "0x023276f0": [
+   "wrap(address)"
+  ],
+  "0x023fc3b5": [
+   "repay(uint256,bytes,uint256[])"
+  ],
+  "0x02a7ae3e": [
+   "burn(bool,bool,uint256)"
+  ],
+  "0x02acc94b": [
+   "mint(uint256,uint256,uint256)"
+  ],
+  "0x02bf62b5": [
+   "wrap(bool,uint256[],uint256[])"
+  ],
+  "0x02e6c903": [
+   "release(bytes,bool)"
+  ],
+  "0x030ba25d": [
+   "withdraw(uint256,bytes)"
+  ],
+  "0x0341a3b3": [
+   "exit(bool,bool,address)"
+  ],
+  "0x034f5077": [
+   "stake(uint256,uint256[],bytes)"
+  ],
+  "0x0357371d": [
+   "release(address,uint256)"
+  ],
+  "0x036c7955": [
+   "deposit(uint256,uint256[],uint256[])"
+  ],
+  "0x038bd95a": [
+   "mint(uint256[],uint256,bytes)"
+  ],
+  "0x0392602e": [
+   "unlock(uint256[],uint256[],uint256)"
+  ],
+  "0x03934f81": [
+   "harvest(address,bool,bool)"
+  ],
+  "0x039bfe7b": [
+   "burn(bool,bytes,uint256)"
+  ],
+  "0x03b15bc6": [
+   "wrap(bytes,address,uint256)"
+  ],
+  "0x03e7c280": [
+   "unlock(uint256[],uint256[],address)"
+  ],
+  "0x03eb09cb": [
+   "unwrap(uint256[],bytes,bool)"
+  ],
+  "0x040dada8": [
+   "collect(bytes,uint256,address)"
+  ],
+  "0x0424dddc": [
+   "close(uint256,uint256[],uint256[])"
+  ],
+  "0x043af198": [
+   "leave(uint256[],uint256[],address)"
+  ],
+  "0x0449015a": [
+   "redeem(uint256,uint256,bytes)"
+  ],
+  "0x045efccf": [
+   "cancel(bytes,bytes,bytes)"
+  ],
+  "0x049104e5": [
+   "redeem(uint256,uint256,address)"
+  ],
+  "0x049e8db3": [
+   "exit(bool,address,uint256)"
+  ],
+  "0x04a0ec0f": [
+   "stake(bool,bytes,bool)"
+  ],
+  "0x04c45257": [
+   "stake(uint256[],uint256[],bytes)"
+  ],
+  "0x04e8dbef": [
+   "wrap(bool)"
+  ],
+  "0x0515953d": [
+   "close(uint256,address,address)"
+  ],
+  "0x052183fe": [
+   "leave(address,bytes,uint256[])"
+  ],
+  "0x0527a360": [
+   "wrap(uint256[],address,uint256)"
+  ],
+  "0x056974b0": [
+   "remove(bool,address)"
+  ],
+  "0x057b7253": [
+   "deposit(uint256[],bool,address)"
+  ],
+  "0x0583dd2c": [
+   "unwrap(uint256[],bytes)"
+  ],
+  "0x059308d0": [
+   "withdraw(bytes,bool,bool)"
+  ],
+  "0x05a10028": [
+   "burn(uint256,uint256,uint256)"
+  ],
+  "0x05b61b73": [
+   "unstake(bytes,uint256[],bool)"
+  ],
+  "0x05cf9e46": [
+   "collect(uint256[],bytes,address)"
+  ],
+  "0x060e7eaa": [
+   "release(uint256,uint256,uint256[])"
+  ],
+  "0x064b4fb9": [
+   "wrap(uint256,bool)"
+  ],
+  "0x064c984b": [
+   "close(bytes,bool,bool)"
+  ],
+  "0x064d389a": [
+   "remove(bytes,address)"
+  ],
+  "0x069ce295": [
+   "harvest(uint256[],uint256[],bool)"
+  ],
+  "0x06a3eb46": [
+   "remove(uint256[],uint256,address)"
+  ],
+  "0x06ab730c": [
+   "leave(bytes)"
+  ],
+  "0x06cea20b": [
+   "unstake(uint256[],uint256,address)"
+  ],
+  "0x06ec16f8": [
+   "collect(address)"
+  ],
+  "0x06f099d0": [
+   "release(bytes,uint256[],address)"
+  ],
+  "0x06ff445d": [
+   "unwrap(uint256[],uint256,uint256[])"
+  ],
+  "0x071a186e": [
+   "wrap(bytes,address,uint256[])"
+  ],
+  "0x071c5d97": [
+   "cancel(uint256[],bool)"
+  ],
+  "0x0723bd8c": [
+   "burn(uint256,bytes,uint256[])"
+  ],
+  "0x072499da": [
+   "collect(uint256,uint256[],address)"
+  ],
+  "0x074de22b": [
+   "unstake(bytes,bytes)"
+  ],
+  "0x07797a1b": [
+   "collect(uint256[],uint256[],uint256[])"
+  ],
+  "0x078f02ca": [
+   "exit(uint256[],uint256,uint256)"
+  ],
+  "0x07919502": [
+   "unstake(uint256[],bytes,bytes)"
+  ],
+  "0x07b775e6": [
+   "stake(bytes,address,uint256)"
+  ],
+  "0x07e035b1": [
+   "release(bool,address,uint256)"
+  ],
+  "0x0808ee6e": [
+   "deposit(address,address,bool)"
+  ],
+  "0x086253f8": [
+   "cancel(uint256,uint256,uint256[])"
+  ],
+  "0x086d0e78": [
+   "repay(uint256[],uint256[],bytes)"
+  ],
+  "0x08769652": [
+   "cancel(bytes,uint256[],uint256[])"
+  ],
+  "0x087e8761": [
+   "claim(address,bool,bytes)"
+  ],
+  "0x08837f39": [
+   "leave(address,bool)"
+  ],
+  "0x088abb8d": [
+   "unstake(bool)"
+  ],
+  "0x0892dae0": [
+   "burn(bool,bytes,uint256[])"
+  ],
+  "0x089a934b": [
+   "exit(bytes,uint256[],bytes)"
+  ],
+  "0x08aa325f": [
+   "claim(uint256,bytes,bytes)"
+  ],
+  "0x08c676e9": [
+   "redeem(uint256[],uint256[],address)"
+  ],
+  "0x08dc2a78": [
+   "harvest(uint256,uint256[],address)"
+  ],
+  "0x08dc9f42": [
+   "mint(uint256,uint256,bytes)"
+  ],
+  "0x08f6a6b6": [
+   "burn(bool,bool,bytes)"
+  ],
+  "0x0943f4e2": [
+   "claim(uint256[],bool,uint256)"
+  ],
+  "0x0968f264": [
+   "withdraw(bytes)"
+  ],
+  "0x096dfe7a": [
+   "exit(address,address,bytes)"
+  ],
+  "0x096f92da": [
+   "redeem(bytes,bytes,bytes)"
+  ],
+  "0x098c0132": [
+   "unwrap(bytes,uint256[],uint256[])"
+  ],
+  "0x09cf83c8": [
+   "collect(address,bytes,address)"
+  ],
+  "0x09e1b694": [
+   "harvest(bytes,bytes,bytes)"
+  ],
+  "0x09ed5bb0": [
+   "repay(address,uint256[])"
+  ],
+  "0x09f7ba6e": [
+   "unlock(uint256[],bool,bool)"
+  ],
+  "0x0a42243d": [
+   "harvest(bool,uint256,bytes)"
+  ],
+  "0x0a631e95": [
+   "remove(address,uint256[],bool)"
+  ],
+  "0x0a7c3ef5": [
+   "close(bool,address,bool)"
+  ],
+  "0x0aa0c556": [
+   "burn(uint256[],uint256,bytes)"
+  ],
+  "0x0acd451d": [
+   "burn(uint256[],uint256[],address)"
+  ],
+  "0x0ad58d2f": [
+   "withdraw(uint256,uint256,address)"
+  ],
+  "0x0ae039d4": [
+   "wrap(uint256,bool,bool)"
+  ],
+  "0x0aebeb4e": [
+   "close(uint256)"
+  ],
+  "0x0b010912": [
+   "collect(uint256[],bool)"
+  ],
+  "0x0b07a45e": [
+   "exit(uint256,address,uint256[])"
+  ],
+  "0x0b081eeb": [
+   "close(bool,address,address)"
+  ],
+  "0x0b10dc08": [
+   "burn(bytes,bool,address)"
+  ],
+  "0x0b11844e": [
+   "deposit(bytes,uint256[],uint256)"
+  ],
+  "0x0b35d332": [
+   "close(bytes,bytes,uint256[])"
+  ],
+  "0x0b75e78c": [
+   "harvest(uint256,uint256[],uint256[])"
+  ],
+  "0x0b88d167": [
+   "collect(uint256[],bytes,uint256)"
+  ],
+  "0x0ba005df": [
+   "repay(uint256,bytes,address)"
+  ],
+  "0x0ba097d6": [
+   "redeem(bytes,address)"
+  ],
+  "0x0bbd87a9": [
+   "unstake(uint256[],uint256,bytes)"
+  ],
+  "0x0bc877b4": [
+   "close(uint256[],bytes,bytes)"
+  ],
+  "0x0bcb514c": [
+   "unwrap(bytes,uint256,uint256)"
+  ],
+  "0x0bd06246": [
+   "mint(uint256[],uint256)"
+  ],
+  "0x0bd5b30c": [
+   "unwrap(bool,uint256,bytes)"
+  ],
+  "0x0bd6eccc": [
+   "mint(uint256[],bytes,uint256)"
+  ],
+  "0x0bdee27b": [
+   "deposit(address,uint256[],uint256[])"
+  ],
+  "0x0bed9ac9": [
+   "repay(bytes,uint256,bool)"
+  ],
+  "0x0c26214a": [
+   "repay(uint256[],bytes,address)"
+  ],
+  "0x0c354725": [
+   "remove(uint256[],bytes)"
+  ],
+  "0x0c3d3272": [
+   "release(bytes,bytes,bool)"
+  ],
+  "0x0c433896": [
+   "stake(bool,address,bytes)"
+  ],
+  "0x0c43fd35": [
+   "harvest(bytes,uint256[],uint256)"
+  ],
+  "0x0c51b88f": [
+   "stake(address,uint256,uint256)"
+  ],
+  "0x0c54e19f": [
+   "redeem(bytes,bool)"
+  ],
+  "0x0c58771f": [
+   "wrap(uint256[],uint256)"
+  ],
+  "0x0c6e2dd2": [
+   "burn(uint256,uint256[],bool)"
+  ],
+  "0x0c72ad20": [
+   "repay(uint256[])"
+  ],
+  "0x0c738ec7": [
+   "unwrap(bool,bool,bool)"
+  ],
+  "0x0ca4f987": [
+   "remove(bytes,uint256,uint256[])"
+  ],
+  "0x0cae37f1": [
+   "mint(bytes,address)"
+  ],
+  "0x0cd375d2": [
+   "collect(bytes,uint256[])"
+  ],
+  "0x0cdf70cb": [
+   "unwrap(address,bytes)"
+  ],
+  "0x0d2875c3": [
+   "harvest(bytes,uint256[],address)"
+  ],
+  "0x0d4d1513": [
+   "mint(address,uint256,address)"
+  ],
+  "0x0db665c9": [
+   "harvest(bytes,address,address)"
+  ],
+  "0x0dcc5301": [
+   "unwrap(uint256[],bytes,address)"
+  ],
+  "0x0dd5a668": [
+   "collect(uint256,uint256,uint256[])"
+  ],
+  "0x0ddd926c": [
+   "wrap(bool,uint256,address)"
+  ],
+  "0x0e152038": [
+   "repay(uint256[],uint256,bytes)"
+  ],
+  "0x0e17ebc6": [
+   "close(uint256[],uint256,address)"
+  ],
+  "0x0e462752": [
+   "collect(bytes,uint256[],uint256[])"
+  ],
+  "0x0e5c011e": [
+   "harvest(address)"
+  ],
+  "0x0e676773": [
+   "redeem(uint256[],address,address)"
+  ],
+  "0x0e6d3cb0": [
+   "remove(uint256,bool,address)"
+  ],
+  "0x0e6db459": [
+   "repay(address,address,uint256[])"
+  ],
+  "0x0e6dfcd5": [
+   "redeem(address,address,uint256)"
+  ],
+  "0x0e89439b": [
+   "stake(uint256,bytes)"
+  ],
+  "0x0eb9b141": [
+   "withdraw(uint256[],bytes,bool)"
+  ],
+  "0x0ec1bc9b": [
+   "remove(bool,address,uint256[])"
+  ],
+  "0x0ec934db": [
+   "collect(bytes,bytes,bytes)"
+  ],
+  "0x0ed37320": [
+   "close(uint256[],address)"
+  ],
+  "0x0ee13190": [
+   "leave(address,uint256[],bool)"
+  ],
+  "0x0ef338a9": [
+   "collect(bool,bool,bytes)"
+  ],
+  "0x0efe6a8b": [
+   "deposit(address,uint256,uint256)"
+  ],
+  "0x0f0f638b": [
+   "collect(uint256[],bool,bytes)"
+  ],
+  "0x0f1697ce": [
+   "unlock(uint256[],bool,bytes)"
+  ],
+  "0x0f285fd2": [
+   "unstake(bool,address,bytes)"
+  ],
+  "0x0f304b88": [
+   "burn(address,uint256[],uint256)"
+  ],
+  "0x0f435ad5": [
+   "cancel(uint256[],bytes,bool)"
+  ],
+  "0x0f45fb77": [
+   "claim(bytes,bytes,bytes)"
+  ],
+  "0x0f8d1d28": [
+   "harvest(uint256[],uint256)"
+  ],
+  "0x0f9f0fca": [
+   "release(uint256,bool,uint256)"
+  ],
+  "0x0faaf3dd": [
+   "burn(uint256,uint256[],uint256[])"
+  ],
+  "0x0fbd7c20": [
+   "unwrap(uint256[],address,bool)"
+  ],
+  "0x0fbf0a93": [
+   "stake(uint256[])"
+  ],
+  "0x0ffce1b7": [
+   "unwrap(address,bool,bool)"
+  ],
+  "0x1001fac5": [
+   "leave(bytes,bool,uint256)"
+  ],
+  "0x101a878d": [
+   "cancel(bytes,uint256[],uint256)"
+  ],
+  "0x101d2ace": [
+   "release(uint256,uint256[],uint256)"
+  ],
+  "0x1028532e": [
+   "release(bytes,address,bool)"
+  ],
+  "0x1033e0fe": [
+   "remove(bytes,bool,bytes)"
+  ],
+  "0x10465f72": [
+   "repay(uint256,uint256[],bytes)"
+  ],
+  "0x105478fe": [
+   "unstake(bytes,uint256,uint256)"
+  ],
+  "0x10603451": [
+   "mint(uint256,bool,uint256)"
+  ],
+  "0x10942701": [
+   "close(bytes,uint256,uint256)"
+  ],
+  "0x109b3c83": [
+   "wrap(uint256,bytes)"
+  ],
+  "0x109d81ab": [
+   "close(address,bool)"
+  ],
+  "0x10a2656a": [
+   "withdraw(uint256,bool,address)"
+  ],
+  "0x10badf4e": [
+   "redeem(address,uint256,bytes)"
+  ],
+  "0x10be013f": [
+   "cancel(bytes,uint256[],address)"
+  ],
+  "0x10e298d0": [
+   "exit(bool,bytes)"
+  ],
+  "0x10e53c21": [
+   "repay(address,bool,address)"
+  ],
+  "0x10ead1dd": [
+   "repay(bool,uint256[],uint256)"
+  ],
+  "0x1100500b": [
+   "unlock(bool,bytes)"
+  ],
+  "0x110aae62": [
+   "stake(uint256[],uint256[],address)"
+  ],
+  "0x1131ac18": [
+   "wrap(bytes,bytes,bool)"
+  ],
+  "0x116e9997": [
+   "wrap(bytes,address)"
+  ],
+  "0x119300c7": [
+   "harvest(uint256[],bool,uint256[])"
+  ],
+  "0x11a7c80f": [
+   "remove(bytes,bytes,address)"
+  ],
+  "0x120175ca": [
+   "exit(uint256,address,address)"
+  ],
+  "0x120fb769": [
+   "close(uint256[],bool,address)"
+  ],
+  "0x12158301": [
+   "stake(uint256[],bytes,bool)"
+  ],
+  "0x1219b611": [
+   "stake(bytes,address)"
+  ],
+  "0x1228e525": [
+   "cancel(bytes,bool,bool)"
+  ],
+  "0x1249c58b": [
+   "mint()"
+  ],
+  "0x129c5562": [
+   "wrap(bool,address)"
+  ],
+  "0x12ab7717": [
+   "close(bool,uint256,bool)"
+  ],
+  "0x12b45660": [
+   "harvest(uint256[],bool,bool)"
+  ],
+  "0x1325a9af": [
+   "unstake(bool,bool,uint256[])"
+  ],
+  "0x1347399b": [
+   "release(bytes)"
+  ],
+  "0x135390f9": [
+   "withdraw(bytes,uint256,address)"
+  ],
+  "0x1378d2bb": [
+   "burn(address,uint256,uint256[])"
+  ],
+  "0x1386aa16": [
+   "harvest(bytes,uint256[])"
+  ],
+  "0x1397e91c": [
+   "claim(uint256[],uint256[])"
+  ],
+  "0x13b0cc39": [
+   "mint(uint256,uint256[],uint256)"
+  ],
+  "0x13bac820": [
+   "wrap(uint256,address)"
+  ],
+  "0x13c2e862": [
+   "withdraw(uint256,uint256[],uint256[])"
+  ],
+  "0x13e09eb2": [
+   "collect(uint256[],uint256[],bytes)"
+  ],
+  "0x13fa0520": [
+   "unstake(address,uint256[],uint256)"
+  ],
+  "0x143c790e": [
+   "redeem(uint256[],bool,address)"
+  ],
+  "0x143f84d4": [
+   "close(uint256[],bytes,uint256)"
+  ],
+  "0x1483aa5a": [
+   "cancel(bool,bytes,bool)"
+  ],
+  "0x1495ad5f": [
+   "harvest(uint256[],bytes,uint256[])"
+  ],
+  "0x14b6b140": [
+   "collect(bool,uint256,uint256)"
+  ],
+  "0x14bb05c0": [
+   "repay(bool,bool,uint256)"
+  ],
+  "0x14dab21c": [
+   "close(bool,address,bytes)"
+  ],
+  "0x14dffac6": [
+   "cancel(bytes,address,bytes)"
+  ],
+  "0x14ecff5c": [
+   "stake(bytes,uint256[],bytes)"
+  ],
+  "0x14ed390a": [
+   "cancel(uint256,bool,address)"
+  ],
+  "0x14f1ab60": [
+   "unwrap(uint256,bool,address)"
+  ],
+  "0x1513df88": [
+   "unlock(address,bool,address)"
+  ],
+  "0x15294c40": [
+   "repay(address,bool,uint256)"
+  ],
+  "0x152c64e8": [
+   "stake(uint256,address,bytes)"
+  ],
+  "0x153584aa": [
+   "leave(address,uint256[],address)"
+  ],
+  "0x153afe73": [
+   "redeem(bytes,uint256,bytes)"
+  ],
+  "0x15514ac5": [
+   "cancel(uint256,address,bytes)"
+  ],
+  "0x15573ef7": [
+   "collect(address,uint256[],uint256[])"
+  ],
+  "0x156a5a9f": [
+   "unlock(bytes,address)"
+  ],
+  "0x156e29f6": [
+   "mint(address,uint256,uint256)"
+  ],
+  "0x1577827e": [
+   "collect(uint256[],bytes)"
+  ],
+  "0x15944cc8": [
+   "close(bytes,uint256)"
+  ],
+  "0x15dc07d7": [
+   "release(address,address,address)"
+  ],
+  "0x15e36ad2": [
+   "claim(bool,uint256,bytes)"
+  ],
+  "0x15ee8642": [
+   "mint(bytes,address,uint256[])"
+  ],
+  "0x15f41501": [
+   "release(address,uint256,address)"
+  ],
+  "0x1633dd0f": [
+   "release(uint256,uint256,bool)"
+  ],
+  "0x164af1df": [
+   "deposit(bytes,bytes)"
+  ],
+  "0x166f52cc": [
+   "harvest(bytes,uint256[],bytes)"
+  ],
+  "0x16955385": [
+   "exit(uint256,bool,uint256[])"
+  ],
+  "0x16a4a783": [
+   "mint(address,bool,uint256[])"
+  ],
+  "0x16dafda6": [
+   "repay(address,uint256[],bytes)"
+  ],
+  "0x16f60557": [
+   "stake(uint256,uint256[])"
+  ],
+  "0x16f8669c": [
+   "unstake(bool,bytes,uint256)"
+  ],
+  "0x1706f6a0": [
+   "cancel(bytes,uint256)"
+  ],
+  "0x1725ccf2": [
+   "close(address,bytes,bool)"
+  ],
+  "0x1734525a": [
+   "remove(bytes,uint256)"
+  ],
+  "0x17561fdb": [
+   "claim(uint256,bool,bool)"
+  ],
+  "0x17630ae5": [
+   "close(uint256[],address,bytes)"
+  ],
+  "0x17709695": [
+   "unwrap(address,bool,bytes)"
+  ],
+  "0x178d300e": [
+   "harvest(uint256,bool)"
+  ],
+  "0x17a419fb": [
+   "unwrap(bool,bool,uint256)"
+  ],
+  "0x17a614a7": [
+   "remove(uint256[],uint256,bytes)"
+  ],
+  "0x17acc648": [
+   "release(bytes,bytes,address)"
+  ],
+  "0x17e43be9": [
+   "mint(uint256[],uint256[],uint256)"
+  ],
+  "0x17e881bc": [
+   "unwrap(uint256[],uint256[],uint256[])"
+  ],
+  "0x17e90ecb": [
+   "burn(uint256[],address,bytes)"
+  ],
+  "0x1818edcb": [
+   "leave(bool,uint256[],bool)"
+  ],
+  "0x1838a585": [
+   "wrap(address,bool)"
+  ],
+  "0x1839c11d": [
+   "remove(uint256,bytes,address)"
+  ],
+  "0x1852f3e1": [
+   "repay(bytes,bytes,bool)"
+  ],
+  "0x185ed80d": [
+   "unstake(uint256,address,bool)"
+  ],
+  "0x187d7c87": [
+   "wrap(uint256[],uint256[])"
+  ],
+  "0x187f7d70": [
+   "collect(bytes,address)"
+  ],
+  "0x189e4660": [
+   "collect(bytes,address,address)"
+  ],
+  "0x18a12cd7": [
+   "release(bytes,bool,bool)"
+  ],
+  "0x18ace401": [
+   "release(address,uint256[])"
+  ],
+  "0x18c08f26": [
+   "exit(uint256[])"
+  ],
+  "0x18c41a80": [
+   "mint(bool)"
+  ],
+  "0x18d04d70": [
+   "unwrap(address,uint256[],uint256[])"
+  ],
+  "0x18d9a96e": [
+   "deposit(bytes,address,address)"
+  ],
+  "0x18e01199": [
+   "burn(uint256,bytes,bytes)"
+  ],
+  "0x18e19bc1": [
+   "wrap(uint256,address,bytes)"
+  ],
+  "0x18fccc76": [
+   "harvest(uint256,address)"
+  ],
+  "0x1910dd03": [
+   "unlock(bool,bool,bytes)"
+  ],
+  "0x19165587": [
+   "release(address)"
+  ],
+  "0x191f28e0": [
+   "unlock(bool,uint256[],bool)"
+  ],
+  "0x19293883": [
+   "deposit(uint256,uint256[],address)"
+  ],
+  "0x1941884f": [
+   "harvest(bool,uint256[],address)"
+  ],
+  "0x1970cd29": [
+   "claim(bool,bool,address)"
+  ],
+  "0x198c9321": [
+   "leave(uint256,uint256,bool)"
+  ],
+  "0x199a7249": [
+   "unstake(bytes,uint256,uint256[])"
+  ],
+  "0x19e8139a": [
+   "wrap(bytes,bool,bool)"
+  ],
+  "0x19fc05b5": [
+   "release(address,address,bool)"
+  ],
+  "0x1a189734": [
+   "claim(uint256[],bytes,uint256[])"
+  ],
+  "0x1a2beb66": [
+   "remove(bool)"
+  ],
+  "0x1aa06d12": [
+   "unstake(uint256[],bool,uint256[])"
+  ],
+  "0x1aa35acf": [
+   "stake(bool,bytes,uint256[])"
+  ],
+  "0x1aa92182": [
+   "collect(bool,address,uint256)"
+  ],
+  "0x1ab656ad": [
+   "collect(bool,bytes,bool)"
+  ],
+  "0x1ac7d371": [
+   "redeem(uint256[],bytes,bool)"
+  ],
+  "0x1ad30cf8": [
+   "stake(uint256[],address)"
+  ],
+  "0x1b03f3c6": [
+   "unwrap(bool,uint256[],address)"
+  ],
+  "0x1b1a3271": [
+   "burn(uint256[],uint256,uint256)"
+  ],
+  "0x1b2ef1ca": [
+   "mint(uint256,uint256)"
+  ],
+  "0x1b3a1452": [
+   "harvest(address,bytes,uint256)"
+  ],
+  "0x1b4260de": [
+   "burn(bool,address,bytes)"
+  ],
+  "0x1b4b2b7b": [
+   "stake(bytes,uint256,bytes)"
+  ],
+  "0x1b4d99bf": [
+   "close(uint256,address,bytes)"
+  ],
+  "0x1b656556": [
+   "stake(uint256,uint256[],bool)"
+  ],
+  "0x1b822e48": [
+   "withdraw(bytes,uint256,bool)"
+  ],
+  "0x1b9af7ed": [
+   "unwrap(address,bytes,uint256[])"
+  ],
+  "0x1bbcfb90": [
+   "release(address,uint256[],bytes)"
+  ],
+  "0x1bcdcee2": [
+   "withdraw(uint256,uint256[],bytes)"
+  ],
+  "0x1bce1c99": [
+   "repay(bool,uint256,bytes)"
+  ],
+  "0x1bd06d42": [
+   "repay(bytes,bool,uint256[])"
+  ],
+  "0x1bedf204": [
+   "burn(bytes,uint256,uint256[])"
+  ],
+  "0x1bf32e42": [
+   "close(bool,uint256[],bytes)"
+  ],
+  "0x1c1c5571": [
+   "wrap(uint256,uint256[],address)"
+  ],
+  "0x1c1ed20c": [
+   "remove(bool,address,uint256)"
+  ],
+  "0x1c26658e": [
+   "exit(address,bytes)"
+  ],
+  "0x1c354408": [
+   "stake(uint256,bytes,bool)"
+  ],
+  "0x1c478410": [
+   "unwrap(bytes,uint256[],address)"
+  ],
+  "0x1c7bf9d4": [
+   "remove(uint256[],bytes,uint256)"
+  ],
+  "0x1c96c01f": [
+   "burn(bytes,address,bytes)"
+  ],
+  "0x1c9e742e": [
+   "cancel(uint256,bytes)"
+  ],
+  "0x1cdf6933": [
+   "unwrap(bool,bool,address)"
+  ],
+  "0x1ce8a47d": [
+   "repay(address,bytes,bool)"
+  ],
+  "0x1cf3e8b3": [
+   "remove(bool,uint256[])"
+  ],
+  "0x1cfc2cd8": [
+   "burn(address,bytes,uint256[])"
+  ],
+  "0x1d3d567c": [
+   "claim(bytes,uint256[],uint256[])"
+  ],
+  "0x1d4c077a": [
+   "stake(bool,uint256[],bool)"
+  ],
+  "0x1d4ea02b": [
+   "harvest(uint256[],uint256[],uint256[])"
+  ],
+  "0x1d53f065": [
+   "mint(uint256,bool,bytes)"
+  ],
+  "0x1d5af406": [
+   "withdraw(bool,bytes,address)"
+  ],
+  "0x1d688e0e": [
+   "release(address,bytes,bytes)"
+  ],
+  "0x1d821779": [
+   "mint(uint256[],address,uint256[])"
+  ],
+  "0x1d8249b0": [
+   "remove(uint256[],uint256[],bool)"
+  ],
+  "0x1d830dd7": [
+   "wrap(uint256[],address,uint256[])"
+  ],
+  "0x1da649cf": [
+   "repay(address,address,uint256)"
+  ],
+  "0x1db16685": [
+   "unlock(bool,address,bool)"
+  ],
+  "0x1db8d654": [
+   "deposit(uint256,uint256[],bool)"
+  ],
+  "0x1dc4a072": [
+   "stake(bool,uint256[],bytes)"
+  ],
+  "0x1dd8abd0": [
+   "unlock(address,bool)"
+  ],
+  "0x1e090844": [
+   "deposit(bytes,bytes,bool)"
+  ],
+  "0x1e10f74a": [
+   "unlock(uint256,bytes)"
+  ],
+  "0x1e1b4b90": [
+   "stake(bool,bool,uint256[])"
+  ],
+  "0x1e31797e": [
+   "unstake(bool,uint256[],bool)"
+  ],
+  "0x1e34e6ee": [
+   "leave(bool,address,bool)"
+  ],
+  "0x1e83409a": [
+   "claim(address)"
+  ],
+  "0x1e861cee": [
+   "mint(bytes,bytes,uint256[])"
+  ],
+  "0x1e9a6950": [
+   "redeem(address,uint256)"
+  ],
+  "0x1eac92dd": [
+   "leave(bytes,bool,bool)"
+  ],
+  "0x1ec4efa3": [
+   "close(uint256[],bool,bool)"
+  ],
+  "0x1ecd5260": [
+   "close(bytes,bool,uint256)"
+  ],
+  "0x1ee48cc2": [
+   "burn(uint256[],uint256)"
+  ],
+  "0x1ee7ceef": [
+   "withdraw(bool,bytes,bool)"
+  ],
+  "0x1eea2d69": [
+   "remove(bytes,uint256,address)"
+  ],
+  "0x1ef82154": [
+   "close(address,uint256[],address)"
+  ],
+  "0x1effe710": [
+   "release(bool,uint256[],bytes)"
+  ],
+  "0x1f0b401e": [
+   "unwrap(address,uint256[],bytes)"
+  ],
+  "0x1f2537e2": [
+   "deposit(bool,bytes,address)"
+  ],
+  "0x1f2eef3b": [
+   "stake(uint256,bytes,uint256[])"
+  ],
+  "0x1f3a1272": [
+   "repay(uint256,address,uint256)"
+  ],
+  "0x1f4036bd": [
+   "mint(uint256[],address,address)"
+  ],
+  "0x1f47c3a7": [
+   "mint(address,bytes,uint256[])"
+  ],
+  "0x1fae70eb": [
+   "unstake(uint256,uint256[],address)"
+  ],
+  "0x1fcc4cfb": [
+   "cancel(address,bool)"
+  ],
+  "0x1fcfe19c": [
+   "mint(bytes,address,uint256)"
+  ],
+  "0x1fd3e4fb": [
+   "exit(bytes,uint256,uint256[])"
+  ],
+  "0x1fe5517f": [
+   "mint(uint256[],address,bytes)"
+  ],
+  "0x1feed31f": [
+   "redeem(address,bool)"
+  ],
+  "0x1ffb07ea": [
+   "remove(bool,address,address)"
+  ],
+  "0x202eead9": [
+   "burn(bool,uint256)"
+  ],
+  "0x2097d3fb": [
+   "mint(address,bool)"
+  ],
+  "0x20ea1970": [
+   "redeem(bytes,uint256[],bool)"
+  ],
+  "0x20ef1782": [
+   "exit(uint256[],uint256,bytes)"
+  ],
+  "0x20f458db": [
+   "withdraw(bool,uint256,address)"
+  ],
+  "0x20f89bf7": [
+   "repay(bytes,bool,bytes)"
+  ],
+  "0x20fb958e": [
+   "withdraw(bytes,uint256,bytes)"
+  ],
+  "0x21045eeb": [
+   "unlock(uint256,bool,uint256)"
+  ],
+  "0x211e69e8": [
+   "mint(uint256[],bool,bool)"
+  ],
+  "0x211f25ae": [
+   "mint(bool,uint256,uint256[])"
+  ],
+  "0x212c5fea": [
+   "close(bool)"
+  ],
+  "0x212e2b87": [
+   "repay(uint256[],uint256,uint256)"
+  ],
+  "0x2142c5a4": [
+   "mint(bool,address,bool)"
+  ],
+  "0x2168c660": [
+   "unwrap(uint256[],uint256[],bytes)"
+  ],
+  "0x2168d6ac": [
+   "release(address,bool)"
+  ],
+  "0x218cf164": [
+   "close(uint256[],uint256[],uint256)"
+  ],
+  "0x21a04c28": [
+   "leave(uint256[],uint256[],uint256)"
+  ],
+  "0x21adb762": [
+   "release(uint256[],address,bool)"
+  ],
+  "0x21c0b342": [
+   "claim(address,address)"
+  ],
+  "0x21d0af34": [
+   "unstake(address,uint256,bool)"
+  ],
+  "0x21e10439": [
+   "unlock(bytes,bool,bool)"
+  ],
+  "0x21fd4de1": [
+   "stake(uint256[],bool,bytes)"
+  ],
+  "0x2201eb76": [
+   "cancel(uint256[],address)"
+  ],
+  "0x2231513e": [
+   "withdraw(bool,bool,address)"
+  ],
+  "0x2232d095": [
+   "mint(address,bool,bool)"
+  ],
+  "0x2247f0a2": [
+   "mint(bytes,uint256[],uint256)"
+  ],
+  "0x2271a29c": [
+   "unlock(bytes,bool,uint256[])"
+  ],
+  "0x2276a129": [
+   "collect(bool,uint256,bool)"
+  ],
+  "0x2276d2a8": [
+   "unstake(bool,bytes,address)"
+  ],
+  "0x22867d78": [
+   "repay(address,uint256)"
+  ],
+  "0x229c9f6c": [
+   "release(uint256,address,uint256)"
+  ],
+  "0x22cbee22": [
+   "unwrap(bool,address,bool)"
+  ],
+  "0x22d26a37": [
+   "harvest(uint256,uint256[])"
+  ],
+  "0x22f5ac02": [
+   "mint(uint256[],uint256,address)"
+  ],
+  "0x23158304": [
+   "exit(bytes,bool,bool)"
+  ],
+  "0x232210be": [
+   "remove(uint256,bool,uint256[])"
+  ],
+  "0x2338d377": [
+   "close(address,bytes)"
+  ],
+  "0x233d3d0d": [
+   "leave(uint256,address,address)"
+  ],
+  "0x234ac45f": [
+   "collect(uint256,bool,address)"
+  ],
+  "0x23964f32": [
+   "wrap(address,bool,uint256)"
+  ],
+  "0x23c6c1e1": [
+   "remove(uint256,uint256,uint256[])"
+  ],
+  "0x23d3ed95": [
+   "release(uint256,bytes,bytes)"
+  ],
+  "0x23d50370": [
+   "stake(uint256[],bytes,uint256[])"
+  ],
+  "0x24233120": [
+   "mint(bytes,bool,bool)"
+  ],
+  "0x24333418": [
+   "exit(uint256[],uint256[],uint256[])"
+  ],
+  "0x243e25e6": [
+   "harvest(uint256[],uint256[])"
+  ],
+  "0x24404e06": [
+   "repay(address,address,bool)"
+  ],
+  "0x2444d9b7": [
+   "exit(bool,bytes,uint256[])"
+  ],
+  "0x24484531": [
+   "repay(uint256[],bytes,bytes)"
+  ],
+  "0x24554c63": [
+   "stake(bytes,bytes,address)"
+  ],
+  "0x245ae398": [
+   "repay(address,uint256,uint256[])"
+  ],
+  "0x2462ad03": [
+   "wrap(uint256[],uint256[],uint256)"
+  ],
+  "0x24a480b5": [
+   "deposit(uint256[],bool,bytes)"
+  ],
+  "0x24be8d05": [
+   "close(bytes,bool)"
+  ],
+  "0x24f33780": [
+   "repay(bool,bytes)"
+  ],
+  "0x24f88b34": [
+   "close(uint256,address,bool)"
+  ],
+  "0x250be427": [
+   "redeem(address,uint256[],uint256[])"
+  ],
+  "0x25b5eb2d": [
+   "release(uint256[],uint256,address)"
+  ],
+  "0x25c1a86f": [
+   "unstake(uint256[],bytes,address)"
+  ],
+  "0x25c99522": [
+   "burn(bool,bool,address)"
+  ],
+  "0x25ded586": [
+   "wrap(uint256,uint256)"
+  ],
+  "0x261cfb59": [
+   "unwrap(bool,uint256)"
+  ],
+  "0x2627d3f9": [
+   "release(address,bytes,address)"
+  ],
+  "0x26476204": [
+   "stake(address)"
+  ],
+  "0x26855136": [
+   "unlock(bool,address,uint256)"
+  ],
+  "0x26879e1f": [
+   "exit(uint256,uint256,uint256[])"
+  ],
+  "0x26911f65": [
+   "burn(address,uint256[],bytes)"
+  ],
+  "0x26a1353b": [
+   "claim(uint256[],uint256,address)"
+  ],
+  "0x26aac399": [
+   "unstake(uint256[],uint256,bool)"
+  ],
+  "0x26c3dd75": [
+   "unstake(uint256[],uint256,uint256[])"
+  ],
+  "0x26c5a2b8": [
+   "close(bool,uint256[],uint256[])"
+  ],
+  "0x26c6c925": [
+   "leave(uint256[],uint256[],bytes)"
+  ],
+  "0x26e7f719": [
+   "deposit(uint256[],uint256,bool)"
+  ],
+  "0x27093c6e": [
+   "release(address,bool,uint256[])"
+  ],
+  "0x270e168b": [
+   "unlock(address,bytes,address)"
+  ],
+  "0x273882f2": [
+   "mint(uint256[],bytes,address)"
+  ],
+  "0x279da466": [
+   "harvest(address,bytes,uint256[])"
+  ],
+  "0x27fc84a3": [
+   "burn(address,address)"
+  ],
+  "0x27ff3753": [
+   "repay(bytes,address,bool)"
+  ],
+  "0x28098ad3": [
+   "cancel(bool,bytes,bytes)"
+  ],
+  "0x2845b099": [
+   "collect(bool,address,address)"
+  ],
+  "0x2849e3e9": [
+   "harvest(bytes,bool,address)"
+  ],
+  "0x284fa344": [
+   "harvest(uint256,uint256,uint256)"
+  ],
+  "0x286095d5": [
+   "release(bytes,address,bytes)"
+  ],
+  "0x28660571": [
+   "unwrap(uint256[],bool)"
+  ],
+  "0x28742660": [
+   "close(bytes,bool,address)"
+  ],
+  "0x287a64da": [
+   "unlock(bool,uint256,bytes)"
+  ],
+  "0x2888229f": [
+   "collect(bool,address,uint256[])"
+  ],
+  "0x289617b6": [
+   "unlock(bytes,uint256[],uint256[])"
+  ],
+  "0x28acaf09": [
+   "unstake(uint256[],bytes)"
+  ],
+  "0x28c38a44": [
+   "release(address,uint256,uint256[])"
+  ],
+  "0x29077ba8": [
+   "close(uint256[],uint256[],address)"
+  ],
+  "0x29092d0e": [
+   "remove(address)"
+  ],
+  "0x291bf379": [
+   "leave(uint256,uint256,bytes)"
+  ],
+  "0x2920b45f": [
+   "collect(uint256,bytes,uint256)"
+  ],
+  "0x2921f6c3": [
+   "unlock(bool,uint256)"
+  ],
+  "0x2924ae40": [
+   "harvest(address,uint256[],bytes)"
+  ],
+  "0x293a5200": [
+   "collect(bool,bytes,uint256[])"
+  ],
+  "0x294091cd": [
+   "stake(address,uint256,address)"
+  ],
+  "0x294e5529": [
+   "leave(address,address,address)"
+  ],
+  "0x29521e99": [
+   "close(address,bool,uint256)"
+  ],
+  "0x2965a0ba": [
+   "exit(bool,uint256[],address)"
+  ],
+  "0x29b7e649": [
+   "stake(bool,uint256[])"
+  ],
+  "0x29d7cf9c": [
+   "redeem(uint256,bytes,uint256)"
+  ],
+  "0x29dbdebf": [
+   "unwrap(uint256,address,uint256[])"
+  ],
+  "0x29f143b9": [
+   "close(bytes,address,address)"
+  ],
+  "0x29f69c05": [
+   "burn(uint256,address,uint256[])"
+  ],
+  "0x2a07b6c7": [
+   "burn(bytes)"
+  ],
+  "0x2a20b820": [
+   "exit(address,uint256[],uint256)"
+  ],
+  "0x2a24ee6b": [
+   "deposit(address,uint256,uint256[])"
+  ],
+  "0x2a351cd9": [
+   "close(bytes,bool,uint256[])"
+  ],
+  "0x2a8804a1": [
+   "close(uint256[],bool,bytes)"
+  ],
+  "0x2a9488f6": [
+   "leave(bool,bytes,address)"
+  ],
+  "0x2ab5351d": [
+   "deposit(bool,uint256[],uint256)"
+  ],
+  "0x2acc27ea": [
+   "unlock(uint256,bytes,address)"
+  ],
+  "0x2ad2774f": [
+   "stake(uint256,bytes,uint256)"
+  ],
+  "0x2aea54e2": [
+   "burn(bool,uint256[],address)"
+  ],
+  "0x2af9cc41": [
+   "exit(uint256,uint256)"
+  ],
+  "0x2afe19eb": [
+   "collect(uint256,bool)"
+  ],
+  "0x2b1c37d0": [
+   "redeem(uint256[],address,uint256)"
+  ],
+  "0x2b39d4bd": [
+   "repay(bool,uint256,uint256[])"
+  ],
+  "0x2b3a8c8f": [
+   "withdraw(bytes,bytes,uint256)"
+  ],
+  "0x2b83cccd": [
+   "redeem(address,uint256,uint256)"
+  ],
+  "0x2ba888bd": [
+   "unlock(bool,bytes,bytes)"
+  ],
+  "0x2bc43fd9": [
+   "claim(address,uint256,uint256)"
+  ],
+  "0x2bc588ee": [
+   "release(uint256[],uint256[])"
+  ],
+  "0x2be52b46": [
+   "close(address,uint256[],bytes)"
+  ],
+  "0x2bf17222": [
+   "exit(uint256[],uint256,uint256[])"
+  ],
+  "0x2bf19ff7": [
+   "collect(bytes,bool,address)"
+  ],
+  "0x2c03b221": [
+   "release(bytes,uint256[],bytes)"
+  ],
+  "0x2c2eb94a": [
+   "collect(address,uint256,address)"
+  ],
+  "0x2c551c2f": [
+   "unwrap(bool,uint256,uint256)"
+  ],
+  "0x2c7c17cc": [
+   "release(bytes,address,address)"
+  ],
+  "0x2c8065cf": [
+   "unwrap(address,address,address)"
+  ],
+  "0x2ca51e22": [
+   "redeem(uint256[],uint256[])"
+  ],
+  "0x2cce5470": [
+   "wrap(bytes,bytes,uint256)"
+  ],
+  "0x2cd160b3": [
+   "cancel(uint256,uint256[])"
+  ],
+  "0x2cd1b113": [
+   "claim(uint256,address,address)"
+  ],
+  "0x2cdbdb9f": [
+   "redeem(uint256[],bool,bytes)"
+  ],
+  "0x2ce85114": [
+   "cancel(uint256[],address,uint256[])"
+  ],
+  "0x2d0167af": [
+   "cancel(uint256[],bool,bytes)"
+  ],
+  "0x2d1e0c02": [
+   "stake(bytes)"
+  ],
+  "0x2d2086ab": [
+   "remove(bool,uint256[],bool)"
+  ],
+  "0x2d3d4ade": [
+   "wrap(bytes,uint256)"
+  ],
+  "0x2d4ace58": [
+   "mint(bool,uint256[],bool)"
+  ],
+  "0x2d569016": [
+   "unlock(bytes,uint256,uint256[])"
+  ],
+  "0x2d69044f": [
+   "mint(uint256,uint256[])"
+  ],
+  "0x2d6aa55f": [
+   "unwrap(uint256[],address,address)"
+  ],
+  "0x2d7010de": [
+   "collect(bytes,address,bool)"
+  ],
+  "0x2d81a78e": [
+   "claim(bool)"
+  ],
+  "0x2d91e458": [
+   "claim(uint256,bool,uint256)"
+  ],
+  "0x2d9bdd3e": [
+   "exit(bytes,uint256,uint256)"
+  ],
+  "0x2dc1c3d6": [
+   "mint(uint256[],address,bool)"
+  ],
+  "0x2def6620": [
+   "unstake()"
+  ],
+  "0x2dfbef0a": [
+   "remove(uint256[],bool,uint256)"
+  ],
+  "0x2e17de78": [
+   "unstake(uint256)"
+  ],
+  "0x2e1a7d4d": [
+   "withdraw(uint256)"
+  ],
+  "0x2e1a9a9e": [
+   "release(uint256[],uint256[],uint256)"
+  ],
+  "0x2e2d2984": [
+   "deposit(uint256,address,address)"
+  ],
+  "0x2e340823": [
+   "cancel(uint256[])"
+  ],
+  "0x2e342d49": [
+   "burn(uint256,address,bytes)"
+  ],
+  "0x2e38d640": [
+   "cancel(uint256[],bool,uint256)"
+  ],
+  "0x2e55544c": [
+   "leave(address,uint256,address)"
+  ],
+  "0x2e5d622f": [
+   "release(bool,address,bool)"
+  ],
+  "0x2e77b127": [
+   "stake(address,uint256[],address)"
+  ],
+  "0x2e87871d": [
+   "mint(uint256,bytes,uint256)"
+  ],
+  "0x2eae4457": [
+   "cancel(bytes,uint256[])"
+  ],
+  "0x2eb4c824": [
+   "leave(bool,bytes,bytes)"
+  ],
+  "0x2ec0260d": [
+   "remove(address,bool,bytes)"
+  ],
+  "0x2ed59d7d": [
+   "collect(address,uint256,bytes)"
+  ],
+  "0x2ee73d41": [
+   "stake(uint256[],bool)"
+  ],
+  "0x2eeabf00": [
+   "cancel(bytes,uint256,bool)"
+  ],
+  "0x2eff2076": [
+   "stake(uint256,bool,address)"
+  ],
+  "0x2f17fab4": [
+   "remove(uint256[],bool,uint256[])"
+  ],
+  "0x2f2fad8e": [
+   "collect(bool,bool,bool)"
+  ],
+  "0x2f55e87c": [
+   "close(uint256,uint256,bool)"
+  ],
+  "0x2f6c493c": [
+   "unlock(address)"
+  ],
+  "0x2f8bc0ef": [
+   "claim(bool,bytes)"
+  ],
+  "0x2f8ff82a": [
+   "claim(bytes,bytes,uint256[])"
+  ],
+  "0x2f904bf7": [
+   "burn(uint256[],bool,uint256[])"
+  ],
+  "0x2f968075": [
+   "release(uint256[],bytes,uint256)"
+  ],
+  "0x2fa49e5e": [
+   "redeem(address,bytes,address)"
+  ],
+  "0x2facde1c": [
+   "unlock(uint256[],uint256,uint256)"
+  ],
+  "0x2fc4be3f": [
+   "unlock(uint256[],bytes,uint256[])"
+  ],
+  "0x2fe0f37f": [
+   "repay(uint256,address,bool)"
+  ],
+  "0x2fe7193d": [
+   "remove(bool,bool,address)"
+  ],
+  "0x2ffdebc8": [
+   "claim(bool,bytes,uint256[])"
+  ],
+  "0x3004f619": [
+   "claim(uint256,bytes,bool)"
+  ],
+  "0x30092bc4": [
+   "harvest(address,address,address)"
+  ],
+  "0x3022fb0b": [
+   "harvest(uint256,bytes,address)"
+  ],
+  "0x305b95b7": [
+   "burn(address,address,bytes)"
+  ],
+  "0x3066266f": [
+   "stake(bool,uint256[],address)"
+  ],
+  "0x30765be1": [
+   "leave(bytes,uint256,uint256[])"
+  ],
+  "0x30922dfd": [
+   "cancel(address,address,uint256)"
+  ],
+  "0x30c84ca9": [
+   "unwrap(bytes,bool,address)"
+  ],
+  "0x30cc75d7": [
+   "release(uint256,address,address)"
+  ],
+  "0x30e10b70": [
+   "release(bytes,bytes,uint256[])"
+  ],
+  "0x30e4e56d": [
+   "unwrap(bool,bytes,bool)"
+  ],
+  "0x30fbeaf5": [
+   "wrap(address,address,bool)"
+  ],
+  "0x3100d269": [
+   "collect(uint256,bytes,bool)"
+  ],
+  "0x3102d455": [
+   "unwrap(uint256[],bytes,bytes)"
+  ],
+  "0x3103ea8c": [
+   "leave(bool,bool)"
+  ],
+  "0x313a1b24": [
+   "cancel(bytes,bytes,uint256)"
+  ],
+  "0x315a69fa": [
+   "cancel(uint256,address,uint256)"
+  ],
+  "0x317ebd90": [
+   "cancel(uint256,bytes,address)"
+  ],
+  "0x3197a851": [
+   "remove(bool,uint256)"
+  ],
+  "0x3199a528": [
+   "release(bytes,uint256[],uint256[])"
+  ],
+  "0x319cdcdf": [
+   "unlock(address,address,uint256[])"
+  ],
+  "0x31a585e5": [
+   "withdraw(bytes,bytes,bool)"
+  ],
+  "0x31f09265": [
+   "withdraw(address,uint256,bytes)"
+  ],
+  "0x320907b8": [
+   "repay(address,bytes)"
+  ],
+  "0x32276fd0": [
+   "unwrap(uint256[],bool,uint256)"
+  ],
+  "0x3228337a": [
+   "unstake(uint256[],bool)"
+  ],
+  "0x326191e0": [
+   "harvest(bytes,uint256[],uint256[])"
+  ],
+  "0x32670d63": [
+   "close(bool,bytes)"
+  ],
+  "0x32748f99": [
+   "wrap(bytes,uint256[],bytes)"
+  ],
+  "0x327debcc": [
+   "exit(uint256,uint256[],bytes)"
+  ],
+  "0x32985077": [
+   "unwrap(bytes,address)"
+  ],
+  "0x32a41257": [
+   "withdraw(address,bytes,bool)"
+  ],
+  "0x32b3cb63": [
+   "remove(bytes,uint256[],uint256)"
+  ],
+  "0x32fc9375": [
+   "collect(bool,uint256[])"
+  ],
+  "0x330f92f8": [
+   "exit(bytes,address,bool)"
+  ],
+  "0x331d8e5d": [
+   "unlock(address,address,bytes)"
+  ],
+  "0x33487e72": [
+   "stake(address,bool,address)"
+  ],
+  "0x335c7fda": [
+   "close(bytes,bytes,address)"
+  ],
+  "0x33b4b08e": [
+   "exit(bytes,uint256[],address)"
+  ],
+  "0x33ce931f": [
+   "burn(bool,address,uint256)"
+  ],
+  "0x33cfcd3b": [
+   "withdraw(uint256,uint256,bool)"
+  ],
+  "0x33d77287": [
+   "stake(bytes,bool,address)"
+  ],
+  "0x33e6089e": [
+   "wrap(bytes,bool,address)"
+  ],
+  "0x34192f6c": [
+   "harvest(uint256,bool,uint256[])"
+  ],
+  "0x344472a0": [
+   "remove(address,uint256,uint256)"
+  ],
+  "0x3461c9fe": [
+   "release(bytes,address)"
+  ],
+  "0x34651e68": [
+   "deposit(uint256,uint256[],bytes)"
+  ],
+  "0x346eff72": [
+   "claim(address,bool,uint256[])"
+  ],
+  "0x347d6c78": [
+   "mint(bytes,uint256,address)"
+  ],
+  "0x348c8212": [
+   "cancel(bool,address,address)"
+  ],
+  "0x34c1b700": [
+   "wrap(uint256[],bool,uint256)"
+  ],
+  "0x34da3945": [
+   "cancel(uint256[],bytes,uint256)"
+  ],
+  "0x34de78a9": [
+   "deposit(bool,uint256[],address)"
+  ],
+  "0x34e08db5": [
+   "withdraw(bool,uint256,uint256)"
+  ],
+  "0x34f5fd7c": [
+   "deposit(bytes,bytes,uint256)"
+  ],
+  "0x353c8ed2": [
+   "close(uint256,bytes,uint256[])"
+  ],
+  "0x354aa22b": [
+   "unlock(uint256[],bytes,uint256)"
+  ],
+  "0x3550c8c5": [
+   "repay(bytes,bool,bool)"
+  ],
+  "0x356bacbd": [
+   "redeem(uint256,bool,bool)"
+  ],
+  "0x357001f2": [
+   "stake(uint256[],bool,address)"
+  ],
+  "0x35a1e0a4": [
+   "leave(uint256,address,bool)"
+  ],
+  "0x35c5542e": [
+   "wrap(uint256[],bool,bytes)"
+  ],
+  "0x35ddb1a3": [
+   "repay(uint256[],bool)"
+  ],
+  "0x361ed868": [
+   "withdraw(address,uint256[],bool)"
+  ],
+  "0x362c0cb5": [
+   "burn(uint256[],address)"
+  ],
+  "0x362dc07a": [
+   "remove(uint256,bool,bytes)"
+  ],
+  "0x36331521": [
+   "unstake(uint256[],address)"
+  ],
+  "0x366a4120": [
+   "release(uint256,uint256)"
+  ],
+  "0x36773e91": [
+   "cancel(bytes,uint256[],bytes)"
+  ],
+  "0x36eff4a9": [
+   "exit(bytes,bytes,address)"
+  ],
+  "0x36fc1b9b": [
+   "claim(bytes,bool)"
+  ],
+  "0x36ff6285": [
+   "stake(bytes,uint256[],uint256)"
+  ],
+  "0x370e6273": [
+   "stake(bytes,uint256,address)"
+  ],
+  "0x37148f6e": [
+   "remove(uint256[],uint256[],uint256[])"
+  ],
+  "0x371f5568": [
+   "unwrap(uint256,bytes,bytes)"
+  ],
+  "0x371fd8e6": [
+   "repay(uint256)"
+  ],
+  "0x375553e9": [
+   "harvest(bool,uint256[],bytes)"
+  ],
+  "0x37859d06": [
+   "redeem(bool,bytes,bool)"
+  ],
+  "0x379607f5": [
+   "claim(uint256)"
+  ],
+  "0x37a69f1b": [
+   "cancel(address,bool,uint256[])"
+  ],
+  "0x37bdc99b": [
+   "release(uint256)"
+  ],
+  "0x37dc3191": [
+   "cancel(uint256,bool)"
+  ],
+  "0x3805550f": [
+   "exit(bytes)"
+  ],
+  "0x3824568e": [
+   "wrap(address,uint256,bool)"
+  ],
+  "0x3841185e": [
+   "redeem(address,bytes)"
+  ],
+  "0x38463cff": [
+   "burn(bytes,uint256)"
+  ],
+  "0x3850bf94": [
+   "cancel(uint256[],uint256,uint256[])"
+  ],
+  "0x387b711d": [
+   "mint(bytes,uint256[])"
+  ],
+  "0x38926b6d": [
+   "claim(uint256,bytes)"
+  ],
+  "0x38a5132b": [
+   "exit(uint256,uint256[])"
+  ],
+  "0x38d07436": [
+   "withdraw(uint256,bool)"
+  ],
+  "0x38d1bac9": [
+   "unstake(bool,bool)"
+  ],
+  "0x38ed1152": [
+   "release(uint256,uint256[],bool)"
+  ],
+  "0x39028b72": [
+   "withdraw(uint256[],uint256[],uint256)"
+  ],
+  "0x394c0d9b": [
+   "collect(uint256,bool,bool)"
+  ],
+  "0x395de242": [
+   "unstake(uint256,uint256[])"
+  ],
+  "0x397229de": [
+   "unwrap(uint256[],uint256,bool)"
+  ],
+  "0x39a3343c": [
+   "unstake(bool,address,uint256[])"
+  ],
+  "0x39d49610": [
+   "release(bytes,bytes,uint256)"
+  ],
+  "0x39d8ad70": [
+   "exit(uint256,uint256,uint256)"
+  ],
+  "0x39f47693": [
+   "unwrap(address,uint256)"
+  ],
+  "0x3a1121cd": [
+   "release(uint256,uint256,uint256)"
+  ],
+  "0x3a266e9c": [
+   "collect(uint256[],bytes,bool)"
+  ],
+  "0x3a2b6cd8": [
+   "close(uint256,bool,uint256)"
+  ],
+  "0x3a30d356": [
+   "mint(address,uint256[],bytes)"
+  ],
+  "0x3a33f3e0": [
+   "claim(bytes,uint256)"
+  ],
+  "0x3a4b66f1": [
+   "stake()"
+  ],
+  "0x3a4dbc0b": [
+   "exit(address,uint256[],uint256[])"
+  ],
+  "0x3a6324b4": [
+   "leave(bool,uint256,bytes)"
+  ],
+  "0x3a7e0200": [
+   "leave(bool,bool,uint256[])"
+  ],
+  "0x3a882a65": [
+   "collect(bool,uint256,address)"
+  ],
+  "0x3a926f1a": [
+   "claim(uint256[],bytes,bytes)"
+  ],
+  "0x3abe6d1f": [
+   "stake(bytes,uint256[],address)"
+  ],
+  "0x3ae3bdf9": [
+   "release(bool,bytes)"
+  ],
+  "0x3af03b2f": [
+   "harvest(bool,bool,bool)"
+  ],
+  "0x3af1b21c": [
+   "harvest(bytes,bool,bytes)"
+  ],
+  "0x3b1efba0": [
+   "stake(bytes,bytes,bool)"
+  ],
+  "0x3b2504f1": [
+   "unwrap(uint256,bool,bytes)"
+  ],
+  "0x3b41954f": [
+   "exit(address,bool,address)"
+  ],
+  "0x3b61030a": [
+   "unstake(address,bool,uint256)"
+  ],
+  "0x3b65f45c": [
+   "collect(uint256[],bool,uint256)"
+  ],
+  "0x3b745357": [
+   "cancel(uint256,bool,bool)"
+  ],
+  "0x3bb068af": [
+   "exit(bytes,uint256)"
+  ],
+  "0x3bb07f1f": [
+   "exit(address,uint256[],address)"
+  ],
+  "0x3bbdfbbe": [
+   "unstake(uint256[],bytes,bool)"
+  ],
+  "0x3bc758ae": [
+   "unwrap(uint256[],bytes,uint256[])"
+  ],
+  "0x3bcb56ab": [
+   "withdraw(bool,uint256,bool)"
+  ],
+  "0x3be5b891": [
+   "unlock(bytes,bool,uint256)"
+  ],
+  "0x3c24f7c2": [
+   "wrap(uint256[],uint256,uint256)"
+  ],
+  "0x3c2bbe73": [
+   "remove(bytes,bool,uint256[])"
+  ],
+  "0x3c3653e2": [
+   "unstake(bytes)"
+  ],
+  "0x3c3d0f85": [
+   "unstake(address,bool,bytes)"
+  ],
+  "0x3c3dac4f": [
+   "claim(uint256[],address,bool)"
+  ],
+  "0x3c48bddd": [
+   "remove(bool,uint256,uint256[])"
+  ],
+  "0x3c5beeb4": [
+   "cancel(bytes)"
+  ],
+  "0x3c6e2f22": [
+   "unwrap(address,uint256,bytes)"
+  ],
+  "0x3c77dd99": [
+   "remove(bool,bytes)"
+  ],
+  "0x3c7ab119": [
+   "leave(bool,uint256[],uint256[])"
+  ],
+  "0x3c9bd2c8": [
+   "deposit(uint256,bytes,uint256[])"
+  ],
+  "0x3ccfd60b": [
+   "withdraw()"
+  ],
+  "0x3cd9e371": [
+   "exit(uint256,uint256[],bool)"
+  ],
+  "0x3cdd9e9e": [
+   "wrap(uint256,uint256[],uint256)"
+  ],
+  "0x3cef8085": [
+   "cancel(uint256,address,uint256[])"
+  ],
+  "0x3cf1bb88": [
+   "leave(uint256[],address,bytes)"
+  ],
+  "0x3cf8e4af": [
+   "harvest(bool,uint256[],uint256)"
+  ],
+  "0x3d3042b2": [
+   "collect(address,uint256,uint256[])"
+  ],
+  "0x3d50a486": [
+   "remove(uint256,uint256[])"
+  ],
+  "0x3d5d190c": [
+   "mint(uint256[],uint256[])"
+  ],
+  "0x3d5dbdb3": [
+   "exit(address,uint256[],bool)"
+  ],
+  "0x3d83f0d1": [
+   "release(bool,bytes,uint256[])"
+  ],
+  "0x3d924135": [
+   "leave(uint256[],address,uint256)"
+  ],
+  "0x3d9b9772": [
+   "cancel(uint256,bytes,bool)"
+  ],
+  "0x3db0f8ab": [
+   "burn(address,uint256[],uint256[])"
+  ],
+  "0x3dc4dd6f": [
+   "wrap(uint256,bytes,bytes)"
+  ],
+  "0x3dcce30f": [
+   "mint(uint256[],bool)"
+  ],
+  "0x3ddea1c0": [
+   "deposit(bool,address,address)"
+  ],
+  "0x3de0fb2c": [
+   "burn(uint256,uint256,uint256[])"
+  ],
+  "0x3debd9ea": [
+   "collect(bytes,uint256[],address)"
+  ],
+  "0x3def94bc": [
+   "cancel(uint256,uint256[],uint256)"
+  ],
+  "0x3e008c67": [
+   "deposit(bytes,uint256,address)"
+  ],
+  "0x3e12170f": [
+   "stake(address,uint256,bytes)"
+  ],
+  "0x3e2bf010": [
+   "deposit(bool,address,bytes)"
+  ],
+  "0x3e5cb348": [
+   "collect(address,address,bytes)"
+  ],
+  "0x3e74d6db": [
+   "withdraw(bool,address,bytes)"
+  ],
+  "0x3e7bae2a": [
+   "exit(bytes,uint256[],uint256[])"
+  ],
+  "0x3e82be41": [
+   "remove(bytes,uint256[],bool)"
+  ],
+  "0x3e97394c": [
+   "release(uint256[])"
+  ],
+  "0x3eb69280": [
+   "withdraw(bytes,uint256[],bytes)"
+  ],
+  "0x3edd1128": [
+   "deposit(address,uint256,bool)"
+  ],
+  "0x3eea73f0": [
+   "collect(uint256,bytes,address)"
+  ],
+  "0x3f006dd3": [
+   "repay(uint256[],address,bytes)"
+  ],
+  "0x3f069a43": [
+   "unwrap(uint256,address,uint256)"
+  ],
+  "0x3f1c6fdc": [
+   "repay(bool,bool)"
+  ],
+  "0x3f78aac2": [
+   "claim(uint256[],bytes,address)"
+  ],
+  "0x3f8e2936": [
+   "collect(address,uint256,bool)"
+  ],
+  "0x3f995b91": [
+   "stake(uint256,uint256[],address)"
+  ],
+  "0x3f9f15f3": [
+   "redeem(bytes,uint256[])"
+  ],
+  "0x3fa66388": [
+   "collect(address,address,uint256[])"
+  ],
+  "0x3fccfcff": [
+   "harvest(bool,bytes,bytes)"
+  ],
+  "0x3fd7f062": [
+   "withdraw(uint256[],bool,bool)"
+  ],
+  "0x3fdf42e3": [
+   "unstake(uint256,bool,address)"
+  ],
+  "0x3fe06235": [
+   "cancel(bytes,address,bool)"
+  ],
+  "0x3feb11cf": [
+   "repay(bool,bytes,uint256[])"
+  ],
+  "0x3fec7cca": [
+   "unlock(bool,uint256,address)"
+  ],
+  "0x3ff1067e": [
+   "burn(uint256,bytes,bool)"
+  ],
+  "0x3ff44601": [
+   "unlock(bool,uint256[],uint256)"
+  ],
+  "0x3ffe0461": [
+   "withdraw(bytes,bool,address)"
+  ],
+  "0x4002dd65": [
+   "exit(bytes,uint256[])"
+  ],
+  "0x40214600": [
+   "remove(bytes,address,uint256[])"
+  ],
+  "0x402d8883": [
+   "repay()"
+  ],
+  "0x403c798c": [
+   "cancel(uint256[],uint256[],uint256[])"
+  ],
+  "0x4062e4b2": [
+   "unstake(uint256[],address,bool)"
+  ],
+  "0x4075c87a": [
+   "unlock(bytes,address,address)"
+  ],
+  "0x40823d9a": [
+   "unwrap(address,uint256[],address)"
+  ],
+  "0x4089854b": [
+   "unwrap(uint256,bool)"
+  ],
+  "0x40960a91": [
+   "stake(bool,bytes)"
+  ],
+  "0x40a5468f": [
+   "mint(address,bytes,address)"
+  ],
+  "0x40b6ba32": [
+   "wrap(uint256[],uint256[],address)"
+  ],
+  "0x40c10f19": [
+   "mint(address,uint256)"
+  ],
+  "0x40d4358f": [
+   "release(uint256[],uint256[],bytes)"
+  ],
+  "0x40e58ee5": [
+   "cancel(uint256)"
+  ],
+  "0x40e76eff": [
+   "withdraw(uint256,bytes,bool)"
+  ],
+  "0x41086fdc": [
+   "unwrap(address,uint256,bool)"
+  ],
+  "0x41337b8f": [
+   "exit(uint256,uint256,bool)"
+  ],
+  "0x414af544": [
+   "remove(uint256[],bytes,address)"
+  ],
+  "0x414cd7ba": [
+   "unstake(bytes,uint256,bool)"
+  ],
+  "0x415ea6f3": [
+   "close(uint256,uint256[],uint256)"
+  ],
+  "0x415ffba7": [
+   "close(uint256,bytes)"
+  ],
+  "0x416964fb": [
+   "collect(bool,uint256[],bytes)"
+  ],
+  "0x4183c4b2": [
+   "burn(bytes,address,address)"
+  ],
+  "0x4185c5d4": [
+   "exit(bool,address,uint256[])"
+  ],
+  "0x41a0282d": [
+   "redeem(bool,uint256,uint256[])"
+  ],
+  "0x41b72f71": [
+   "unstake(uint256[],uint256,uint256)"
+  ],
+  "0x41fb5bbd": [
+   "repay(bool)"
+  ],
+  "0x41fcb612": [
+   "claim(bytes,address)"
+  ],
+  "0x42087394": [
+   "claim(uint256,uint256[],uint256[])"
+  ],
+  "0x42222731": [
+   "unwrap(uint256[],bool,address)"
+  ],
+  "0x422e2e61": [
+   "unwrap(bytes,uint256,bytes)"
+  ],
+  "0x42489e78": [
+   "unlock(uint256[],bytes)"
+  ],
+  "0x4249884d": [
+   "deposit(bool,bytes)"
+  ],
+  "0x425838e6": [
+   "release(uint256[],uint256)"
+  ],
+  "0x426bfb07": [
+   "wrap(bool,bytes,uint256[])"
+  ],
+  "0x426c0f16": [
+   "collect(uint256,uint256[],uint256)"
+  ],
+  "0x426d809e": [
+   "exit(bytes,uint256,bool)"
+  ],
+  "0x427c0716": [
+   "exit(uint256,bytes)"
+  ],
+  "0x428465c1": [
+   "burn(uint256[],uint256[],bytes)"
+  ],
+  "0x4286346d": [
+   "wrap(address,bool,bool)"
+  ],
+  "0x428c6488": [
+   "unstake(uint256,uint256[],uint256)"
+  ],
+  "0x42966c68": [
+   "burn(uint256)"
+  ],
+  "0x42ca7e4f": [
+   "close(bool,uint256,uint256[])"
+  ],
+  "0x42df0fef": [
+   "deposit(uint256[],bytes,address)"
+  ],
+  "0x42e383ff": [
+   "exit(bool,bool,uint256[])"
+  ],
+  "0x42ecbc69": [
+   "remove(bytes,address,uint256)"
+  ],
+  "0x42f00025": [
+   "redeem(uint256[],bytes,uint256[])"
+  ],
+  "0x4312c528": [
+   "redeem(bytes,address,uint256[])"
+  ],
+  "0x43375132": [
+   "unlock(uint256[],bool)"
+  ],
+  "0x4361edfc": [
+   "release(uint256,address,uint256[])"
+  ],
+  "0x4379b41e": [
+   "stake(address,uint256[],bool)"
+  ],
+  "0x439be8c3": [
+   "cancel(bytes,bytes,address)"
+  ],
+  "0x43a0d066": [
+   "deposit(uint256,uint256,bool)"
+  ],
+  "0x43a37014": [
+   "collect(bytes,uint256,uint256[])"
+  ],
+  "0x43cb6396": [
+   "unstake(uint256[],bool,uint256)"
+  ],
+  "0x43cfcf90": [
+   "deposit(bytes,address,bool)"
+  ],
+  "0x43d726d6": [
+   "close()"
+  ],
+  "0x43db445d": [
+   "unstake(bytes,uint256[],address)"
+  ],
+  "0x43ee126e": [
+   "remove(bytes,uint256,bytes)"
+  ],
+  "0x43fcf048": [
+   "unstake(address,uint256[],uint256[])"
+  ],
+  "0x441a3e70": [
+   "withdraw(uint256,uint256)"
+  ],
+  "0x44275289": [
+   "close(uint256,bytes,bytes)"
+  ],
+  "0x4458a14c": [
+   "redeem(address,uint256,bool)"
+  ],
+  "0x446c6c73": [
+   "unwrap(bytes,bool,uint256[])"
+  ],
+  "0x446dc587": [
+   "leave(address,uint256,uint256[])"
+  ],
+  "0x447c08eb": [
+   "remove(bytes,bytes,uint256[])"
+  ],
+  "0x447da8a6": [
+   "stake(uint256,bool,uint256)"
+  ],
+  "0x447fb510": [
+   "harvest(bytes,uint256,uint256[])"
+  ],
+  "0x4486f0e8": [
+   "leave(address,uint256,bool)"
+  ],
+  "0x4494e635": [
+   "repay(uint256[],address,address)"
+  ],
+  "0x4497e1af": [
+   "collect(bool,uint256,bytes)"
+  ],
+  "0x449b8c0a": [
+   "leave(bytes,address,bytes)"
+  ],
+  "0x44ab0d20": [
+   "release(address,uint256[],uint256)"
+  ],
+  "0x44b68d7a": [
+   "exit(uint256[],bool,uint256[])"
+  ],
+  "0x44ba2ca9": [
+   "repay(bool,bytes,bytes)"
+  ],
+  "0x44d17187": [
+   "burn(address,uint256,bytes)"
+  ],
+  "0x44d8fabc": [
+   "withdraw(uint256,bool,uint256[])"
+  ],
+  "0x44dc97b3": [
+   "remove(bool,bool,uint256)"
+  ],
+  "0x44df8e70": [
+   "burn()"
+  ],
+  "0x44f24513": [
+   "mint(uint256[],uint256,uint256[])"
+  ],
+  "0x4548924f": [
+   "cancel(uint256[],uint256[],bool)"
+  ],
+  "0x45604e50": [
+   "cancel(uint256,uint256[],bytes)"
+  ],
+  "0x45638ec6": [
+   "unstake(bool,uint256[],bytes)"
+  ],
+  "0x4567ac74": [
+   "leave(bool,uint256,uint256)"
+  ],
+  "0x456a09c8": [
+   "withdraw(uint256[],uint256[],address)"
+  ],
+  "0x45718278": [
+   "claim(address,uint256[])"
+  ],
+  "0x457c795b": [
+   "unlock(address,bool,bool)"
+  ],
+  "0x45a11cec": [
+   "burn(address,address,address)"
+  ],
+  "0x45c9d735": [
+   "stake(uint256[],uint256,bool)"
+  ],
+  "0x45e493e9": [
+   "collect(uint256[],uint256,bool)"
+  ],
+  "0x45f4ffa3": [
+   "unlock(uint256,bool,bytes)"
+  ],
+  "0x461c420a": [
+   "harvest(address,address,uint256[])"
+  ],
+  "0x463b2eee": [
+   "stake(uint256[],uint256,bytes)"
+  ],
+  "0x4641257d": [
+   "harvest()"
+  ],
+  "0x4645efdd": [
+   "collect(uint256,uint256,bool)"
+  ],
+  "0x467dd85b": [
+   "withdraw(address,address,bytes)"
+  ],
+  "0x468c22ab": [
+   "deposit(bool,bool)"
+  ],
+  "0x46e6744b": [
+   "deposit(address,address,bytes)"
+  ],
+  "0x46eccb41": [
+   "burn(bool,address,bool)"
+  ],
+  "0x46f20205": [
+   "unwrap(uint256[],uint256)"
+  ],
+  "0x46f35200": [
+   "claim(uint256[],bool,address)"
+  ],
+  "0x46f61fd9": [
+   "close(uint256[],uint256[])"
+  ],
+  "0x473003f5": [
+   "mint(uint256[],uint256[],uint256[])"
+  ],
+  "0x4730fe54": [
+   "unlock(bytes,uint256,bool)"
+  ],
+  "0x4742b459": [
+   "unwrap(bool,uint256,address)"
+  ],
+  "0x475a0ca9": [
+   "collect(uint256[],bool,address)"
+  ],
+  "0x4778458a": [
+   "unwrap(bool,address,bytes)"
+  ],
+  "0x477e4445": [
+   "remove(address,address,uint256[])"
+  ],
+  "0x47e7ef24": [
+   "deposit(address,uint256)"
+  ],
+  "0x481a3fc4": [
+   "close(address,uint256,uint256)"
+  ],
+  "0x482bb057": [
+   "collect(bytes,bytes,address)"
+  ],
+  "0x4837d71a": [
+   "repay(uint256[],uint256,bool)"
+  ],
+  "0x48427707": [
+   "repay(bytes,uint256[],address)"
+  ],
+  "0x48461c4b": [
+   "repay(bytes,uint256[],uint256[])"
+  ],
+  "0x486d69b5": [
+   "harvest(uint256[],bool)"
+  ],
+  "0x48a48ffc": [
+   "withdraw(bool,uint256[],bytes)"
+  ],
+  "0x48a7b002": [
+   "remove(address,bytes,address)"
+  ],
+  "0x48b75044": [
+   "release(address,address)"
+  ],
+  "0x48b8f394": [
+   "close(uint256,address,uint256[])"
+  ],
+  "0x48c35d46": [
+   "stake(uint256,uint256,bytes)"
+  ],
+  "0x48c89491": [
+   "unlock(bytes)"
+  ],
+  "0x492e47d2": [
+   "redeem(uint256[],address)"
+  ],
+  "0x493251bf": [
+   "burn(uint256[],address,uint256[])"
+  ],
+  "0x496e3a04": [
+   "remove(bytes,bool)"
+  ],
+  "0x49bdc2b8": [
+   "deposit(address,uint256,bytes)"
+  ],
+  "0x49d5cc08": [
+   "release(uint256[],uint256[],address)"
+  ],
+  "0x49dd6226": [
+   "cancel(bytes,bool,uint256)"
+  ],
+  "0x4a0f2f7a": [
+   "stake(address,bool,uint256)"
+  ],
+  "0x4a0fa538": [
+   "remove(uint256[])"
+  ],
+  "0x4a124879": [
+   "deposit(bytes,bytes,address)"
+  ],
+  "0x4a30d310": [
+   "leave(uint256[],uint256,bytes)"
+  ],
+  "0x4a33b13c": [
+   "collect(address,bool)"
+  ],
+  "0x4a3c9f10": [
+   "collect(bool,address)"
+  ],
+  "0x4a4ca869": [
+   "close(address,bool,bytes)"
+  ],
+  "0x4a5b8e64": [
+   "leave(uint256[],address,uint256[])"
+  ],
+  "0x4a71584c": [
+   "cancel(bool,bytes)"
+  ],
+  "0x4a7222d3": [
+   "claim(uint256,uint256,uint256[])"
+  ],
+  "0x4a93e47a": [
+   "burn(bool,uint256[],bytes)"
+  ],
+  "0x4a98d5fe": [
+   "unlock(uint256,uint256[],address)"
+  ],
+  "0x4ab4da9b": [
+   "claim(address,address,uint256[])"
+  ],
+  "0x4ac12545": [
+   "exit(address,bytes,bool)"
+  ],
+  "0x4ae499d0": [
+   "close(uint256,bool,bool)"
+  ],
+  "0x4ae6eec9": [
+   "cancel(address,address,address)"
+  ],
+  "0x4af2c2af": [
+   "cancel(address,uint256[],address)"
+  ],
+  "0x4afd4079": [
+   "redeem(bool,address,bytes)"
+  ],
+  "0x4b089043": [
+   "unwrap(uint256[],uint256,bytes)"
+  ],
+  "0x4b24be3d": [
+   "mint(bool,bytes,bool)"
+  ],
+  "0x4b25d0e3": [
+   "harvest(bytes,uint256)"
+  ],
+  "0x4b2cc88a": [
+   "wrap(uint256,uint256[],bytes)"
+  ],
+  "0x4b3c550c": [
+   "unstake(uint256[],bool,address)"
+  ],
+  "0x4b623583": [
+   "remove(bool,bool,uint256[])"
+  ],
+  "0x4b67fff6": [
+   "collect(bool,address,bytes)"
+  ],
+  "0x4bb78b14": [
+   "withdraw(address,bytes)"
+  ],
+  "0x4bc2b870": [
+   "deposit(bool,bytes,uint256)"
+  ],
+  "0x4bdf8877": [
+   "burn(uint256[],uint256,address)"
+  ],
+  "0x4c0eb8ed": [
+   "harvest(address,address,bool)"
+  ],
+  "0x4c327c9a": [
+   "exit(uint256,uint256[],uint256)"
+  ],
+  "0x4c33fe94": [
+   "cancel(address)"
+  ],
+  "0x4c62ec6f": [
+   "unstake(bytes,uint256,bytes)"
+  ],
+  "0x4c756541": [
+   "unlock(address,bool,bytes)"
+  ],
+  "0x4cc48345": [
+   "wrap(uint256,bytes,address)"
+  ],
+  "0x4cc82215": [
+   "remove(uint256)"
+  ],
+  "0x4ce495ff": [
+   "leave(uint256,bool,bytes)"
+  ],
+  "0x4ce68113": [
+   "unstake(bytes,address,bytes)"
+  ],
+  "0x4cf1484a": [
+   "repay(bool,uint256[],address)"
+  ],
+  "0x4cf9a8a0": [
+   "deposit(bytes,uint256[],bytes)"
+  ],
+  "0x4cff9848": [
+   "withdraw(address,uint256[],bytes)"
+  ],
+  "0x4d2d4e07": [
+   "redeem(bytes,bool,bool)"
+  ],
+  "0x4d4202e1": [
+   "collect(uint256[],uint256,uint256)"
+  ],
+  "0x4d7a664f": [
+   "repay(bool,address)"
+  ],
+  "0x4d8b2ea5": [
+   "deposit(uint256,bool,bytes)"
+  ],
+  "0x4d962a5d": [
+   "mint(bool,bool,uint256[])"
+  ],
+  "0x4d9b8d7a": [
+   "repay(bytes,address,address)"
+  ],
+  "0x4df13361": [
+   "exit(address,uint256,uint256[])"
+  ],
+  "0x4df42d65": [
+   "unstake(bytes,uint256[],uint256)"
+  ],
+  "0x4df4b80e": [
+   "deposit(bool,uint256,bytes)"
+  ],
+  "0x4dff31e7": [
+   "redeem(address,address,address)"
+  ],
+  "0x4e104bc1": [
+   "unwrap(uint256[],uint256[])"
+  ],
+  "0x4e1cf8d3": [
+   "deposit(bytes,uint256[],address)"
+  ],
+  "0x4e343e4b": [
+   "close(uint256,bytes,address)"
+  ],
+  "0x4e40fed4": [
+   "deposit(address,bytes,address)"
+  ],
+  "0x4e5d1905": [
+   "repay(bool,address,address)"
+  ],
+  "0x4e683d37": [
+   "leave(uint256,uint256[],bool)"
+  ],
+  "0x4e71d92d": [
+   "claim()"
+  ],
+  "0x4ed3b913": [
+   "harvest(uint256,bytes,bool)"
+  ],
+  "0x4f1b5d71": [
+   "unwrap(uint256[],address,uint256[])"
+  ],
+  "0x4f31613f": [
+   "burn(uint256[],address,uint256)"
+  ],
+  "0x4f3340ee": [
+   "remove(bool,bytes,bytes)"
+  ],
+  "0x4f52c315": [
+   "unlock(bytes,uint256[],bool)"
+  ],
+  "0x4f5aa4c2": [
+   "unstake(uint256,address,address)"
+  ],
+  "0x4f62a2bf": [
+   "repay(address,address,bytes)"
+  ],
+  "0x4f7d85e8": [
+   "cancel(address,bytes)"
+  ],
+  "0x4f8d1877": [
+   "remove(bytes,address,bytes)"
+  ],
+  "0x4f92d897": [
+   "unlock(address,address,bool)"
+  ],
+  "0x4f9d31c6": [
+   "repay(uint256[],uint256[])"
+  ],
+  "0x4fc8803b": [
+   "collect(uint256[],bytes,uint256[])"
+  ],
+  "0x4fcccbae": [
+   "burn(bool)"
+  ],
+  "0x4fd8c556": [
+   "exit(uint256,bytes,uint256[])"
+  ],
+  "0x4fe24fae": [
+   "unstake(uint256,bytes,uint256[])"
+  ],
+  "0x4feccbb5": [
+   "exit(uint256,bytes,bytes)"
+  ],
+  "0x500efa15": [
+   "burn(bytes,bool,bool)"
+  ],
+  "0x5013f141": [
+   "collect(address,bool,address)"
+  ],
+  "0x50385d44": [
+   "exit(bytes,bytes,uint256[])"
+  ],
+  "0x504113d2": [
+   "harvest(bytes,bytes)"
+  ],
+  "0x50828636": [
+   "harvest(bool,bool)"
+  ],
+  "0x50917c3b": [
+   "repay(bool,address,bool)"
+  ],
+  "0x50afb127": [
+   "wrap(bool,uint256,bytes)"
+  ],
+  "0x50b3658c": [
+   "redeem(bool,bytes)"
+  ],
+  "0x50c6f5fb": [
+   "release(uint256[],bool)"
+  ],
+  "0x50e65469": [
+   "withdraw(bytes,address,bytes)"
+  ],
+  "0x50f5c30c": [
+   "wrap(uint256[],bool,bool)"
+  ],
+  "0x50f7cf0e": [
+   "cancel(bytes,bool,address)"
+  ],
+  "0x50fbe2d9": [
+   "withdraw(bytes,bytes)"
+  ],
+  "0x511e264c": [
+   "unlock(uint256[],uint256[],bool)"
+  ],
+  "0x514d1307": [
+   "stake(bool,uint256,bool)"
+  ],
+  "0x519d2082": [
+   "unlock(bytes,uint256[])"
+  ],
+  "0x51a7c716": [
+   "unstake(uint256,address,uint256)"
+  ],
+  "0x51a83fc9": [
+   "redeem(bytes,bool,uint256)"
+  ],
+  "0x51bc891f": [
+   "collect(uint256[],address,uint256[])"
+  ],
+  "0x51bcb8bd": [
+   "unstake(uint256,bool,bool)"
+  ],
+  "0x51cff8d9": [
+   "withdraw(address)"
+  ],
+  "0x51f60516": [
+   "remove(uint256[],bytes,bool)"
+  ],
+  "0x51fea840": [
+   "collect(uint256,uint256,uint256)"
+  ],
+  "0x52310d26": [
+   "exit(address,uint256,bytes)"
+  ],
+  "0x5236be40": [
+   "redeem(uint256,address,bool)"
+  ],
+  "0x523e0efa": [
+   "stake(bytes,bool,uint256[])"
+  ],
+  "0x5284fb4e": [
+   "unstake(address,bool,address)"
+  ],
+  "0x529ef59b": [
+   "unlock(uint256,uint256,bool)"
+  ],
+  "0x52af5174": [
+   "redeem(uint256[],uint256[],bool)"
+  ],
+  "0x52b59968": [
+   "wrap(bytes,bool)"
+  ],
+  "0x52b60c37": [
+   "collect(uint256[],address,address)"
+  ],
+  "0x52cef3e0": [
+   "harvest(uint256[],uint256,address)"
+  ],
+  "0x52dc1b2a": [
+   "collect(bytes,bytes,uint256)"
+  ],
+  "0x52ea1790": [
+   "claim(bool,bool)"
+  ],
+  "0x52eb616e": [
+   "collect(bytes,uint256,bytes)"
+  ],
+  "0x53059aef": [
+   "remove(uint256[],bool,bool)"
+  ],
+  "0x531f09a0": [
+   "cancel(address,uint256[],uint256[])"
+  ],
+  "0x5321fac4": [
+   "cancel(bool,bool,bytes)"
+  ],
+  "0x5323e2bb": [
+   "exit(uint256[],bytes,bool)"
+  ],
+  "0x5324e81c": [
+   "unlock(uint256,uint256,uint256[])"
+  ],
+  "0x532b8b78": [
+   "redeem(bool,address,address)"
+  ],
+  "0x53985976": [
+   "cancel(address,address,bool)"
+  ],
+  "0x53ad3b12": [
+   "repay(bytes,bytes,address)"
+  ],
+  "0x53b055de": [
+   "harvest(uint256[],address,bytes)"
+  ],
+  "0x53b9d4f3": [
+   "close(uint256[],uint256,uint256[])"
+  ],
+  "0x53bc21da": [
+   "repay(uint256[],bool,uint256[])"
+  ],
+  "0x53db1051": [
+   "release(bytes,address,uint256[])"
+  ],
+  "0x53e5b9f4": [
+   "leave(bool,uint256[],address)"
+  ],
+  "0x53f35770": [
+   "repay(address,bytes,uint256)"
+  ],
+  "0x540b5d28": [
+   "release(bool,address,bytes)"
+  ],
+  "0x54280307": [
+   "remove(bytes,uint256,uint256)"
+  ],
+  "0x543533b8": [
+   "release(bool,uint256[])"
+  ],
+  "0x5437e401": [
+   "withdraw(address,bool)"
+  ],
+  "0x54498cfc": [
+   "remove(bool,bytes,uint256[])"
+  ],
+  "0x5468c730": [
+   "withdraw(uint256[],uint256[],uint256[])"
+  ],
+  "0x5469cdab": [
+   "unwrap(bool,bytes,uint256)"
+  ],
+  "0x549055c9": [
+   "remove(address,uint256[])"
+  ],
+  "0x54908c50": [
+   "leave(address,bool,bool)"
+  ],
+  "0x54a3f474": [
+   "deposit(uint256[],uint256,bytes)"
+  ],
+  "0x54d30c87": [
+   "release(uint256,bool)"
+  ],
+  "0x54d38282": [
+   "unwrap(uint256[],uint256,address)"
+  ],
+  "0x54db0c0f": [
+   "exit(bool,uint256,bool)"
+  ],
+  "0x54fa7b6e": [
+   "stake(address,uint256[],uint256)"
+  ],
+  "0x5500dab4": [
+   "cancel(uint256,uint256,bytes)"
+  ],
+  "0x552892fb": [
+   "leave(uint256[],bool,uint256)"
+  ],
+  "0x55315bfe": [
+   "unstake(bytes,bool,address)"
+  ],
+  "0x553ab3b6": [
+   "close(address,address,bytes)"
+  ],
+  "0x55586dfa": [
+   "redeem(uint256[],bytes,bytes)"
+  ],
+  "0x555b5092": [
+   "unlock(bytes,address,bool)"
+  ],
+  "0x5582a54e": [
+   "unwrap(bool,address,address)"
+  ],
+  "0x558ad43a": [
+   "burn(address,bool,bytes)"
+  ],
+  "0x55aecc2e": [
+   "wrap(address,bytes,bool)"
+  ],
+  "0x55b43de0": [
+   "wrap(uint256,address,bool)"
+  ],
+  "0x55d5a2e6": [
+   "withdraw(address,bool,uint256[])"
+  ],
+  "0x55dc8223": [
+   "close(bool,bytes,bytes)"
+  ],
+  "0x55e397e3": [
+   "remove(uint256,bool,bool)"
+  ],
+  "0x55f50306": [
+   "close(address,uint256[],uint256)"
+  ],
+  "0x560fd0f1": [
+   "claim(bytes,bytes,address)"
+  ],
+  "0x561b2463": [
+   "stake(uint256,uint256,bool)"
+  ],
+  "0x5634466c": [
+   "wrap(address,uint256,uint256[])"
+  ],
+  "0x564b13d7": [
+   "exit(address,uint256[],bytes)"
+  ],
+  "0x566fee57": [
+   "unstake(bytes,bool,bytes)"
+  ],
+  "0x5682acc4": [
+   "mint(bytes,uint256[],address)"
+  ],
+  "0x56c335b8": [
+   "exit(bytes,address,bytes)"
+  ],
+  "0x56d1c2aa": [
+   "unstake(address,uint256[],bytes)"
+  ],
+  "0x56e0d69b": [
+   "unstake(bool,address,bool)"
+  ],
+  "0x57019a1f": [
+   "exit(address,bool,uint256[])"
+  ],
+  "0x5708facf": [
+   "wrap(bool,uint256)"
+  ],
+  "0x570a76ea": [
+   "mint(bool,uint256,address)"
+  ],
+  "0x5780edd1": [
+   "release(bytes,bool,address)"
+  ],
+  "0x5787132f": [
+   "repay(uint256,bool,bytes)"
+  ],
+  "0x579f5b62": [
+   "close(address,uint256,bytes)"
+  ],
+  "0x57ad1a19": [
+   "leave(bytes,uint256)"
+  ],
+  "0x57d682c4": [
+   "cancel(uint256,address)"
+  ],
+  "0x57deaff7": [
+   "repay(bool,uint256[],bytes)"
+  ],
+  "0x57f46cbe": [
+   "collect(uint256[])"
+  ],
+  "0x57f7bf2d": [
+   "stake(bool,uint256)"
+  ],
+  "0x580e92ef": [
+   "redeem(bool,bytes,bytes)"
+  ],
+  "0x58382ab9": [
+   "exit(bool,uint256[],uint256)"
+  ],
+  "0x583b3657": [
+   "cancel(bool,uint256[],bool)"
+  ],
+  "0x585780af": [
+   "close(bool,uint256[])"
+  ],
+  "0x5857c0ad": [
+   "unlock(uint256[],uint256,uint256[])"
+  ],
+  "0x585ae344": [
+   "exit(uint256[],bool,address)"
+  ],
+  "0x58782e35": [
+   "burn(uint256,bool,bytes)"
+  ],
+  "0x58d3ec6a": [
+   "close(uint256[])"
+  ],
+  "0x58dc475b": [
+   "unlock(bytes,uint256[],address)"
+  ],
+  "0x58e12a9b": [
+   "harvest(uint256[],uint256,bool)"
+  ],
+  "0x58edef4c": [
+   "remove(bytes)"
+  ],
+  "0x590db0ce": [
+   "cancel(bool,bytes,uint256)"
+  ],
+  "0x5915d806": [
+   "withdraw(uint256,uint256[])"
+  ],
+  "0x59508f8f": [
+   "unlock(address,address,uint256)"
+  ],
+  "0x59513d03": [
+   "claim(uint256,bool,bytes)"
+  ],
+  "0x59533737": [
+   "cancel(uint256[],address,bytes)"
+  ],
+  "0x596170b5": [
+   "unlock(bool,uint256,bool)"
+  ],
+  "0x596c8976": [
+   "close(uint256,uint256)"
+  ],
+  "0x59806242": [
+   "claim(uint256[],uint256[],bool)"
+  ],
+  "0x59849498": [
+   "withdraw(uint256[],uint256,bool)"
+  ],
+  "0x598b8e71": [
+   "deposit(uint256[])"
+  ],
+  "0x599b4586": [
+   "exit(uint256[],uint256[],bool)"
+  ],
+  "0x599d85c6": [
+   "withdraw(bytes,uint256[],uint256[])"
+  ],
+  "0x59a0dacf": [
+   "unlock(bytes,bool,address)"
+  ],
+  "0x59a55a7d": [
+   "stake(bool,bytes,bytes)"
+  ],
+  "0x59ab1395": [
+   "leave(uint256[],bool,bytes)"
+  ],
+  "0x59c5a552": [
+   "cancel(uint256[],bytes,bytes)"
+  ],
+  "0x59d08726": [
+   "release(uint256,uint256[],bytes)"
+  ],
+  "0x59db2727": [
+   "harvest(address,bytes,bytes)"
+  ],
+  "0x59e5fd04": [
+   "remove(address,address,uint256)"
+  ],
+  "0x5a0bc7ca": [
+   "close(uint256[],bytes,bool)"
+  ],
+  "0x5a0e47f8": [
+   "repay(address,bytes,uint256[])"
+  ],
+  "0x5a2988ed": [
+   "unlock(bytes,bytes,uint256)"
+  ],
+  "0x5a31a757": [
+   "wrap(bool,uint256[],bool)"
+  ],
+  "0x5a5196bb": [
+   "unwrap(bool,uint256,uint256[])"
+  ],
+  "0x5a58fa49": [
+   "unwrap(uint256,bytes,address)"
+  ],
+  "0x5a70f834": [
+   "wrap(bool,bool,address)"
+  ],
+  "0x5a933adf": [
+   "unstake(uint256[],address,uint256)"
+  ],
+  "0x5a986ccf": [
+   "collect(address,bytes,bytes)"
+  ],
+  "0x5aa10f43": [
+   "release(uint256[],uint256,uint256[])"
+  ],
+  "0x5aad3814": [
+   "release(address,uint256,bool)"
+  ],
+  "0x5aad6074": [
+   "withdraw(bool,uint256[],bool)"
+  ],
+  "0x5aba4615": [
+   "withdraw(uint256[],bool,bytes)"
+  ],
+  "0x5ada4a76": [
+   "burn(uint256[],bytes,bytes)"
+  ],
+  "0x5b0b97c3": [
+   "collect(address,address,bool)"
+  ],
+  "0x5b3ce7ec": [
+   "leave(bool,bytes,bool)"
+  ],
+  "0x5b455551": [
+   "claim(uint256,address,uint256[])"
+  ],
+  "0x5b555586": [
+   "unstake(bool,uint256,uint256[])"
+  ],
+  "0x5b64f391": [
+   "unstake(uint256,bool,uint256)"
+  ],
+  "0x5b758eb4": [
+   "collect(uint256[],address,bool)"
+  ],
+  "0x5b952ae4": [
+   "unwrap(uint256,uint256,address)"
+  ],
+  "0x5b9a4254": [
+   "wrap(uint256[],address,bool)"
+  ],
+  "0x5ba034df": [
+   "mint(address,bytes,bytes)"
+  ],
+  "0x5bb6f58e": [
+   "remove(bytes,uint256[],address)"
+  ],
+  "0x5bc9d96d": [
+   "exit(address,address,address)"
+  ],
+  "0x5be33329": [
+   "unlock(uint256,address,bool)"
+  ],
+  "0x5bf2adde": [
+   "repay(bytes,address,uint256)"
+  ],
+  "0x5bfadb24": [
+   "unlock(uint256,uint256)"
+  ],
+  "0x5c15155e": [
+   "wrap(address,uint256,address)"
+  ],
+  "0x5c495e30": [
+   "collect(uint256,address,uint256[])"
+  ],
+  "0x5c516633": [
+   "unstake(uint256,bytes,address)"
+  ],
+  "0x5c5b69a9": [
+   "mint(uint256[],address)"
+  ],
+  "0x5c5f5aaf": [
+   "stake(address,bytes,uint256)"
+  ],
+  "0x5c7443f9": [
+   "harvest(bytes,bool)"
+  ],
+  "0x5c833bfd": [
+   "redeem(address,uint256,address)"
+  ],
+  "0x5c880164": [
+   "wrap(bool,uint256[],address)"
+  ],
+  "0x5ca491a2": [
+   "release(bytes,uint256[])"
+  ],
+  "0x5cacd6b9": [
+   "repay(uint256,uint256[],address)"
+  ],
+  "0x5cb771ea": [
+   "cancel(uint256[],address,address)"
+  ],
+  "0x5cd29712": [
+   "leave(uint256[],uint256,bool)"
+  ],
+  "0x5cd4743e": [
+   "repay(bytes,uint256,bytes)"
+  ],
+  "0x5ceae9c4": [
+   "repay(address,uint256,address)"
+  ],
+  "0x5cf7b616": [
+   "collect(uint256,address,bytes)"
+  ],
+  "0x5d14b06f": [
+   "harvest(uint256[])"
+  ],
+  "0x5d1eb712": [
+   "wrap(uint256,bool,uint256[])"
+  ],
+  "0x5d303519": [
+   "deposit(uint256,bytes)"
+  ],
+  "0x5d322ae8": [
+   "deposit(bytes,uint256,uint256)"
+  ],
+  "0x5d36598f": [
+   "unlock(uint256[])"
+  ],
+  "0x5d3f9c41": [
+   "unwrap(uint256,uint256[],bytes)"
+  ],
+  "0x5d42db00": [
+   "close(uint256[],bytes,uint256[])"
+  ],
+  "0x5d499d62": [
+   "repay(bytes,uint256[],uint256)"
+  ],
+  "0x5d4cd809": [
+   "redeem(uint256,uint256[],bool)"
+  ],
+  "0x5d5ab968": [
+   "unstake(bytes,bytes,uint256)"
+  ],
+  "0x5d8b788a": [
+   "claim(uint256,uint256,bool)"
+  ],
+  "0x5d950a44": [
+   "collect(bool,bytes,uint256)"
+  ],
+  "0x5db7f88c": [
+   "stake(bool,uint256,uint256)"
+  ],
+  "0x5dbe4756": [
+   "unstake(address,uint256[])"
+  ],
+  "0x5dc55f2f": [
+   "deposit(uint256[],uint256)"
+  ],
+  "0x5dcf6975": [
+   "harvest(bytes,address)"
+  ],
+  "0x5e1c75e1": [
+   "claim(address,address,address)"
+  ],
+  "0x5e3fcf54": [
+   "release(bool,uint256[],bool)"
+  ],
+  "0x5e45e236": [
+   "redeem(uint256[],bytes,address)"
+  ],
+  "0x5e737548": [
+   "claim(uint256,address,uint256)"
+  ],
+  "0x5eb3c4fd": [
+   "unlock(uint256[],bool,address)"
+  ],
+  "0x5ec1fe1e": [
+   "leave(uint256,bytes,address)"
+  ],
+  "0x5ecdabf9": [
+   "burn(uint256,uint256[],uint256)"
+  ],
+  "0x5eddd157": [
+   "claim(uint256,uint256,bytes)"
+  ],
+  "0x5ef5057e": [
+   "burn(bool,bytes,address)"
+  ],
+  "0x5f16596b": [
+   "wrap(bool,address,bytes)"
+  ],
+  "0x5f458fa4": [
+   "remove(uint256[],address,bytes)"
+  ],
+  "0x5f4bb80b": [
+   "mint(uint256,uint256,bool)"
+  ],
+  "0x5f4eb10f": [
+   "withdraw(bytes,uint256[])"
+  ],
+  "0x5f525ade": [
+   "harvest(uint256[],bool,address)"
+  ],
+  "0x5f592190": [
+   "repay(uint256,uint256[],uint256)"
+  ],
+  "0x5f5a4191": [
+   "cancel(uint256,bytes,uint256)"
+  ],
+  "0x5f6b6d56": [
+   "harvest(address,bytes,bool)"
+  ],
+  "0x5fad64c4": [
+   "close(bytes,bool,bytes)"
+  ],
+  "0x5fc26c98": [
+   "leave(uint256[],uint256,address)"
+  ],
+  "0x5fcc8ae0": [
+   "burn(bool,bytes)"
+  ],
+  "0x5fcccedd": [
+   "close(bool,bytes,uint256)"
+  ],
+  "0x5ff83fcf": [
+   "exit(bool,uint256,uint256[])"
+  ],
+  "0x60478b8f": [
+   "withdraw(bool,bool,uint256)"
+  ],
+  "0x604c60a2": [
+   "deposit(uint256[],bytes,bool)"
+  ],
+  "0x60829f8a": [
+   "unstake(address,address,uint256)"
+  ],
+  "0x60a28c8f": [
+   "withdraw(address,bytes,bytes)"
+  ],
+  "0x60ac8880": [
+   "release(bool,address,uint256[])"
+  ],
+  "0x60b03028": [
+   "harvest(uint256,uint256[],bytes)"
+  ],
+  "0x60b15cc5": [
+   "unstake(bool,uint256,uint256)"
+  ],
+  "0x60d75343": [
+   "stake(bool,bool,address)"
+  ],
+  "0x60e361ea": [
+   "claim(uint256[],address,uint256[])"
+  ],
+  "0x61061b41": [
+   "unwrap(bool,uint256[],uint256)"
+  ],
+  "0x6121d7e1": [
+   "cancel(bytes,bool,uint256[])"
+  ],
+  "0x6137879d": [
+   "mint(bool,bytes,bytes)"
+  ],
+  "0x615d01b3": [
+   "close(bool,bool,address)"
+  ],
+  "0x616578dc": [
+   "release(uint256,bool,bool)"
+  ],
+  "0x6187701b": [
+   "repay(uint256[],address,uint256[])"
+  ],
+  "0x61919749": [
+   "deposit(uint256[],address,bytes)"
+  ],
+  "0x6198e339": [
+   "unlock(uint256)"
+  ],
+  "0x619cd9f5": [
+   "collect(uint256[],uint256[],address)"
+  ],
+  "0x61a22801": [
+   "close(address,uint256,uint256[])"
+  ],
+  "0x61b9cd1e": [
+   "unlock(uint256,address,address)"
+  ],
+  "0x61de2ea3": [
+   "remove(bytes,uint256[])"
+  ],
+  "0x62033881": [
+   "burn(bool,uint256,bytes)"
+  ],
+  "0x62355638": [
+   "wrap(address,address,uint256)"
+  ],
+  "0x62381a49": [
+   "repay(address,uint256[],uint256)"
+  ],
+  "0x6249a53a": [
+   "unstake(bool,bool,bytes)"
+  ],
+  "0x62740a1c": [
+   "burn(bytes,uint256[],address)"
+  ],
+  "0x62962a99": [
+   "cancel(address,uint256,uint256[])"
+  ],
+  "0x6297b484": [
+   "repay(bool,uint256[],bool)"
+  ],
+  "0x62b2b5f0": [
+   "withdraw(uint256,address,bytes)"
+  ],
+  "0x62b2b5fb": [
+   "repay(bytes,uint256[])"
+  ],
+  "0x62b2e12c": [
+   "harvest(uint256,uint256,address)"
+  ],
+  "0x62ebfdfe": [
+   "release(uint256[],uint256,bool)"
+  ],
+  "0x63185c42": [
+   "mint(address,address,address)"
+  ],
+  "0x631c8c0b": [
+   "leave(address,uint256[],uint256[])"
+  ],
+  "0x6321a93f": [
+   "mint(address,bytes,bool)"
+  ],
+  "0x6323f80f": [
+   "deposit(uint256,uint256,uint256[])"
+  ],
+  "0x63517b9e": [
+   "unwrap(uint256[],address,uint256)"
+  ],
+  "0x635d7252": [
+   "harvest(bool,address)"
+  ],
+  "0x635f5348": [
+   "stake(bytes,uint256[])"
+  ],
+  "0x635fd256": [
+   "wrap(uint256[],bool,uint256[])"
+  ],
+  "0x6367c550": [
+   "exit(address,bool)"
+  ],
+  "0x63814eae": [
+   "close(bool,bool)"
+  ],
+  "0x6383b368": [
+   "repay(bool,bytes,address)"
+  ],
+  "0x6389971d": [
+   "cancel(uint256[],uint256)"
+  ],
+  "0x63a42d10": [
+   "harvest(bool,bytes,bool)"
+  ],
+  "0x63ac2a4c": [
+   "unwrap(uint256[])"
+  ],
+  "0x63d05442": [
+   "claim(address,uint256[],uint256[])"
+  ],
+  "0x63d1fb3b": [
+   "exit(bool,uint256[])"
+  ],
+  "0x63e0448a": [
+   "cancel(uint256,uint256[],address)"
+  ],
+  "0x63e2e738": [
+   "unwrap(address,bool,uint256[])"
+  ],
+  "0x63e6885f": [
+   "burn(address,bytes,bool)"
+  ],
+  "0x6456e114": [
+   "unstake(address,bytes)"
+  ],
+  "0x646a8912": [
+   "unwrap(uint256[],bytes,uint256)"
+  ],
+  "0x6471aee6": [
+   "unlock(bytes,uint256,uint256)"
+  ],
+  "0x649888ed": [
+   "cancel(bytes,uint256,bytes)"
+  ],
+  "0x64b3fc50": [
+   "burn(bytes,uint256[])"
+  ],
+  "0x64cdba23": [
+   "exit(address,uint256,bool)"
+  ],
+  "0x650b9aba": [
+   "collect(address,uint256[])"
+  ],
+  "0x6526db7a": [
+   "remove(uint256,uint256)"
+  ],
+  "0x65362915": [
+   "release(uint256,bool,uint256[])"
+  ],
+  "0x654bda7a": [
+   "remove(uint256,address,address)"
+  ],
+  "0x6561cb1c": [
+   "withdraw(uint256[],bytes)"
+  ],
+  "0x65736358": [
+   "cancel(uint256,bytes,bytes)"
+  ],
+  "0x658aecbc": [
+   "exit(uint256[],bool)"
+  ],
+  "0x659c3a99": [
+   "burn(bool,uint256,uint256[])"
+  ],
+  "0x65a32b77": [
+   "harvest(uint256,uint256[],bool)"
+  ],
+  "0x65aa52e7": [
+   "stake(uint256[],uint256[],bool)"
+  ],
+  "0x65b4f70e": [
+   "claim(uint256[],uint256,uint256[])"
+  ],
+  "0x65d43125": [
+   "unlock(uint256[],address,bytes)"
+  ],
+  "0x65dfb299": [
+   "leave(bytes,bool,uint256[])"
+  ],
+  "0x65f4f5f3": [
+   "cancel(bool,bool,uint256[])"
+  ],
+  "0x664cbf7e": [
+   "unstake(bool,address,address)"
+  ],
+  "0x66605784": [
+   "burn(uint256,uint256[],address)"
+  ],
+  "0x6686fdfb": [
+   "unlock(bytes,bool,bytes)"
+  ],
+  "0x668a0021": [
+   "repay(uint256,bool,bool)"
+  ],
+  "0x66900253": [
+   "collect(address,address,address)"
+  ],
+  "0x66b5a664": [
+   "exit(uint256,uint256[],uint256[])"
+  ],
+  "0x66c10fbf": [
+   "claim(bool,bool,bytes)"
+  ],
+  "0x66c1fea8": [
+   "exit(bool,uint256[],bytes)"
+  ],
+  "0x66c3c6f3": [
+   "redeem(bytes,bool,address)"
+  ],
+  "0x66c6bb0b": [
+   "harvest(address,bool,uint256)"
+  ],
+  "0x66cc1857": [
+   "harvest(address,address)"
+  ],
+  "0x66f346dc": [
+   "cancel(bytes,address,uint256[])"
+  ],
+  "0x67478c7c": [
+   "exit(bool,uint256[],bool)"
+  ],
+  "0x67696b46": [
+   "unlock(uint256,bool,uint256[])"
+  ],
+  "0x677d28ca": [
+   "withdraw(address,address,bool)"
+  ],
+  "0x67857ebc": [
+   "remove(bytes,uint256[],uint256[])"
+  ],
+  "0x67a9ed25": [
+   "unstake(bytes,address,uint256)"
+  ],
+  "0x67dfd4c9": [
+   "leave(uint256)"
+  ],
+  "0x67e048c4": [
+   "deposit(bool,address,uint256)"
+  ],
+  "0x67eb5e83": [
+   "stake(uint256,bool,bytes)"
+  ],
+  "0x67f4b88b": [
+   "unlock(uint256,uint256[],bool)"
+  ],
+  "0x67f68fac": [
+   "mint(uint256,bool)"
+  ],
+  "0x681aad64": [
+   "withdraw(address,bool,bool)"
+  ],
+  "0x683f5587": [
+   "withdraw(uint256,uint256[],bool)"
+  ],
+  "0x68b79c2f": [
+   "redeem(bool,uint256[],bool)"
+  ],
+  "0x68beb79a": [
+   "unlock(bytes,bytes,uint256[])"
+  ],
+  "0x68e30677": [
+   "unstake(address,bytes,bytes)"
+  ],
+  "0x68f60ffd": [
+   "unwrap(bytes,address,uint256)"
+  ],
+  "0x68fa3f1f": [
+   "leave(uint256[],bytes,address)"
+  ],
+  "0x68fcae0c": [
+   "remove(address,bytes)"
+  ],
+  "0x6907ab37": [
+   "claim(address,bool,bool)"
+  ],
+  "0x69328dec": [
+   "withdraw(address,uint256,address)"
+  ],
+  "0x69445c31": [
+   "deposit(uint256,bytes,bytes)"
+  ],
+  "0x694c9bf7": [
+   "claim(bytes,address,address)"
+  ],
+  "0x69573648": [
+   "remove(bytes,bytes)"
+  ],
+  "0x695dd515": [
+   "withdraw(uint256[],uint256,address)"
+  ],
+  "0x696af95c": [
+   "claim(bytes,uint256,address)"
+  ],
+  "0x6992f77b": [
+   "cancel(bool,address,uint256[])"
+  ],
+  "0x69954e92": [
+   "redeem(address,address,uint256[])"
+  ],
+  "0x69b6d5f9": [
+   "claim(bool,address,uint256[])"
+  ],
+  "0x69cd2a01": [
+   "burn(bytes,bool,bytes)"
+  ],
+  "0x69e93543": [
+   "redeem(address,bytes,bool)"
+  ],
+  "0x69ed3a76": [
+   "stake(bytes,uint256[],bool)"
+  ],
+  "0x69f6d708": [
+   "collect(bytes,address,uint256[])"
+  ],
+  "0x6a001fcf": [
+   "claim(bytes,bool,bytes)"
+  ],
+  "0x6a4ac73b": [
+   "withdraw(bool,bool)"
+  ],
+  "0x6a5205fe": [
+   "leave(bytes,uint256[],bool)"
+  ],
+  "0x6a627842": [
+   "mint(address)"
+  ],
+  "0x6a77c8fe": [
+   "repay(uint256,bytes,bool)"
+  ],
+  "0x6a7ae8ce": [
+   "cancel(address,bytes,uint256)"
+  ],
+  "0x6a969e9d": [
+   "repay(uint256[],bool,bool)"
+  ],
+  "0x6ac4a00a": [
+   "remove(bool,uint256[],uint256[])"
+  ],
+  "0x6b41674c": [
+   "unlock(uint256,bool)"
+  ],
+  "0x6b4f4481": [
+   "unlock(uint256[],uint256,bool)"
+  ],
+  "0x6b55dbb3": [
+   "exit(uint256,address,bool)"
+  ],
+  "0x6b6e36da": [
+   "release(uint256[],bytes)"
+  ],
+  "0x6b7ac600": [
+   "repay(uint256[],bytes,bool)"
+  ],
+  "0x6b8357ac": [
+   "collect(address,uint256)"
+  ],
+  "0x6b91a1d0": [
+   "wrap(uint256[],bytes,address)"
+  ],
+  "0x6b9244e4": [
+   "redeem(bytes,bool,bytes)"
+  ],
+  "0x6ba4c138": [
+   "claim(uint256[])"
+  ],
+  "0x6bc08edc": [
+   "unstake(uint256[],bytes,uint256[])"
+  ],
+  "0x6bc63893": [
+   "mint(bytes,bytes)"
+  ],
+  "0x6bd1c38f": [
+   "redeem(address,uint256,uint256[])"
+  ],
+  "0x6bd7371c": [
+   "wrap(uint256,bytes,uint256)"
+  ],
+  "0x6c6d9b1e": [
+   "redeem(bytes,bool,uint256[])"
+  ],
+  "0x6c832d0d": [
+   "withdraw(bytes,bool,bytes)"
+  ],
+  "0x6cac4f3d": [
+   "release(uint256[],address,address)"
+  ],
+  "0x6cb277f3": [
+   "leave(bytes,bytes,address)"
+  ],
+  "0x6cb58c93": [
+   "leave(address,uint256)"
+  ],
+  "0x6cbcd07b": [
+   "unlock(address,bytes,bytes)"
+  ],
+  "0x6cbde426": [
+   "close(uint256,uint256[],address)"
+  ],
+  "0x6cc968be": [
+   "mint(bool,address,address)"
+  ],
+  "0x6ce86724": [
+   "repay(bool,bool,uint256[])"
+  ],
+  "0x6cff18d0": [
+   "repay(uint256[],bool,uint256)"
+  ],
+  "0x6d2ebceb": [
+   "claim(bytes,bool,uint256)"
+  ],
+  "0x6d312dea": [
+   "wrap(address,uint256[],bytes)"
+  ],
+  "0x6d32635d": [
+   "mint(bool,uint256,bool)"
+  ],
+  "0x6d3ffa2e": [
+   "collect(bool,uint256,uint256[])"
+  ],
+  "0x6d53efdc": [
+   "repay(uint256[],bool,address)"
+  ],
+  "0x6d7d6e64": [
+   "exit(bool,bool,bytes)"
+  ],
+  "0x6d95ee37": [
+   "wrap(address,uint256[],uint256[])"
+  ],
+  "0x6dacac9d": [
+   "leave(bool,uint256,uint256[])"
+  ],
+  "0x6e084aeb": [
+   "claim(bytes,uint256,bool)"
+  ],
+  "0x6e22c959": [
+   "burn(uint256,uint256,bool)"
+  ],
+  "0x6e286671": [
+   "unwrap(uint256,uint256)"
+  ],
+  "0x6e4c8d8a": [
+   "deposit(bytes,uint256,bytes)"
+  ],
+  "0x6e553f65": [
+   "deposit(uint256,address)"
+  ],
+  "0x6e6deeba": [
+   "wrap(uint256,address,address)"
+  ],
+  "0x6e7be804": [
+   "unwrap(uint256,address,bytes)"
+  ],
+  "0x6e93462c": [
+   "withdraw(bool,address,address)"
+  ],
+  "0x6e9c931c": [
+   "stake(uint256,address,uint256)"
+  ],
+  "0x6ed671e8": [
+   "repay(address,address)"
+  ],
+  "0x6eef7743": [
+   "collect(bool,uint256[],uint256[])"
+  ],
+  "0x6f023913": [
+   "repay(address,bool,uint256[])"
+  ],
+  "0x6f1dbfd6": [
+   "mint(bytes,uint256,bytes)"
+  ],
+  "0x6f2ce0a1": [
+   "unlock(bytes,uint256,bytes)"
+  ],
+  "0x6f2ffcea": [
+   "claim(bytes,address,bool)"
+  ],
+  "0x6f3411fc": [
+   "claim(bool,address,bool)"
+  ],
+  "0x6f5b080f": [
+   "redeem(bool,bytes,address)"
+  ],
+  "0x6f7646b6": [
+   "claim(uint256[],uint256,uint256)"
+  ],
+  "0x6f9e1e6f": [
+   "mint(uint256[],bool,bytes)"
+  ],
+  "0x6fd42410": [
+   "unstake(bytes,bytes,bytes)"
+  ],
+  "0x6fd44ee4": [
+   "cancel(bool,uint256[],uint256)"
+  ],
+  "0x6fd52298": [
+   "repay(uint256,uint256,bool)"
+  ],
+  "0x6ff17aa9": [
+   "release(bool,bool,address)"
+  ],
+  "0x700c3c41": [
+   "unstake(uint256[],uint256[],uint256)"
+  ],
+  "0x703e2a1c": [
+   "deposit(bytes,bool,bool)"
+  ],
+  "0x7069ca10": [
+   "unlock(uint256,bytes,bytes)"
+  ],
+  "0x706ae7be": [
+   "remove(uint256[],bool)"
+  ],
+  "0x70742b61": [
+   "unlock(address,bool,uint256[])"
+  ],
+  "0x70a1903d": [
+   "harvest(bool)"
+  ],
+  "0x70c6cea8": [
+   "close(uint256,uint256,uint256)"
+  ],
+  "0x70ea6723": [
+   "leave(bytes,bytes,bytes)"
+  ],
+  "0x70f1936d": [
+   "release(uint256,bool,address)"
+  ],
+  "0x70f93ede": [
+   "mint(bytes,uint256,uint256)"
+  ],
+  "0x71006c09": [
+   "exit(address,address,uint256)"
+  ],
+  "0x7103d94a": [
+   "stake(bool,uint256,uint256[])"
+  ],
+  "0x7128f2b6": [
+   "remove(uint256[],uint256[])"
+  ],
+  "0x71352dcc": [
+   "cancel(uint256[],bytes,address)"
+  ],
+  "0x713962b6": [
+   "burn(uint256[],bytes,address)"
+  ],
+  "0x7156b9b8": [
+   "leave(bool,bytes,uint256[])"
+  ],
+  "0x7161cc1e": [
+   "stake(uint256[],bytes,bytes)"
+  ],
+  "0x71631130": [
+   "burn(uint256[],address,address)"
+  ],
+  "0x716644b5": [
+   "repay(address,uint256[],address)"
+  ],
+  "0x717f8c2a": [
+   "unlock(uint256,bytes,bool)"
+  ],
+  "0x7189f8ee": [
+   "mint(uint256,uint256,uint256[])"
+  ],
+  "0x71953463": [
+   "unlock(bool,uint256[])"
+  ],
+  "0x719dcf4a": [
+   "close(address,address)"
+  ],
+  "0x71a40396": [
+   "redeem(bool,address,bool)"
+  ],
+  "0x71baa1af": [
+   "claim(uint256,bool)"
+  ],
+  "0x71c7c387": [
+   "deposit(bytes,uint256[],uint256[])"
+  ],
+  "0x71cf5ad8": [
+   "unwrap(bool,uint256,bool)"
+  ],
+  "0x71d9a23c": [
+   "remove(address,uint256,address)"
+  ],
+  "0x71e1e5fc": [
+   "unstake(address,uint256,uint256[])"
+  ],
+  "0x72340056": [
+   "claim(address,bytes,uint256[])"
+  ],
+  "0x72a1c6b0": [
+   "deposit(uint256,address,uint256[])"
+  ],
+  "0x72a4d94b": [
+   "release(bool)"
+  ],
+  "0x72ad7eba": [
+   "collect(bytes,bool,uint256)"
+  ],
+  "0x72be3d4a": [
+   "exit(bool,address)"
+  ],
+  "0x72e77199": [
+   "exit(bytes,address,uint256[])"
+  ],
+  "0x72eea6d5": [
+   "cancel(uint256[],uint256[],address)"
+  ],
+  "0x7317c967": [
+   "stake(uint256[],uint256,address)"
+  ],
+  "0x7339dfff": [
+   "deposit(address,bool,bytes)"
+  ],
+  "0x73578ad6": [
+   "wrap(bytes,uint256,bool)"
+  ],
+  "0x7366c35e": [
+   "close(uint256,bool)"
+  ],
+  "0x7368451c": [
+   "mint(bytes,bool,uint256[])"
+  ],
+  "0x737a9ed6": [
+   "withdraw(bytes,uint256,uint256)"
+  ],
+  "0x737f7937": [
+   "mint(uint256[],bool,address)"
+  ],
+  "0x738b30f4": [
+   "unlock(uint256,uint256[],uint256)"
+  ],
+  "0x738c440a": [
+   "unlock(address,bytes)"
+  ],
+  "0x7399bfe8": [
+   "harvest(address,bytes)"
+  ],
+  "0x73b6a37f": [
+   "release(uint256[],bytes,address)"
+  ],
+  "0x73c02519": [
+   "mint(uint256,address,bytes)"
+  ],
+  "0x73e0ff7c": [
+   "redeem(uint256[],bool,bool)"
+  ],
+  "0x73e11883": [
+   "claim(bool,uint256[],uint256[])"
+  ],
+  "0x73e9a497": [
+   "repay(uint256[],uint256)"
+  ],
+  "0x73f5dd6d": [
+   "close(uint256,uint256[])"
+  ],
+  "0x7412c080": [
+   "collect(uint256[],address,bytes)"
+  ],
+  "0x742dd87a": [
+   "claim(uint256[],uint256[],address)"
+  ],
+  "0x742e0bb0": [
+   "deposit(bytes,address,uint256)"
+  ],
+  "0x744fb6ca": [
+   "withdraw(uint256,uint256,bytes)"
+  ],
+  "0x749388c4": [
+   "burn(uint256,uint256,address)"
+  ],
+  "0x749a4021": [
+   "remove(uint256,address,uint256)"
+  ],
+  "0x74aa85c4": [
+   "withdraw(bytes,address,address)"
+  ],
+  "0x74c6be9a": [
+   "repay(uint256[],address,bool)"
+  ],
+  "0x74ecf7be": [
+   "close(address,address,address)"
+  ],
+  "0x74fed147": [
+   "release(uint256,bytes)"
+  ],
+  "0x75183f2b": [
+   "close(uint256,uint256,address)"
+  ],
+  "0x751bf42f": [
+   "withdraw(bool,uint256,uint256[])"
+  ],
+  "0x756a972d": [
+   "collect(address,bool,bool)"
+  ],
+  "0x75b935d4": [
+   "exit(uint256,bool)"
+  ],
+  "0x75e11e1f": [
+   "redeem(bool,uint256,address)"
+  ],
+  "0x75e27d37": [
+   "close(bytes,uint256,bytes)"
+  ],
+  "0x75f26e63": [
+   "unwrap(address)"
+  ],
+  "0x7616c844": [
+   "unstake(bool,uint256,address)"
+  ],
+  "0x761a0993": [
+   "exit(bool,bytes,uint256)"
+  ],
+  "0x7628a37d": [
+   "stake(uint256,uint256,address)"
+  ],
+  "0x762f283a": [
+   "claim(bool,bool,uint256[])"
+  ],
+  "0x762f6b38": [
+   "claim(uint256[],uint256[],bytes)"
+  ],
+  "0x7647691d": [
+   "unwrap(uint256,address)"
+  ],
+  "0x7649c893": [
+   "cancel(bytes,address,address)"
+  ],
+  "0x766572ec": [
+   "redeem(bool,uint256[],uint256)"
+  ],
+  "0x767081d1": [
+   "claim(address,address,bytes)"
+  ],
+  "0x7687a4dd": [
+   "unlock(bool,uint256[],uint256[])"
+  ],
+  "0x769f7813": [
+   "redeem(bool,uint256[],address)"
+  ],
+  "0x76a93cf2": [
+   "remove(uint256[],uint256[],bytes)"
+  ],
+  "0x76e2deee": [
+   "burn(bytes,address,uint256[])"
+  ],
+  "0x76fd3de7": [
+   "claim(bool,address,address)"
+  ],
+  "0x76fd4fdf": [
+   "burn(address,uint256,bool)"
+  ],
+  "0x770a8bd5": [
+   "cancel(bytes,bytes,uint256[])"
+  ],
+  "0x770bd0c9": [
+   "collect(uint256[],uint256,uint256[])"
+  ],
+  "0x7743082b": [
+   "unwrap(bytes,bytes,uint256)"
+  ],
+  "0x775ed63d": [
+   "mint(address,bytes,uint256)"
+  ],
+  "0x7770b5bf": [
+   "remove(bool,bytes,bool)"
+  ],
+  "0x778062ba": [
+   "unwrap(bool,bytes,bytes)"
+  ],
+  "0x779549b6": [
+   "release(uint256[],address,bytes)"
+  ],
+  "0x779a7c46": [
+   "remove(address,address,bool)"
+  ],
+  "0x77a3d03c": [
+   "redeem(uint256[],uint256,address)"
+  ],
+  "0x77ade9bd": [
+   "exit(bool,uint256,uint256)"
+  ],
+  "0x77b1534a": [
+   "remove(address,bool,address)"
+  ],
+  "0x77bdcf75": [
+   "leave(uint256,bytes,bytes)"
+  ],
+  "0x77c23017": [
+   "wrap(uint256[],bytes,bool)"
+  ],
+  "0x77e4a4e7": [
+   "leave(bool,bool,address)"
+  ],
+  "0x77e55076": [
+   "deposit(bool,uint256,uint256[])"
+  ],
+  "0x78006ea7": [
+   "claim(bool,uint256[],address)"
+  ],
+  "0x7811dd3a": [
+   "deposit(uint256[],uint256[],bool)"
+  ],
+  "0x783e07e1": [
+   "release(bytes,uint256,uint256[])"
+  ],
+  "0x784735f8": [
+   "deposit(uint256,bool,uint256[])"
+  ],
+  "0x784a99e7": [
+   "close(uint256,bytes,uint256)"
+  ],
+  "0x785a1f58": [
+   "harvest(uint256[],bool,bytes)"
+  ],
+  "0x7867ce36": [
+   "collect(bool,bool,address)"
+  ],
+  "0x786c51af": [
+   "repay(uint256[],address)"
+  ],
+  "0x7876c778": [
+   "wrap(uint256[],bytes)"
+  ],
+  "0x788483eb": [
+   "release(bool,address)"
+  ],
+  "0x78b2b61a": [
+   "unstake(bool,bool,uint256)"
+  ],
+  "0x78bac6c9": [
+   "unlock(bool,bool,address)"
+  ],
+  "0x78c81caa": [
+   "repay(uint256[],uint256,uint256[])"
+  ],
+  "0x794952e6": [
+   "stake(bytes,bool,bool)"
+  ],
+  "0x796d8bad": [
+   "close(address,bool,bool)"
+  ],
+  "0x796da625": [
+   "deposit(bool,bool,address)"
+  ],
+  "0x79783533": [
+   "harvest(uint256,bool,uint256)"
+  ],
+  "0x798c036b": [
+   "collect(address,bytes)"
+  ],
+  "0x798d0bd8": [
+   "burn(address,bytes,uint256)"
+  ],
+  "0x799406e5": [
+   "close(bool,uint256[],uint256)"
+  ],
+  "0x79a111c8": [
+   "unlock(address,address,address)"
+  ],
+  "0x79a145af": [
+   "release(bytes,uint256[],bool)"
+  ],
+  "0x79b91d69": [
+   "unstake(uint256,uint256,bool)"
+  ],
+  "0x79ba4b9e": [
+   "exit(uint256,bytes,uint256)"
+  ],
+  "0x79d2908e": [
+   "harvest(bool,uint256,bool)"
+  ],
+  "0x7a1ee1c0": [
+   "claim(address,uint256,bool)"
+  ],
+  "0x7a30f1ff": [
+   "unwrap(address,address)"
+  ],
+  "0x7a32f0f1": [
+   "wrap(bool,uint256,uint256[])"
+  ],
+  "0x7a32f92a": [
+   "unwrap(bytes,uint256[],bytes)"
+  ],
+  "0x7a33d15a": [
+   "leave(bytes,uint256[],address)"
+  ],
+  "0x7a3b5e6e": [
+   "deposit(address,bytes,bytes)"
+  ],
+  "0x7a54d7cd": [
+   "stake(uint256[],bytes)"
+  ],
+  "0x7a675115": [
+   "deposit(address,bytes,uint256[])"
+  ],
+  "0x7a883431": [
+   "wrap(address,uint256[],bool)"
+  ],
+  "0x7a90002e": [
+   "cancel(uint256,uint256[],uint256[])"
+  ],
+  "0x7ab2f27e": [
+   "close(bytes,uint256[],bool)"
+  ],
+  "0x7ab913ae": [
+   "harvest(uint256[],address,address)"
+  ],
+  "0x7ab950ea": [
+   "unlock(uint256,uint256,uint256)"
+  ],
+  "0x7acac114": [
+   "wrap(uint256,bool,bytes)"
+  ],
+  "0x7acb7757": [
+   "stake(uint256,address)"
+  ],
+  "0x7aebe326": [
+   "burn(bytes,bytes,uint256[])"
+  ],
+  "0x7b0472f0": [
+   "stake(uint256,uint256)"
+  ],
+  "0x7b88cb32": [
+   "unwrap(bool,bytes)"
+  ],
+  "0x7ba0e2e7": [
+   "mint(bytes)"
+  ],
+  "0x7bcba17a": [
+   "harvest(address,uint256[],bool)"
+  ],
+  "0x7bd591b6": [
+   "exit(bytes,uint256,bytes)"
+  ],
+  "0x7bdb0d23": [
+   "redeem(uint256[],uint256,uint256[])"
+  ],
+  "0x7bde82f2": [
+   "redeem(uint256,address)"
+  ],
+  "0x7be22ca2": [
+   "deposit(uint256[],uint256[],uint256)"
+  ],
+  "0x7be633e2": [
+   "leave(bool,uint256,address)"
+  ],
+  "0x7be893a4": [
+   "stake(uint256[],uint256,uint256[])"
+  ],
+  "0x7c02c1c8": [
+   "harvest(bool,bytes,uint256)"
+  ],
+  "0x7c201f8d": [
+   "claim(bytes,bool,bool)"
+  ],
+  "0x7c2bbd06": [
+   "collect(uint256,bool,uint256)"
+  ],
+  "0x7c2c6a30": [
+   "harvest(bool,bool,address)"
+  ],
+  "0x7c4fb39a": [
+   "withdraw(bool,uint256[])"
+  ],
+  "0x7cb950b7": [
+   "harvest(bool,uint256,uint256[])"
+  ],
+  "0x7cb99ee7": [
+   "redeem(bool,uint256[])"
+  ],
+  "0x7cbc2373": [
+   "redeem(uint256,uint256)"
+  ],
+  "0x7d0b4478": [
+   "unlock(uint256,uint256[],uint256[])"
+  ],
+  "0x7d1507c7": [
+   "exit(uint256[],address,bytes)"
+  ],
+  "0x7d29f358": [
+   "stake(bool,uint256,address)"
+  ],
+  "0x7d2fb54d": [
+   "close(uint256[],bytes,address)"
+  ],
+  "0x7d3b7c41": [
+   "unlock(uint256[],address,bool)"
+  ],
+  "0x7d4d374e": [
+   "release(address,uint256[],address)"
+  ],
+  "0x7d68ca1e": [
+   "mint(bool,uint256[],bytes)"
+  ],
+  "0x7db16c6e": [
+   "stake(uint256,bool,uint256[])"
+  ],
+  "0x7dd6c1fd": [
+   "remove(uint256[],bytes,bytes)"
+  ],
+  "0x7ddaa84b": [
+   "redeem(uint256,uint256,bool)"
+  ],
+  "0x7deed669": [
+   "burn(uint256[],bool)"
+  ],
+  "0x7df449cb": [
+   "deposit(bool,bool,bytes)"
+  ],
+  "0x7e067a60": [
+   "deposit(uint256[],uint256[],address)"
+  ],
+  "0x7e08d0b1": [
+   "close(bool,bytes,bool)"
+  ],
+  "0x7e0976e0": [
+   "leave(address,uint256[],uint256)"
+  ],
+  "0x7e1b153c": [
+   "close(bytes,bytes,bool)"
+  ],
+  "0x7e2dccb5": [
+   "deposit(bool,uint256[],bytes)"
+  ],
+  "0x7e5f26e3": [
+   "remove(bool,bytes,uint256)"
+  ],
+  "0x7e9f2c84": [
+   "stake(uint256,address,bool)"
+  ],
+  "0x7ea1511b": [
+   "cancel(bool,uint256)"
+  ],
+  "0x7eaf1e4d": [
+   "cancel(uint256,uint256,uint256)"
+  ],
+  "0x7ebe60d0": [
+   "deposit(uint256[],bool,uint256)"
+  ],
+  "0x7ed72fda": [
+   "remove(uint256,uint256,uint256)"
+  ],
+  "0x7edd5d2d": [
+   "repay(uint256,bytes)"
+  ],
+  "0x7eee288d": [
+   "unlock(address,uint256)"
+  ],
+  "0x7f223b4c": [
+   "withdraw(uint256,bool,uint256)"
+  ],
+  "0x7f247303": [
+   "claim(bool,address,uint256)"
+  ],
+  "0x7f37342a": [
+   "wrap(uint256[],uint256,uint256[])"
+  ],
+  "0x7f453c6a": [
+   "release(bool,bool,bool)"
+  ],
+  "0x7f5a7ba4": [
+   "harvest(bytes,bytes,uint256)"
+  ],
+  "0x7f5a9839": [
+   "mint(bool,uint256[],address)"
+  ],
+  "0x7f638e92": [
+   "wrap(bytes,bool,uint256)"
+  ],
+  "0x7f678334": [
+   "unstake(uint256,bytes,bool)"
+  ],
+  "0x7f77cff7": [
+   "release(bytes,bool,bytes)"
+  ],
+  "0x7f7c1491": [
+   "remove(address,address)"
+  ],
+  "0x7f7ed683": [
+   "release(uint256[],bool,uint256[])"
+  ],
+  "0x7f8661a1": [
+   "exit(uint256)"
+  ],
+  "0x7f8af472": [
+   "stake(bytes,address,address)"
+  ],
+  "0x7f9bd2ba": [
+   "remove(uint256,address,uint256[])"
+  ],
+  "0x7f9d5ff9": [
+   "exit(uint256[],bool,bytes)"
+  ],
+  "0x7fa6a3a6": [
+   "exit(bytes,bool,bytes)"
+  ],
+  "0x7fab9e46": [
+   "stake(bool)"
+  ],
+  "0x7fec2125": [
+   "withdraw(uint256[],uint256,bytes)"
+  ],
+  "0x800c37d7": [
+   "burn(address,uint256[],address)"
+  ],
+  "0x802fc11b": [
+   "deposit(bool,bytes,uint256[])"
+  ],
+  "0x8034ec64": [
+   "redeem(bytes,uint256[],uint256)"
+  ],
+  "0x804a7ff8": [
+   "cancel(address,bool,bool)"
+  ],
+  "0x804c1aa2": [
+   "claim(address,uint256[],uint256)"
+  ],
+  "0x805f0119": [
+   "wrap(address,bool,bytes)"
+  ],
+  "0x80673a5b": [
+   "harvest(uint256[],address,uint256[])"
+  ],
+  "0x80800946": [
+   "remove(uint256,bytes,bytes)"
+  ],
+  "0x808615ac": [
+   "stake(address,address)"
+  ],
+  "0x809d9382": [
+   "collect(bytes,bytes,uint256[])"
+  ],
+  "0x80a07d2b": [
+   "unstake(bytes,uint256)"
+  ],
+  "0x80a5a371": [
+   "burn(uint256,uint256,bytes)"
+  ],
+  "0x80ed71e4": [
+   "deposit(uint256,bool,address)"
+  ],
+  "0x8124fea6": [
+   "release(uint256,address)"
+  ],
+  "0x8134fdfc": [
+   "wrap(address,address,address)"
+  ],
+  "0x817b3348": [
+   "repay(uint256,uint256,uint256[])"
+  ],
+  "0x817e52a6": [
+   "cancel(address,address,uint256[])"
+  ],
+  "0x819b0613": [
+   "unlock(uint256[],address)"
+  ],
+  "0x81a65514": [
+   "harvest(uint256[],uint256[],uint256)"
+  ],
+  "0x81aec9d8": [
+   "close(bytes,uint256,uint256[])"
+  ],
+  "0x81c197ed": [
+   "withdraw(uint256[],uint256[])"
+  ],
+  "0x81d32baf": [
+   "redeem(bytes,address,address)"
+  ],
+  "0x81d86396": [
+   "mint(uint256[],bytes,uint256[])"
+  ],
+  "0x81dc9df9": [
+   "leave(address,uint256,bytes)"
+  ],
+  "0x81fc94cd": [
+   "redeem(bool,bool,uint256)"
+  ],
+  "0x82033cdc": [
+   "unstake(uint256,uint256[],bytes)"
+  ],
+  "0x8217c986": [
+   "harvest(uint256,bool,bytes)"
+  ],
+  "0x822f153f": [
+   "withdraw(uint256[],uint256,uint256[])"
+  ],
+  "0x8238ad0d": [
+   "redeem(bytes,bytes,uint256)"
+  ],
+  "0x824c1db5": [
+   "cancel(address,address)"
+  ],
+  "0x824d621b": [
+   "wrap(bool,bool,uint256)"
+  ],
+  "0x828e6ec4": [
+   "remove(bool,uint256[],uint256)"
+  ],
+  "0x828ec576": [
+   "unstake(uint256,uint256,uint256[])"
+  ],
+  "0x8293744b": [
+   "withdraw(address,uint256[])"
+  ],
+  "0x82942b1c": [
+   "unlock(bytes,bytes,bytes)"
+  ],
+  "0x82954449": [
+   "deposit(bool,address,bool)"
+  ],
+  "0x829745b1": [
+   "collect(bool,bytes,address)"
+  ],
+  "0x82b98a9e": [
+   "remove(bytes,bool,bool)"
+  ],
+  "0x82bab06d": [
+   "redeem(bool,bool)"
+  ],
+  "0x82f762fc": [
+   "unwrap(uint256,address,bool)"
+  ],
+  "0x82ff10fa": [
+   "unlock(uint256[],address,uint256)"
+  ],
+  "0x8301f393": [
+   "cancel(uint256,bytes,uint256[])"
+  ],
+  "0x83248f27": [
+   "close(address,uint256[],bool)"
+  ],
+  "0x8340f549": [
+   "deposit(address,address,uint256)"
+  ],
+  "0x836a1040": [
+   "mint(uint256,address,uint256)"
+  ],
+  "0x836d8da1": [
+   "wrap(uint256[],bytes,bytes)"
+  ],
+  "0x8373702e": [
+   "exit(bool,address,bytes)"
+  ],
+  "0x8381e182": [
+   "unstake(uint256,address)"
+  ],
+  "0x839d23c7": [
+   "stake(uint256[],uint256[],uint256)"
+  ],
+  "0x83aec4ed": [
+   "stake(uint256[],uint256[],uint256[])"
+  ],
+  "0x83cec92d": [
+   "repay(uint256[],uint256[],address)"
+  ],
+  "0x83df6747": [
+   "deposit(uint256,address,bool)"
+  ],
+  "0x84114ad4": [
+   "collect(uint256,uint256,bytes)"
+  ],
+  "0x841dc0b7": [
+   "unstake(bool,bool,bool)"
+  ],
+  "0x8423071e": [
+   "unstake(address,address,address)"
+  ],
+  "0x8429520e": [
+   "release(address,bytes,uint256)"
+  ],
+  "0x842a9d60": [
+   "unlock(bool,uint256[],bytes)"
+  ],
+  "0x8430e1b0": [
+   "release(uint256,bytes,uint256[])"
+  ],
+  "0x845023b2": [
+   "remove(uint256,bytes,uint256[])"
+  ],
+  "0x846b1ef7": [
+   "exit(address,bytes,uint256[])"
+  ],
+  "0x8477fe98": [
+   "unwrap(bool,uint256[])"
+  ],
+  "0x84a21409": [
+   "remove(uint256[],uint256,bool)"
+  ],
+  "0x84a332a8": [
+   "leave(bytes,bytes,uint256)"
+  ],
+  "0x84b1e259": [
+   "release(bool,uint256,uint256[])"
+  ],
+  "0x84b1f2e4": [
+   "redeem(uint256,uint256[],uint256[])"
+  ],
+  "0x84bc070a": [
+   "unstake(bytes,bool)"
+  ],
+  "0x84d70645": [
+   "unwrap(address,bool,uint256)"
+  ],
+  "0x8510c6de": [
+   "exit(bytes,address,uint256)"
+  ],
+  "0x8577c99a": [
+   "wrap(address,bool,address)"
+  ],
+  "0x857b767b": [
+   "stake(uint256[],uint256)"
+  ],
+  "0x858642d3": [
+   "leave(bytes,bool,bytes)"
+  ],
+  "0x85930c5c": [
+   "collect(bool,bytes)"
+  ],
+  "0x85a74921": [
+   "withdraw(address,uint256[],address)"
+  ],
+  "0x85aee17e": [
+   "cancel(bool,uint256[],address)"
+  ],
+  "0x85f45ff7": [
+   "repay(bool,address,bytes)"
+  ],
+  "0x860eccdd": [
+   "unwrap(uint256,uint256,uint256)"
+  ],
+  "0x861a4387": [
+   "unwrap(uint256,uint256[],address)"
+  ],
+  "0x86387e29": [
+   "unwrap(uint256[],uint256,uint256)"
+  ],
+  "0x8674b867": [
+   "leave(uint256,uint256,address)"
+  ],
+  "0x86a5191e": [
+   "repay(address,uint256,bytes)"
+  ],
+  "0x86ae9bd4": [
+   "withdraw(bool,uint256[],uint256[])"
+  ],
+  "0x86c3faaa": [
+   "wrap(bool,bytes,bytes)"
+  ],
+  "0x86cddbef": [
+   "repay(bytes,bool,uint256)"
+  ],
+  "0x86d1a69f": [
+   "release()"
+  ],
+  "0x86d98873": [
+   "unlock(uint256[],bool,uint256[])"
+  ],
+  "0x86eec4a1": [
+   "stake(bytes,bytes)"
+  ],
+  "0x8732106a": [
+   "deposit(uint256[],uint256,uint256[])"
+  ],
+  "0x8744cac0": [
+   "withdraw(uint256[],bool)"
+  ],
+  "0x8748023e": [
+   "wrap(uint256,bytes,uint256[])"
+  ],
+  "0x875b4f63": [
+   "claim(uint256[],address,bytes)"
+  ],
+  "0x876b54b8": [
+   "close(bytes,uint256,bool)"
+  ],
+  "0x876f2559": [
+   "close(bool,uint256)"
+  ],
+  "0x8776762c": [
+   "cancel(bytes,bytes)"
+  ],
+  "0x879a18dc": [
+   "withdraw(bytes,uint256[],bool)"
+  ],
+  "0x87a4459b": [
+   "harvest(uint256,address,address)"
+  ],
+  "0x87e491ce": [
+   "repay(uint256,uint256,bytes)"
+  ],
+  "0x87fb1f34": [
+   "collect(bytes,uint256[],bool)"
+  ],
+  "0x8808f6cb": [
+   "claim(bool,bytes,bytes)"
+  ],
+  "0x881e093e": [
+   "deposit(uint256,uint256[],uint256)"
+  ],
+  "0x8827ff2b": [
+   "burn(bytes,uint256,uint256)"
+  ],
+  "0x882da189": [
+   "remove(uint256[],address,uint256[])"
+  ],
+  "0x886f325b": [
+   "burn(bytes,uint256[],bytes)"
+  ],
+  "0x88718568": [
+   "stake(bytes,bool,uint256)"
+  ],
+  "0x8890e6a5": [
+   "leave(bytes,uint256,bytes)"
+  ],
+  "0x889e5256": [
+   "close(bool,bytes,address)"
+  ],
+  "0x88a4e5c4": [
+   "cancel(bytes,bytes,bool)"
+  ],
+  "0x88ac893f": [
+   "claim(uint256,address,bool)"
+  ],
+  "0x88ad6be1": [
+   "leave(uint256[],bytes,bool)"
+  ],
+  "0x88be0cb3": [
+   "withdraw(address,bool,bytes)"
+  ],
+  "0x88bff5c9": [
+   "redeem(bytes,bytes,address)"
+  ],
+  "0x88c0232b": [
+   "redeem(uint256[],bool)"
+  ],
+  "0x88da90d0": [
+   "burn(address,address,bool)"
+  ],
+  "0x88f19379": [
+   "deposit(bool,bytes,bool)"
+  ],
+  "0x88fc4074": [
+   "burn(bytes,bool,uint256[])"
+  ],
+  "0x8913543a": [
+   "unlock(uint256,address,uint256[])"
+  ],
+  "0x89254d8c": [
+   "burn(bytes,uint256,bytes)"
+  ],
+  "0x892fdc24": [
+   "repay(uint256[],bytes,uint256[])"
+  ],
+  "0x89330868": [
+   "remove(uint256,uint256[],bool)"
+  ],
+  "0x893bd7c8": [
+   "withdraw(address,address,uint256[])"
+  ],
+  "0x89439b1c": [
+   "collect(uint256,bytes)"
+  ],
+  "0x895a7485": [
+   "repay(uint256,uint256,uint256)"
+  ],
+  "0x895f9dd0": [
+   "harvest(bool,uint256[],bool)"
+  ],
+  "0x89670c0a": [
+   "repay(bool,uint256,address)"
+  ],
+  "0x8988f079": [
+   "stake(bool,uint256[],uint256)"
+  ],
+  "0x89afcb44": [
+   "burn(address)"
+  ],
+  "0x89b58c9f": [
+   "release(uint256,bytes,bool)"
+  ],
+  "0x89bba45e": [
+   "wrap(bool,uint256[],bytes)"
+  ],
+  "0x89de3c67": [
+   "release(bool,uint256,bool)"
+  ],
+  "0x89eee90b": [
+   "harvest(uint256,uint256,bool)"
+  ],
+  "0x89f8b8ba": [
+   "withdraw(bool,bool,bytes)"
+  ],
+  "0x89fb897e": [
+   "burn(bytes,uint256[],uint256)"
+  ],
+  "0x89ffac13": [
+   "withdraw(bool,uint256[],uint256)"
+  ],
+  "0x8a05065d": [
+   "unwrap(bool,address,uint256[])"
+  ],
+  "0x8a06dcfe": [
+   "claim(bool,bytes,uint256)"
+  ],
+  "0x8a241332": [
+   "deposit(uint256[],uint256,uint256)"
+  ],
+  "0x8a2ad708": [
+   "deposit(address,bool,uint256[])"
+  ],
+  "0x8a719e9f": [
+   "repay(uint256[],bool,bytes)"
+  ],
+  "0x8a7a47bc": [
+   "wrap(bool,bool)"
+  ],
+  "0x8a9c02f4": [
+   "deposit(bool,uint256,uint256)"
+  ],
+  "0x8a9f1783": [
+   "mint(bytes,bytes,address)"
+  ],
+  "0x8aaada8e": [
+   "claim(uint256,uint256[],bytes)"
+  ],
+  "0x8aaef98c": [
+   "claim(address,bytes,bytes)"
+  ],
+  "0x8ac971be": [
+   "repay(bytes,uint256)"
+  ],
+  "0x8ad07290": [
+   "stake(bool,address,bool)"
+  ],
+  "0x8af38b6a": [
+   "repay(bool,uint256,uint256)"
+  ],
+  "0x8af535bc": [
+   "claim(address,bytes,address)"
+  ],
+  "0x8b0ba4e5": [
+   "cancel(bool,uint256[],bytes)"
+  ],
+  "0x8b162dc1": [
+   "mint(address,uint256[],uint256)"
+  ],
+  "0x8b1e20c7": [
+   "deposit(address,uint256[],bool)"
+  ],
+  "0x8b1fd8f8": [
+   "redeem(uint256[],bool,uint256)"
+  ],
+  "0x8b2f2fee": [
+   "leave(uint256[],bytes)"
+  ],
+  "0x8b429ae8": [
+   "redeem(address,address,bool)"
+  ],
+  "0x8b4c19c8": [
+   "close(uint256[],address,address)"
+  ],
+  "0x8b93c745": [
+   "claim(bytes,uint256[],bytes)"
+  ],
+  "0x8ba6cd03": [
+   "wrap(address,bytes)"
+  ],
+  "0x8bb2513b": [
+   "mint(uint256[],bytes)"
+  ],
+  "0x8bc39207": [
+   "unlock(address,uint256,address)"
+  ],
+  "0x8bd8d0a9": [
+   "claim(address,bytes,uint256)"
+  ],
+  "0x8bdd3166": [
+   "unwrap(bytes,uint256[],bool)"
+  ],
+  "0x8bdf65aa": [
+   "cancel(uint256,bool,bytes)"
+  ],
+  "0x8bfb07c9": [
+   "release(address,address,uint256)"
+  ],
+  "0x8c065e7f": [
+   "release(bool,bool,bytes)"
+  ],
+  "0x8c0c4d17": [
+   "withdraw(bytes,bool)"
+  ],
+  "0x8c2e6d1b": [
+   "exit(bytes,bytes,uint256)"
+  ],
+  "0x8c336a75": [
+   "collect(bytes,uint256,uint256)"
+  ],
+  "0x8c4128a5": [
+   "release(uint256,uint256,address)"
+  ],
+  "0x8c4ab40c": [
+   "cancel(address,uint256,address)"
+  ],
+  "0x8c555e85": [
+   "harvest(uint256,bool,bool)"
+  ],
+  "0x8c574b48": [
+   "claim(uint256[],address)"
+  ],
+  "0x8c6ab013": [
+   "collect(uint256,address,bool)"
+  ],
+  "0x8c6b0143": [
+   "mint(bool,address,uint256[])"
+  ],
+  "0x8c86e51e": [
+   "stake(uint256[],bytes,address)"
+  ],
+  "0x8c98a61b": [
+   "close(bool,bool,bool)"
+  ],
+  "0x8c99319f": [
+   "burn(uint256,bytes,address)"
+  ],
+  "0x8cbc02f1": [
+   "redeem(bytes,bytes,uint256[])"
+  ],
+  "0x8cc7104f": [
+   "unwrap(address,address,uint256)"
+  ],
+  "0x8ccf1ea5": [
+   "deposit(uint256[],bytes,uint256[])"
+  ],
+  "0x8cd2e0c7": [
+   "repay(address,uint256,uint256)"
+  ],
+  "0x8cd6a2ad": [
+   "burn(uint256,address,bool)"
+  ],
+  "0x8cf53076": [
+   "close(bool,uint256,bytes)"
+  ],
+  "0x8d1d64e8": [
+   "leave(bytes,bytes)"
+  ],
+  "0x8d3c100a": [
+   "collect(uint256,address)"
+  ],
+  "0x8d51d3f1": [
+   "repay(bytes,bytes,bytes)"
+  ],
+  "0x8d59151f": [
+   "unlock(bytes,bytes)"
+  ],
+  "0x8d70e57d": [
+   "unwrap(bytes,uint256[])"
+  ],
+  "0x8db77731": [
+   "withdraw(address,uint256[],uint256)"
+  ],
+  "0x8db86dee": [
+   "collect(uint256,address,address)"
+  ],
+  "0x8dbdbe6d": [
+   "deposit(uint256,uint256,address)"
+  ],
+  "0x8dca9e37": [
+   "close(uint256,uint256[],bytes)"
+  ],
+  "0x8de37e35": [
+   "wrap(uint256[],bytes,uint256)"
+  ],
+  "0x8dfaa0a4": [
+   "unlock(bool,uint256,uint256[])"
+  ],
+  "0x8e10f929": [
+   "cancel(address,bytes,bool)"
+  ],
+  "0x8e27a771": [
+   "mint(bytes,bytes,uint256)"
+  ],
+  "0x8e6a098b": [
+   "unwrap(uint256[],uint256[],bool)"
+  ],
+  "0x8e6c4598": [
+   "release(bool,uint256[],uint256)"
+  ],
+  "0x8e72341b": [
+   "exit(uint256[],bool,uint256)"
+  ],
+  "0x8e7862e8": [
+   "unlock(uint256[],uint256)"
+  ],
+  "0x8e84d1d6": [
+   "cancel(bytes,uint256,uint256)"
+  ],
+  "0x8e941fae": [
+   "burn(uint256,bool,uint256[])"
+  ],
+  "0x8eb4bb3d": [
+   "burn(uint256[],bytes)"
+  ],
+  "0x8ec750bb": [
+   "leave(address,address)"
+  ],
+  "0x8ecbbb11": [
+   "release(uint256[],address,uint256[])"
+  ],
+  "0x8f0b3d41": [
+   "unlock(uint256[],uint256,bytes)"
+  ],
+  "0x8f0bc152": [
+   "claim(address,uint256,bytes)"
+  ],
+  "0x8f11d3ee": [
+   "wrap(bytes,uint256,bytes)"
+  ],
+  "0x8f17dad4": [
+   "unlock(bool,bytes,bool)"
+  ],
+  "0x8f1d7b98": [
+   "wrap(address,bool,uint256[])"
+  ],
+  "0x8f31b6dc": [
+   "deposit(uint256[],address,uint256)"
+  ],
+  "0x8f4144f9": [
+   "exit(bool,uint256,address)"
+  ],
+  "0x8f549206": [
+   "remove(address,uint256,bool)"
+  ],
+  "0x8f68cdab": [
+   "cancel(uint256[],address,bool)"
+  ],
+  "0x8f6db0d1": [
+   "unwrap(bool,address,uint256)"
+  ],
+  "0x8f8c8c31": [
+   "claim(uint256[],bool,bool)"
+  ],
+  "0x8f94bf40": [
+   "stake(uint256[],address,bool)"
+  ],
+  "0x8f9c81f4": [
+   "cancel(bool,uint256,bytes)"
+  ],
+  "0x8fbe4a3a": [
+   "cancel(uint256,address,bool)"
+  ],
+  "0x8fca761f": [
+   "redeem(uint256,uint256[],uint256)"
+  ],
+  "0x8fd755ae": [
+   "leave(bytes,uint256[],uint256)"
+  ],
+  "0x8ff45d93": [
+   "mint(uint256[],uint256[],bytes)"
+  ],
+  "0x90052850": [
+   "unwrap(address,bytes,uint256)"
+  ],
+  "0x901ce56e": [
+   "redeem(address,bool,uint256)"
+  ],
+  "0x901fba8e": [
+   "cancel(uint256[],uint256,uint256)"
+  ],
+  "0x90209b7d": [
+   "deposit(address,bool,bool)"
+  ],
+  "0x90228b7e": [
+   "collect(uint256[],bytes,bytes)"
+  ],
+  "0x903ddaa9": [
+   "burn(bool,uint256,uint256)"
+  ],
+  "0x909caacd": [
+   "close(uint256[],uint256[],uint256[])"
+  ],
+  "0x90c073c1": [
+   "claim(uint256[],bytes,uint256)"
+  ],
+  "0x90f242a9": [
+   "unstake(uint256[],uint256[],uint256[])"
+  ],
+  "0x91324a6b": [
+   "close(uint256[],bool)"
+  ],
+  "0x9132f991": [
+   "remove(uint256[],uint256,uint256[])"
+  ],
+  "0x91616282": [
+   "cancel(bytes,address)"
+  ],
+  "0x916add63": [
+   "mint(bytes,bytes,bool)"
+  ],
+  "0x918c644e": [
+   "stake(bool,bool,uint256)"
+  ],
+  "0x91a161e8": [
+   "wrap(bytes,bytes,bytes)"
+  ],
+  "0x91d17c18": [
+   "unwrap(bytes,bool,bool)"
+  ],
+  "0x91d1cd37": [
+   "stake(bytes,uint256,uint256)"
+  ],
+  "0x91d9c8fd": [
+   "redeem(uint256[],uint256[],uint256)"
+  ],
+  "0x920d2d3d": [
+   "collect(uint256,uint256,address)"
+  ],
+  "0x9219d61c": [
+   "withdraw(bytes,uint256[],uint256)"
+  ],
+  "0x9237e4a6": [
+   "wrap(uint256[],address,address)"
+  ],
+  "0x9246788d": [
+   "burn(bytes,bytes,address)"
+  ],
+  "0x92630643": [
+   "withdraw(bool,bytes)"
+  ],
+  "0x926374fd": [
+   "wrap(uint256[],uint256[],bytes)"
+  ],
+  "0x926e31d6": [
+   "unstake(address,uint256,address)"
+  ],
+  "0x92788e2f": [
+   "harvest(bytes,address,uint256)"
+  ],
+  "0x92843fdb": [
+   "claim(bool,bool,bool)"
+  ],
+  "0x9290411e": [
+   "claim(bool,bytes,bool)"
+  ],
+  "0x92904bea": [
+   "close(address,bytes,uint256)"
+  ],
+  "0x92930b45": [
+   "withdraw(uint256,bool,bool)"
+  ],
+  "0x929c480c": [
+   "exit(uint256[],uint256)"
+  ],
+  "0x92c59bf6": [
+   "deposit(uint256[],uint256[],bytes)"
+  ],
+  "0x92e3da13": [
+   "leave(uint256,uint256[],address)"
+  ],
+  "0x92fd2daf": [
+   "claim(address,bool)"
+  ],
+  "0x93072781": [
+   "leave(address,bool,uint256[])"
+  ],
+  "0x93190521": [
+   "repay(address,bytes,bytes)"
+  ],
+  "0x9339b0a0": [
+   "withdraw(address,uint256[],uint256[])"
+  ],
+  "0x933cbc0d": [
+   "close(address,uint256,bool)"
+  ],
+  "0x93405540": [
+   "deposit(bytes,uint256)"
+  ],
+  "0x93617212": [
+   "wrap(bool,uint256[])"
+  ],
+  "0x93666e27": [
+   "wrap(address,uint256,bytes)"
+  ],
+  "0x9374ffc9": [
+   "burn(bool,uint256,address)"
+  ],
+  "0x93bea5dd": [
+   "collect(bytes,uint256[],bytes)"
+  ],
+  "0x93c4bff1": [
+   "leave(bool,bytes,uint256)"
+  ],
+  "0x93cd14a0": [
+   "mint(uint256[],uint256[],address)"
+  ],
+  "0x93d4f2c9": [
+   "unstake(uint256,uint256,address)"
+  ],
+  "0x93f9c1d4": [
+   "close(bytes,uint256,address)"
+  ],
+  "0x93faf134": [
+   "exit(uint256[],address,bool)"
+  ],
+  "0x94030e95": [
+   "cancel(bytes,uint256[],bool)"
+  ],
+  "0x940a23a7": [
+   "unstake(bytes,address)"
+  ],
+  "0x940d6db0": [
+   "exit(bytes,uint256,address)"
+  ],
+  "0x94163637": [
+   "stake(address,uint256[],bytes)"
+  ],
+  "0x946595e1": [
+   "redeem(uint256[],uint256,bytes)"
+  ],
+  "0x9489640d": [
+   "deposit(bool,bool,bool)"
+  ],
+  "0x9497f918": [
+   "unwrap(address,bytes,bytes)"
+  ],
+  "0x94a2a05d": [
+   "unstake(bytes,address,address)"
+  ],
+  "0x94b7fde7": [
+   "collect(bytes,address,bytes)"
+  ],
+  "0x94bf804d": [
+   "mint(uint256,address)"
+  ],
+  "0x94c2696f": [
+   "repay(uint256,uint256[],uint256[])"
+  ],
+  "0x94c53a83": [
+   "unlock(bytes,bool)"
+  ],
+  "0x94d008ef": [
+   "mint(address,uint256,bytes)"
+  ],
+  "0x94e08019": [
+   "stake(bytes,bool,bytes)"
+  ],
+  "0x954a56f3": [
+   "wrap(uint256,bytes,bool)"
+  ],
+  "0x9557f71f": [
+   "withdraw(address,bytes,address)"
+  ],
+  "0x95699250": [
+   "remove(uint256,uint256,bytes)"
+  ],
+  "0x9580b21e": [
+   "unlock(address,bytes,uint256[])"
+  ],
+  "0x9582b780": [
+   "leave(bool,uint256)"
+  ],
+  "0x95a2251f": [
+   "redeem(address)"
+  ],
+  "0x95c1d919": [
+   "mint(uint256,uint256[],bytes)"
+  ],
+  "0x95eb6510": [
+   "stake(address,bool,bool)"
+  ],
+  "0x95ed772a": [
+   "exit(uint256[],bytes,uint256[])"
+  ],
+  "0x95fb5f83": [
+   "deposit(uint256,bool,bool)"
+  ],
+  "0x96109219": [
+   "withdraw(uint256,uint256[],uint256)"
+  ],
+  "0x961a772d": [
+   "harvest(bool,address,uint256)"
+  ],
+  "0x96206832": [
+   "unwrap(address,bool,address)"
+  ],
+  "0x96317646": [
+   "deposit(uint256,bytes,address)"
+  ],
+  "0x965e570a": [
+   "deposit(bytes,bool)"
+  ],
+  "0x966e70a2": [
+   "leave(uint256,uint256[])"
+  ],
+  "0x967803fb": [
+   "deposit(bytes,address)"
+  ],
+  "0x96a8bdf2": [
+   "unstake(bool,uint256,bytes)"
+  ],
+  "0x96adc399": [
+   "wrap(bool,address,address)"
+  ],
+  "0x96ca3704": [
+   "release(bool,uint256[],uint256[])"
+  ],
+  "0x96ce3f0b": [
+   "stake(uint256,bytes,bytes)"
+  ],
+  "0x96cf6c6c": [
+   "mint(uint256,bytes,bool)"
+  ],
+  "0x96d25e7c": [
+   "burn(uint256[],uint256[],bool)"
+  ],
+  "0x96d4d023": [
+   "remove(bytes,bytes,bool)"
+  ],
+  "0x96d9b740": [
+   "redeem(uint256[],uint256)"
+  ],
+  "0x96dca765": [
+   "exit(bool,uint256,bytes)"
+  ],
+  "0x96e8ea7a": [
+   "unstake(uint256,bytes,uint256)"
+  ],
+  "0x96fb5620": [
+   "collect(bytes,uint256)"
+  ],
+  "0x96fe453b": [
+   "remove(uint256[],bool,bytes)"
+  ],
+  "0x9727756a": [
+   "mint(address,uint256[],uint256[])"
+  ],
+  "0x972e6fe1": [
+   "repay(bytes,uint256,uint256[])"
+  ],
+  "0x9734b3af": [
+   "wrap(bool,uint256,uint256)"
+  ],
+  "0x973676da": [
+   "leave(bytes,bool,address)"
+  ],
+  "0x974e571e": [
+   "burn(uint256[],uint256[],uint256[])"
+  ],
+  "0x9787a43d": [
+   "cancel(bytes,bool)"
+  ],
+  "0x9794a90d": [
+   "remove(address,uint256,bytes)"
+  ],
+  "0x9794c240": [
+   "release(bytes,uint256[],uint256)"
+  ],
+  "0x97aa2adc": [
+   "release(address,address,uint256[])"
+  ],
+  "0x97bccc3f": [
+   "remove(bool,bytes,address)"
+  ],
+  "0x97d17e1c": [
+   "harvest(bytes,uint256,bool)"
+  ],
+  "0x97db1cf5": [
+   "leave(bytes,uint256[],bytes)"
+  ],
+  "0x981d8489": [
+   "exit(bytes,uint256[],uint256)"
+  ],
+  "0x983d95ce": [
+   "withdraw(uint256[])"
+  ],
+  "0x984c0450": [
+   "withdraw(bool,uint256)"
+  ],
+  "0x98590ef9": [
+   "cancel(address,uint256)"
+  ],
+  "0x987b4edd": [
+   "mint(bytes,bool)"
+  ],
+  "0x987bf81b": [
+   "cancel(uint256[],uint256,address)"
+  ],
+  "0x989565dc": [
+   "burn(uint256[],bool,bytes)"
+  ],
+  "0x98a5f996": [
+   "redeem(bytes,address,bool)"
+  ],
+  "0x98b1e06a": [
+   "deposit(bytes)"
+  ],
+  "0x98bbb4e3": [
+   "exit(uint256,bytes,address)"
+  ],
+  "0x98d3f90b": [
+   "cancel(bytes,bool,bytes)"
+  ],
+  "0x98eabb19": [
+   "close(uint256[],uint256,uint256)"
+  ],
+  "0x98ee2abb": [
+   "leave(bool,address,uint256[])"
+  ],
+  "0x99388b6f": [
+   "close(bool,bool,bytes)"
+  ],
+  "0x9945e3d3": [
+   "redeem(bytes)"
+  ],
+  "0x994768a6": [
+   "collect(uint256[],bool,uint256[])"
+  ],
+  "0x995846bd": [
+   "stake(address,uint256,bool)"
+  ],
+  "0x995f0285": [
+   "repay(bytes,uint256[],bytes)"
+  ],
+  "0x9969a9bd": [
+   "leave(uint256[],uint256)"
+  ],
+  "0x996cba68": [
+   "claim(address,address,uint256)"
+  ],
+  "0x99807b9b": [
+   "withdraw(uint256,bytes,bytes)"
+  ],
+  "0x99a36232": [
+   "redeem(uint256,bool,address)"
+  ],
+  "0x99af782b": [
+   "release(bool,bool)"
+  ],
+  "0x99b44674": [
+   "stake(bool,bytes,address)"
+  ],
+  "0x99b44ba0": [
+   "claim(bytes,address,uint256)"
+  ],
+  "0x99b90563": [
+   "deposit(address,bool,uint256)"
+  ],
+  "0x99b9fd41": [
+   "unlock(bool,address)"
+  ],
+  "0x99c4d8cc": [
+   "wrap(address,bytes,address)"
+  ],
+  "0x99f8d093": [
+   "burn(address,bytes,bytes)"
+  ],
+  "0x9a316bab": [
+   "mint(bool,uint256[])"
+  ],
+  "0x9a408321": [
+   "deposit(uint256,bool)"
+  ],
+  "0x9a60cdf7": [
+   "wrap(bool,bytes,address)"
+  ],
+  "0x9a7f990e": [
+   "remove(uint256[],address)"
+  ],
+  "0x9a953a7c": [
+   "burn(bool,bytes,bool)"
+  ],
+  "0x9aa7693d": [
+   "claim(address,bool,uint256)"
+  ],
+  "0x9aaeec94": [
+   "wrap(bool,uint256,bool)"
+  ],
+  "0x9abfafe2": [
+   "close(uint256,uint256,uint256[])"
+  ],
+  "0x9abfd1e5": [
+   "leave(bool,bool,bytes)"
+  ],
+  "0x9ac10292": [
+   "unwrap(bytes,bytes)"
+  ],
+  "0x9ad0126e": [
+   "wrap(address,address,uint256[])"
+  ],
+  "0x9af3b3ad": [
+   "cancel(bool,address,uint256)"
+  ],
+  "0x9af60795": [
+   "leave(bool,bytes)"
+  ],
+  "0x9b194cd3": [
+   "collect(bool)"
+  ],
+  "0x9b1a80bb": [
+   "stake(uint256[],address,uint256)"
+  ],
+  "0x9b1ba214": [
+   "mint(bool,uint256,bytes)"
+  ],
+  "0x9b4ee064": [
+   "leave(uint256,bool)"
+  ],
+  "0x9b6e4b3a": [
+   "remove(address,bytes,uint256[])"
+  ],
+  "0x9b754d6f": [
+   "repay(bool,bool,bytes)"
+  ],
+  "0x9b843292": [
+   "unwrap(address,uint256[],uint256)"
+  ],
+  "0x9b9d797f": [
+   "harvest(address,uint256[],uint256)"
+  ],
+  "0x9b9e7388": [
+   "burn(uint256[],bool,uint256)"
+  ],
+  "0x9bb59c2a": [
+   "close(uint256[],address,uint256[])"
+  ],
+  "0x9bccdf2b": [
+   "unwrap(bytes,uint256,uint256[])"
+  ],
+  "0x9c1b21c2": [
+   "stake(bytes,address,bytes)"
+  ],
+  "0x9c337c0e": [
+   "repay(uint256[],uint256[],bool)"
+  ],
+  "0x9c5cf775": [
+   "collect(bool,bool,uint256[])"
+  ],
+  "0x9c6b9f8a": [
+   "claim(uint256,bytes,address)"
+  ],
+  "0x9c7f5153": [
+   "withdraw(uint256[],address,uint256[])"
+  ],
+  "0x9c81a493": [
+   "release(uint256[],bytes,uint256[])"
+  ],
+  "0x9c9f90bc": [
+   "cancel(bool,bool,bool)"
+  ],
+  "0x9ca93b20": [
+   "cancel(bool,uint256,uint256)"
+  ],
+  "0x9cb25707": [
+   "collect(uint256[],address,uint256)"
+  ],
+  "0x9d0b9c40": [
+   "close(address,uint256,address)"
+  ],
+  "0x9d524753": [
+   "wrap(uint256,bool,address)"
+  ],
+  "0x9d91194d": [
+   "leave(uint256,address,bytes)"
+  ],
+  "0x9da7f26c": [
+   "deposit(uint256,bytes,uint256)"
+  ],
+  "0x9dc29fac": [
+   "burn(address,uint256)"
+  ],
+  "0x9dcd4461": [
+   "cancel(bool,bool,address)"
+  ],
+  "0x9debdddc": [
+   "stake(uint256,uint256,uint256[])"
+  ],
+  "0x9df8872c": [
+   "unwrap(bytes,bytes,bytes)"
+  ],
+  "0x9dfa4e94": [
+   "remove(uint256,address)"
+  ],
+  "0x9e1c043b": [
+   "leave(address,bytes,bool)"
+  ],
+  "0x9e1c4c10": [
+   "mint(bool,bool,uint256)"
+  ],
+  "0x9e2c8a5b": [
+   "unstake(uint256,uint256)"
+  ],
+  "0x9e6d77d0": [
+   "close(address,bool,address)"
+  ],
+  "0x9e7db5af": [
+   "cancel(bool,address,bytes)"
+  ],
+  "0x9e82124e": [
+   "collect(uint256,address,uint256)"
+  ],
+  "0x9e96a260": [
+   "claim(address,uint256,address)"
+  ],
+  "0x9eb56afc": [
+   "mint(bytes,uint256,bool)"
+  ],
+  "0x9ebea88c": [
+   "unstake(uint256,bool)"
+  ],
+  "0x9eea5f66": [
+   "burn(uint256,address,uint256)"
+  ],
+  "0x9eea79e2": [
+   "deposit(uint256[],address,bool)"
+  ],
+  "0x9f0afc73": [
+   "release(uint256[],uint256,uint256)"
+  ],
+  "0x9f175024": [
+   "withdraw(bool,bool,bool)"
+  ],
+  "0x9f18c645": [
+   "wrap(bytes,bytes,uint256[])"
+  ],
+  "0x9f1acf44": [
+   "deposit(address,address,address)"
+  ],
+  "0x9f25c25e": [
+   "harvest(uint256,uint256,uint256[])"
+  ],
+  "0x9f454db9": [
+   "wrap(address,address)"
+  ],
+  "0x9f7c73e9": [
+   "repay(address)"
+  ],
+  "0x9f9a53eb": [
+   "burn(address,bool,uint256)"
+  ],
+  "0x9fac68cb": [
+   "burn(uint256,bool)"
+  ],
+  "0x9fcf5731": [
+   "leave(address,bytes,address)"
+  ],
+  "0x9fde1e7a": [
+   "unlock(bool,bool,uint256[])"
+  ],
+  "0x9fde1f04": [
+   "burn(uint256,uint256[],bytes)"
+  ],
+  "0x9fe18a7f": [
+   "collect(bool,bool,uint256)"
+  ],
+  "0xa00f0967": [
+   "remove(uint256[],address,bool)"
+  ],
+  "0xa011e350": [
+   "exit(uint256,uint256,bytes)"
+  ],
+  "0xa01fe6b4": [
+   "remove(uint256[],uint256,uint256)"
+  ],
+  "0xa0712d68": [
+   "mint(uint256)"
+  ],
+  "0xa089b3e3": [
+   "harvest(address,uint256[],address)"
+  ],
+  "0xa0a316c8": [
+   "remove(bytes,bytes,uint256)"
+  ],
+  "0xa0a77e1e": [
+   "claim(bool,uint256,address)"
+  ],
+  "0xa0cd23ab": [
+   "unlock(bytes,address,bytes)"
+  ],
+  "0xa1089ca0": [
+   "claim(bool,uint256,uint256)"
+  ],
+  "0xa12ef25e": [
+   "collect(address,address)"
+  ],
+  "0xa1322b76": [
+   "stake(uint256[],bool,uint256[])"
+  ],
+  "0xa16eac8f": [
+   "wrap(bytes,bool,uint256[])"
+  ],
+  "0xa1a6404f": [
+   "release(bytes,bytes,bytes)"
+  ],
+  "0xa1ca8607": [
+   "redeem(bool,uint256,bool)"
+  ],
+  "0xa1dbfdba": [
+   "close(bytes,uint256[],uint256[])"
+  ],
+  "0xa1e3897b": [
+   "deposit(address,address,uint256[])"
+  ],
+  "0xa23369f6": [
+   "release(bool,uint256,address)"
+  ],
+  "0xa291edb5": [
+   "unwrap(bytes,uint256,bool)"
+  ],
+  "0xa297e195": [
+   "harvest(bool,address,uint256[])"
+  ],
+  "0xa2a87acb": [
+   "leave(bytes,uint256[],uint256[])"
+  ],
+  "0xa2bc66be": [
+   "unstake(address,uint256,uint256)"
+  ],
+  "0xa2cca722": [
+   "collect(address,bool,uint256)"
+  ],
+  "0xa2f3d5e6": [
+   "redeem(uint256[],uint256[],bytes)"
+  ],
+  "0xa2ffda73": [
+   "repay(uint256,bytes,uint256)"
+  ],
+  "0xa314636d": [
+   "mint(address,uint256[],bool)"
+  ],
+  "0xa315efd4": [
+   "cancel(address,uint256[],bool)"
+  ],
+  "0xa331b264": [
+   "close(bytes,bytes,uint256)"
+  ],
+  "0xa3622bf0": [
+   "redeem(bytes,uint256)"
+  ],
+  "0xa374c987": [
+   "exit(address,bool,uint256)"
+  ],
+  "0xa3924a66": [
+   "unwrap(uint256[],bool,bool)"
+  ],
+  "0xa396f81d": [
+   "withdraw(uint256[],bytes,uint256[])"
+  ],
+  "0xa3a7b6f0": [
+   "release(uint256[],bytes,bool)"
+  ],
+  "0xa3c2719a": [
+   "wrap(address,uint256,uint256)"
+  ],
+  "0xa3cba09a": [
+   "mint(uint256,bytes,bytes)"
+  ],
+  "0xa3d3f63d": [
+   "claim(uint256,bool,uint256[])"
+  ],
+  "0xa3f7b64e": [
+   "cancel(bytes,address,uint256)"
+  ],
+  "0xa40bd3b0": [
+   "unstake(bool,bool,address)"
+  ],
+  "0xa40e9603": [
+   "leave(address,address,uint256)"
+  ],
+  "0xa41fe49f": [
+   "withdraw(uint256,uint256,uint256)"
+  ],
+  "0xa46394af": [
+   "remove(uint256,bool,uint256)"
+  ],
+  "0xa46dfb33": [
+   "mint(bytes,uint256,uint256[])"
+  ],
+  "0xa4777179": [
+   "exit(uint256[],bytes)"
+  ],
+  "0xa48e2a9c": [
+   "harvest(uint256[],uint256,uint256)"
+  ],
+  "0xa4963aeb": [
+   "burn(bool,address,address)"
+  ],
+  "0xa498290c": [
+   "harvest(uint256[],uint256,bytes)"
+  ],
+  "0xa4986a3e": [
+   "leave(uint256,uint256,uint256)"
+  ],
+  "0xa49a60ad": [
+   "close(bytes,address)"
+  ],
+  "0xa50f79ee": [
+   "release(bool,uint256,bytes)"
+  ],
+  "0xa51e1fe8": [
+   "stake(uint256[],address,bytes)"
+  ],
+  "0xa5389a78": [
+   "release(bytes,uint256,bool)"
+  ],
+  "0xa5578a0d": [
+   "harvest(bool,uint256,uint256)"
+  ],
+  "0xa578d89a": [
+   "wrap(bool,bytes,uint256)"
+  ],
+  "0xa5ac067e": [
+   "wrap(bool,bool,uint256[])"
+  ],
+  "0xa5b533de": [
+   "remove(bool,address,bytes)"
+  ],
+  "0xa5c900f9": [
+   "deposit(bool,uint256[],uint256[])"
+  ],
+  "0xa5ca2d71": [
+   "wrap(address,bytes,bytes)"
+  ],
+  "0xa5d0bb93": [
+   "burn(bytes,bytes)"
+  ],
+  "0xa5d7ebcf": [
+   "redeem(uint256[],address,bytes)"
+  ],
+  "0xa6018a72": [
+   "leave(uint256[],uint256[],bool)"
+  ],
+  "0xa60d997d": [
+   "cancel(uint256[],bytes,uint256[])"
+  ],
+  "0xa6148e59": [
+   "unwrap(address,address,uint256[])"
+  ],
+  "0xa61a3bcc": [
+   "release(address,address,bytes)"
+  ],
+  "0xa625403a": [
+   "exit(address,address)"
+  ],
+  "0xa638f2e2": [
+   "stake(uint256,uint256,uint256)"
+  ],
+  "0xa642d8b1": [
+   "remove(uint256[],address,uint256)"
+  ],
+  "0xa661006d": [
+   "leave(bool,uint256[])"
+  ],
+  "0xa667c318": [
+   "unlock(address,uint256[],address)"
+  ],
+  "0xa694fc3a": [
+   "stake(uint256)"
+  ],
+  "0xa69df4b5": [
+   "unlock()"
+  ],
+  "0xa6e40276": [
+   "unlock(bool,address,uint256[])"
+  ],
+  "0xa6fc20c7": [
+   "collect(uint256,uint256[],bool)"
+  ],
+  "0xa7022981": [
+   "repay(bytes,uint256[],bool)"
+  ],
+  "0xa71604e8": [
+   "deposit(address,uint256[])"
+  ],
+  "0xa733762f": [
+   "exit(uint256,bool,bool)"
+  ],
+  "0xa750cf7a": [
+   "stake(bytes,uint256[],uint256[])"
+  ],
+  "0xa76c3773": [
+   "stake(uint256[],address,uint256[])"
+  ],
+  "0xa76fef93": [
+   "harvest(uint256,address,uint256[])"
+  ],
+  "0xa7710c42": [
+   "stake(bool,address,uint256)"
+  ],
+  "0xa782a857": [
+   "harvest(address,address,bytes)"
+  ],
+  "0xa7a4b427": [
+   "unlock(uint256[],bool,uint256)"
+  ],
+  "0xa7bcdb16": [
+   "redeem(address,bool,bytes)"
+  ],
+  "0xa7d41f7f": [
+   "stake(bool,address,uint256[])"
+  ],
+  "0xa7d545db": [
+   "stake(uint256,address,address)"
+  ],
+  "0xa7f43779": [
+   "remove()"
+  ],
+  "0xa7f4bdce": [
+   "withdraw(uint256[],uint256,uint256)"
+  ],
+  "0xa810a54c": [
+   "withdraw(bool)"
+  ],
+  "0xa832a1a6": [
+   "collect(uint256[],uint256,bytes)"
+  ],
+  "0xa83f5fc3": [
+   "mint(bool,bytes,uint256)"
+  ],
+  "0xa84e873c": [
+   "withdraw(bytes,uint256,uint256[])"
+  ],
+  "0xa862679e": [
+   "unwrap(uint256,bool,uint256)"
+  ],
+  "0xa8971ef9": [
+   "exit(uint256[],uint256[])"
+  ],
+  "0xa89b7e46": [
+   "redeem(uint256,address,uint256[])"
+  ],
+  "0xa8c28da6": [
+   "deposit(bytes,bool,address)"
+  ],
+  "0xa8ea5cdb": [
+   "deposit(bytes,bool,uint256[])"
+  ],
+  "0xa8ea782b": [
+   "collect(bytes,bool,uint256[])"
+  ],
+  "0xa8f72c54": [
+   "unwrap(address,bytes,bool)"
+  ],
+  "0xa8fecde9": [
+   "mint(uint256,uint256[],uint256[])"
+  ],
+  "0xa9005187": [
+   "collect(uint256[],uint256,address)"
+  ],
+  "0xa911a473": [
+   "collect(uint256,bytes,uint256[])"
+  ],
+  "0xa9133f8d": [
+   "redeem(uint256[],uint256[],uint256[])"
+  ],
+  "0xa935fbf8": [
+   "harvest(bytes,bytes,bool)"
+  ],
+  "0xa938bb5b": [
+   "repay(address,bool,bytes)"
+  ],
+  "0xa93bd761": [
+   "unlock(address,uint256[],bool)"
+  ],
+  "0xa947c604": [
+   "release(uint256,address,bool)"
+  ],
+  "0xa9547100": [
+   "exit(uint256,bool,address)"
+  ],
+  "0xa95a47e8": [
+   "remove(bool,uint256,bytes)"
+  ],
+  "0xa97da669": [
+   "exit(bytes,bytes)"
+  ],
+  "0xa981848f": [
+   "cancel(address,uint256,uint256)"
+  ],
+  "0xa9844d8a": [
+   "harvest(uint256,bytes,uint256)"
+  ],
+  "0xa986a196": [
+   "redeem(address,bool,uint256[])"
+  ],
+  "0xa9af9ceb": [
+   "release(bytes,address,uint256)"
+  ],
+  "0xa9b5ffd9": [
+   "collect(bytes)"
+  ],
+  "0xa9c33ef1": [
+   "unlock(uint256[],bytes,bool)"
+  ],
+  "0xa9e3ddc9": [
+   "unstake(uint256,address,uint256[])"
+  ],
+  "0xa9ef6880": [
+   "withdraw(uint256,uint256,uint256[])"
+  ],
+  "0xaa0795f0": [
+   "deposit(uint256[],bytes)"
+  ],
+  "0xaa0863dc": [
+   "remove(address,bytes,bytes)"
+  ],
+  "0xaa0b7db7": [
+   "deposit(uint256,uint256,bytes)"
+  ],
+  "0xaa15da4a": [
+   "mint(uint256,address,uint256[])"
+  ],
+  "0xaa19e249": [
+   "leave(uint256,uint256[],uint256[])"
+  ],
+  "0xaa30d53a": [
+   "release(bytes,bytes)"
+  ],
+  "0xaa49bbdc": [
+   "withdraw(address,bool,uint256)"
+  ],
+  "0xaa72d6f8": [
+   "remove(uint256[],uint256[],address)"
+  ],
+  "0xaa84b81d": [
+   "collect(uint256,bool,uint256[])"
+  ],
+  "0xaac92670": [
+   "close(uint256,bool,uint256[])"
+  ],
+  "0xaad3ec96": [
+   "claim(address,uint256)"
+  ],
+  "0xaad4bab2": [
+   "repay(bool,uint256)"
+  ],
+  "0xaae0e4eb": [
+   "deposit(address,uint256[],bytes)"
+  ],
+  "0xaae1cc29": [
+   "withdraw(uint256[],bool,uint256[])"
+  ],
+  "0xaae3c063": [
+   "wrap(uint256,uint256,address)"
+  ],
+  "0xaae76644": [
+   "remove(bytes,address,bool)"
+  ],
+  "0xaafdefd7": [
+   "mint(address,bool,uint256)"
+  ],
+  "0xab1bdd49": [
+   "remove(address,bytes,uint256)"
+  ],
+  "0xab49b786": [
+   "redeem(bool)"
+  ],
+  "0xab52c003": [
+   "claim(bytes,uint256,uint256[])"
+  ],
+  "0xab7ab42a": [
+   "remove(address,bool,uint256[])"
+  ],
+  "0xab8b064b": [
+   "cancel(bool,uint256,bool)"
+  ],
+  "0xab8bcf43": [
+   "leave(uint256,uint256[],bytes)"
+  ],
+  "0xab97eb87": [
+   "repay(uint256,uint256[])"
+  ],
+  "0xabb36c89": [
+   "stake(uint256[],address,address)"
+  ],
+  "0xabd3f7cb": [
+   "leave(bool,uint256[],bytes)"
+  ],
+  "0xabe50f19": [
+   "stake(uint256,bool)"
+  ],
+  "0xabe7f1ab": [
+   "remove(address,uint256)"
+  ],
+  "0xabee0803": [
+   "unlock(address,uint256,bytes)"
+  ],
+  "0xabf06f59": [
+   "unlock(bool,bytes,address)"
+  ],
+  "0xabf28ebc": [
+   "claim(bool,uint256[],uint256)"
+  ],
+  "0xac1b1c14": [
+   "release(bool,bytes,uint256)"
+  ],
+  "0xac385dd1": [
+   "repay(bool,uint256[])"
+  ],
+  "0xac3d1439": [
+   "repay(bytes,bool,address)"
+  ],
+  "0xac44ff31": [
+   "claim(uint256,uint256,address)"
+  ],
+  "0xac5dc42a": [
+   "unlock(uint256[],uint256[],uint256[])"
+  ],
+  "0xaca86bfa": [
+   "leave(uint256[])"
+  ],
+  "0xacb70815": [
+   "repay(uint256,address)"
+  ],
+  "0xacc10f11": [
+   "collect(address,uint256,uint256)"
+  ],
+  "0xacd7aa9e": [
+   "harvest(uint256[],bytes,uint256)"
+  ],
+  "0xace044bc": [
+   "unwrap(bytes,uint256[],uint256)"
+  ],
+  "0xace2b24b": [
+   "deposit(bytes,bytes,uint256[])"
+  ],
+  "0xad1f9998": [
+   "deposit(bytes,uint256[])"
+  ],
+  "0xad20b1eb": [
+   "redeem(bytes,uint256,uint256[])"
+  ],
+  "0xad23149d": [
+   "harvest(address,bytes,address)"
+  ],
+  "0xad5842d5": [
+   "cancel(bool,bytes,uint256[])"
+  ],
+  "0xad6c3c9b": [
+   "stake(bytes,bool)"
+  ],
+  "0xad8894b1": [
+   "mint(uint256[],bytes,bytes)"
+  ],
+  "0xad894982": [
+   "exit(uint256,address,uint256)"
+  ],
+  "0xadb55657": [
+   "unlock(bool,bytes,uint256)"
+  ],
+  "0xadc9740c": [
+   "deposit(address,bool)"
+  ],
+  "0xadc9772e": [
+   "stake(address,uint256)"
+  ],
+  "0xadea2c8f": [
+   "redeem(uint256[],bool,uint256[])"
+  ],
+  "0xaded67ef": [
+   "claim(address,uint256[],address)"
+  ],
+  "0xae0481f2": [
+   "release(bytes,uint256)"
+  ],
+  "0xae0b8962": [
+   "deposit(bytes,uint256,bool)"
+  ],
+  "0xae1357bf": [
+   "cancel(uint256[],bytes)"
+  ],
+  "0xae1d7718": [
+   "leave(address,bool,uint256)"
+  ],
+  "0xae3a3066": [
+   "remove(uint256,uint256[],uint256[])"
+  ],
+  "0xae4169cb": [
+   "collect(uint256,bool,bytes)"
+  ],
+  "0xae446cfa": [
+   "unstake(uint256[],uint256[],address)"
+  ],
+  "0xae6adf97": [
+   "harvest(bool,bytes,uint256[])"
+  ],
+  "0xae7f8279": [
+   "exit(address,bytes,uint256)"
+  ],
+  "0xaeaa0644": [
+   "unstake(bytes,bool,uint256[])"
+  ],
+  "0xaeecada6": [
+   "burn(bytes,bool,uint256)"
+  ],
+  "0xaef378d6": [
+   "claim(bytes,bytes,uint256)"
+  ],
+  "0xaefc0ae8": [
+   "unlock(uint256[],bytes,bytes)"
+  ],
+  "0xaf10e848": [
+   "withdraw(uint256,bool,bytes)"
+  ],
+  "0xaf20d7ea": [
+   "unstake(uint256[],address,bytes)"
+  ],
+  "0xaf2c8469": [
+   "collect(bool,uint256)"
+  ],
+  "0xaf411b1d": [
+   "release(address,bytes)"
+  ],
+  "0xaf601815": [
+   "collect(uint256[],uint256[],bool)"
+  ],
+  "0xaf6b9b88": [
+   "mint(bytes,uint256[],bytes)"
+  ],
+  "0xaf7ac272": [
+   "redeem(uint256,bool,bytes)"
+  ],
+  "0xafab2fcd": [
+   "unwrap(bool,bool)"
+  ],
+  "0xafd2e3b8": [
+   "wrap(uint256,bool,uint256)"
+  ],
+  "0xafdb9efa": [
+   "mint(bool,bool,bool)"
+  ],
+  "0xb0217df0": [
+   "unstake(bytes,bool,bool)"
+  ],
+  "0xb028cac7": [
+   "redeem(address,uint256[],bytes)"
+  ],
+  "0xb0297e68": [
+   "exit(uint256[],uint256[],bytes)"
+  ],
+  "0xb02d5848": [
+   "leave(uint256,bytes,uint256)"
+  ],
+  "0xb055da70": [
+   "exit(uint256[],bool,bool)"
+  ],
+  "0xb06c2075": [
+   "withdraw(uint256,address,uint256[])"
+  ],
+  "0xb098fef6": [
+   "unstake(address,address,bool)"
+  ],
+  "0xb0ab71a0": [
+   "harvest(bool,bool,uint256)"
+  ],
+  "0xb114e888": [
+   "stake(address,bool)"
+  ],
+  "0xb1523735": [
+   "close(bool,bytes,uint256[])"
+  ],
+  "0xb161ae36": [
+   "repay(bool,bool,address)"
+  ],
+  "0xb165f57a": [
+   "exit(uint256[],bytes,bytes)"
+  ],
+  "0xb16764da": [
+   "exit(uint256[],address)"
+  ],
+  "0xb17d12b9": [
+   "repay(bool,uint256,bool)"
+  ],
+  "0xb185cc00": [
+   "leave(uint256,uint256[],uint256)"
+  ],
+  "0xb1a029f5": [
+   "repay(address,uint256[],bool)"
+  ],
+  "0xb1aa8283": [
+   "release(address,uint256[],uint256[])"
+  ],
+  "0xb1adb083": [
+   "unstake(uint256[],uint256[])"
+  ],
+  "0xb1b5d4ee": [
+   "repay(uint256[],uint256[],uint256[])"
+  ],
+  "0xb1b66652": [
+   "claim(uint256,uint256[])"
+  ],
+  "0xb1cb7218": [
+   "stake(address,address,address)"
+  ],
+  "0xb1cc7449": [
+   "unlock(uint256,uint256,address)"
+  ],
+  "0xb1d09e53": [
+   "release(uint256[],address,uint256)"
+  ],
+  "0xb1d2e165": [
+   "harvest(uint256[],bytes,bytes)"
+  ],
+  "0xb1e0b745": [
+   "leave(bytes,uint256,address)"
+  ],
+  "0xb1e8f8ef": [
+   "repay(uint256,uint256,address)"
+  ],
+  "0xb20258f0": [
+   "mint(bytes,bool,uint256)"
+  ],
+  "0xb2093f38": [
+   "unstake(address,bytes,uint256)"
+  ],
+  "0xb260fe66": [
+   "unstake(uint256,uint256[],bool)"
+  ],
+  "0xb26830f0": [
+   "withdraw(uint256[],address,uint256)"
+  ],
+  "0xb26aeee9": [
+   "unlock(uint256[],uint256[])"
+  ],
+  "0xb26f4c59": [
+   "exit(address,bytes,address)"
+  ],
+  "0xb286c49c": [
+   "unwrap(address,uint256[],bool)"
+  ],
+  "0xb29d611e": [
+   "leave(uint256[],uint256,uint256[])"
+  ],
+  "0xb2abc347": [
+   "collect(bytes,bytes,bool)"
+  ],
+  "0xb2bb92cf": [
+   "close(bool,uint256,address)"
+  ],
+  "0xb345a546": [
+   "mint(uint256[],uint256,bool)"
+  ],
+  "0xb346c294": [
+   "unwrap(uint256[],bool,bytes)"
+  ],
+  "0xb34b45f2": [
+   "release(uint256[],bytes,bytes)"
+  ],
+  "0xb363fc95": [
+   "cancel(bool,uint256[],uint256[])"
+  ],
+  "0xb36ca89e": [
+   "harvest(uint256[],bytes,bool)"
+  ],
+  "0xb36ec899": [
+   "release(uint256,uint256[],uint256[])"
+  ],
+  "0xb39037ac": [
+   "wrap(bytes,uint256[],address)"
+  ],
+  "0xb390c0ab": [
+   "burn(uint256,uint256)"
+  ],
+  "0xb3950de1": [
+   "deposit(bool,uint256)"
+  ],
+  "0xb3b59956": [
+   "close(address,uint256[],uint256[])"
+  ],
+  "0xb3bf9d32": [
+   "deposit(address,uint256[],uint256)"
+  ],
+  "0xb3dcb1c3": [
+   "leave(address,bool,address)"
+  ],
+  "0xb410c3d7": [
+   "claim(uint256[],bool,uint256[])"
+  ],
+  "0xb413148e": [
+   "unwrap(uint256,bytes)"
+  ],
+  "0xb42652e9": [
+   "exit(address)"
+  ],
+  "0xb4378d70": [
+   "wrap(uint256[],uint256[],uint256[])"
+  ],
+  "0xb4432291": [
+   "redeem(bool,address)"
+  ],
+  "0xb445ec9e": [
+   "mint(bool,address)"
+  ],
+  "0xb4490274": [
+   "leave(uint256,bytes,bool)"
+  ],
+  "0xb45ae85f": [
+   "leave(bool,bool,bool)"
+  ],
+  "0xb460af94": [
+   "withdraw(uint256,address,address)"
+  ],
+  "0xb46ab251": [
+   "claim(uint256,bytes,uint256[])"
+  ],
+  "0xb486b8c9": [
+   "deposit(bool,address)"
+  ],
+  "0xb4bbe481": [
+   "deposit(bytes,bool,uint256)"
+  ],
+  "0xb4c1f6d0": [
+   "unwrap(bool,address)"
+  ],
+  "0xb4ce9068": [
+   "cancel(uint256[],uint256[],bytes)"
+  ],
+  "0xb50c7d48": [
+   "unstake(bool,uint256[],uint256)"
+  ],
+  "0xb510391f": [
+   "mint(address,bytes)"
+  ],
+  "0xb5374916": [
+   "unwrap(address,address,bool)"
+  ],
+  "0xb53a773f": [
+   "claim(bool,bytes,address)"
+  ],
+  "0xb55463de": [
+   "stake(bytes,address,bool)"
+  ],
+  "0xb5569439": [
+   "harvest(bytes,bool,bool)"
+  ],
+  "0xb561fd2b": [
+   "repay(address,uint256,bool)"
+  ],
+  "0xb5674c68": [
+   "unlock(address,uint256,uint256)"
+  ],
+  "0xb5769a84": [
+   "mint(uint256[],address,uint256)"
+  ],
+  "0xb57d00fa": [
+   "collect(bool,uint256[],address)"
+  ],
+  "0xb5975d96": [
+   "claim(uint256,uint256[],bool)"
+  ],
+  "0xb5c30a98": [
+   "unlock(bool,bool,uint256)"
+  ],
+  "0xb5c5f672": [
+   "withdraw(address,uint256,uint256)"
+  ],
+  "0xb5c76a8e": [
+   "unstake(bytes,address,uint256[])"
+  ],
+  "0xb5d88165": [
+   "stake(uint256[],bool,uint256)"
+  ],
+  "0xb632b644": [
+   "leave(uint256[],uint256[])"
+  ],
+  "0xb63a3aea": [
+   "unlock(address,uint256[],bytes)"
+  ],
+  "0xb65c3ef8": [
+   "unstake(bool,bytes,bytes)"
+  ],
+  "0xb672e84e": [
+   "unwrap(uint256[],bool,uint256[])"
+  ],
+  "0xb68f4345": [
+   "unwrap(address,uint256,address)"
+  ],
+  "0xb6b55f25": [
+   "deposit(uint256)"
+  ],
+  "0xb6ba3fcd": [
+   "claim(bytes,uint256,uint256)"
+  ],
+  "0xb6d17501": [
+   "mint(uint256,uint256[],address)"
+  ],
+  "0xb6f7d0da": [
+   "burn(uint256[],uint256,uint256[])"
+  ],
+  "0xb6f8891e": [
+   "close(uint256[],uint256,bool)"
+  ],
+  "0xb7034f7e": [
+   "claim(address,address,bool)"
+  ],
+  "0xb70e471d": [
+   "wrap(bytes,uint256,uint256[])"
+  ],
+  "0xb73bee0a": [
+   "wrap(bytes,address,bool)"
+  ],
+  "0xb73d8e6c": [
+   "stake(bytes,bytes,bytes)"
+  ],
+  "0xb749fb15": [
+   "mint(uint256[],uint256,uint256)"
+  ],
+  "0xb7612ab2": [
+   "redeem(bytes,uint256[],uint256[])"
+  ],
+  "0xb766e34d": [
+   "release(uint256,bool,bytes)"
+  ],
+  "0xb77db8ac": [
+   "harvest(uint256[],address)"
+  ],
+  "0xb790c871": [
+   "withdraw(address,bytes,uint256[])"
+  ],
+  "0xb7947d91": [
+   "deposit(bool,uint256,address)"
+  ],
+  "0xb7a1d9d5": [
+   "unwrap(bool,bool,bytes)"
+  ],
+  "0xb7a7a7e4": [
+   "exit(bytes,bytes,bytes)"
+  ],
+  "0xb7e2a06c": [
+   "mint(bytes,bytes,bytes)"
+  ],
+  "0xb809e01b": [
+   "stake(uint256,address,uint256[])"
+  ],
+  "0xb80f55c9": [
+   "burn(uint256[])"
+  ],
+  "0xb8192205": [
+   "redeem(uint256,uint256,uint256)"
+  ],
+  "0xb81d22aa": [
+   "harvest(bool,address,bytes)"
+  ],
+  "0xb84844f6": [
+   "leave(address,bytes,bytes)"
+  ],
+  "0xb84889fc": [
+   "unlock(bytes,bytes,bool)"
+  ],
+  "0xb864d702": [
+   "release(bytes,uint256,address)"
+  ],
+  "0xb8813f61": [
+   "exit(uint256,bytes,bool)"
+  ],
+  "0xb895cb3f": [
+   "cancel(uint256[],bool,uint256[])"
+  ],
+  "0xb895cdad": [
+   "unlock(address,bool,uint256)"
+  ],
+  "0xb89970f2": [
+   "unlock(uint256,uint256,bytes)"
+  ],
+  "0xb89b21fa": [
+   "unstake(bool,uint256,bool)"
+  ],
+  "0xb89f8a74": [
+   "release(address,bool,bool)"
+  ],
+  "0xb8bc7c58": [
+   "burn(uint256[],bytes,bool)"
+  ],
+  "0xb8bdd8dd": [
+   "close(bytes)"
+  ],
+  "0xb8ce670d": [
+   "burn(address,uint256,address)"
+  ],
+  "0xb8de4879": [
+   "wrap(uint256[],bool)"
+  ],
+  "0xb8f4b730": [
+   "exit(address,uint256[])"
+  ],
+  "0xb8f4bd7b": [
+   "withdraw(uint256[],address)"
+  ],
+  "0xb9118ef9": [
+   "leave(address,uint256[])"
+  ],
+  "0xb91bce7d": [
+   "burn(uint256[],bytes,uint256)"
+  ],
+  "0xb93b756b": [
+   "mint(bool,bytes)"
+  ],
+  "0xb93c4236": [
+   "collect(bytes,bool)"
+  ],
+  "0xb990e1fe": [
+   "leave(bool,address,bytes)"
+  ],
+  "0xb9c733b6": [
+   "repay(bytes)"
+  ],
+  "0xba087652": [
+   "redeem(uint256,address,address)"
+  ],
+  "0xba0b3623": [
+   "repay(uint256,bool)"
+  ],
+  "0xba20cb07": [
+   "leave(address,bool,bytes)"
+  ],
+  "0xba20eaae": [
+   "leave(address,uint256[],bytes)"
+  ],
+  "0xba2c2f0b": [
+   "stake(address,uint256[],uint256[])"
+  ],
+  "0xba365d7e": [
+   "mint(uint256,address,bool)"
+  ],
+  "0xba36b92d": [
+   "burn(address,uint256[])"
+  ],
+  "0xba7b3dea": [
+   "burn(address,bool)"
+  ],
+  "0xba7d2825": [
+   "exit(uint256[],bytes,address)"
+  ],
+  "0xba8caeef": [
+   "deposit(bytes,bool,bytes)"
+  ],
+  "0xbaa293b9": [
+   "burn(uint256[],uint256[],uint256)"
+  ],
+  "0xbab7028f": [
+   "harvest(address,uint256,bool)"
+  ],
+  "0xbabb7351": [
+   "burn(address,uint256[],bool)"
+  ],
+  "0xbabd6ae8": [
+   "unstake(bytes,bool,uint256)"
+  ],
+  "0xbad15ec2": [
+   "collect(address,uint256[],address)"
+  ],
+  "0xbadeacd7": [
+   "withdraw(bool,address,bool)"
+  ],
+  "0xbb1757cf": [
+   "claim(address,bytes)"
+  ],
+  "0xbb1c4dbc": [
+   "harvest(address,bool,bytes)"
+  ],
+  "0xbb28aedb": [
+   "release(uint256[],bool,address)"
+  ],
+  "0xbb4201c8": [
+   "remove(bytes,bytes,bytes)"
+  ],
+  "0xbb54121f": [
+   "unlock(address,uint256,uint256[])"
+  ],
+  "0xbb66c369": [
+   "unlock(uint256,bool,address)"
+  ],
+  "0xbb8015ce": [
+   "withdraw(bool,bytes,uint256)"
+  ],
+  "0xbba06f27": [
+   "redeem(address,address)"
+  ],
+  "0xbbdc9531": [
+   "exit(address,uint256,uint256)"
+  ],
+  "0xbbf4084e": [
+   "harvest(address,bool)"
+  ],
+  "0xbc157ac1": [
+   "deposit(uint256,address,uint256)"
+  ],
+  "0xbc1a14de": [
+   "burn(bytes,bytes,uint256)"
+  ],
+  "0xbc423deb": [
+   "exit(address,uint256,address)"
+  ],
+  "0xbc4a21bf": [
+   "close(bool,address,uint256)"
+  ],
+  "0xbc58c3a7": [
+   "unlock(bool,uint256[],address)"
+  ],
+  "0xbc775107": [
+   "harvest(uint256,uint256[],uint256)"
+  ],
+  "0xbc8b5e06": [
+   "leave(uint256[],address,address)"
+  ],
+  "0xbccf0dcf": [
+   "deposit(address,bytes,bool)"
+  ],
+  "0xbd1acd8e": [
+   "repay(uint256[],uint256,address)"
+  ],
+  "0xbd6b1163": [
+   "close(uint256,bool,address)"
+  ],
+  "0xbd7a7b49": [
+   "repay(bytes,address,uint256[])"
+  ],
+  "0xbd97b375": [
+   "unstake(uint256,uint256,uint256)"
+  ],
+  "0xbda11869": [
+   "harvest(bytes,bool,uint256)"
+  ],
+  "0xbda1b55f": [
+   "stake(address,bytes,bool)"
+  ],
+  "0xbdcc19bd": [
+   "harvest(bytes,uint256,uint256)"
+  ],
+  "0xbddaf80e": [
+   "withdraw(uint256[],address,bool)"
+  ],
+  "0xbe040fb0": [
+   "redeem()"
+  ],
+  "0xbe0ff9d0": [
+   "withdraw(uint256[],bytes,address)"
+  ],
+  "0xbe27b22c": [
+   "claim(bytes,bytes)"
+  ],
+  "0xbe285b14": [
+   "exit(uint256[],uint256,bool)"
+  ],
+  "0xbe42ce86": [
+   "collect(uint256[],address)"
+  ],
+  "0xbe448542": [
+   "release(uint256[],uint256,bytes)"
+  ],
+  "0xbe60680e": [
+   "exit(bytes,uint256[],bool)"
+  ],
+  "0xbe7ae9aa": [
+   "remove(uint256,address,bytes)"
+  ],
+  "0xbe7da44d": [
+   "remove(address,bool,bool)"
+  ],
+  "0xbe98331d": [
+   "close(bool,bool,uint256[])"
+  ],
+  "0xbe98466e": [
+   "unwrap(bytes,uint256)"
+  ],
+  "0xbea6f2b9": [
+   "remove(uint256,bytes,uint256)"
+  ],
+  "0xbec77541": [
+   "claim(bytes,bool,uint256[])"
+  ],
+  "0xbecf77f6": [
+   "unstake(bool,bytes,bool)"
+  ],
+  "0xbedf77a6": [
+   "leave(address)"
+  ],
+  "0xbee0d5f4": [
+   "withdraw(uint256[],bytes,uint256)"
+  ],
+  "0xbef5e842": [
+   "redeem(uint256,bool,uint256[])"
+  ],
+  "0xbefc5457": [
+   "stake(address,bool,bytes)"
+  ],
+  "0xbefc611f": [
+   "mint(uint256[],uint256[],bool)"
+  ],
+  "0xbf0622d1": [
+   "repay(address,bool,bool)"
+  ],
+  "0xbf376c7a": [
+   "wrap(address,uint256)"
+  ],
+  "0xbf43bf05": [
+   "collect(uint256[],bool,bool)"
+  ],
+  "0xbf6eac2f": [
+   "stake(address,address,uint256)"
+  ],
+  "0xbf75d5ed": [
+   "burn(address,bool,uint256[])"
+  ],
+  "0xbfa4400b": [
+   "unlock(address,uint256[])"
+  ],
+  "0xbfb7f05e": [
+   "burn(address,address,uint256[])"
+  ],
+  "0xbfc2832a": [
+   "stake(bytes,bytes,uint256)"
+  ],
+  "0xbfe00128": [
+   "redeem(uint256,uint256[],bytes)"
+  ],
+  "0xbff8f148": [
+   "redeem(bytes,uint256[],bytes)"
+  ],
+  "0xc04efcd4": [
+   "unwrap(address,uint256,uint256)"
+  ],
+  "0xc053dc1e": [
+   "redeem(uint256[],bytes,uint256)"
+  ],
+  "0xc06871d9": [
+   "claim(address,uint256,uint256[])"
+  ],
+  "0xc08e6f8b": [
+   "unstake(address,address,bytes)"
+  ],
+  "0xc09709d7": [
+   "repay(uint256,address,uint256[])"
+  ],
+  "0xc09f9ad8": [
+   "collect(uint256[],uint256[],uint256)"
+  ],
+  "0xc0a28f73": [
+   "unwrap(uint256,bool,bool)"
+  ],
+  "0xc0aa89a0": [
+   "withdraw(uint256,bytes,uint256)"
+  ],
+  "0xc0e1e294": [
+   "unlock(bool,bool)"
+  ],
+  "0xc0e4930e": [
+   "redeem(address,uint256[],uint256)"
+  ],
+  "0xc0e78528": [
+   "unwrap(uint256[],address)"
+  ],
+  "0xc0e8dbb3": [
+   "redeem(bool,bool,address)"
+  ],
+  "0xc0efecfd": [
+   "leave(address,address,bytes)"
+  ],
+  "0xc110bd8a": [
+   "exit(bool,address,bool)"
+  ],
+  "0xc130eb19": [
+   "wrap(uint256[],bytes,uint256[])"
+  ],
+  "0xc15871d9": [
+   "collect(address,bytes,bool)"
+  ],
+  "0xc16fe799": [
+   "unstake(bytes,address,bool)"
+  ],
+  "0xc170448f": [
+   "wrap(bytes,uint256[])"
+  ],
+  "0xc190663d": [
+   "collect(address,bytes,uint256)"
+  ],
+  "0xc1aef86f": [
+   "remove(bool,uint256,uint256)"
+  ],
+  "0xc1b3c89a": [
+   "stake(bool,bool,bool)"
+  ],
+  "0xc1b88569": [
+   "unwrap(uint256,uint256[],uint256)"
+  ],
+  "0xc1b8c8b5": [
+   "redeem(uint256,bytes,uint256[])"
+  ],
+  "0xc1cf85a2": [
+   "mint(address,bool,address)"
+  ],
+  "0xc1e10bf4": [
+   "collect(address,uint256[],bytes)"
+  ],
+  "0xc1e933fd": [
+   "close(address,address,uint256[])"
+  ],
+  "0xc20ac307": [
+   "collect(bool,uint256[],bool)"
+  ],
+  "0xc22e3a23": [
+   "withdraw(bool,address,uint256[])"
+  ],
+  "0xc24317ff": [
+   "deposit(uint256[],uint256,address)"
+  ],
+  "0xc258cb00": [
+   "unlock(bytes,uint256,address)"
+  ],
+  "0xc29fa9dd": [
+   "redeem(address,bytes,bytes)"
+  ],
+  "0xc2a672e0": [
+   "unstake(address,uint256)"
+  ],
+  "0xc2b6b8bd": [
+   "unlock(bytes,bytes,address)"
+  ],
+  "0xc2b7f16a": [
+   "repay(address,uint256[],uint256[])"
+  ],
+  "0xc2ceb95f": [
+   "harvest(address,address,uint256)"
+  ],
+  "0xc2dd979e": [
+   "harvest(uint256[],bool,uint256)"
+  ],
+  "0xc2edc9a9": [
+   "claim(bool,bool,uint256)"
+  ],
+  "0xc2edf2bd": [
+   "mint(uint256,bytes,uint256[])"
+  ],
+  "0xc315f7d9": [
+   "release(address,uint256,bytes)"
+  ],
+  "0xc31947e6": [
+   "close(bool,address,uint256[])"
+  ],
+  "0xc339923d": [
+   "exit(uint256,bool,uint256)"
+  ],
+  "0xc344b21d": [
+   "close(uint256[],address,bool)"
+  ],
+  "0xc3490263": [
+   "claim(uint256,uint256)"
+  ],
+  "0xc34ae77f": [
+   "release(uint256[],bool,uint256)"
+  ],
+  "0xc363e28d": [
+   "release(uint256,uint256[])"
+  ],
+  "0xc3657d36": [
+   "cancel(address,uint256,bool)"
+  ],
+  "0xc38e86ea": [
+   "release(bool,address,address)"
+  ],
+  "0xc3b2b772": [
+   "harvest(bool,uint256[])"
+  ],
+  "0xc3c027b1": [
+   "release(uint256,uint256,bytes)"
+  ],
+  "0xc3d1fd47": [
+   "burn(bool,bool,bool)"
+  ],
+  "0xc3f2908f": [
+   "redeem(bool,address,uint256[])"
+  ],
+  "0xc402f7f1": [
+   "cancel(bool,address,bool)"
+  ],
+  "0xc4113b88": [
+   "unstake(address,uint256,bytes)"
+  ],
+  "0xc45533bc": [
+   "stake(address,address,bytes)"
+  ],
+  "0xc46c97f7": [
+   "collect(address,bool,uint256[])"
+  ],
+  "0xc47c6d43": [
+   "redeem(bool,uint256[],bytes)"
+  ],
+  "0xc47e300d": [
+   "deposit(bytes,bytes,bytes)"
+  ],
+  "0xc49ba8df": [
+   "deposit(bytes,uint256,uint256[])"
+  ],
+  "0xc4a0db96": [
+   "redeem(uint256,uint256[])"
+  ],
+  "0xc4c9741b": [
+   "redeem(uint256,uint256[],address)"
+  ],
+  "0xc4e4a140": [
+   "unlock(bytes,uint256)"
+  ],
+  "0xc50cda12": [
+   "claim(uint256[],bool)"
+  ],
+  "0xc525c46b": [
+   "release(bool,bool,uint256)"
+  ],
+  "0xc563e093": [
+   "leave(bool,uint256[],uint256)"
+  ],
+  "0xc57273c2": [
+   "deposit(bool)"
+  ],
+  "0xc5759ef2": [
+   "exit(uint256[],address,uint256)"
+  ],
+  "0xc5ae85ba": [
+   "remove(uint256[],bool,address)"
+  ],
+  "0xc5e6f643": [
+   "release(bytes,bool,uint256[])"
+  ],
+  "0xc5f10c3e": [
+   "remove(uint256,uint256[],uint256)"
+  ],
+  "0xc5f4a460": [
+   "withdraw(bytes,bytes,uint256[])"
+  ],
+  "0xc60a1aaa": [
+   "leave(bytes,address,address)"
+  ],
+  "0xc60c86a9": [
+   "unlock(bytes,address,uint256[])"
+  ],
+  "0xc611eeec": [
+   "leave(address,address,bool)"
+  ],
+  "0xc6230fde": [
+   "wrap(bool,address,bool)"
+  ],
+  "0xc62a8f48": [
+   "deposit(uint256[],address,address)"
+  ],
+  "0xc63594b3": [
+   "wrap(uint256,uint256,bytes)"
+  ],
+  "0xc6366fbd": [
+   "redeem(bytes,uint256,bool)"
+  ],
+  "0xc63ff8dd": [
+   "claim(bytes)"
+  ],
+  "0xc648e633": [
+   "stake(uint256,bool,bool)"
+  ],
+  "0xc6769834": [
+   "leave(bool)"
+  ],
+  "0xc677dede": [
+   "release(uint256[],address)"
+  ],
+  "0xc6b774fd": [
+   "unlock(uint256,address,uint256)"
+  ],
+  "0xc6c3bbe6": [
+   "mint(address,address,uint256)"
+  ],
+  "0xc6d32c1f": [
+   "withdraw(bytes,address,bool)"
+  ],
+  "0xc6f4265e": [
+   "unwrap(address,uint256,uint256[])"
+  ],
+  "0xc7012626": [
+   "withdraw(bytes,uint256)"
+  ],
+  "0xc7223a3a": [
+   "unwrap(bytes,bytes,bool)"
+  ],
+  "0xc7246bf7": [
+   "unwrap(bytes,address,uint256[])"
+  ],
+  "0xc74073a1": [
+   "close(address)"
+  ],
+  "0xc7439345": [
+   "unwrap(uint256,bool,uint256[])"
+  ],
+  "0xc7688e5a": [
+   "burn(address,bool,bool)"
+  ],
+  "0xc775c91a": [
+   "unwrap(bytes)"
+  ],
+  "0xc7884781": [
+   "unstake(address,bool,uint256[])"
+  ],
+  "0xc7a09b96": [
+   "exit(bool,uint256[],uint256[])"
+  ],
+  "0xc7a723c3": [
+   "stake(uint256[],bool,bool)"
+  ],
+  "0xc7ac1ab5": [
+   "burn(bool,uint256[],uint256)"
+  ],
+  "0xc7b80dbd": [
+   "unwrap(uint256,uint256,bool)"
+  ],
+  "0xc7c2a025": [
+   "exit(address,bool,bytes)"
+  ],
+  "0xc7f08649": [
+   "claim(uint256[],uint256,bytes)"
+  ],
+  "0xc7f962fc": [
+   "remove(address,uint256[],uint256)"
+  ],
+  "0xc7fff6c1": [
+   "leave(uint256[],address,bool)"
+  ],
+  "0xc8176e2f": [
+   "exit(bytes,bool,uint256[])"
+  ],
+  "0xc82a03ae": [
+   "unwrap(bytes,bool,bytes)"
+  ],
+  "0xc853835e": [
+   "harvest(bytes,address,bytes)"
+  ],
+  "0xc85494dc": [
+   "leave(uint256,bool,uint256)"
+  ],
+  "0xc86be28d": [
+   "stake(bytes,uint256)"
+  ],
+  "0xc883b2e5": [
+   "repay(uint256,address,address)"
+  ],
+  "0xc8841c80": [
+   "redeem(bytes,uint256,address)"
+  ],
+  "0xc88443e4": [
+   "close(address,uint256[])"
+  ],
+  "0xc88d9ba6": [
+   "stake(address,bytes)"
+  ],
+  "0xc891896e": [
+   "unwrap(bool,bytes,uint256[])"
+  ],
+  "0xc8a7153f": [
+   "withdraw(bytes,address,uint256[])"
+  ],
+  "0xc8acdfac": [
+   "leave(address,bytes,uint256)"
+  ],
+  "0xc8d9ec64": [
+   "repay(bool,uint256[],uint256[])"
+  ],
+  "0xc8e97eaa": [
+   "withdraw(bool,bool,uint256[])"
+  ],
+  "0xc8f16bd3": [
+   "unwrap(bool,bytes,address)"
+  ],
+  "0xc8f98d91": [
+   "withdraw(bytes,address)"
+  ],
+  "0xc8fd6ed0": [
+   "unstake(uint256,bytes)"
+  ],
+  "0xc8fea2fb": [
+   "collect(address,address,uint256)"
+  ],
+  "0xc901115d": [
+   "cancel(uint256,uint256,address)"
+  ],
+  "0xc93c297d": [
+   "deposit(bytes,address,uint256[])"
+  ],
+  "0xc9684a8d": [
+   "claim(uint256[],uint256[],uint256[])"
+  ],
+  "0xc9706d9a": [
+   "release(uint256[],uint256[],uint256[])"
+  ],
+  "0xc994d406": [
+   "leave(uint256,address,uint256[])"
+  ],
+  "0xc99c75c1": [
+   "mint(bytes,address,bool)"
+  ],
+  "0xc9a3911e": [
+   "stake(address,uint256[])"
+  ],
+  "0xc9a6e9c2": [
+   "withdraw(uint256[],bytes,bytes)"
+  ],
+  "0xc9aa9f6d": [
+   "wrap(uint256[],address,bytes)"
+  ],
+  "0xc9bf7891": [
+   "collect(address,bool,bytes)"
+  ],
+  "0xc9d8a9f0": [
+   "exit(uint256[],uint256[],uint256)"
+  ],
+  "0xca07c88b": [
+   "remove(address,uint256[],bytes)"
+  ],
+  "0xca093945": [
+   "remove(address,uint256[],address)"
+  ],
+  "0xca371fdd": [
+   "claim(bool,uint256[],bool)"
+  ],
+  "0xca738ece": [
+   "remove(address,address,bytes)"
+  ],
+  "0xcab9225a": [
+   "wrap(bool,bool,bool)"
+  ],
+  "0xcad88673": [
+   "unlock(address,uint256,bool)"
+  ],
+  "0xcb221ec9": [
+   "cancel(address,bool,uint256)"
+  ],
+  "0xcb292009": [
+   "close(bytes,address,uint256[])"
+  ],
+  "0xcb541ff5": [
+   "unstake(address,bool,bool)"
+  ],
+  "0xcb619c35": [
+   "claim(bool,address)"
+  ],
+  "0xcb67e244": [
+   "burn(uint256[],uint256,bool)"
+  ],
+  "0xcb7b0d22": [
+   "unstake(uint256[],bool,bytes)"
+  ],
+  "0xcb82b73d": [
+   "withdraw(bytes,bool,uint256)"
+  ],
+  "0xcb84006b": [
+   "deposit(bytes,address,bytes)"
+  ],
+  "0xcb8d3926": [
+   "wrap(bytes,uint256[],uint256[])"
+  ],
+  "0xcbb6007d": [
+   "stake(address,address,bool)"
+  ],
+  "0xcbbdc4ac": [
+   "remove(uint256[],uint256)"
+  ],
+  "0xcbc550de": [
+   "mint(uint256[],bytes,bool)"
+  ],
+  "0xcbcc0fe9": [
+   "claim(bytes,uint256[],bool)"
+  ],
+  "0xcbe8e03f": [
+   "harvest(bytes,bytes,address)"
+  ],
+  "0xcc0b5a5f": [
+   "cancel(uint256,address,address)"
+  ],
+  "0xcc17a5bf": [
+   "wrap(uint256[])"
+  ],
+  "0xcc32ab86": [
+   "close(address,address,bool)"
+  ],
+  "0xcc5042a2": [
+   "leave(uint256[],bytes,uint256)"
+  ],
+  "0xcc62604c": [
+   "collect(bytes,bytes)"
+  ],
+  "0xcc804aa5": [
+   "burn(uint256[],bool,address)"
+  ],
+  "0xcc970d40": [
+   "stake(bool,bytes,uint256)"
+  ],
+  "0xcd0b43a3": [
+   "exit(bytes,bool)"
+  ],
+  "0xcd13cd18": [
+   "claim(address,uint256[],bool)"
+  ],
+  "0xcd614838": [
+   "unstake(bool,address)"
+  ],
+  "0xcd6ef9b1": [
+   "unstake(uint256,uint256,bytes)"
+  ],
+  "0xcd75c56a": [
+   "redeem(bool,address,uint256)"
+  ],
+  "0xcd7feac8": [
+   "unwrap(bool,uint256[],uint256[])"
+  ],
+  "0xcd809188": [
+   "unstake(uint256,bool,uint256[])"
+  ],
+  "0xcdca3c8d": [
+   "cancel(address,uint256[],bytes)"
+  ],
+  "0xcde8e904": [
+   "unwrap(bytes,bool)"
+  ],
+  "0xcdf7b4e8": [
+   "mint(uint256,bool,bool)"
+  ],
+  "0xce08cf30": [
+   "deposit(address,bool,address)"
+  ],
+  "0xce34e67e": [
+   "unstake(bytes,bytes,address)"
+  ],
+  "0xce3f865f": [
+   "collect(uint256)"
+  ],
+  "0xce557abf": [
+   "redeem(bytes,uint256[],address)"
+  ],
+  "0xce567a89": [
+   "unwrap(bool,bool,uint256[])"
+  ],
+  "0xce5c7f61": [
+   "harvest(bytes)"
+  ],
+  "0xce6e1c0e": [
+   "release(uint256,bytes,uint256)"
+  ],
+  "0xcf0f275a": [
+   "wrap(bytes,bytes)"
+  ],
+  "0xcf2af6f0": [
+   "leave(uint256[],uint256[],uint256[])"
+  ],
+  "0xcf2c52cb": [
+   "deposit(address,bytes)"
+  ],
+  "0xcf3d88c1": [
+   "redeem(uint256,bytes,bytes)"
+  ],
+  "0xcf459636": [
+   "unstake(bool,uint256)"
+  ],
+  "0xcf83b245": [
+   "unstake(address,address,uint256[])"
+  ],
+  "0xcf8bc8ba": [
+   "withdraw(bytes,uint256[],address)"
+  ],
+  "0xcfa6f827": [
+   "collect(uint256,uint256)"
+  ],
+  "0xcff40759": [
+   "exit(uint256,address)"
+  ],
+  "0xd007f441": [
+   "cancel(uint256[],bool,bool)"
+  ],
+  "0xd01ab8ee": [
+   "wrap(uint256,address,uint256)"
+  ],
+  "0xd02221a3": [
+   "harvest(bool,uint256)"
+  ],
+  "0xd0258b7f": [
+   "harvest(uint256[],address,uint256)"
+  ],
+  "0xd03059fa": [
+   "burn(bool,address)"
+  ],
+  "0xd05256d6": [
+   "leave(uint256[],address)"
+  ],
+  "0xd077eddb": [
+   "mint(bool,bytes,uint256[])"
+  ],
+  "0xd095f096": [
+   "wrap(bytes,uint256[],uint256)"
+  ],
+  "0xd0960359": [
+   "claim(bytes,uint256[],uint256)"
+  ],
+  "0xd09d1c0c": [
+   "repay(bytes,uint256,address)"
+  ],
+  "0xd0bd22e7": [
+   "burn(bool,bool)"
+  ],
+  "0xd0e30db0": [
+   "deposit()"
+  ],
+  "0xd0e8230f": [
+   "exit(bool,bool,uint256)"
+  ],
+  "0xd0f48715": [
+   "withdraw(bytes,bytes,bytes)"
+  ],
+  "0xd11286c3": [
+   "stake(bool,bool)"
+  ],
+  "0xd12e0436": [
+   "redeem(address,uint256[],address)"
+  ],
+  "0xd14f3672": [
+   "burn(uint256[],bytes,uint256[])"
+  ],
+  "0xd16c2329": [
+   "deposit(uint256,bytes,bool)"
+  ],
+  "0xd17c65b9": [
+   "wrap(address,bytes,uint256)"
+  ],
+  "0xd19f1c5c": [
+   "mint(bytes,address,bytes)"
+  ],
+  "0xd1a1beb4": [
+   "mint(address,uint256,bool)"
+  ],
+  "0xd1aa26ba": [
+   "harvest(bool,bool,uint256[])"
+  ],
+  "0xd1b13b35": [
+   "withdraw(bool,uint256,bytes)"
+  ],
+  "0xd1fe6ad7": [
+   "unstake(bytes,uint256[])"
+  ],
+  "0xd22f7e73": [
+   "exit(uint256[],address,uint256[])"
+  ],
+  "0xd2390aa2": [
+   "redeem(address,uint256[])"
+  ],
+  "0xd244cd72": [
+   "collect(bytes,bool,bytes)"
+  ],
+  "0xd252fe63": [
+   "claim(bytes,uint256,bytes)"
+  ],
+  "0xd25af428": [
+   "release(bool,uint256)"
+  ],
+  "0xd296ec00": [
+   "unlock(bool,address,address)"
+  ],
+  "0xd2e03953": [
+   "unwrap(uint256,bytes,uint256)"
+  ],
+  "0xd361db3e": [
+   "exit(bytes,address)"
+  ],
+  "0xd389af72": [
+   "unwrap(uint256,uint256[],bool)"
+  ],
+  "0xd393c432": [
+   "harvest(address,uint256,uint256[])"
+  ],
+  "0xd3a6ae31": [
+   "remove(address,bytes,bool)"
+  ],
+  "0xd3bc3962": [
+   "stake(uint256,uint256[],uint256)"
+  ],
+  "0xd3d202fd": [
+   "close(uint256,address)"
+  ],
+  "0xd3db15fe": [
+   "mint(bytes,uint256[],uint256[])"
+  ],
+  "0xd3dbcd2a": [
+   "mint(uint256,bool,address)"
+  ],
+  "0xd3de23c3": [
+   "collect(uint256,bytes,bytes)"
+  ],
+  "0xd3e5eb98": [
+   "harvest(uint256,address,bool)"
+  ],
+  "0xd40ff2e9": [
+   "unwrap(bytes,address,bytes)"
+  ],
+  "0xd414a625": [
+   "repay(uint256,bool,address)"
+  ],
+  "0xd420096c": [
+   "repay(bytes,bool)"
+  ],
+  "0xd425f074": [
+   "redeem(bytes,uint256,uint256)"
+  ],
+  "0xd43596d1": [
+   "harvest(bool,address,bool)"
+  ],
+  "0xd44c859a": [
+   "withdraw(uint256,bytes,uint256[])"
+  ],
+  "0xd451c6a8": [
+   "release(bool,uint256,uint256)"
+  ],
+  "0xd46eb119": [
+   "wrap()"
+  ],
+  "0xd4860d52": [
+   "unlock(uint256,uint256[],bytes)"
+  ],
+  "0xd48a3d3d": [
+   "claim(uint256[],bytes)"
+  ],
+  "0xd48dbf64": [
+   "mint(bool,bytes,address)"
+  ],
+  "0xd493fdf7": [
+   "exit(bool,bytes,bool)"
+  ],
+  "0xd49fa601": [
+   "stake(uint256[],bytes,uint256)"
+  ],
+  "0xd505a364": [
+   "claim(bool,uint256)"
+  ],
+  "0xd531e7ca": [
+   "stake(address,uint256,uint256[])"
+  ],
+  "0xd5379e0f": [
+   "burn(bool,uint256[],uint256[])"
+  ],
+  "0xd53979d2": [
+   "repay(address,bytes,address)"
+  ],
+  "0xd55aa3c8": [
+   "claim(address,bool,address)"
+  ],
+  "0xd568f00e": [
+   "withdraw(uint256[],uint256[],bool)"
+  ],
+  "0xd592f4f2": [
+   "stake(bool,address,address)"
+  ],
+  "0xd5a72c1c": [
+   "claim(uint256[],uint256[],uint256)"
+  ],
+  "0xd5d1701b": [
+   "withdraw(bool,bytes,uint256[])"
+  ],
+  "0xd5f615c6": [
+   "remove(uint256,bool)"
+  ],
+  "0xd5ff770f": [
+   "mint(bool,bool,bytes)"
+  ],
+  "0xd60d39db": [
+   "unstake(address,uint256[],bool)"
+  ],
+  "0xd60d9078": [
+   "remove(address,uint256,uint256[])"
+  ],
+  "0xd6241218": [
+   "burn(address,bytes)"
+  ],
+  "0xd62fbdd3": [
+   "redeem(address,uint256[],bool)"
+  ],
+  "0xd65a06b0": [
+   "redeem(uint256,bool)"
+  ],
+  "0xd65b1ee1": [
+   "repay(uint256,address,bytes)"
+  ],
+  "0xd66c82b7": [
+   "release(bool,bytes,address)"
+  ],
+  "0xd66d9e19": [
+   "leave()"
+  ],
+  "0xd6a88e11": [
+   "cancel(bool,uint256,uint256[])"
+  ],
+  "0xd6ae4ab5": [
+   "burn(bytes,address)"
+  ],
+  "0xd6bb62c6": [
+   "cancel(address,address,bytes)"
+  ],
+  "0xd6c36200": [
+   "exit(bool,bool)"
+  ],
+  "0xd6f5237a": [
+   "remove(address,uint256[],uint256[])"
+  ],
+  "0xd6fdd0fc": [
+   "deposit(bool,address,uint256[])"
+  ],
+  "0xd7002a48": [
+   "exit(uint256,uint256,address)"
+  ],
+  "0xd7112338": [
+   "cancel(uint256[],uint256,bool)"
+  ],
+  "0xd7122076": [
+   "unstake(bytes,uint256,address)"
+  ],
+  "0xd76d35b6": [
+   "burn(uint256,bool,address)"
+  ],
+  "0xd779e20c": [
+   "harvest(address,bool,address)"
+  ],
+  "0xd7ab600a": [
+   "unstake(uint256[],address,uint256[])"
+  ],
+  "0xd7b35301": [
+   "deposit(uint256[],bool)"
+  ],
+  "0xd7c902aa": [
+   "redeem(bytes,bytes,bool)"
+  ],
+  "0xd7d952f3": [
+   "withdraw(uint256,bytes,address)"
+  ],
+  "0xd80417d6": [
+   "redeem(bool,uint256[],uint256[])"
+  ],
+  "0xd81b958d": [
+   "redeem(address,address,bytes)"
+  ],
+  "0xd855ef78": [
+   "redeem(uint256,address,bytes)"
+  ],
+  "0xd85c40f4": [
+   "exit(uint256,address,bytes)"
+  ],
+  "0xd8780161": [
+   "redeem(uint256,address,uint256)"
+  ],
+  "0xd87d9604": [
+   "wrap(address,address,bytes)"
+  ],
+  "0xd8891242": [
+   "burn(bytes,address,bool)"
+  ],
+  "0xd89e8485": [
+   "deposit(bool,uint256[],bool)"
+  ],
+  "0xd8a0072a": [
+   "repay(bytes,address,bytes)"
+  ],
+  "0xd8aed145": [
+   "repay(uint256,uint256)"
+  ],
+  "0xd8bed1bd": [
+   "remove(address,bool,uint256)"
+  ],
+  "0xd93606ae": [
+   "harvest(bytes,address,bool)"
+  ],
+  "0xd946a628": [
+   "burn(bool,bytes,bytes)"
+  ],
+  "0xd951e461": [
+   "collect(uint256[],uint256[])"
+  ],
+  "0xd95489a2": [
+   "wrap(uint256[],uint256,bool)"
+  ],
+  "0xd987c26c": [
+   "unstake(bool,address,uint256)"
+  ],
+  "0xd99604bb": [
+   "claim(bytes,uint256[])"
+  ],
+  "0xd998ab6e": [
+   "wrap(uint256,uint256,uint256[])"
+  ],
+  "0xd9a6c09e": [
+   "repay(bool,bytes,uint256)"
+  ],
+  "0xd9a6c8f9": [
+   "repay(uint256[],bytes,uint256)"
+  ],
+  "0xd9b51e0d": [
+   "claim(bytes,address,bytes)"
+  ],
+  "0xd9bacd7e": [
+   "withdraw(bytes,bool,uint256[])"
+  ],
+  "0xd9caed12": [
+   "withdraw(address,address,uint256)"
+  ],
+  "0xd9dd75a7": [
+   "deposit(uint256[],bytes,bytes)"
+  ],
+  "0xd9f0f326": [
+   "close(address,bytes,bytes)"
+  ],
+  "0xda263690": [
+   "unlock(uint256[],address,uint256[])"
+  ],
+  "0xda39b3e7": [
+   "mint(uint256,address,address)"
+  ],
+  "0xda675e64": [
+   "collect(uint256,uint256[],bytes)"
+  ],
+  "0xdae36b3f": [
+   "collect(bytes,address,uint256)"
+  ],
+  "0xdb006a75": [
+   "redeem(uint256)"
+  ],
+  "0xdb065f6e": [
+   "unwrap(uint256,uint256[],uint256[])"
+  ],
+  "0xdb156660": [
+   "claim(uint256[],bool,bytes)"
+  ],
+  "0xdb3c97aa": [
+   "unlock(uint256,uint256[])"
+  ],
+  "0xdb3ee719": [
+   "mint(bool,uint256[],uint256)"
+  ],
+  "0xdb41afc9": [
+   "wrap(bytes,address,bytes)"
+  ],
+  "0xdb67332f": [
+   "leave(uint256[],bool,bool)"
+  ],
+  "0xdb7aad04": [
+   "cancel(bytes,uint256,uint256[])"
+  ],
+  "0xdb7fd408": [
+   "mint(uint256,bytes)"
+  ],
+  "0xdb98c230": [
+   "repay(bool,address,uint256[])"
+  ],
+  "0xdbadd18e": [
+   "redeem(uint256,bytes,address)"
+  ],
+  "0xdbc06f43": [
+   "redeem(bool,bytes,uint256)"
+  ],
+  "0xdbc8763d": [
+   "unwrap(uint256[],address,bytes)"
+  ],
+  "0xdbc88b73": [
+   "repay(uint256[],bytes)"
+  ],
+  "0xdbf42c05": [
+   "unlock(uint256[],bytes,address)"
+  ],
+  "0xdbfcacba": [
+   "exit(bytes,bool,uint256)"
+  ],
+  "0xdc3b65b4": [
+   "redeem(bytes,address,uint256)"
+  ],
+  "0xdc6fd485": [
+   "close(bytes,uint256[],uint256)"
+  ],
+  "0xdc9ae17d": [
+   "burn(bytes,address,uint256)"
+  ],
+  "0xdcb7b388": [
+   "remove(uint256[],bytes,uint256[])"
+  ],
+  "0xdcc1c453": [
+   "collect(bool,bool)"
+  ],
+  "0xdcc34dd6": [
+   "burn(uint256,bool,bool)"
+  ],
+  "0xdcddd8e1": [
+   "remove(address,address,address)"
+  ],
+  "0xdce0997f": [
+   "repay(uint256,bool,uint256[])"
+  ],
+  "0xdce81815": [
+   "exit(bool,uint256)"
+  ],
+  "0xdcf9d221": [
+   "unlock(uint256,bytes,uint256)"
+  ],
+  "0xdd00a9dc": [
+   "close(uint256,uint256,bytes)"
+  ],
+  "0xdd1145a5": [
+   "cancel(uint256,bool,uint256[])"
+  ],
+  "0xdd12a043": [
+   "redeem(uint256,uint256,uint256[])"
+  ],
+  "0xdd174cc1": [
+   "close(address,bytes,address)"
+  ],
+  "0xdd20ef0a": [
+   "deposit(uint256[],uint256[],uint256[])"
+  ],
+  "0xdd28975c": [
+   "claim(bool,uint256[],bytes)"
+  ],
+  "0xdd51e39f": [
+   "unstake(bool,uint256[],uint256[])"
+  ],
+  "0xddae7db8": [
+   "redeem(uint256[],address,bool)"
+  ],
+  "0xddaf318f": [
+   "exit(bool,bytes,address)"
+  ],
+  "0xddc63262": [
+   "harvest(uint256)"
+  ],
+  "0xddd5e1b2": [
+   "claim(uint256,address)"
+  ],
+  "0xddd9aa06": [
+   "release(uint256[],bool,bool)"
+  ],
+  "0xddda35cd": [
+   "unlock(address,uint256[],uint256[])"
+  ],
+  "0xddf25e18": [
+   "stake(bytes,bytes,uint256[])"
+  ],
+  "0xddf51a8b": [
+   "deposit(uint256[],bytes,uint256)"
+  ],
+  "0xde01cb24": [
+   "redeem(uint256[],uint256,bool)"
+  ],
+  "0xde0e9a3e": [
+   "unwrap(uint256)"
+  ],
+  "0xde3ab781": [
+   "deposit(uint256,uint256[])"
+  ],
+  "0xde3e81b6": [
+   "leave(bool,uint256,bool)"
+  ],
+  "0xde70f500": [
+   "leave(uint256,bool,uint256[])"
+  ],
+  "0xde7c16ab": [
+   "cancel(uint256[],uint256[])"
+  ],
+  "0xde836ebd": [
+   "mint(address,uint256[])"
+  ],
+  "0xde868fe5": [
+   "unstake(uint256[],bytes,uint256)"
+  ],
+  "0xde933be9": [
+   "leave(uint256,bytes)"
+  ],
+  "0xde99a9d7": [
+   "mint(bytes,uint256[],bool)"
+  ],
+  "0xdeef68fa": [
+   "release(uint256,address,bytes)"
+  ],
+  "0xdf00d5c7": [
+   "claim(uint256,bool,address)"
+  ],
+  "0xdf0d5285": [
+   "close(bytes,address,uint256)"
+  ],
+  "0xdf1e21db": [
+   "exit(uint256[],address,address)"
+  ],
+  "0xdf20cd39": [
+   "harvest(uint256[],bytes,address)"
+  ],
+  "0xdf22db88": [
+   "burn(uint256,bool,uint256)"
+  ],
+  "0xdf63cca6": [
+   "remove(bytes,uint256[],bytes)"
+  ],
+  "0xdf96f20b": [
+   "redeem(address,bool,address)"
+  ],
+  "0xdfad4b85": [
+   "burn(address,bool,address)"
+  ],
+  "0xdfbcb71b": [
+   "redeem(bool,uint256,bytes)"
+  ],
+  "0xdfc5348d": [
+   "unstake(bool,bytes)"
+  ],
+  "0xdfcd9e00": [
+   "close(bool,address)"
+  ],
+  "0xdfefc776": [
+   "mint(bool,uint256)"
+  ],
+  "0xdff0d23d": [
+   "harvest(bool,address,address)"
+  ],
+  "0xe008f022": [
+   "remove(uint256,bytes)"
+  ],
+  "0xe00ed32d": [
+   "wrap(address,bytes,uint256[])"
+  ],
+  "0xe011a1f3": [
+   "remove(bool,uint256[],bytes)"
+  ],
+  "0xe02ae075": [
+   "leave(uint256,uint256)"
+  ],
+  "0xe04bd31f": [
+   "release(address,bool,uint256)"
+  ],
+  "0xe062bfe9": [
+   "exit(bool,bytes,bytes)"
+  ],
+  "0xe0667165": [
+   "unstake(uint256,bytes,bytes)"
+  ],
+  "0xe075a2fd": [
+   "collect(address,uint256[],uint256)"
+  ],
+  "0xe07a1f5f": [
+   "stake(uint256,uint256[],uint256[])"
+  ],
+  "0xe0b96564": [
+   "exit(bytes,bytes,bool)"
+  ],
+  "0xe0c8de7d": [
+   "close(address,bytes,uint256[])"
+  ],
+  "0xe14dcdcc": [
+   "unstake(uint256[],uint256[],bytes)"
+  ],
+  "0xe16b0cfc": [
+   "harvest(uint256,bytes,bytes)"
+  ],
+  "0xe172de88": [
+   "repay(address,bool)"
+  ],
+  "0xe19f6033": [
+   "claim(address,bytes,bool)"
+  ],
+  "0xe1b08a69": [
+   "burn(bytes,uint256[],uint256[])"
+  ],
+  "0xe1d00084": [
+   "redeem(bytes,address,bytes)"
+  ],
+  "0xe1d80410": [
+   "claim(bool,uint256,uint256[])"
+  ],
+  "0xe1df964e": [
+   "unstake(uint256,address,bytes)"
+  ],
+  "0xe1e13847": [
+   "withdraw(bool,address)"
+  ],
+  "0xe23b61d1": [
+   "unlock(bool,bytes,uint256[])"
+  ],
+  "0xe24546f2": [
+   "collect(uint256[],uint256)"
+  ],
+  "0xe24b46f1": [
+   "exit(uint256,bool,bytes)"
+  ],
+  "0xe25c07ac": [
+   "cancel(bool,uint256,address)"
+  ],
+  "0xe2660469": [
+   "unwrap(bytes,bool,uint256)"
+  ],
+  "0xe2a210eb": [
+   "collect(bool,bytes,bytes)"
+  ],
+  "0xe2aff800": [
+   "exit(uint256[],bytes,uint256)"
+  ],
+  "0xe2bbb158": [
+   "deposit(uint256,uint256)"
+  ],
+  "0xe2fdac12": [
+   "wrap(uint256,uint256[],bool)"
+  ],
+  "0xe32d2ec3": [
+   "leave(bool,address)"
+  ],
+  "0xe33d562f": [
+   "withdraw(bool,bytes,bytes)"
+  ],
+  "0xe3699b97": [
+   "release(address,bool,address)"
+  ],
+  "0xe37c4fe1": [
+   "stake(bool,uint256,bytes)"
+  ],
+  "0xe3b37f2e": [
+   "harvest(bytes,uint256[],bool)"
+  ],
+  "0xe3ba659d": [
+   "close(uint256,bytes,bool)"
+  ],
+  "0xe3c5cdba": [
+   "stake(address,address,uint256[])"
+  ],
+  "0xe416a6c7": [
+   "burn(address,bytes,address)"
+  ],
+  "0xe43f80a5": [
+   "redeem(uint256,bool,uint256)"
+  ],
+  "0xe449f341": [
+   "unstake(uint256[])"
+  ],
+  "0xe44f82db": [
+   "cancel(address,uint256,bytes)"
+  ],
+  "0xe47258d4": [
+   "harvest(uint256,address,uint256)"
+  ],
+  "0xe473b153": [
+   "cancel(address,uint256[],uint256)"
+  ],
+  "0xe49280cb": [
+   "close(address,uint256)"
+  ],
+  "0xe4a4b7b1": [
+   "harvest(uint256,uint256)"
+  ],
+  "0xe4a5eadf": [
+   "repay(uint256,bytes,bytes)"
+  ],
+  "0xe4ab7698": [
+   "leave(uint256,address,uint256)"
+  ],
+  "0xe4cbb46e": [
+   "burn(uint256[],uint256[])"
+  ],
+  "0xe4d2d3c2": [
+   "withdraw(uint256[],bool,uint256)"
+  ],
+  "0xe4d661cc": [
+   "leave(uint256[],bytes,uint256[])"
+  ],
+  "0xe5003216": [
+   "harvest(address,uint256[],uint256[])"
+  ],
+  "0xe51285e6": [
+   "unstake(bytes,bytes,bool)"
+  ],
+  "0xe5225381": [
+   "collect()"
+  ],
+  "0xe525b9f2": [
+   "unwrap(bytes,uint256,address)"
+  ],
+  "0xe533b3b7": [
+   "close(bytes,uint256[])"
+  ],
+  "0xe5666252": [
+   "burn(uint256,bytes,uint256)"
+  ],
+  "0xe575ec0b": [
+   "remove(bytes,address,address)"
+  ],
+  "0xe5879e28": [
+   "remove(uint256[],uint256[],uint256)"
+  ],
+  "0xe594279c": [
+   "close(bytes,uint256[],address)"
+  ],
+  "0xe5c1bf6e": [
+   "redeem(bytes,bytes)"
+  ],
+  "0xe5daca64": [
+   "withdraw(uint256[],address,address)"
+  ],
+  "0xe5e50659": [
+   "leave(bytes,bytes,uint256[])"
+  ],
+  "0xe5f63687": [
+   "close(bytes,address,bool)"
+  ],
+  "0xe5fa4f91": [
+   "redeem(bool,bytes,uint256[])"
+  ],
+  "0xe607d3cb": [
+   "release(bool,uint256[],address)"
+  ],
+  "0xe63697c8": [
+   "withdraw(uint256,address,uint256)"
+  ],
+  "0xe6459abb": [
+   "exit(uint256[],uint256[],address)"
+  ],
+  "0xe6680ee9": [
+   "unlock(uint256[],uint256[],bytes)"
+  ],
+  "0xe668c5ec": [
+   "claim(uint256[],uint256,bool)"
+  ],
+  "0xe674a0bd": [
+   "unlock(address,address)"
+  ],
+  "0xe67f1a72": [
+   "burn(bool,uint256,bool)"
+  ],
+  "0xe683ad44": [
+   "stake(uint256[],uint256[])"
+  ],
+  "0xe68a55ca": [
+   "harvest(bytes,bytes,uint256[])"
+  ],
+  "0xe6a11882": [
+   "claim(bytes,address,uint256[])"
+  ],
+  "0xe6b29af7": [
+   "repay(bytes,bytes,uint256)"
+  ],
+  "0xe6c7a986": [
+   "collect(address,bytes,uint256[])"
+  ],
+  "0xe6c91a15": [
+   "exit(bool)"
+  ],
+  "0xe6f5f965": [
+   "remove(bool,bool,bytes)"
+  ],
+  "0xe7011193": [
+   "unlock(uint256[],address,address)"
+  ],
+  "0xe71c4090": [
+   "collect(bool,address,bool)"
+  ],
+  "0xe7236812": [
+   "wrap(bool,bytes,bool)"
+  ],
+  "0xe76d78f1": [
+   "exit(uint256[],uint256,address)"
+  ],
+  "0xe77c646d": [
+   "redeem(uint256,bytes)"
+  ],
+  "0xe79f20ef": [
+   "close(uint256,uint256[],bool)"
+  ],
+  "0xe7a20bd0": [
+   "wrap(bytes)"
+  ],
+  "0xe7d3fe6b": [
+   "mint(uint256,uint256,address)"
+  ],
+  "0xe7ec7343": [
+   "cancel(bool)"
+  ],
+  "0xe815e0a2": [
+   "mint(uint256[],bool,uint256)"
+  ],
+  "0xe81efaf4": [
+   "wrap(uint256[],bool,address)"
+  ],
+  "0xe8263cfa": [
+   "unwrap(address,bytes,address)"
+  ],
+  "0xe83b0095": [
+   "exit(address,address,bool)"
+  ],
+  "0xe840427d": [
+   "remove(uint256,uint256,address)"
+  ],
+  "0xe84d43be": [
+   "deposit(bool,uint256[])"
+  ],
+  "0xe86cd458": [
+   "release(address,bool,bytes)"
+  ],
+  "0xe878b1cb": [
+   "withdraw(bool,address,uint256)"
+  ],
+  "0xe8b98f64": [
+   "exit(uint256,uint256[],address)"
+  ],
+  "0xe8c07bed": [
+   "release(uint256[],uint256[],bool)"
+  ],
+  "0xe8cff130": [
+   "remove(bool,uint256,bool)"
+  ],
+  "0xe8de359b": [
+   "unwrap(bytes,address,address)"
+  ],
+  "0xe9044e38": [
+   "exit(bytes,bool,address)"
+  ],
+  "0xe9294ce1": [
+   "cancel(bool,bytes,address)"
+  ],
+  "0xe936f8eb": [
+   "leave(bytes,bytes,bool)"
+  ],
+  "0xe9470364": [
+   "harvest(uint256[],address,bool)"
+  ],
+  "0xe963bf77": [
+   "close(uint256,bool,bytes)"
+  ],
+  "0xe967cb04": [
+   "stake(address,bytes,address)"
+  ],
+  "0xe978abd7": [
+   "unwrap(uint256[],uint256[],uint256)"
+  ],
+  "0xe98a7c12": [
+   "repay(bool,bool,bool)"
+  ],
+  "0xe99d2dd2": [
+   "wrap(bool,bool,bytes)"
+  ],
+  "0xe9af4b3c": [
+   "mint(uint256[],bool,uint256[])"
+  ],
+  "0xe9b7a4d3": [
+   "close(bool,bool,uint256)"
+  ],
+  "0xe9bbeb6a": [
+   "remove(bytes,bool,uint256)"
+  ],
+  "0xe9c07883": [
+   "exit(address,bool,bool)"
+  ],
+  "0xe9cab308": [
+   "harvest(address,uint256[])"
+  ],
+  "0xe9fad8ee": [
+   "exit()"
+  ],
+  "0xea0a6e11": [
+   "leave(address,address,uint256[])"
+  ],
+  "0xea2ea406": [
+   "burn(bool,address,uint256[])"
+  ],
+  "0xea598cb0": [
+   "wrap(uint256)"
+  ],
+  "0xea625415": [
+   "mint(bytes,bool,bytes)"
+  ],
+  "0xea6273f6": [
+   "harvest(bool,bool,bytes)"
+  ],
+  "0xea8a1af0": [
+   "cancel()"
+  ],
+  "0xea928566": [
+   "unwrap(uint256,bytes,uint256[])"
+  ],
+  "0xeabb5e34": [
+   "leave(uint256[],bool)"
+  ],
+  "0xeac13fea": [
+   "harvest(bool,bytes,address)"
+  ],
+  "0xeac1dbc7": [
+   "close(bool,uint256[],bool)"
+  ],
+  "0xeacc3ef7": [
+   "stake(address,bytes,uint256[])"
+  ],
+  "0xead41f08": [
+   "deposit(bool,bool,uint256)"
+  ],
+  "0xead5d359": [
+   "withdraw(address,uint256,bool)"
+  ],
+  "0xeb27e63b": [
+   "remove(uint256,address,bool)"
+  ],
+  "0xeb32ef44": [
+   "close(uint256[],uint256[],bool)"
+  ],
+  "0xeb486847": [
+   "leave(bytes,uint256[])"
+  ],
+  "0xeb6fc419": [
+   "stake(bool,bool,bytes)"
+  ],
+  "0xeb8ae530": [
+   "wrap(bytes,address,address)"
+  ],
+  "0xeb8fa9e0": [
+   "unwrap(uint256,uint256,bytes)"
+  ],
+  "0xebb3f5da": [
+   "remove(bool,uint256,address)"
+  ],
+  "0xebbe236a": [
+   "redeem(address,bool,bool)"
+  ],
+  "0xebda0df6": [
+   "release(address,uint256[],bool)"
+  ],
+  "0xebfa3403": [
+   "claim(bool,address,bytes)"
+  ],
+  "0xec56fa28": [
+   "release(bytes,bool,uint256)"
+  ],
+  "0xec603197": [
+   "unwrap(bytes,bytes,address)"
+  ],
+  "0xec61288f": [
+   "redeem(uint256,bytes,bool)"
+  ],
+  "0xec6cf1eb": [
+   "exit(address,bytes,bytes)"
+  ],
+  "0xec80a198": [
+   "mint(bool,uint256[],uint256[])"
+  ],
+  "0xec917299": [
+   "wrap(address,uint256[],address)"
+  ],
+  "0xecbd45af": [
+   "claim(uint256,address,bytes)"
+  ],
+  "0xecd19817": [
+   "harvest(bytes,uint256,address)"
+  ],
+  "0xecdd5371": [
+   "unstake(uint256,uint256[],uint256[])"
+  ],
+  "0xecfafa82": [
+   "claim(bytes,uint256[],address)"
+  ],
+  "0xed10e0a3": [
+   "claim(uint256[],bytes,bool)"
+  ],
+  "0xed4301c1": [
+   "close(uint256[],bool,uint256)"
+  ],
+  "0xed53e7f3": [
+   "leave(bool,bool,uint256)"
+  ],
+  "0xed614c9d": [
+   "repay(uint256,bool,uint256)"
+  ],
+  "0xed8a840d": [
+   "unstake(bytes,uint256[],bytes)"
+  ],
+  "0xed961c6c": [
+   "cancel(uint256,uint256,bool)"
+  ],
+  "0xedb9984c": [
+   "remove(uint256[],address,address)"
+  ],
+  "0xedc1af59": [
+   "harvest(uint256,bytes)"
+  ],
+  "0xeddbce82": [
+   "redeem(uint256[],address,uint256[])"
+  ],
+  "0xede94aa2": [
+   "close(uint256[],address,uint256)"
+  ],
+  "0xedf0ef03": [
+   "harvest(address,uint256,bytes)"
+  ],
+  "0xee0502df": [
+   "unstake(address,bytes,uint256[])"
+  ],
+  "0xee1fe2ad": [
+   "mint(address,address)"
+  ],
+  "0xee22d15d": [
+   "leave(uint256,bool,bool)"
+  ],
+  "0xee28e1f2": [
+   "release(bool,bytes,bool)"
+  ],
+  "0xee293653": [
+   "leave(bool,address,uint256)"
+  ],
+  "0xee2947d9": [
+   "cancel(address,bytes,uint256[])"
+  ],
+  "0xee2aae2a": [
+   "unlock(address,uint256[],uint256)"
+  ],
+  "0xee595084": [
+   "cancel(uint256,bool,uint256)"
+  ],
+  "0xee76c379": [
+   "claim(bytes,bool,address)"
+  ],
+  "0xee8e0336": [
+   "leave(uint256[],bool,uint256[])"
+  ],
+  "0xee96a519": [
+   "release(bytes,uint256,uint256)"
+  ],
+  "0xeeccebd1": [
+   "repay(uint256[],address,uint256)"
+  ],
+  "0xeedaa514": [
+   "wrap(uint256[],uint256,bytes)"
+  ],
+  "0xef171686": [
+   "wrap(address,uint256[])"
+  ],
+  "0xef1a5c5f": [
+   "leave(uint256[],bytes,bytes)"
+  ],
+  "0xef2226ad": [
+   "release(bytes,uint256,bytes)"
+  ],
+  "0xef265d6d": [
+   "burn(uint256,address,address)"
+  ],
+  "0xef5b9b43": [
+   "release(address,bytes,bool)"
+  ],
+  "0xef60e3b1": [
+   "mint(bool,address,uint256)"
+  ],
+  "0xef693bed": [
+   "exit(address,uint256)"
+  ],
+  "0xef6d77b7": [
+   "collect(bytes,uint256,bool)"
+  ],
+  "0xef9d0033": [
+   "repay(bytes,address)"
+  ],
+  "0xefa9a9be": [
+   "claim(uint256,uint256,uint256)"
+  ],
+  "0xefede4ff": [
+   "wrap(uint256,address,uint256[])"
+  ],
+  "0xf014beec": [
+   "deposit(uint256,bool,uint256)"
+  ],
+  "0xf023a693": [
+   "harvest(uint256,address,bytes)"
+  ],
+  "0xf0a8124f": [
+   "unwrap(uint256,uint256,uint256[])"
+  ],
+  "0xf0b48311": [
+   "mint(bool,address,bytes)"
+  ],
+  "0xf0ca6e76": [
+   "unwrap(uint256,bytes,bool)"
+  ],
+  "0xf1163e47": [
+   "burn(bytes,bytes,bytes)"
+  ],
+  "0xf134fcea": [
+   "leave(uint256,uint256,uint256[])"
+  ],
+  "0xf1451360": [
+   "collect(bytes,uint256[],uint256)"
+  ],
+  "0xf16710cf": [
+   "burn(bytes,bool)"
+  ],
+  "0xf18034a5": [
+   "exit(bool,address,address)"
+  ],
+  "0xf1c7b419": [
+   "redeem(address,bytes,uint256)"
+  ],
+  "0xf1cf1903": [
+   "repay(bytes,bytes,uint256[])"
+  ],
+  "0xf1d2ec1d": [
+   "unlock(uint256,address)"
+  ],
+  "0xf1ddecf9": [
+   "mint(address,address,bytes)"
+  ],
+  "0xf21f3c08": [
+   "unstake(address,address)"
+  ],
+  "0xf223885a": [
+   "deposit(uint256[],uint256[])"
+  ],
+  "0xf2261e40": [
+   "stake(bool,uint256[],uint256[])"
+  ],
+  "0xf2267f82": [
+   "unstake(bool,bytes,uint256[])"
+  ],
+  "0xf235f492": [
+   "close(uint256[],bytes)"
+  ],
+  "0xf23fbc2d": [
+   "repay(bool,bytes,bool)"
+  ],
+  "0xf240c4a0": [
+   "harvest(bool,uint256[],uint256[])"
+  ],
+  "0xf2731f4a": [
+   "mint(bool,uint256,uint256)"
+  ],
+  "0xf2799b7c": [
+   "deposit(uint256[],bool,uint256[])"
+  ],
+  "0xf27beebf": [
+   "leave(uint256,bytes,uint256[])"
+  ],
+  "0xf27dbb36": [
+   "leave(uint256[],bool,address)"
+  ],
+  "0xf283d40d": [
+   "burn(uint256[],bool,bool)"
+  ],
+  "0xf2888dbb": [
+   "unstake(address)"
+  ],
+  "0xf2954265": [
+   "wrap(bytes,uint256[],bool)"
+  ],
+  "0xf297be66": [
+   "release(address,uint256,uint256)"
+  ],
+  "0xf29953b7": [
+   "leave(uint256,address)"
+  ],
+  "0xf2c66f45": [
+   "burn(bool,uint256[],bool)"
+  ],
+  "0xf2cac920": [
+   "deposit(uint256[],address)"
+  ],
+  "0xf2cf6140": [
+   "collect(uint256,uint256[],uint256[])"
+  ],
+  "0xf30fd2b2": [
+   "release(uint256,bytes,address)"
+  ],
+  "0xf3109367": [
+   "mint(bool,bool,address)"
+  ],
+  "0xf32936bc": [
+   "cancel(address,bool,address)"
+  ],
+  "0xf340bda2": [
+   "harvest(uint256,uint256,bytes)"
+  ],
+  "0xf340fa01": [
+   "deposit(address)"
+  ],
+  "0xf3435c25": [
+   "unwrap(address,uint256[])"
+  ],
+  "0xf34916c6": [
+   "leave(bytes,address,uint256[])"
+  ],
+  "0xf363e2ad": [
+   "leave(bytes,address)"
+  ],
+  "0xf378d4a1": [
+   "exit(bytes,address,address)"
+  ],
+  "0xf389b6e4": [
+   "claim(uint256[],address,address)"
+  ],
+  "0xf392bef5": [
+   "stake(uint256[],uint256,uint256)"
+  ],
+  "0xf3a20d1d": [
+   "redeem(bool,bool,bool)"
+  ],
+  "0xf3ae2a1d": [
+   "unlock(uint256,bool,bool)"
+  ],
+  "0xf3b77f30": [
+   "close(bytes,bytes)"
+  ],
+  "0xf3da17e8": [
+   "unlock(uint256,address,bytes)"
+  ],
+  "0xf3f32729": [
+   "unwrap(bytes,address,bool)"
+  ],
+  "0xf3fef3a3": [
+   "withdraw(address,uint256)"
+  ],
+  "0xf406ba4e": [
+   "leave(address,uint256,uint256)"
+  ],
+  "0xf44b705d": [
+   "remove(uint256,uint256,bool)"
+  ],
+  "0xf44d7216": [
+   "wrap(bool,address,uint256[])"
+  ],
+  "0xf45346dc": [
+   "deposit(address,uint256,address)"
+  ],
+  "0xf459196c": [
+   "release(uint256[],bool,bytes)"
+  ],
+  "0xf4600d9c": [
+   "unstake(uint256[],address,address)"
+  ],
+  "0xf46a8a6d": [
+   "claim(uint256[],address,uint256)"
+  ],
+  "0xf4704ed3": [
+   "cancel(uint256[],address,uint256)"
+  ],
+  "0xf47c3878": [
+   "mint(uint256,bytes,address)"
+  ],
+  "0xf4836c5d": [
+   "cancel(address,bytes,bytes)"
+  ],
+  "0xf4c7ac96": [
+   "claim(bool,uint256,bool)"
+  ],
+  "0xf4e74c08": [
+   "unwrap(bool,uint256[],bool)"
+  ],
+  "0xf4f23cb8": [
+   "collect(uint256,uint256[])"
+  ],
+  "0xf5298aca": [
+   "burn(address,uint256,uint256)"
+  ],
+  "0xf52cb86e": [
+   "cancel(bytes,uint256,address)"
+  ],
+  "0xf52dd161": [
+   "unstake(bool,uint256[],address)"
+  ],
+  "0xf53fe4f9": [
+   "withdraw(uint256[],uint256[],bytes)"
+  ],
+  "0xf5467d8f": [
+   "unwrap(uint256,uint256[])"
+  ],
+  "0xf54ac246": [
+   "harvest(address,uint256,address)"
+  ],
+  "0xf57a9891": [
+   "collect(address,uint256[],bool)"
+  ],
+  "0xf59f162a": [
+   "unwrap(address,bool)"
+  ],
+  "0xf5afc305": [
+   "wrap(bool,address,uint256)"
+  ],
+  "0xf5bf7413": [
+   "close(address,address,uint256)"
+  ],
+  "0xf5ca3134": [
+   "deposit(address,uint256[],address)"
+  ],
+  "0xf61fba07": [
+   "close(bytes,address,bytes)"
+  ],
+  "0xf635c3ea": [
+   "claim(uint256,bytes,uint256)"
+  ],
+  "0xf648e3e3": [
+   "mint(bytes,bool,address)"
+  ],
+  "0xf66a25a4": [
+   "unstake(address,bool)"
+  ],
+  "0xf6960c90": [
+   "burn(bytes,uint256,bool)"
+  ],
+  "0xf6b5edf8": [
+   "wrap(bytes,uint256,uint256)"
+  ],
+  "0xf6b911bc": [
+   "burn(address,address,uint256)"
+  ],
+  "0xf6bf22ab": [
+   "wrap(bool,uint256[],uint256)"
+  ],
+  "0xf6c0afed": [
+   "unwrap(address,address,bytes)"
+  ],
+  "0xf6c561b3": [
+   "repay(bool,address,uint256)"
+  ],
+  "0xf6cd38ca": [
+   "wrap(bool,bytes)"
+  ],
+  "0xf6da8c44": [
+   "unlock(bool,bool,bool)"
+  ],
+  "0xf6ea5f2a": [
+   "close(bool,uint256,uint256)"
+  ],
+  "0xf6ec67c1": [
+   "unstake(address,bytes,bool)"
+  ],
+  "0xf6fab215": [
+   "remove(bool,address,bool)"
+  ],
+  "0xf730fa5e": [
+   "close(bool,uint256[],address)"
+  ],
+  "0xf7588701": [
+   "harvest(address,uint256,uint256)"
+  ],
+  "0xf759681a": [
+   "harvest(uint256,bytes,uint256[])"
+  ],
+  "0xf76265f3": [
+   "unstake(address,uint256[],address)"
+  ],
+  "0xf7758a31": [
+   "deposit(uint256[],address,uint256[])"
+  ],
+  "0xf7778046": [
+   "close(bytes,bytes,bytes)"
+  ],
+  "0xf79504cc": [
+   "harvest(bool,bytes)"
+  ],
+  "0xf7aaa3e0": [
+   "unstake(address,bytes,address)"
+  ],
+  "0xf7ab8b60": [
+   "harvest(bytes,uint256,bytes)"
+  ],
+  "0xf7db2f32": [
+   "mint(address,uint256[],address)"
+  ],
+  "0xf7fae5d8": [
+   "close(uint256[],bool,uint256[])"
+  ],
+  "0xf8063a95": [
+   "repay(bytes,bytes)"
+  ],
+  "0xf8068a25": [
+   "unstake(bool,uint256[])"
+  ],
+  "0xf81276c6": [
+   "unlock(bytes,address,uint256)"
+  ],
+  "0xf81a0ef0": [
+   "unlock(bool,uint256,uint256)"
+  ],
+  "0xf82ee7a7": [
+   "deposit(bool,uint256,bool)"
+  ],
+  "0xf830487b": [
+   "close(uint256[],uint256,bytes)"
+  ],
+  "0xf836b7a3": [
+   "remove(uint256,uint256[],address)"
+  ],
+  "0xf84945ae": [
+   "burn(bool,uint256[])"
+  ],
+  "0xf87a487b": [
+   "remove(bool,uint256[],address)"
+  ],
+  "0xf88eae51": [
+   "cancel(uint256[],uint256,bytes)"
+  ],
+  "0xf8aeaaab": [
+   "cancel(bool,uint256[])"
+  ],
+  "0xf8af162b": [
+   "unstake(bytes,uint256[],uint256[])"
+  ],
+  "0xf8bdb0f1": [
+   "stake(bytes,uint256,bool)"
+  ],
+  "0xf8befa08": [
+   "leave(address,bytes)"
+  ],
+  "0xf8e93ef9": [
+   "mint(uint256[])"
+  ],
+  "0xf8ebaacd": [
+   "redeem(bool,uint256,uint256)"
+  ],
+  "0xf8f5b914": [
+   "withdraw(bytes,bytes,address)"
+  ],
+  "0xf902fa38": [
+   "unstake(uint256[],uint256[],bool)"
+  ],
+  "0xf9067329": [
+   "remove(bool,bool,bool)"
+  ],
+  "0xf9313070": [
+   "harvest(uint256[],uint256,uint256[])"
+  ],
+  "0xf940e385": [
+   "withdraw(address,address)"
+  ],
+  "0xf9609f08": [
+   "deposit(address,address)"
+  ],
+  "0xf9688397": [
+   "wrap(uint256,uint256,bool)"
+  ],
+  "0xf96a6179": [
+   "close(uint256[],uint256)"
+  ],
+  "0xf96eb446": [
+   "leave(bytes,bool)"
+  ],
+  "0xf97fa0a7": [
+   "deposit(bool,bytes,bytes)"
+  ],
+  "0xf9934064": [
+   "release(uint256,uint256[],address)"
+  ],
+  "0xf9afb26a": [
+   "redeem(uint256[])"
+  ],
+  "0xf9b67d8c": [
+   "wrap(address,uint256[],uint256)"
+  ],
+  "0xf9d22b9a": [
+   "unlock(address,bytes,bool)"
+  ],
+  "0xf9f629c5": [
+   "cancel(address,uint256[])"
+  ],
+  "0xfa13ed7e": [
+   "collect(bool,uint256[],uint256)"
+  ],
+  "0xfa2641d0": [
+   "unlock(uint256,bytes,uint256[])"
+  ],
+  "0xfa38dcd5": [
+   "close(uint256[],uint256[],bytes)"
+  ],
+  "0xfa5062c7": [
+   "wrap(uint256[],uint256[],bool)"
+  ],
+  "0xfa554e6c": [
+   "withdraw(address,bool,address)"
+  ],
+  "0xfa57e608": [
+   "deposit(bool,bool,uint256[])"
+  ],
+  "0xfa67458c": [
+   "withdraw(uint256[],address,bytes)"
+  ],
+  "0xfa751606": [
+   "withdraw(uint256,uint256[],address)"
+  ],
+  "0xfa7dd04d": [
+   "stake(address,bytes,bytes)"
+  ],
+  "0xfaa9bce9": [
+   "deposit(uint256,address,bytes)"
+  ],
+  "0xfad3b037": [
+   "claim(uint256,uint256[],uint256)"
+  ],
+  "0xfadd21aa": [
+   "stake(address,bool,uint256[])"
+  ],
+  "0xfaf33518": [
+   "mint(address,address,bool)"
+  ],
+  "0xfaf8e47e": [
+   "unstake(uint256[],uint256)"
+  ],
+  "0xfb0462b1": [
+   "stake(uint256,bytes,address)"
+  ],
+  "0xfb0b475b": [
+   "mint(address,address,uint256[])"
+  ],
+  "0xfb183a02": [
+   "unwrap(uint256,address,address)"
+  ],
+  "0xfb1d6bb4": [
+   "deposit(uint256[],bool,bool)"
+  ],
+  "0xfb2be9d7": [
+   "wrap(bytes,uint256,address)"
+  ],
+  "0xfb320c08": [
+   "remove(bytes,bool,address)"
+  ],
+  "0xfb3c967f": [
+   "redeem(bool,uint256)"
+  ],
+  "0xfb3f1f10": [
+   "release(bool,bool,uint256[])"
+  ],
+  "0xfb64a0da": [
+   "burn(bytes,uint256[],bool)"
+  ],
+  "0xfb8825d6": [
+   "repay(address,address,address)"
+  ],
+  "0xfb8c5ef0": [
+   "withdraw(address,uint256,uint256[])"
+  ],
+  "0xfbac89f6": [
+   "unlock(bool)"
+  ],
+  "0xfbc44476": [
+   "wrap(uint256,uint256,uint256)"
+  ],
+  "0xfbced3d0": [
+   "claim(bool,uint256[])"
+  ],
+  "0xfbd8c311": [
+   "unlock(uint256[],uint256,address)"
+  ],
+  "0xfbe59ac1": [
+   "repay(bytes,uint256,uint256)"
+  ],
+  "0xfbf2ba3e": [
+   "burn(bytes,uint256,address)"
+  ],
+  "0xfbffb43d": [
+   "remove(uint256,uint256[],bytes)"
+  ],
+  "0xfc0279d0": [
+   "cancel(bool,bool,uint256)"
+  ],
+  "0xfc2559cb": [
+   "wrap(uint256[],address)"
+  ],
+  "0xfc2b343b": [
+   "leave(uint256[],uint256,uint256)"
+  ],
+  "0xfc78fa85": [
+   "wrap(uint256,uint256[])"
+  ],
+  "0xfc7b6853": [
+   "close(uint256,address,uint256)"
+  ],
+  "0xfc866564": [
+   "harvest(uint256[],uint256[],bytes)"
+  ],
+  "0xfc898928": [
+   "withdraw(uint256[],uint256)"
+  ],
+  "0xfc89f0dd": [
+   "cancel(address,bool,bytes)"
+  ],
+  "0xfc99487a": [
+   "unlock(address,bytes,uint256)"
+  ],
+  "0xfca6541f": [
+   "cancel(address,bytes,address)"
+  ],
+  "0xfcabd960": [
+   "remove(bool,bool)"
+  ],
+  "0xfcb38adf": [
+   "cancel(uint256,uint256[],bool)"
+  ],
+  "0xfcb4b323": [
+   "leave(bytes,address,bool)"
+  ],
+  "0xfcbec2df": [
+   "close(bytes,uint256[],bytes)"
+  ],
+  "0xfcccdc45": [
+   "wrap(bytes,bytes,address)"
+  ],
+  "0xfcd3533c": [
+   "burn(uint256,address)"
+  ],
+  "0xfcdf5438": [
+   "unlock(bytes,uint256[],uint256)"
+  ],
+  "0xfce5ec95": [
+   "mint(address,bool,bytes)"
+  ],
+  "0xfd02ffb7": [
+   "unwrap()"
+  ],
+  "0xfd0705b2": [
+   "mint(uint256,bool,uint256[])"
+  ],
+  "0xfd0944b3": [
+   "release(bool,bytes,bytes)"
+  ],
+  "0xfd1b01b7": [
+   "cancel(uint256[],uint256[],uint256)"
+  ],
+  "0xfd33a97a": [
+   "cancel(uint256[],bool,address)"
+  ],
+  "0xfd495dcb": [
+   "burn(uint256[],address,bool)"
+  ],
+  "0xfd4a007f": [
+   "redeem(address,bytes,uint256[])"
+  ],
+  "0xfd956fe0": [
+   "unwrap(bool)"
+  ],
+  "0xfdbba0be": [
+   "withdraw(bool,uint256[],address)"
+  ],
+  "0xfdbe8c3b": [
+   "withdraw(bytes,address,uint256)"
+  ],
+  "0xfde85294": [
+   "wrap(uint256[],uint256,address)"
+  ],
+  "0xfdf093df": [
+   "stake(bytes,address,uint256[])"
+  ],
+  "0xfe23245a": [
+   "mint(address,uint256,uint256[])"
+  ],
+  "0xfe377e8d": [
+   "claim(uint256,uint256[],address)"
+  ],
+  "0xfe63d27e": [
+   "cancel(bool,bool)"
+  ],
+  "0xfe786ee6": [
+   "mint(bool,bool)"
+  ],
+  "0xfe7ca978": [
+   "leave(bytes,uint256,bool)"
+  ],
+  "0xfe87a853": [
+   "harvest(uint256,bool,address)"
+  ],
+  "0xfe89a82d": [
+   "unstake(uint256,bool,bytes)"
+  ],
+  "0xfe97ca18": [
+   "unlock(bytes,uint256[],bytes)"
+  ],
+  "0xfe9aed8e": [
+   "remove(bytes,uint256,bool)"
+  ],
+  "0xfe9d9303": [
+   "burn(uint256,bytes)"
+  ],
+  "0xfeab7cd8": [
+   "remove(uint256,bytes,bool)"
+  ],
+  "0xfed413da": [
+   "harvest(uint256[],bytes)"
+  ],
+  "0xfef798bc": [
+   "leave(bool,address,address)"
+  ],
+  "0xff0ac5bf": [
+   "close(address,bool,uint256[])"
+  ],
+  "0xff3d650b": [
+   "repay(uint256,uint256[],bool)"
+  ],
+  "0xff450ff0": [
+   "exit(bool,bool,bool)"
+  ],
+  "0xff4c4e6b": [
+   "mint(bytes,address,address)"
+  ],
+  "0xff61da9b": [
+   "leave(bytes,address,uint256)"
+  ],
+  "0xff7885e8": [
+   "withdraw(address,address,address)"
+  ],
+  "0xff7b3d77": [
+   "unstake(uint256[],bool,bool)"
+  ],
+  "0xff931d45": [
+   "wrap(uint256,uint256[],uint256[])"
+  ],
+  "0xffb4f2e7": [
+   "harvest(bytes,address,uint256[])"
+  ],
+  "0xffea6abd": [
+   "burn(bytes,bytes,bool)"
+  ],
+  "0xfffbda2d": [
+   "claim(bytes,bytes,bool)"
+  ]
+ }
+}
