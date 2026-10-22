@@ -555,11 +555,53 @@ claims outside the batch stay locked (D').
 | D4 present | ✅ Exits (1:1, two steps) | Step 5: once a batch covers the claim, the holder redeems alone with just the claim id. This week's wait: median ~40h, max ~6 days |
 | D1 frontend / D2 company API / D3 indexer / D5 default RPC removed | Same outcome as above | The whole T0 run never used any of them. The only blocking dependency found is D4 |
 
-**Capital exposed to D4 at the fork block** (directly measured so far): claims waiting for a batch held **4,204.19 stETH**
-in `0x889e`. Every stETH holder (our user: 5,084.27 stETH) needs a batch to exit through the protocol.
+**Capital exposed to D4 at the fork block 26,248,199:**
+- **9,661,657.11 stETH**: stETH `totalSupply()` (read from unmodified chain state). Every stETH needs a batch to exit through the protocol.
+- Of which **4,204.19 stETH** is already in claims waiting for a batch (held by `0x889e`).
+- Our user: 5,084.27 stETH.
 
 **What the user had to work out alone at T0:** where their position is (log scan + spam filtering), that the stETH
 contract is a proxy, that no function names could be recovered, which contract and function other users use to exit,
 the call layout, the 1,000 stETH / 100 wei limits (by probing), and the two-step design.
 
 **Fallback (SPEC §4, not a pass):** selling on the trading route seen in step 3b.
+
+**Why T1 and T2 aren't run for Lido:** tiers add **information** (repo artifacts, block explorers, public RPCs),
+not **permissions**. The T0 run is blocked by a caller check on the daily batch (steps 3d, 5), and no amount of
+information gets past that. Higher tiers would only make discovery faster; the outcome stays 🔴 with D4 removed
+(SPEC §3).
+
+### Required infrastructure (everything the user's node had to support)
+
+| Capability | Used in | What it needs on a self-run node |
+|------------|---------|----------------------------------|
+| `eth_getBalance`, `eth_getTransactionCount`, `eth_getCode`, `eth_getStorageAt` | 1, 3a.1, 3b | Any full node |
+| `eth_getLogs` over **all history** (address and topic filters) | 2, 3b, 3c | Full node that keeps all receipts/logs. Since 2025, clients may drop pre-Merge history by default. Hosted providers limit block ranges |
+| `eth_getTransactionByHash` for any past tx | 2, 3b, 3c | Full node with a complete tx index. Some clients only index recent txs by default; check client settings |
+| `eth_call` against **past state**, with a chosen `from` | 3d, 4 | **Archive node** |
+| `debug_traceCall`, `debug_traceTransaction` (`callTracer`, `withLog`) | 3a.1, 3b, 3c, 3d | **Archive node** with the debug API enabled |
+| Local simulation (fork, impersonation, time travel) | 4, 5 | A local tool (anvil) on top of an archive node |
+
+Stand-in used for this run: anvil forked from Alchemy (Pay As You Go), standard JSON-RPC methods only (SPEC §6).
+
+### Timings (raw; how to report "recovery time" is still open, SPEC open questions)
+
+| Step | What | Queries / execution | Analysis (approx.) |
+|------|------|---------------------|--------------------|
+| 1 | Basic account facts | 2s | — |
+| 2 | Find every token contract, find stETH | 69s | ~5 min |
+| 3a.1 | Proxy check + trace | ~11s | ~2 min |
+| 3a.2 | Selectors + word list | ~1s | ~3 min |
+| 3b part 1 | Where stETH goes (7 days) | 48s | ~5 min |
+| 3b prep | Check that tracing works | ~5s | ~2 min |
+| 3b phase 1 | All 2,213 txs, grouped | 33s | ~5 min |
+| 3b phase 2 | 27 traces | 6.4s | ~5 min |
+| 3b phase 2b | Decode deposit record | — | ~3 min |
+| 3c | Every event of `0x889e` | 15s | ~10 min |
+| 3d | Redemptions, batches, caller test | ~1 min | ~15 min |
+| 4 | Run the exit (approve, limits, hand-in, try redeem, +7 days) | ~3 min | — |
+| 5 | Proof: same claim with/without batch | ~1 min | — |
+| **Total** | | **~8 min of queries/execution** | **~55 min of analysis** |
+
+Wall clock for the whole run: 12:41:06Z → 16:25:03Z (3h44m). Most of it was building the method itself (scripts, rules)
+and discussing it, which a rerun wouldn't repeat.

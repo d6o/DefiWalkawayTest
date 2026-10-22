@@ -36,6 +36,10 @@ Results are reported for each tier, so it's clear what each exit depends on.
 | **T1** | T0 plus artifacts in the protocol's public git repo (ABIs, deployment addresses, docs) |
 | **T2** | T1 plus third-party public services (Etherscan, public RPCs, IPFS gateways) |
 
+**Run order:** T0 first. If the T0 run is blocked by a **permission check** (D4), T1 and T2 aren't run:
+tiers add information, not permissions, so the outcome can't change. If T0 is blocked for lack of information,
+the higher tiers are run.
+
 ## 4. What counts as success
 
 The user **finds every position in the protocol being tested** and **gets all the assets back to their wallet, rewards included**.
@@ -57,7 +61,8 @@ protocol dependencies. "You can only leave by selling at market" is still report
 
 ## 6. Environment
 
-- Mainnet fork pinned to a specific block (recorded with each run).
+- Mainnet fork pinned to **one block for all protocols: 26,248,199** (2026-10-22 12:37:23 UTC), so results are
+  directly comparable. Recorded with each run.
 - Real holder addresses are impersonated to reproduce historical positions.
 - All runs must be reproducible from the repo.
 - **Node stand-in:** a hosted archive RPC (Alchemy, Pay As You Go) stands in for "your own node".
