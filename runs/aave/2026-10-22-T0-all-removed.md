@@ -381,7 +381,12 @@ user's own history (step 2):
 
 ---
 
-## Result: Aave, T0
+## Result: Aave V3, T0 — ◐ Partial exit
+
+**Tag: ◐ Partial exit** (SPEC §5). With only their own funds, the user gets **61.67 weETH (13.5% of the aEthweETH
+position)** out. A **full exit is possible** (step 7, with capital provided by the experimenter), but it is **very
+challenging to find without assistance**: understanding why most of the position was locked and how to unlock it took
+call traces, bytecode searches, the user's own history, and a cause-and-effect test (steps 4–6).
 
 | Scenario | Result | Why |
 |----------|--------|-----|

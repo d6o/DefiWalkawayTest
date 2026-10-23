@@ -10,7 +10,7 @@ Each row links to the full run log, where every claim is backed by a query, tran
 | # | Protocol | Test address (SPEC §8) | Position | Exit at T0, all dependencies removed | What blocks it | Capital exposed |
 |---|----------|------------------------|----------|--------------------------------------|----------------|-----------------|
 | 1 | [Lido](runs/lido/2026-10-22-T0-all-removed.md) | `0xde80…b9e2` | 5,084.27 stETH | 🔴 **Blocked** | **D4:** a permissioned daily batch | 9,661,657 stETH (all of it) |
-| 2 | [Aave](runs/aave/2026-10-22-T0-all-removed.md) | `0x462a…31d0` | 456.48 aEthweETH + 4,515.39 aEthwstETH, 5,762.76 WETH debt | ✅ **Full exit** with capital; **partial** (61.67 weETH, 13.5%) with own funds | Nothing on the paths used; the user's own debt limits withdrawals | None found on the paths used |
+| 2 | [Aave V3](runs/aave/2026-10-22-T0-all-removed.md) | `0x462a…31d0` | 456.48 aEthweETH + 4,515.39 aEthwstETH, 5,762.76 WETH debt | ◐ **Partial exit**: 61.67 weETH (13.5% of the aEthweETH position) with own funds. Full exit possible (shown with capital), but **very hard to find without assistance** | The user's own debt caps withdrawals; no dependency on the paths used | None found on the paths used |
 | 3 | Binance staked ETH | — | — | — | — | — |
 | 4 | EigenCloud | — | — | — | — | — |
 | 5 | Spark | — | — | — | — | — |
@@ -33,7 +33,12 @@ wait for a daily batch → redeem the claim for ETH, 1:1.
 - **Capital exposed:** every stETH needs the batch to exit through the protocol: **9,661,657 stETH**; 4,204 stETH
   were already in claims waiting for a batch at the fork block.
 
-## Aave
+## Aave V3 — ◐ Partial exit
+
+**Result:** with only their own funds, the user gets **61.67 weETH (13.5% of the aEthweETH position)** out. A **full exit is
+possible**: it was completed on the fork once the capital to repay the debt was provided. But finding out how, and why
+most of the position was locked, was **very challenging without assistance**: it took traces, bytecode searches, the
+user's own transaction history, and a cause-and-effect test (run log steps 4–7).
 
 **Exit path found at T0:** `withdraw(asset, amount, recipient)` on `0x8787…a4e2`. It's the only function the fixed
 word list could name, and it works in one step.
@@ -51,7 +56,8 @@ word list could name, and it works in one step.
 ## Findings across protocols
 
 1. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
-   without the permissioned batch. Aave can be exited by anyone with the capital to repay.
+   without the permissioned batch. Aave V3 can be fully exited by anyone with the capital to repay, but our user,
+   with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
 2. **Knowing what to do takes expert work at T0.** With only a node, users have to:
    - find their positions in a log scan full of spam and address-poisoning tokens (77 of 78 contracts for the Lido user);
    - work without function names: only 1 exit function was nameable across both protocols (Aave's `withdraw`);
@@ -71,4 +77,4 @@ word list could name, and it works in one step.
 | Protocol | Queries / execution | Analysis | Wall clock | Note |
 |----------|---------------------|----------|------------|------|
 | Lido | ~8 min | ~55 min | 3h44m | Includes building the method and scripts |
-| Aave | ~4 min | ~35 min | 34 min | Method and scripts reused |
+| Aave V3 | ~4 min | ~35 min | 34 min | Method and scripts reused |

@@ -72,6 +72,7 @@ protocol dependencies. "You can only leave by selling at market" is still report
 | 🟡 Harder but possible | e.g. log scans are needed instead of a subgraph |
 | 🟠 Needs real work to recover | e.g. rebuilding a Merkle proof, reconstructing an ABI |
 | 🔴 Blocked | Blocked until a privileged actor acts |
+| ◐ Partial exit | Only part of the position comes out with the user's own funds (§4). The run records why, and whether a full exit is possible at all |
 
 ## 6. Environment
 
@@ -125,7 +126,7 @@ Picking the address is experiment setup. The walkaway test itself starts after t
 | Protocol | Token | Address | Balance | Snapshot |
 |----------|-------|---------|---------|----------|
 | Lido | stETH | `0xde804e46f67ebeecbe4c0a54efe33143cb7ab9e2` | 5,084 stETH | `data/selection/2026-10-22-ethplorer-steth-top100.json` (~block 26,248,199) |
-| Aave | aEthweETH (`0xBdfa7b7893081B35Fb54027489e2Bc7A38275129`) | `0x462a336dcac6eaf544106266914caa5a18b831d0` | 456.48 aEthweETH | `data/selection/2026-10-22-ethplorer-aethweeth-top100.json`; product/token choice: `data/selection/2026-10-22-defillama-aave-v3.json` |
+| Aave V3 | aEthweETH (`0xBdfa7b7893081B35Fb54027489e2Bc7A38275129`) | `0x462a336dcac6eaf544106266914caa5a18b831d0` | 456.48 aEthweETH | `data/selection/2026-10-22-ethplorer-aethweeth-top100.json`; product/token choice: `data/selection/2026-10-22-defillama-aave-v3.json` |
 
 ## 9. Naming functions at T0
 
