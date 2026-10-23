@@ -254,3 +254,86 @@ so nothing is decoded automatically. Noted for T2: with a signature database, th
 3. **The limit shrinks over time** (−0.00004 weETH in 12s), while the aEthweETH balance itself grows slightly. So an
    amount that passes a simulation can fail a few seconds later. Users have to leave a margin.
 4. Why there is a limit, and why it shrinks, isn't shown by the chain yet.
+
+### Step 5: is there an on-chain link between aEthweETH and the "Variable Debt WETH" token?
+**Time:** 01:40:39Z → ~01:43Z (queries ~30s, reading ~3 min).
+**Knowledge used:** `debug_traceCall`, `debug_traceTransaction`, `eth_getStorageAt` (EIP-1967 slot), searching bytecode for
+an address, the user's own history from step 2.
+**Raw data:** `data/step5/trace_withdraw_all.json`, `data/step5/trace_debt_mint.json`.
+
+**Check 1: what does `withdraw` read before rejecting?** Trace of `withdraw(weETH, 2²⁵⁶−1, user)` (reverts `0x6679996d`):
+```
+USER -> 0x8787 (0x69328dec) → logic 0x728a…03cf → DELEGATECALL 0x584c…7d8c (0x186dea44)
+   STATICCALL aEthweETH            0x1da24f3e(…)
+   CALL       aEthweETH            0xb18d6afd(…)
+   STATICCALL variableDebtEthWETH  0x1da24f3e(user) → 5,196.9906   (balanceOf: 5,763.7603)
+   STATICCALL aEthwstETH           0x1da24f3e(user) → 4,508.7622   (balanceOf: 4,515.3880)
+   → revert 0x6679996d
+```
+`0x8787` reads the user's figure from **all three** Aave-named contracts with the same unnamed function, right before
+rejecting. The values differ from `balanceOf`, so it's an internal figure, but it's an input to the decision.
+
+**Check 2: what created the user's "Variable Debt WETH" balance?** From the user's history (step 2): 15 mints and 12 burns,
+**all in txs the user sent to `0xd01607c3c5ecaba394d8be377a08590149325722`** (mints via `0xe74f7b85`, burns via `0xbcc3c255`).
+Trace of the first mint (`0xb81bd692…`, block 25,080,540):
+```
+USER -> 0xd016 (0xe74f7b85)
+  0xd016 -> 0x8787 (0xa415bcad)              → 0x8787 mints 1,400 variableDebtEthWETH to USER
+  WETH 1,400: 0x4d5f…14e8 -> 0xd016
+  0xd016 -> WETH withdraw(uint256)            → 1,400 ETH to 0xd016   (name from the fixed list)
+  0xd016 -> USER                              → 1,400 ETH
+```
+**In one transaction the user received 1,400 ETH and `0x8787` minted them 1,400 of the debt-named token.**
+
+**Check 3: do the contracts reference each other?** EIP-1967 implementation of each, then search its code for `0x8787`'s address:
+
+| Token | Implementation | Size | Contains `0x8787…a4e2` |
+|-------|----------------|------|------------------------|
+| aEthweETH | `0xadc45df3…7ada` | 10,477 B | ✅ |
+| aEthwstETH | `0xadc45df3…7ada` (**same logic**) | 10,477 B | ✅ |
+| variableDebtEthWETH | `0xb27c52c7…e330` | 7,198 B | ✅ |
+
+**Where the hypothesis stands:**
+
+| Claim | Status |
+|-------|--------|
+| The debt-named balance is minted by `0x8787` while the user receives the same amount of ETH | ✅ shown |
+| `0x8787`'s withdraw logic reads it (and the other deposit) | ✅ shown |
+| It **causes** the cap on withdrawals | ⚠️ consistent, not yet shown → step 6 |
+
+**Finding (usability):** this link was only found with call traces, bytecode searches, and following a helper contract
+through the user's own history. The chain contains everything, but **a normal user couldn't realistically put it together
+without expert tooling or AI assistance.**
+
+### Step 6: does the "Variable Debt WETH" balance cause the cap? (cause-and-effect test)
+**Time:** 01:48:50Z → 01:49:21Z (~30s of execution) plus reading (~3 min).
+**Knowledge used:** the user's own burn path, read from their history (trace of their last burn, `data/step6/trace_debt_burn.json`):
+```
+USER -> 0xd016 (0xbcc3c255)  value 220 ETH; args [0x8787…a4e2, 220e18, USER]
+  0xd016 -> WETH (0xd0e30db0)        220 ETH → WETH
+  0xd016 -> 0x8787 (0x573ade81)      args [WETH, 220e18, 2, USER]
+     → burns 219.9973 variableDebtEthWETH from USER; WETH 220 → 0x4d5f…14e8
+```
+**Design:** use only the user's own funds. Each action in its own block, +1s apart; after each one, binary-search the
+max withdrawable weETH again.
+- **Control:** a plain 0.1 ETH transfer to self.
+- **Treatment:** **1 ETH** through the user's own path: `0xd016.0xbcc3c255(0x8787…a4e2, 1e18, USER)` with 1 ETH.
+
+**Raw data:** `data/step6/causal_test.json`.
+
+| State | Block | User ETH | Debt-named `balanceOf` | Max withdrawable weETH | Change in max |
+|-------|-------|----------|------------------------|------------------------|---------------|
+| Start | 26,248,201 | 1.056550 | 5,763.760349 | 0.000996647 | — |
+| After control (tx `0x9330f61f…`) | 26,248,202 | 1.056547 | 5,763.760353 | 0.000993294 | **−0.000003353** |
+| After treatment (tx `0xc348270c…`, status 1, 162,930 gas) | 26,248,203 | 0.056529 | **5,762.760357** | **0.952506820** | **+0.951513526** |
+
+**Findings:**
+1. **Shown: lowering the debt-named balance raises the cap.** −1.0 on that balance → **+0.95 weETH** withdrawable.
+   The control changed nothing beyond time drift.
+2. **Why the cap shrinks over time:** the debt-named balance **grows by itself** (+0.000004 in 1s with no action),
+   and the cap shrinks with it (step 4).
+3. So the step 2 hypothesis is now supported by evidence: the balance minted by `0x8787` when the user received ETH
+   (step 5) **limits how much of the deposit can be withdrawn**, and it grows over time.
+4. **To withdraw everything, the user has to bring back what they received** (~5,762.76, sent through the same path).
+   They hold 0.06 ETH and 61.67 weETH. That's a **capital** limit, not a dependency (D1–D5): the protocol path itself
+   needed no frontend, API, indexer, or privileged actor.

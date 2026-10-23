@@ -1,0 +1,28 @@
+{
+ "0. start": {
+  "block": 26248201,
+  "ts": 1792672656,
+  "eth": 1056549907557228746,
+  "debt_balanceOf": 5763760349490003926447,
+  "max_withdraw_weETH": 996647168839125
+ },
+ "1. after control (0.1 ETH self)": {
+  "block": 26248202,
+  "ts": 1792672657,
+  "eth": 1056547164465282746,
+  "debt_balanceOf": 5763760353014511612271,
+  "max_withdraw_weETH": 993294341045911
+ },
+ "treatment_tx": "0xc348270c972c1594f44b6b6b114bff884c43b01d51944b6b1bc486ed26eaf212",
+ "treatment_status": "0x1",
+ "2. after 1 ETH via 0xd016": {
+  "block": 26248203,
+  "ts": 1792672658,
+  "eth": 56528540437503706,
+  "debt_balanceOf": 5762760356539019300251,
+  "max_withdraw_weETH": 952506820103599744
+ },
+ "delta_control": -3352827793214,
+ "delta_treatment": 951513525762553833,
+ "delta_debt": -999996475492312020
+}
