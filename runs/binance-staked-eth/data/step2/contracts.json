@@ -1,0 +1,50 @@
+{
+ "summary": {
+  "address": "0x066eb6929f18a72093c5afc9eba6dd476df876bc",
+  "to_block": 26248199,
+  "match": "wBETH",
+  "started": "2026-10-23T02:26:28+00:00",
+  "ended": "2026-10-23T02:26:35+00:00",
+  "seconds": 7.0,
+  "log_counts": {
+   "transfer_in": 3,
+   "transfer_out": 0,
+   "1155_single_in": 0,
+   "1155_single_out": 0,
+   "1155_batch_in": 0,
+   "1155_batch_out": 0
+  },
+  "contracts": 2,
+  "rpc_calls_note": "eth_getLogs via LOGS_RPC_URL; eth_call via CALL_RPC_URL (fork)"
+ },
+ "contracts": [
+  {
+   "contract": "0xa2e3356610840701bdf5611a53974510ae27e2e1",
+   "name": "Wrapped Binance Beacon ETH",
+   "symbol": "wBETH",
+   "decimals": 18,
+   "balanceOf_raw": 16957785690000000000,
+   "standard": "ERC-20",
+   "transfers_in": 2,
+   "transfers_out": 0,
+   "first_block": 25103260,
+   "last_block": 25103306,
+   "symbol_matches": true,
+   "symbol_contains": true
+  },
+  {
+   "contract": "0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac",
+   "name": "StorjToken",
+   "symbol": "STORJ",
+   "decimals": 8,
+   "balanceOf_raw": 17281547509,
+   "standard": "ERC-20",
+   "transfers_in": 1,
+   "transfers_out": 0,
+   "first_block": 25103206,
+   "last_block": 25103206,
+   "symbol_matches": false,
+   "symbol_contains": false
+  }
+ ]
+}
