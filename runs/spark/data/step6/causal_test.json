@@ -1,0 +1,49 @@
+{
+ "0_start": {
+  "block": 26248201,
+  "ts": 1792672645,
+  "dai_wallet": 0,
+  "debt_dai": 155817883368512354857916,
+  "max_weeth": 999738660972014
+ },
+ "control_tx": "0xcb473f3152e15b826011bae87193deb231318785ec15aec61a8cc987bfebb8f4",
+ "1_control": {
+  "block": 26248202,
+  "ts": 1792672646,
+  "dai_wallet": 0,
+  "debt_dai": 155817883587711509431881,
+  "max_weeth": 999476843770039
+ },
+ "repay_tx": "0x36132a2836739e8788817f29e8084223dca49148d771c53c26f6af7433ad9d37",
+ "repay_status": "0x1",
+ "2_treatment": {
+  "block": 26248204,
+  "ts": 1792672648,
+  "dai_wallet": 0,
+  "debt_dai": 155817884026109819504887,
+  "max_weeth": 998953231956985
+ },
+ "delta_control": -261809671676,
+ "delta_treatment": 470643166489630055,
+ "first_attempt": "repay reverted: user holds 0 DAI; experimenter then provided 1,000 DAI from a large holder (disclosed)",
+ "donor": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+ "donor_tx": "0x9a30c21aa7fe48436607b2c90a577b0f6a37141683194929104542b484cc1fa1",
+ "0b_funded": {
+  "block": 26248205,
+  "dai_wallet": 1000000000000000000000,
+  "debt_dai": 155817884245308975003928,
+  "max_weeth": 998691422285309
+ },
+ "1b_control": {
+  "block": 26248206,
+  "dai_wallet": 1000000000000000000000,
+  "debt_dai": 155817884464508130811327,
+  "max_weeth": 998429612613633
+ },
+ "2b_treatment": {
+  "block": 26248208,
+  "dai_wallet": 0,
+  "debt_dai": 154817884902906443351200,
+  "max_weeth": 471641596102243688
+ }
+}

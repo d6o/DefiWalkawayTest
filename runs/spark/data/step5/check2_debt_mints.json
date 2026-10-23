@@ -1,0 +1,65 @@
+[
+ {
+  "debt_token": "variableDebtUSDT",
+  "tx": "0xc96b49652614f1f1e040de97a056b75322b28da8a7abe698335f4913174bc13a",
+  "block": 24721118,
+  "sender_is_user": true,
+  "tx_to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+  "selector": "0xa415bcad",
+  "calls_into_0xc13e": [
+   "0xa415bcad"
+  ],
+  "user_received": [
+   [
+    "Spark Variable Debt USDT",
+    134933.0
+   ],
+   [
+    "Tether USD",
+    134933.0
+   ]
+  ]
+ },
+ {
+  "debt_token": "variableDebtUSDS",
+  "tx": "0x4dff5a12a990ad6cd8e93c67f0f29b250f0682c7b2b20a5a0c991c21f992bdd6",
+  "block": 24721125,
+  "sender_is_user": true,
+  "tx_to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+  "selector": "0xa415bcad",
+  "calls_into_0xc13e": [
+   "0xa415bcad"
+  ],
+  "user_received": [
+   [
+    "Spark Variable Debt USDS",
+    116374.0
+   ],
+   [
+    "USDS Stablecoin",
+    116374.0
+   ]
+  ]
+ },
+ {
+  "debt_token": "variableDebtDAI",
+  "tx": "0x3bc9201afb3dbec285e2e4f8e5a6cbe74f6d51c15579a17ebda1cfa1e23b0db1",
+  "block": 24721129,
+  "sender_is_user": true,
+  "tx_to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+  "selector": "0xa415bcad",
+  "calls_into_0xc13e": [
+   "0xa415bcad"
+  ],
+  "user_received": [
+   [
+    "Spark Variable Debt DAI",
+    152179.0
+   ],
+   [
+    "Dai Stablecoin",
+    152179.0
+   ]
+  ]
+ }
+]

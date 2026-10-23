@@ -3,7 +3,7 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 2 of 5 protocols done; Binance staked ETH paused; EigenCloud not started.
+**Status:** 3 of 5 protocols done (Lido, Aave V3, Spark); Binance staked ETH paused; EigenCloud not started.
 
 ## Summary
 
@@ -13,7 +13,7 @@ Each row links to the full run log, where every claim is backed by a query, tran
 | 2 | [Aave V3](runs/aave/2026-10-22-T0-all-removed.md) | `0x462a…31d0` | 456.48 aEthweETH + 4,515.39 aEthwstETH, 5,762.76 WETH debt | ◐ **Partial exit**: 61.67 weETH (13.5% of the aEthweETH position) with own funds. Full exit possible (shown with capital), but **very hard to find without assistance** | The user's own debt caps withdrawals; no dependency on the paths used | None found on the paths used |
 | 3 | [Binance staked ETH](runs/binance-staked-eth/2026-10-22-T0-all-removed.md) | `0x066e…76bc` | 16.96 wBETH (user has 0 ETH, never sent a tx) | ⏸ **Paused** after step 3b | — (so far: 0 burns and 0.012 wBETH minted on-chain in 7 days; 99.2% of supply in 5 EOAs) | — |
 | 4 | EigenCloud | — | — | ⏸ **Not started** | Test address can't be picked with SPEC §8 as written: **no position token** (deposits are recorded as internal shares). DefiLlama: one product; "WETH" $5.72B (89.4%), stETH $0.54B (8.5%). Fallback rule pending (see SPEC open questions) | — |
-| 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; "Variable Debt" USDT/USDS/DAI by name | ▶ **In progress** (steps 1–2) | — | — |
+| 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -53,6 +53,21 @@ word list could name, and it works in one step.
 - **No privileged actor** on the repay or withdraw paths. Not tested: the helper contract the user repaid through,
   and who can upgrade or pause the (upgradeable) contracts.
 
+## Spark (SparkLend) — ◐ Partial exit
+
+**Exit path found at T0:** `withdraw(asset, amount, recipient)` on `0xc13e…e987`, named by the fixed list, one step, ~1:1.
+
+- **Our user** had two deposits (403.29 spwstETH, 199.67 spweETH) and three debt-named balances (DAI, USDS, USDT).
+- **The two deposits share one withdrawal limit:** either one can be fully withdrawn alone, but not both.
+  Order A: all wstETH + 2.65% of weETH; order B: all weETH + 59% of wstETH. Which is better depends on prices,
+  which aren't available at T0.
+- **Shown to be the user's own debts:** minted by `0xc13e` while the user received the same amount of each stablecoin;
+  read by the withdrawal logic; repaying 1,000 DAI raised the weETH cap from 0.001 to 0.47 (control: no change).
+- **The repay path was only visible inside other users' smart-wallet transactions** (traces), never as a direct call.
+- **Full exit with capital (provided):** repay ≈ $412k of stablecoins, withdraw everything: 403.29 wstETH + 199.67 weETH.
+- **Spam reaches protocol contracts too:** the spweETH contract held a 100-billion-unit airdrop token; "which token does
+  this contract hold" has to be matched against its supply.
+
 ## Findings across protocols
 
 1. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
@@ -60,7 +75,7 @@ word list could name, and it works in one step.
    with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
 2. **Knowing what to do takes expert work at T0.** With only a node, users have to:
    - find their positions in a log scan full of spam and address-poisoning tokens (77 of 78 contracts for the Lido user);
-   - work without function names: only 1 exit function was nameable across both protocols (Aave's `withdraw`);
+   - work without function names: the only nameable exit function across three protocols was `withdraw` (Aave, Spark);
    - learn the exit from **other users' behavior** (log analysis, call traces);
    - explain blocks with traces, bytecode searches, and cause-and-effect tests.
 
@@ -78,3 +93,4 @@ word list could name, and it works in one step.
 |----------|---------------------|----------|------------|------|
 | Lido | ~8 min | ~55 min | 3h44m | Includes building the method and scripts |
 | Aave V3 | ~4 min | ~35 min | 34 min | Method and scripts reused |
+| Spark | ~9 min | ~22 min | 63 min | Includes a ~10 min hung query |

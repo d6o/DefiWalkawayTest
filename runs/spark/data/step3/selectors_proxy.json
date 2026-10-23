@@ -1,0 +1,76 @@
+{
+ "summary": {
+  "label": "spwstETH proxy",
+  "code_bytes": 2400,
+  "push4_total": 5,
+  "dispatcher_selectors": 5,
+  "named_basic": 0,
+  "named_wordlist": 0,
+  "unnamed": 5,
+  "non_dispatcher_push4": 0
+ },
+ "selectors": [
+  {
+   "selector": "0x3659cfe6",
+   "pcs": [
+    69
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x4f1ef286",
+   "pcs": [
+    80
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0x5c60da1b",
+   "pcs": [
+    20,
+    31
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ",
+    "GT"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xd1f57894",
+   "pcs": [
+    42
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  },
+  {
+   "selector": "0xf851a440",
+   "pcs": [
+    53
+   ],
+   "dispatcher": true,
+   "compare_ops": [
+    "EQ"
+   ],
+   "names": [],
+   "name_source": null
+  }
+ ]
+}

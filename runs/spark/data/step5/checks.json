@@ -1,0 +1,46 @@
+{
+ "check1_reads": [
+  [
+   "spweETH",
+   "0x1da24f3e",
+   194.3788742940688
+  ],
+  [
+   "variableDebtDAI",
+   "0x1da24f3e",
+   126521.45269114891
+  ],
+  [
+   "variableDebtUSDT",
+   "0x1da24f3e",
+   1.14027402452e-07
+  ],
+  [
+   "variableDebtUSDS",
+   "0x1da24f3e",
+   110551.47531692324
+  ]
+ ],
+ "check3": {
+  "spwstETH": [
+   "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+   true
+  ],
+  "spweETH": [
+   "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+   true
+  ],
+  "variableDebtUSDT": [
+   "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+   true
+  ],
+  "variableDebtUSDS": [
+   "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+   true
+  ],
+  "variableDebtDAI": [
+   "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+   true
+  ]
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "summary": {
+  "candidates": [
+   "0x0000000000000000000000000000000000000000",
+   "0xb8a451107a9f87fde481d4d686247d6e43ed715e",
+   "0xb137e7d16564c81ae2b0c8ee6b55de81dd46ece5",
+   "0xca686974913389d42f3c5f61010503daccdb487a",
+   "0x83191548381d620a265b5e20681737562188c648",
+   "0xf20b338752976878754518183873602902360704",
+   "0x099484399038aaccc3267baa168da639f6d19401",
+   "0x5aae4d2f360e156de3416936049837a7bb685588",
+   "0x4b2877a94ead57e8a5e07b7b044eaeb59f605886",
+   "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "0xbdfa9c5f270c23ca659bf01f11317891dd8a026a",
+   "0xdd647ce113505b34c62412d2a804ce1bfbcfc737",
+   "0xee9ca24fb62bfc021e1a46e09e1c1cbecd3341b5",
+   "0x39c78ce4fbd59722f48a3271fe11f9ac5f933ba0",
+   "0x237a398ce090e8f64df9351821f7a1b24cb734b2",
+   "0x5e9eadc22514f35af45de3ea4c3c9e56d21435ee",
+   "0x08bf75d17046412ae08c95b6106993f714487872",
+   "0x8ded14f27231361be42a5e169d933c09c81a4d8a",
+   "0xc3b1f7ab9fabd729cdf9e90ea54ec447f9464269",
+   "0x5d4a746167046410af57d322e20f4e984ed71e09",
+   "0xf0ee0b11f40b6ccc0d4c1e998bee3d0a24d6460c",
+   "0xd1c06abb99f895ffa2b7f453dc49f96bca0bd648",
+   "0xe007ac9388ea91fcbb023372960e1e09a33f1253",
+   "0x0129ab03f0715f700bb6a279f47e6354c67ae0ca",
+   "0x2178e1d614fefb2b304db58f07116d89f948fda1",
+   "0x99a8af20449b218244f73978aa8a373c8b8653e4",
+   "0xec66036a20d0b7e155f9c62dc52c30196b706865",
+   "0x56d79ce03877de564e657168ae69e9c87b62b0ba",
+   "0x055dc44976b2c1fa2344023162ae846eb6ab0f1f",
+   "0x2aba8118fbefc1830a81ae493cae23e516eaf89a",
+   "0xb689cc5707018de5b42def6d33841e854149bc1e",
+   "0xe01ce5d2a36ecb404db6b263bd0081a54b11f0a4"
+  ],
+  "txs": 103,
+  "groups": 20,
+  "started": "2026-10-23T03:45:12+00:00",
+  "ended": "2026-10-23T03:45:14+00:00",
+  "seconds": 2.4,
+  "examples_to_trace": 41
+ },
+ "groups": [
+  {
+   "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+   "selector": "0x69328dec",
+   "txs": 26,
+   "distinct_senders": 15,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 26
+   },
+   "token_amount": 9574.6141,
+   "sender_moved_own_tokens": 26,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "3": 26
+   },
+   "to_is_candidate": true,
+   "examples": [
+    "0x07672268beeadcb62d8f2c29cc5cb92675fb8a610134c787cc2c933347c72f91",
+    "0x415794e44f4ff979a7c753a9d96a95c699a7536c678d50dd29736ba392bcaef4",
+    "0xff19c1949acdb31f1bea371ab838933cc1b4592f5b6a187480ea33e0ab71f8f9"
+   ]
+  },
+  {
+   "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+   "selector": "0x02c205f0",
+   "txs": 20,
+   "distinct_senders": 14,
+   "candidates": {
+    "0xca686974913389d42f3c5f61010503daccdb487a": 5,
+    "0x5e9eadc22514f35af45de3ea4c3c9e56d21435ee": 1,
+    "0x08bf75d17046412ae08c95b6106993f714487872": 1,
+    "0x8ded14f27231361be42a5e169d933c09c81a4d8a": 1,
+    "0x0129ab03f0715f700bb6a279f47e6354c67ae0ca": 1,
+    "0x2178e1d614fefb2b304db58f07116d89f948fda1": 1,
+    "0xee9ca24fb62bfc021e1a46e09e1c1cbecd3341b5": 2,
+    "0xec66036a20d0b7e155f9c62dc52c30196b706865": 1,
+    "0x56d79ce03877de564e657168ae69e9c87b62b0ba": 1,
+    "0x055dc44976b2c1fa2344023162ae846eb6ab0f1f": 1,
+    "0x39c78ce4fbd59722f48a3271fe11f9ac5f933ba0": 2,
+    "0x2aba8118fbefc1830a81ae493cae23e516eaf89a": 1,
+    "0xb689cc5707018de5b42def6d33841e854149bc1e": 1,
+    "0xe01ce5d2a36ecb404db6b263bd0081a54b11f0a4": 1
+   },
+   "token_amount": 5904.4948,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "8": 20
+   },
+   "to_is_candidate": true,
+   "examples": [
+    "0x73704b610763e997f4e429d11fe62725faf337177eca72f0a317e167df7b4d48",
+    "0xb91a1546acf49e9d1152946fd9927b03b026d0c8b94a1fdf8030e9c22164092d",
+    "0xa052c9461628879acf1c2d422b6c1495f3917b4fa42d3d24e732760fcad2c8fc"
+   ]
+  },
+  {
+   "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+   "selector": "0x617ba037",
+   "txs": 4,
+   "distinct_senders": 2,
+   "candidates": {
+    "0xf20b338752976878754518183873602902360704": 2,
+    "0xdd647ce113505b34c62412d2a804ce1bfbcfc737": 2
+   },
+   "token_amount": 1620.5376,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "4": 4
+   },
+   "to_is_candidate": true,
+   "examples": [
+    "0x63a05649cd8a68eae41c29939b2164be8a3700835dbece971b356108131c4173",
+    "0xa756c70fd0fb926b98810cd94d09bdb0c6e9e673ab3a76cc2f709ee68dbdd89c",
+    "0x492a93e11daafe3459ae6c2a0737e74dc1e7ae2e54b7eb819bede52e9acf39de"
+   ]
+  }
+ ]
+}

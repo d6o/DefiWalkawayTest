@@ -1,0 +1,93 @@
+{
+ "balance_spwstETH": 403291968816777233923,
+ "sim_max": [
+  true,
+  "ok"
+ ],
+ "sim_exact balance": [
+  true,
+  "ok"
+ ],
+ "sim_1 wstETH": [
+  true,
+  "ok"
+ ],
+ "sim_1 wei": [
+  true,
+  "ok"
+ ],
+ "max_withdrawable": 403291968816777233923,
+ "snapshot": "0x0",
+ "send": {
+  "tx": "0xc33c3e9f098c4458487806625d2a0bffce36ecaf88ee7363372d931e57b3aaf4",
+  "status": "0x1",
+  "amount": 403290968816777233923,
+  "gas": 495013
+ },
+ "wst_before": 0,
+ "wst_after": 403290968816777233923,
+ "spw_before": 403291968816777233923,
+ "spw_after": 1000000000000002,
+ "max_after": 1000000000000002,
+ "withdraw_rest": {
+  "tx": "0x2ace82aee9acbf8df8e228b1dd1325bcf54bdbcb6c7f639f147362576acfb61a",
+  "status": "0x1",
+  "spw_after": 0,
+  "wst_after": 403291968816777233925
+ },
+ "spweeth_holds": {
+  "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee": [
+   "Wrapped eETH",
+   38372000000000000000000
+  ],
+  "0x6fb1b08a39601303a466de1815fd1a70f9fc65f5": [
+   "AFK",
+   10000000000000000000
+  ],
+  "0xfdb7941769e292d3f0b9cc356c9e054cb3f2c729": [
+   "Ainance",
+   8000000000000000000
+  ],
+  "0xc80b4457fccd49e7c3a2f5566dd1b827d85f6c98": [
+   "ha138.com",
+   100000000000000000000000000000
+  ]
+ },
+ "spweeth": {
+  "underlying": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+  "balance": 199672562137631826298,
+  "max_withdrawable": 5294687582223993675,
+  "plus1": "0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000023335000000000000000000000000000000000000000000000000000000000000"
+ },
+ "spweeth_wrong_pick": "first pick used the largest raw holding (spam token ha138.com); corrected to the holding that matches totalSupply",
+ "start_state": {
+  "spwstETH_bal": 403291968816777233923,
+  "spweETH_bal": 199672562137631826298,
+  "max_wst_alone": 403291968816777233923,
+  "max_weeth_alone": 199672562137631826298
+ },
+ "snapshot_start": "0x1",
+ "order_B": {
+  "withdraw_weeth_tx": "0xc00dfe6fe0cf023f88896b792bf87c3245ff394dfe3c18ef07c70bc47f9d9d8c",
+  "status": "0x1",
+  "weeth_out": 199672572137631826298,
+  "then_max_wst": 239052693476952114390,
+  "spw_bal": 403291968816777233925
+ },
+ "order_A": {
+  "withdraw_all_wst_first": 403291968816777233923,
+  "then_max_weeth": 5294687582223993675,
+  "spe_bal": 199672562137631826298
+ },
+ "snapshot_start2": "0x2",
+ "partial_exit_order_A": {
+  "wst_tx": "0x9e07f4aea0823e6d2c08614b5e0aa3772f98fb81bdc6c49fe8b483203ed50996",
+  "wst_status": "0x1",
+  "weeth_tx": "0x5fd81e3ec519cfa558d8771af28a5fc228f380ca43d111f1406a386a7868ccf5",
+  "weeth_status": "0x1",
+  "wallet_wstETH": 403291968816777233925,
+  "wallet_weETH": 5293697843563021661,
+  "spw": 0,
+  "spe": 194378874294068804637
+ }
+}

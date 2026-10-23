@@ -1,0 +1,91 @@
+{
+ "note": "first script hung on the USDT donor lookup (eth_getLogs over 200 blocks of USDT transfers); DAI and USDS funding had completed. Resumed with a 5-block USDT lookup.",
+ "0_before_usdt_funding": {
+  "eth": 10165263302452714642,
+  "wstETH": 403291968816777233925,
+  "weETH": 5293697843563021661,
+  "spwstETH": 0,
+  "spweETH": 194378874294068804637,
+  "debt_DAI": 154817885338493710149066,
+  "wallet_DAI": 156366063751935505203200,
+  "debt_USDS": 119077692854574721675819,
+  "wallet_USDS": 120268469618407907524608,
+  "debt_USDT": 138108741606,
+  "wallet_USDT": 0
+ },
+ "funding_USDT": {
+  "donor": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
+  "amount": 139489829022,
+  "tx": "0x3e597aeebc6e2a8a040099212ed3c3af18fe2dbecbfd7152cbc4ce3f3d097ee7",
+  "status": "0x1"
+ },
+ "1_funded": {
+  "eth": 10165263302452714642,
+  "wstETH": 403291968816777233925,
+  "weETH": 5293697843563021661,
+  "spwstETH": 0,
+  "spweETH": 194378874294068804637,
+  "debt_DAI": 154817885556287344007579,
+  "wallet_DAI": 156366063751935505203200,
+  "debt_USDS": 119077693017656465964058,
+  "wallet_USDS": 120268469618407907524608,
+  "debt_USDT": 138108741780,
+  "wallet_USDT": 139489829022
+ },
+ "repay": {
+  "DAI": {
+   "approve_status": "0x1",
+   "tx": "0x9b405f235a9a9523d05ff1101c0e8306587eda3fe1eed4ceb0f94fb5fc375eb9",
+   "status": "0x1",
+   "gas": 200068
+  },
+  "USDS": {
+   "approve_status": "0x1",
+   "tx": "0x9288ffc5780e0b0333ca96e6d4ace9f26d56b142b01ef5acaa07a2751daee6a2",
+   "status": "0x1",
+   "gas": 205066
+  },
+  "USDT": {
+   "approve_status": "0x1",
+   "tx": "0x0918f6c757168185f5c1295622f83ef3a6f55122ce61ad2544d8d7153fabef78",
+   "status": "0x1",
+   "gas": 211874
+  }
+ },
+ "2_repaid": {
+  "eth": 10165252101132991214,
+  "wstETH": 403291968816777233925,
+  "weETH": 5293697843563021661,
+  "spwstETH": 0,
+  "spweETH": 194378874294068804637,
+  "debt_DAI": 0,
+  "wallet_DAI": 1548177542267257781767,
+  "debt_USDS": 0,
+  "wallet_USDS": 1190775622260971140833,
+  "debt_USDT": 0,
+  "wallet_USDT": 1381085678
+ },
+ "withdraw": {
+  "wstETH": {
+   "tx": "0xca635e2e31fd30a50c33b11981535b9de23ac0a3bb96b42a38e9f2f2e36b435e",
+   "status": "0x0"
+  },
+  "weETH": {
+   "tx": "0xf5115d13d6162c1b71c5d0582eecb891efb86132985b2af2072bfe9cf6a1052f",
+   "status": "0x1"
+  }
+ },
+ "3_final": {
+  "eth": 10165250147576465978,
+  "wstETH": 403291968816777233925,
+  "weETH": 199672572137631826298,
+  "spwstETH": 0,
+  "spweETH": 0,
+  "debt_DAI": 0,
+  "wallet_DAI": 1548177542267257781767,
+  "debt_USDS": 0,
+  "wallet_USDS": 1190775622260971140833,
+  "debt_USDT": 0,
+  "wallet_USDT": 1381085678
+ }
+}

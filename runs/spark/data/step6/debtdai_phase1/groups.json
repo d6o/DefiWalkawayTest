@@ -1,0 +1,178 @@
+{
+ "summary": {
+  "candidates": [
+   "0x0000000000000000000000000000000000000000",
+   "0xe7df357b0f1cba84864b1accf01ef464a6f36b2e",
+   "0xf5f6d6246366f5cbf50238d2dbdc3a48ff4e30d4",
+   "0x1c24a4b9bdb04994d18d9e8bdd46038c8002c22b"
+  ],
+  "txs": 14,
+  "groups": 8,
+  "started": "2026-10-23T03:50:05+00:00",
+  "ended": "2026-10-23T03:50:06+00:00",
+  "seconds": 1.0,
+  "examples_to_trace": 13
+ },
+ "groups": [
+  {
+   "to": "0x00acd5005200e7009beb000000e35e1e002b5565",
+   "selector": "0x0101c13e",
+   "txs": 4,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 7
+   },
+   "token_amount": 5.104,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 4,
+   "calldata_words": {
+    "13": 1,
+    "19": 3
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0x7bb1dbb3dea3cb0efbc185eec3f31142a80b172840e9bdbc360833bad24393bd",
+    "0xcca7840e85d79bea15a6174300081f5585b91c503cf6f1ca0ccda5998a6b9ca3",
+    "0x5495e6450cb6397202b7a2dfa59d001215355d858ad642e699dfea191e76aaf2"
+   ]
+  },
+  {
+   "to": "0x519c5fd08e95d4b9528f4af3c0a923adb7e95e0f",
+   "selector": "0x6a761202",
+   "txs": 3,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 3
+   },
+   "token_amount": 8.2677,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "149": 1,
+    "159": 1,
+    "229": 1
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0x4d561ca6b98e3603ea66555466676030aa90506cc3c7fe1d90bc780b0119151c",
+    "0x04acd493784a3cf72e2f3620ed91baaada3ba15e85756e3b480cf7544256a6ce",
+    "0xdee04afe02c2123215e6c611a16258d2207ba80a1e6910034a0f0d83841448b7"
+   ]
+  },
+  {
+   "to": "0x83191548381d620a265b5e20681737562188c648",
+   "selector": "0x27f69bb6",
+   "txs": 2,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 6
+   },
+   "token_amount": 3.4442,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "17": 2
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0x2de706c62e867bc678453c257f0f6589d20f5cc0d2a35f5103730e4b83c05123",
+    "0x14ca90dc703bc56837377ba92fabd7dfb761ee6d5a9f26b01c09e0e737af398e"
+   ]
+  },
+  {
+   "to": "0xe7df357b0f1cba84864b1accf01ef464a6f36b2e",
+   "selector": "0x6a761202",
+   "txs": 1,
+   "distinct_senders": 1,
+   "candidates": {
+    "0xe7df357b0f1cba84864b1accf01ef464a6f36b2e": 1
+   },
+   "token_amount": 25056.8124,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "267": 1
+   },
+   "to_is_candidate": true,
+   "examples": [
+    "0x30daef52c1bc1c29f078968b7dc93e6efef2bf94e9e1696fc531a9cb06cd5503"
+   ]
+  },
+  {
+   "to": "0xf5f6d6246366f5cbf50238d2dbdc3a48ff4e30d4",
+   "selector": "0x1cff79cd",
+   "txs": 1,
+   "distinct_senders": 1,
+   "candidates": {
+    "0xf5f6d6246366f5cbf50238d2dbdc3a48ff4e30d4": 1
+   },
+   "token_amount": 120034.6793,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "286": 1
+   },
+   "to_is_candidate": true,
+   "examples": [
+    "0x15eebf7d959a065dece92d55192fbacf4dd98a344400a1e69e2aaae723d48130"
+   ]
+  },
+  {
+   "to": "0x00acd5005200e7009beb000000e35e1e002b5565",
+   "selector": "0x01027937",
+   "txs": 1,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 1
+   },
+   "token_amount": 0.5839,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 1,
+   "calldata_words": {
+    "30": 1
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0xf2fdf1bb3ebf0ac21a235dc788fe48aa98befe01172abfa63b3d39352379697d"
+   ]
+  },
+  {
+   "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+   "selector": "0xa415bcad",
+   "txs": 1,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x1c24a4b9bdb04994d18d9e8bdd46038c8002c22b": 1
+   },
+   "token_amount": 1928.8727,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 0,
+   "calldata_words": {
+    "5": 1
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0x9942698622d8c705c5717dc1fcf6bfdeb3c2534cf2aeb94ae29795113109ff2f"
+   ]
+  },
+  {
+   "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+   "selector": "0x2bd0a0b8",
+   "txs": 1,
+   "distinct_senders": 1,
+   "candidates": {
+    "0x0000000000000000000000000000000000000000": 1
+   },
+   "token_amount": 2.3535,
+   "sender_moved_own_tokens": 0,
+   "txs_with_eth_value": 1,
+   "calldata_words": {
+    "43": 1
+   },
+   "to_is_candidate": false,
+   "examples": [
+    "0xd812dfd9c1a85a1d61ae188cf13f2c439feef2358e7d65545a53f0553ab38de5"
+   ]
+  }
+ ]
+}
