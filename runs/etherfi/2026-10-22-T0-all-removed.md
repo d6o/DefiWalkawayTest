@@ -161,15 +161,60 @@ All 3 submitters are plain EOAs.
 2. **This is the D4 dependency**, split in two steps: permissioned approval (3 EOAs) + permissionless execution.
    If the 3 stop submitting, no new batch can be approved, and new claims, like our user's #83,769, stay unpaid.
 
+### Step 6: how many of the 3 submitters are needed? (quorum test)
+**Time:** ~14:10Z → ~14:25Z (several forks; ~3 min of execution). **Raw data:** `data/step6/quorum_test.json`, `data/step3f/quorum.json`.
+
+**From the events (all 39 approved reports this week):** approval happened **exactly at the 3rd submission** every time;
+every report was submitted by all three (`0x9b705e51…`, `0xc2f2a630…`, `0x4293664628…`); no submissions after approval.
+
+**On a fork at 26,246,927**, when only 1 of 3 had submitted the report behind the last batch (`0x72e949be…`), trying
+that batch from a random address after each step:
+
+| State | Clock | Batch |
+|-------|-------|-------|
+| 1 of 3 submitted | fork time | ❌ `0x9cb6fb7c` |
+| 2 of 3 (replayed `0xc2f2…`'s real submission) | +10 min / +1 h / **+1 day** | ❌ / ❌ / ❌ (fresh fork) |
+| 3 of 3 (replayed `0x9b70…`'s too) | +1 min | ❌ |
+| 3 of 3 | **+10 min** / real batch time (+19 min) | ✅ / ✅ |
+
+**Findings:**
+1. **All 3 of 3 submitters are needed.** With 2 of 3, the batch stays invalid even a day later.
+   **If any single one of the three stops, no new batch can be approved.**
+2. After approval there's a **waiting period of 1–10 minutes** before the batch can be executed.
+
+### Step 7: the user's other ether.fi position (weETH)
+**Time:** 14:28:03Z → 14:28:05Z. **Raw data:** `data/step7/weeth.json`.
+
+The user also held **39.33 weETH** (step 2). Using the call other holders used (step 3b, `0xde0e9a3e(amount)` on weETH):
+- Unwrap all → tx ✅: weETH 39.33 burned; **eETH 43.51 from the weETH contract to the user**.
+- `approve` + request (`0x397a1b28`) → ✅, **claim #83,770** minted to the user.
+- Claim → ❌ `0xd399e3e5`, same as #83,769.
+
+**Finding:** the weETH position converts to eETH without any dependency, then hits **the same D4 block**.
+The user now holds two unpayable claims (#83,769: 43.64 eETH; #83,770: 43.51 eETH). (liquidETH, 9.98, is a separate
+product, Ether.Fi Liquid, and outside this test.)
+
+### Required infrastructure (this run)
+
+| Capability | Used in |
+|------------|---------|
+| `eth_getLogs` over all history | 2, 3b, 3c–3f |
+| `eth_getTransactionByHash` (971 + 446 txs, batched) | 3b, 3c–3f |
+| `eth_call` against past state, chosen `from` | 3a, 4, 5, 6, 7 |
+| `debug_traceCall` / `debug_traceTransaction` | 3a, 3b, 3c, 3d, 5 |
+| Forks at several past blocks, impersonation, clock control, snapshot/revert | 4, 5, 6, 7 |
+
 ---
 
 ## Result: ether.fi (eETH), T0 — 🔴 Blocked
 
 | Scenario | Result | Why |
 |----------|--------|-----|
-| **D4 removed** (the 3 report submitters stop) | 🔴 **Blocked** | Steps 4–5: the claim can't be paid without an approved batch; only 3 EOAs can approve |
+| **D4 removed** (**any one** of the 3 report submitters stops) | 🔴 **Blocked** | Steps 4–7: claims can't be paid without an approved batch; approval needs **all 3** EOAs |
 | D4 present | ✅ Exits (two steps) | Step 5: once a batch covers the claim, the owner redeems alone with `0xb13acedd(id)`. This week: median ~14h, max ~56h |
 | Each of D1, D2, D3, D5 removed individually | Same as above | The run never used them |
+
+**Both positions** (eETH and the weETH unwrapped to eETH, step 7) end in the same block.
 
 **Difference from Lido:** in Lido the batch itself could only be sent by specific callers. In ether.fi **anyone can send
 the batch**, but only once its data has been approved by **3 permissioned submitters**. The dependency is the same:
@@ -192,6 +237,8 @@ nobody else can make new claims payable.
 | 3c–3f | Claims contract, batches, approvals | ~1.5 min | ~6 min |
 | 4 | Request + claim attempts | ~30s | ~1 min |
 | 5 | Proof (same claim, data test, approval caller test) | ~2 min | ~6 min |
-| **Total** | | **~6.5 min** | **~20 min** |
+| 6 | Quorum test | ~3 min | ~5 min |
+| 7 | weETH position | ~2s | ~1 min |
+| **Total** | | **~9.5 min** | **~26 min** |
 
 Wall clock: 13:33:05Z → ~13:50Z (17 min).

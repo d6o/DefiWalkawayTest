@@ -1,0 +1,23 @@
+{
+ "snapshot": "0x2",
+ "unwrap": {
+  "tx": "0x0b7a81c8c6822cb50b775528cac906595fe95c8608e87194e25e72b9f0ddbdd3",
+  "status": "0x1"
+ },
+ "request": {
+  "tx": "0x70c3524f91ba7377058ca6099a5517c213a6e8cac9fc7a07139292dd71c334d2",
+  "status": "0x1"
+ },
+ "claim_ids": [
+  83770
+ ],
+ "claim_83770": [
+  false,
+  "0xd399e3e5"
+ ],
+ "final": {
+  "weETH": 0,
+  "eETH": 1,
+  "eth": 99930036700669164
+ }
+}

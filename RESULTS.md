@@ -17,7 +17,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morph
 | 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
 | 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing. Liquidity limit only: the USDC comes from `0xbbbb…ffcb` (127.6M held vs 110.9M vault total at the fork block) | None found on the path used |
 | 7 | [Sky (Savings USDS)](runs/sky/2026-10-22-T0-all-removed.md) | `0x03ba…2f96` | 1,844,122 sUSDS | ✅ **Exits cleanly**: one `redeem` → 2,053,783 USDS (+11.4% vs shares) | Nothing. The sUSDS contract holds ≈100% of what all shares are worth (4.83B USDS) | None found on the path used |
-| 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **3 permissioned EOAs** works | 2,267,690 eETH (all of it) |
+| 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **all 3 of 3 permissioned EOAs** works (any one stopping blocks it) | 2,267,690 eETH (all of it) |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -106,6 +106,9 @@ word list could name, and it works in one step.
 - **Our user:** 43.64 eETH handed in → claim #83,769 → not redeemable, including after 7 days without a batch.
 - **With batches running:** median wait ~14h this week (max ~56h).
 - **Capital exposed:** 2,267,690 eETH (all of it); 1,855 eETH already waiting in claims.
+- **Quorum: all 3 of 3.** In every approved report this week, and on a fork, 2 of 3 never made a batch valid (even a
+  day later). **If any single submitter stops, withdrawals stop.**
+- **The user's weETH** unwraps to eETH without any dependency, then hits the same block (second claim, #83,770).
 - **vs Lido:** Lido restricts who can *send* the batch; ether.fi restricts who can *approve* it. Same dependency.
 
 ## Findings across protocols
@@ -138,4 +141,4 @@ word list could name, and it works in one step.
 | Spark | ~9 min | ~22 min | 63 min | Includes a ~10 min hung query |
 | Morpho | ~2.5 min | ~13 min | 2 min (+ step 5 later) | Vault selection (setup) took longer than the run |
 | Sky | ~2.5 min | ~11 min | 3 min | |
-| ether.fi | ~6.5 min | ~20 min | 17 min | |
+| ether.fi | ~9.5 min | ~26 min | 17 min (+ steps 6–7 later) | |
