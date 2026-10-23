@@ -3,7 +3,7 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 5 protocols done (Lido, Aave V3, Spark, Morpho, Sky); Binance staked ETH paused; EigenCloud not started.
+**Status:** 6 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi); Binance staked ETH paused; EigenCloud not started.
 Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morpho, then Sky and ether.fi), same method.
 
 ## Summary
@@ -17,6 +17,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morph
 | 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
 | 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing. Liquidity limit only: the USDC comes from `0xbbbb…ffcb` (127.6M held vs 110.9M vault total at the fork block) | None found on the path used |
 | 7 | [Sky (Savings USDS)](runs/sky/2026-10-22-T0-all-removed.md) | `0x03ba…2f96` | 1,844,122 sUSDS | ✅ **Exits cleanly**: one `redeem` → 2,053,783 USDS (+11.4% vs shares) | Nothing. The sUSDS contract holds ≈100% of what all shares are worth (4.83B USDS) | None found on the path used |
+| 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **3 permissioned EOAs** works | 2,267,690 eETH (all of it) |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -94,12 +95,27 @@ word list could name, and it works in one step.
 - **Backing:** the sUSDS contract holds 4.83B USDS, ≈100% of what all 4.34B shares are worth; interest is minted during
   the call. Drain test: a capital-type limit, no permission.
 
+## ether.fi (eETH) — 🔴 Blocked
+
+**Exit path found at T0:** hand in eETH at the deposit contract (`0x397a1b28`, after an `approve`) → claim NFT from
+`0x7d57…` → later redeem with `0xb13acedd(id)` → ETH. Same two-step shape as Lido.
+
+- **What makes a claim payable:** a batch (~every 4h) sends ETH to the claims contract. **Anyone can execute a batch**
+  (a random address did, on a fork), **but only data approved by 3 EOAs works**: modified data fails from any caller,
+  and a random address can't submit a report (step 5).
+- **Our user:** 43.64 eETH handed in → claim #83,769 → not redeemable, including after 7 days without a batch.
+- **With batches running:** median wait ~14h this week (max ~56h).
+- **Capital exposed:** 2,267,690 eETH (all of it); 1,855 eETH already waiting in claims.
+- **vs Lido:** Lido restricts who can *send* the batch; ether.fi restricts who can *approve* it. Same dependency.
+
 ## Findings across protocols
 
-1. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
+1. **Two withdrawal queues, two D4 dependencies.** Lido and ether.fi both fund withdrawals through batches that
+   only a few permissioned actors can produce (Lido: send; ether.fi: approve). Morpho and Sky exit in one call.
+2. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
    without the permissioned batch. Aave V3 can be fully exited by anyone with the capital to repay, but our user,
    with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
-2. **Knowing what to do takes expert work at T0.** With only a node, users have to:
+3. **Knowing what to do takes expert work at T0.** With only a node, users have to:
    - find their positions in a log scan full of spam and address-poisoning tokens (77 of 78 contracts for the Lido user);
    - work without function names: the only nameable exit function across three protocols was `withdraw` (Aave, Spark);
    - learn the exit from **other users' behavior** (log analysis, call traces);
@@ -107,10 +123,10 @@ word list could name, and it works in one step.
 
    The chain had all the information, but a normal user couldn't realistically assemble it without expert tooling or
    AI assistance.
-3. **The user's node must be an archive node** with full log history, a complete tx index, and debug tracing.
-4. **Small traps a frontend normally hides:** Lido's 1,000 stETH per-claim limit (found only by probing), and Aave's
+4. **The user's node must be an archive node** with full log history, a complete tx index, and debug tracing.
+5. **Small traps a frontend normally hides:** Lido's 1,000 stETH per-claim limit (found only by probing), and Aave's
    withdrawal cap that shrinks every second (a simulated amount can fail moments later).
-5. **Hosted signature databases (T2) shortcut a lot:** in the Aave run, one leaked a revert reason instantly
+6. **Hosted signature databases (T2) shortcut a lot:** in the Aave run, one leaked a revert reason instantly
    (not used at T0).
 
 ## Effort per run (raw; SPEC open questions)
@@ -122,3 +138,4 @@ word list could name, and it works in one step.
 | Spark | ~9 min | ~22 min | 63 min | Includes a ~10 min hung query |
 | Morpho | ~2.5 min | ~13 min | 2 min (+ step 5 later) | Vault selection (setup) took longer than the run |
 | Sky | ~2.5 min | ~11 min | 3 min | |
+| ether.fi | ~6.5 min | ~20 min | 17 min | |

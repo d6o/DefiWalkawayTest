@@ -1,0 +1,113 @@
+{
+ "summary": {
+  "contract": "0x0ef8fa4760db8f5cd4d993f3e3416f30f942d705",
+  "from_block": 26197800,
+  "to_block": 26248199,
+  "logs": 45,
+  "txs": 44,
+  "event_types": 3,
+  "nft_721": {
+   "mints": 0,
+   "burns": 0,
+   "transfers": 0,
+   "mint_ids": {
+    "count": 0,
+    "min": null,
+    "max": null
+   },
+   "burn_ids": {
+    "count": 0,
+    "min": null,
+    "max": null
+   },
+   "transfer_examples": []
+  },
+  "started": "2026-10-23T13:48:20+00:00",
+  "ended": "2026-10-23T13:48:22+00:00",
+  "seconds": 2.0
+ },
+ "event_types": [
+  {
+   "topic0": "0x997abd9d07db6cb25b8542e4fe05ddc887fc249d15d5ec7e3089ff385012bd2f",
+   "topics": 3,
+   "data_words": 0,
+   "logs": 39,
+   "txs": 39,
+   "distinct_senders": 1,
+   "top_senders": [
+    [
+     "0x4293664628469891c4043780874bbfe4dc6223e2",
+     39
+    ]
+   ],
+   "tx_to_selector": [
+    {
+     "to": "0x0ef8fa4760db8f5cd4d993f3e3416f30f942d705",
+     "selector": "0x2e03931e",
+     "txs": 39
+    }
+   ],
+   "first_block": 26198559,
+   "last_block": 26247024,
+   "example_txs": [
+    "0x1cdac447a08128c2410130258b59060aceddeb8915b2339d3f5c6e5d554fac5a",
+    "0x551c6134d6fb61a90cc574f677b35c6a414e2a97592ce7ec02d3509c2d3df1d3",
+    "0x72e949be0ac308c0c09a766bfb4b1b4aae910430979b948a45e247651dd41678"
+   ]
+  },
+  {
+   "topic0": "0x759d0a7bacdbec16e0b3bb7baf5119df4901d78801e76103cba9eb675a87e8c1",
+   "topics": 3,
+   "data_words": 3,
+   "logs": 5,
+   "txs": 5,
+   "distinct_senders": 1,
+   "top_senders": [
+    [
+     "0x62a44d2493afc2b25b51b01706ed7ea10cf80e34",
+     5
+    ]
+   ],
+   "tx_to_selector": [
+    {
+     "to": "0x0ef8fa4760db8f5cd4d993f3e3416f30f942d705",
+     "selector": "0x317627e3",
+     "txs": 5
+    }
+   ],
+   "first_block": 26198258,
+   "last_block": 26213970,
+   "example_txs": [
+    "0x8c03a9f5cf8ea554ef681ea37862b503b99b4c7574606e2e0c0c464613e7dfa9",
+    "0x542cc1d014392dd121cef7a6c9aa7054bee218c919edf499a4049f625314f21a",
+    "0x34a0cc2f6af86564ae8f9980cad74b1687a3293f3f1d71c191ba330e391972bd"
+   ]
+  },
+  {
+   "topic0": "0x66d8d6f2322f635d706545c54130cfcdad0174e5b87a17ff0571fe3faf657b89",
+   "topics": 3,
+   "data_words": 3,
+   "logs": 1,
+   "txs": 1,
+   "distinct_senders": 1,
+   "top_senders": [
+    [
+     "0x4293664628469891c4043780874bbfe4dc6223e2",
+     1
+    ]
+   ],
+   "tx_to_selector": [
+    {
+     "to": "0x0ef8fa4760db8f5cd4d993f3e3416f30f942d705",
+     "selector": "0x2e03931e",
+     "txs": 1
+    }
+   ],
+   "first_block": 26213883,
+   "last_block": 26213883,
+   "example_txs": [
+    "0xc3cc0c545434f2a108ab42df8613125e87d2a8c2f3966a3c36d16003bdf90498"
+   ]
+  }
+ ]
+}

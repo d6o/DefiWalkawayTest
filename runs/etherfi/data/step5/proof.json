@@ -1,0 +1,62 @@
+{
+ "batch": "0x72e949be0ac308c0c09a766bfb4b1b4aae910430979b948a45e247651dd41678",
+ "claim": 83757,
+ "owner": "0xd7215dbbd6e595a57e4ddc7786ef068f8da8b564",
+ "pending_before": 9,
+ "A": [
+  false,
+  "0xd399e3e5"
+ ],
+ "B": "0x1",
+ "B'": [
+  true,
+  "0x"
+ ],
+ "C": {
+  "tx": "0x70c4718c871b4b0fbe6c9ab9c9387046a494683206c4fdc5f27f8ce9e78bd233",
+  "status": "0x0"
+ },
+ "D": [
+  true,
+  "0x"
+ ],
+ "D_real": {
+  "tx": "0x56ac4428aa48754b8cb1ced7c4c182c4480e7d5dc245a1f24a847ba6b466eb85",
+  "status": "0x1",
+  "eth_delta": 36660857407009849599
+ },
+ "D'": [
+  83762,
+  false,
+  "0xd399e3e5"
+ ],
+ "batch_calldata": {
+  "selector": "0x2e03931e",
+  "words": [
+   32,
+   1,
+   15484704,
+   15485983,
+   26245530,
+   26246805,
+   24847406371916229711,
+   2011902677350934528,
+   320,
+   83757,
+   245742341965296806851,
+   0
+  ],
+  "changed_vs_previous": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10
+  ]
+ },
+ "resend_same": "0x0",
+ "resend_1d": "0x0"
+}

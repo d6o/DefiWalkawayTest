@@ -1,0 +1,21 @@
+{
+ "snapshot": "0x1",
+ "gas_funding": "experimenter set user ETH to 0.1 for gas (user had 0.00057 ETH)",
+ "eeth": 43642970314355008043,
+ "request": {
+  "tx": "0x61fd4c68768c6aa2a20663ea822fcea38ea420b26b41c11a4bc772c2e3680630",
+  "status": "0x1",
+  "gas": 193111
+ },
+ "claim_ids": [
+  83769
+ ],
+ "claim_now_83769": [
+  false,
+  "0xd399e3e5"
+ ],
+ "claim_7d_83769": [
+  false,
+  "0xd399e3e5"
+ ]
+}

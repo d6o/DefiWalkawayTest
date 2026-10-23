@@ -1,0 +1,103 @@
+{
+ "summary": {
+  "contract": "0x57aaf0004c716388b21795431cd7d5f9d3bb6a41",
+  "from_block": 26197800,
+  "to_block": 26248199,
+  "logs": 158,
+  "txs": 119,
+  "event_types": 2,
+  "nft_721": {
+   "mints": 0,
+   "burns": 0,
+   "transfers": 0,
+   "mint_ids": {
+    "count": 0,
+    "min": null,
+    "max": null
+   },
+   "burn_ids": {
+    "count": 0,
+    "min": null,
+    "max": null
+   },
+   "transfer_examples": []
+  },
+  "started": "2026-10-23T13:48:49+00:00",
+  "ended": "2026-10-23T13:48:55+00:00",
+  "seconds": 5.3
+ },
+ "event_types": [
+  {
+   "topic0": "0xe6f12615b1560447dc4b63bb3fb30c998c4839bbee68d976818a929cb8fd8bba",
+   "topics": 3,
+   "data_words": 5,
+   "logs": 119,
+   "txs": 119,
+   "distinct_senders": 3,
+   "top_senders": [
+    [
+     "0x9b705e518e1ca057c216b1a64b37d6549a72f506",
+     40
+    ],
+    [
+     "0xc2f2a6308577ec02ff06221b087dbd5960792c9f",
+     40
+    ],
+    [
+     "0x4293664628469891c4043780874bbfe4dc6223e2",
+     39
+    ]
+   ],
+   "tx_to_selector": [
+    {
+     "to": "0x57aaf0004c716388b21795431cd7d5f9d3bb6a41",
+     "selector": "0xcaf0216d",
+     "txs": 119
+    }
+   ],
+   "first_block": 26198456,
+   "last_block": 26248193,
+   "example_txs": [
+    "0x8bde7904432562ff6125894382465880867700351ac1b987c45d315e66898d85",
+    "0xc516573de3239450e073f477f654563624a50873134252a3778051190b126936",
+    "0xabadafff677d3e30cd3548f46c0cbbc4400cf65610e4d998ecaf85bfa5e3de66"
+   ]
+  },
+  {
+   "topic0": "0x806d044a61ac7edf13f9a0f3dc1846baec3dd94bddee1c6d9f4e7d4841a546b0",
+   "topics": 2,
+   "data_words": 5,
+   "logs": 39,
+   "txs": 39,
+   "distinct_senders": 3,
+   "top_senders": [
+    [
+     "0x4293664628469891c4043780874bbfe4dc6223e2",
+     20
+    ],
+    [
+     "0xc2f2a6308577ec02ff06221b087dbd5960792c9f",
+     14
+    ],
+    [
+     "0x9b705e518e1ca057c216b1a64b37d6549a72f506",
+     5
+    ]
+   ],
+   "tx_to_selector": [
+    {
+     "to": "0x57aaf0004c716388b21795431cd7d5f9d3bb6a41",
+     "selector": "0xcaf0216d",
+     "txs": 39
+    }
+   ],
+   "first_block": 26198464,
+   "last_block": 26246928,
+   "example_txs": [
+    "0x4ae263c409c62f9730497c3275ce4d4ec4451d030b621cc77c09f7340e985512",
+    "0xc516573de3239450e073f477f654563624a50873134252a3778051190b126936",
+    "0x550e3b9c2eaf81cae0d986097d171d1211c28f89e83438ea7adc88e6c0a94285"
+   ]
+  }
+ ]
+}
