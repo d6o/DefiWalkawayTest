@@ -99,7 +99,7 @@ Other: a position named after another protocol (Aave Ethereum USDC, 62,856), spa
 | Call | Example | Words | What happens |
 |------|---------|-------|--------------|
 | vault `deposit(assets, receiver)` | `0xebea5223…` | [102,500,000, sender] | USDC 102.50 sender → vault; **98.642 gtusdcp minted** to sender |
-| vault **`redeem(shares, receiver, owner)`** | `0x4f35f224…` | [19.258e18, sender, sender] | gtusdcp 19.258 burned; **USDC 20.013 vault → sender** |
+| vault **`redeem(uint256, address, address)`** | `0x4f35f224…` | [19.258e18, sender, sender] | gtusdcp 19.258 burned; **USDC 20.013 vault → sender** |
 | vault `redeem` | `0x69068ce6…` | [1,415.5e18, sender, sender] | 1,415.50 burned; **USDC 1,471.65 → sender** |
 | vault `redeem` | `0x8f9f0bd6…` | [7,035.29e18, sender, sender] | 7,035.29 burned; **USDC 7,315.60 → sender** |
 | `0xd8b4…7b3c` `redeem` | 3 txs | [shares, sender, sender] | `0xd8b4` burns its own token, then the vault burns gtusdcp held by `0xd8b4` and sends USDC to the sender |
@@ -108,9 +108,14 @@ Inside every call, the vault calls the same three contracts (`0x870a…00bc`, `0
 from the vault's address. `0xd8b4…7b3c` is a **wrapper** around the vault; our user holds the vault token directly.
 
 **Findings:**
-1. **Exit confirmed from behavior:** `redeem(shares, receiver, owner)` on the vault burns shares and sends USDC to the
-   receiver, in one step, at ~1.04 USDC per share this week. No other actor involved in the traced examples.
-2. **Deposits and redemptions both run through the vault token itself.**
+1. **Exit confirmed from behavior:** `redeem(uint256, address, address)` on the vault burns shares and sends USDC,
+   in one step, at ~1.04 USDC per share this week. No other actor involved in the traced examples.
+2. **What the arguments mean, from the data only:** word 0 equals the number of shares burned in every example, so it's
+   the share amount. Words 1 and 2 were always the sender, and the USDC went to the sender. The chain can't tell which
+   of the two is the recipient; a user copies the pattern with both set to their own address.
+   *Correction:* an earlier version of this log labelled them "(shares, receiver, owner)"; those two names came from
+   memory of a standard, not from the chain, and were removed.
+3. **Deposits and redemptions both run through the vault token itself.**
 
 ### Step 4: run the exit for our user
 **Time:** 12:27:12Z → 12:27:26Z (~14s).
@@ -123,7 +128,10 @@ from the vault's address. `0xd8b4…7b3c` is a **wrapper** around the vault; our
 | 2²⁵⁶−1 | ❌ same panic (the vault doesn't accept "everything" as a sentinel, unlike Aave/Spark) |
 | 1 share | ✅ returns 1.039855 |
 
-**Sent:** `redeem(123,530.05227055399 × 10¹⁸, user, user)` → tx `0x178745ee…`, **status 1**, 362,885 gas.
+**Contamination note:** the step 4 script also made one `eth_call` to a selector from Claude's memory
+(`convertToAssets`, `0x07a2d13a`). Its result was discarded and not used, but the call shouldn't have been made.
+
+**Sent:** `redeem(123,530.05227055399 × 10¹⁸, user, user)`, copying the observed pattern → tx `0x178745ee…`, **status 1**, 362,885 gas.
 - gtusdcp **123,530.0523 burned**; **USDC 128,453.458127 from the vault to the user.**
 - After: shares **0**, wallet USDC **128,453.46** (from 0), ETH 0.0409 (gas only).
 
