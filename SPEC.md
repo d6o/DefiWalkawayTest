@@ -190,6 +190,10 @@ Learned during the Lido and Aave runs, applied to every run from here on.
 - **Capital exposed**, as used so far: if the exit is blocked by D4, the position token's `totalSupply()` at the fork
   block (Lido); if no D4 dependency is found, none (Aave). The capital a test user needs for a full exit is reported
   separately (§4). To be confirmed once more protocols are done.
+- **EigenCloud has no position token**, so §8 can't pick its test address. Options discussed (2026-10-23), not decided:
+  A. rank the largest asset's depositors from the protocol's own on-chain records (e.g. native-restaking pod owners by
+  recorded amount at the fork block) and take the 100th; B. the same for stETH deposits (8.5% of TVL);
+  C. a third-party ranking (e.g. Dune). Snapshot: `data/selection/2026-10-22-defillama-eigencloud.json`.
 - Save the DefiLlama **.csv** export alongside the screenshot.
 
 **Resolved:** which product/version to test when DefiLlama groups several under one name → the protocol's largest
