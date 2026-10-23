@@ -127,6 +127,7 @@ Picking the address is experiment setup. The walkaway test itself starts after t
 |----------|-------|---------|---------|----------|
 | Lido | stETH | `0xde804e46f67ebeecbe4c0a54efe33143cb7ab9e2` | 5,084 stETH | `data/selection/2026-10-22-ethplorer-steth-top100.json` (~block 26,248,199) |
 | Binance staked ETH | wBETH (`0xa2E3356610840701BDf5611a53974510Ae27E2e1`), single product/asset on Ethereum | `0x066eb6929f18a72093c5afc9eba6dd476df876bc` | 16.96 wBETH | `data/selection/2026-10-22-ethplorer-wbeth-top100.json`; `data/selection/2026-10-22-defillama-binance-staked-eth.json` |
+| Spark (SparkLend) | spwstETH (`0x12B54025C112Aa61fAce2CDB7118740875A566E9`); largest product SparkLend ($5.10B), largest asset wstETH ($3.55B, 67.9%) | `0x50e835c1088dd06747312c06ac0839ecc773cb42` (**#99**: #100 `0xbb73…17d6` is a contract) | 403.29 spwstETH | `data/selection/2026-10-22-ethplorer-spwsteth-top100.json`; `data/selection/2026-10-22-defillama-sparklend.json` |
 | Aave V3 | aEthweETH (`0xBdfa7b7893081B35Fb54027489e2Bc7A38275129`) | `0x462a336dcac6eaf544106266914caa5a18b831d0` | 456.48 aEthweETH | `data/selection/2026-10-22-ethplorer-aethweeth-top100.json`; product/token choice: `data/selection/2026-10-22-defillama-aave-v3.json` |
 
 ## 9. Naming functions at T0
