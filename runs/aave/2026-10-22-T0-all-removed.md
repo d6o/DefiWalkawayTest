@@ -175,7 +175,7 @@ comes only from the fixed list, which was set before any protocol was tested.
 3. Still not shown: what the user **gets back** when aEthweETH is burned. Next: trace examples.
 
 ### Step 3b, phase 2: trace the two main `0x8787` functions
-**Time:** ~01:31Z (6 traces in 1.4s, `scripts/tracetx.py`) plus reading (~3 min).
+**Time:** ~01:28Z (6 traces in 1.4s, `scripts/tracetx.py`) plus reading (~3 min).
 **Knowledge used:** `debug_traceTransaction`, standard `Transfer` events, calldata words.
 **Raw data:** `data/step3b/phase2/traces/*.json`, `data/step3b/phase2/summaries.json`. Examples: first / middle / last.
 
@@ -199,3 +199,58 @@ weETH goes from the sender **into `0xbdfa…` (aEthweETH)**, and aEthweETH is mi
 3. The weETH sits in the aEthweETH contract itself (in on mint, out on withdraw).
 4. All three argument types were readable from the data: the asset address, an amount, the recipient.
 5. **Still to test for our user:** whether the other Aave-named balances (step 2 hypotheses) affect this.
+
+### Step 4 (part 1): try `withdraw` for our user, simulation only
+**Time:** 01:29:23Z → 01:29:49Z (~26s, 75 `eth_call`s), nothing sent.
+**Knowledge used:** the call layout from step 3b phase 2 (`withdraw(weETH, amount, recipient)` on `0x8787…a4e2`), `eth_call`.
+**Raw data:** `data/step4/max_withdraw_aweeth.json`.
+
+| Amount | Result |
+|--------|--------|
+| 2²⁵⁶−1 (everything, as other holders did) | ❌ custom error **`0x6679996d`** (no arguments) |
+| 456.482736854341547308 (exact balance) | ❌ `0x6679996d` |
+| 1 weETH | ✅ |
+| 1 wei | ✅ |
+
+**Binary search for the largest amount that succeeds** (71 calls):
+- **Max withdrawable: 61.672942239804441619 weETH = 13.5% of the 456.48 balance.**
+- 1 wei more → `0x6679996d`.
+
+**Findings:**
+1. **Our user can't withdraw their whole aEthweETH balance**, unlike the 3 traced holders. Only **13.5%** goes through;
+   anything above is rejected with `0x6679996d`.
+2. **The chain doesn't say why.** The error has no arguments and can't be named at T0. The step 2 hypothesis (the
+   "Variable Debt WETH" balance limits withdrawals) is consistent with this, but not shown.
+
+### Step 4 (part 2): actually withdraw the allowed amount
+**Time:** 01:34:39Z → ~01:40Z (~5 min including the failed attempts).
+**Knowledge used:** same as part 1; anvil `evm_setNextBlockTimestamp`, `eth_sendTransaction` via plain JSON-RPC.
+**Fork snapshot before this step:** `0x0` (`data/step4/snapshot.txt`).
+**Raw data:** `data/step4/withdraw_receipt.json` (failed), `data/step4/withdraw_receipt_ok.json`, `data/step4/partial_withdraw.json`.
+
+**⚠️ Contamination (T2 source leaked):** the first attempt used `cast send`. Its gas estimation reverted, and `cast`
+printed a **name** for error `0x6679996d`, looked up automatically from a **hosted signature database**. That's a T2
+source, not allowed at T0, so the name isn't used or repeated in this run. From here on, calls go through plain JSON-RPC
+so nothing is decoded automatically. Noted for T2: with a signature database, the revert reason appears immediately.
+
+**Attempts:**
+
+| # | What | Block timestamp | Result |
+|---|------|-----------------|--------|
+| 1 | `cast send` withdraw 61.672942239804441619 (part 1 max) | wall clock (~13h after fork) | ❌ gas estimation reverted `0x6679996d` |
+| 2 | Same amount, plain JSON-RPC, next block pinned to fork time **+12s** | 1,792,672,655 | ❌ mined, **status 0** |
+| 3 | Re-measure the max on the current block (+12s): **61.672902005868166952** (−0.000040233936 vs fork block) | — | — |
+| 4 | Withdraw **61.671902005868166952** (new max − 0.001), next block +1s | 1,792,672,656 | ✅ **status 1**, 359,455 gas |
+
+**Result of attempt 4** (tx `0x791837677789ae1daac481165c9d7b9145a54786e70f2318a2e61f27c85de8b9`):
+- aEthweETH burned from the user: 61.67186; **weETH from `0xbdfa…` (aEthweETH) to the user: 61.67190.**
+- Wallet weETH: **0 → 61.6719**. aEthweETH: 456.4827 → 394.8108.
+- Max still withdrawable afterwards: **0.000997 weETH** (the margin left in attempt 4).
+
+**Findings:**
+1. **Partial exit confirmed on the fork: 61.67 weETH (13.5% of the aEthweETH position) reached the wallet**, using only
+   the chain. No frontend, API, indexer, or privileged actor was involved.
+2. **The rest of the position (394.81 aEthweETH) can't be withdrawn now**; anything above the limit reverts with `0x6679996d`.
+3. **The limit shrinks over time** (−0.00004 weETH in 12s), while the aEthweETH balance itself grows slightly. So an
+   amount that passes a simulation can fail a few seconds later. Users have to leave a margin.
+4. Why there is a limit, and why it shrinks, isn't shown by the chain yet.

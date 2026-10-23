@@ -1,0 +1,9 @@
+{
+ "max_withdrawable_wei": 61672942239804441619,
+ "max_withdrawable": 61.67294223980444,
+ "balance": 456.4827368543415,
+ "share_of_balance": 0.13510465404408836,
+ "max_ok": true,
+ "max_plus_1_error": "0x6679996d",
+ "eth_calls": 71
+}
