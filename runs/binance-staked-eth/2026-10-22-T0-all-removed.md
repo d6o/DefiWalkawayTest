@@ -69,4 +69,3 @@ That's a funds limit (SPEC §4), not a dependency, but a real barrier.
 2. **The user never minted wBETH.** It was sent to them by two EOAs that have each sent **15–19 million transactions**
    (very high-volume operators), within ~100 blocks of each other.
 3. With no transactions of their own, the user's history gives **no hint** of how wBETH is created or redeemed.
-EOF
