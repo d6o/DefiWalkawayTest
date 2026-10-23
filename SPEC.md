@@ -14,6 +14,10 @@ They have no frontend, browser history, or cached data.
 Note: token names and symbols are not trustworthy on-chain (anyone can deploy a token called "stETH").
 Telling the real contract apart from look-alikes is part of the test.
 
+Because the user knows the protocol's name, **any token in their history whose `name()` mentions the protocol** is
+treated as a possible position in it (e.g. "Aave Ethereum wstETH", "Aave Ethereum Variable Debt WETH").
+What each one means still has to be shown from chain data.
+
 ## 2. What gets removed
 
 Each dependency is removed **on its own**, then **all together**:
@@ -48,6 +52,14 @@ The assets are **the ones the user deposited** (e.g. weETH deposited into Aave �
 
 A **partial exit** (e.g. principal recovered but rewards not) is recorded as its own result, not a pass.
 
+**Capital limits are not dependencies.** If the exit is limited by the user's own obligations (e.g. a debt that must be
+repaid first), the run records:
+1. the **partial exit** possible with the user's own funds, and
+2. whether a **full exit** works once the experimenter provides the missing capital on the fork (disclosed, §10),
+3. the **capital needed**.
+
+That separates "the protocol can't be exited without a dependency" from "this user doesn't have the money".
+
 **Only the protocol's own exit path counts.** Selling the position on a DEX or other secondary market
 is recorded as a **fallback**, not a pass. Otherwise the test would measure market liquidity instead of
 protocol dependencies. "You can only leave by selling at market" is still reported as a finding.
@@ -73,6 +85,9 @@ protocol dependencies. "You can only leave by selling at market" is still report
   - Disclosure: a hosted provider answers faster than a self-run node, so measured times are **optimistic**.
   - Limit to know about: `eth_getLogs` accepts any block range if the result is under 10K logs, or any
     result size if the range is under 10K blocks. Larger searches have to be split.
+- **Calls that may revert go through plain JSON-RPC.** Tools like `cast` decode revert errors by looking them up in a
+  hosted signature database, which is a T2 source. At T0 that would leak names (it happened once in the Aave run, step 4).
+- Fork state is **snapshotted** (`evm_snapshot`) before every state-changing step, so it can be rolled back.
 
 ## 7. Protocol selection
 
@@ -136,12 +151,44 @@ into `data/methodology/signatures.json`
   (what other users call, and which calls send assets back).
 - Disclosure: we wrote the verb list, and we know these protocols. Fixing it in advance limits the bias; it doesn't remove it.
 
+## 10. Evidence rules
+
+Learned during the Lido and Aave runs, applied to every run from here on.
+
+**Facts vs. hypotheses**
+- Every claim in a run log is either **shown by chain data** (with the query, tx, or trace that shows it) or marked as a
+  **hypothesis**. Names, symbols, and outside knowledge are never evidence on their own.
+- When an interpretation turns out to be stated too strongly, the run log keeps a **correction note**. No silent edits.
+- **Contamination notes:** when an operator recognizes an address, selector, or error from memory or from a leaked
+  source, it's disclosed in the log and not used.
+
+**Learning from other users (behavior)**
+- Window: the **7 days before the fork block** (blocks 26,197,800 → 26,248,199).
+- Read **every** transaction that moved the position token in the window; group by what the sender called (`tx.to` + selector).
+- Trace **3 examples per group** (first / middle / last by block). If the examples disagree, trace more from that group.
+- Smart-contract wallets hide the real call in the outer transaction; only traces show it.
+
+**Cause and effect**
+- When something is suspected to cause a block (e.g. a balance limiting withdrawals), it's tested on the fork with a
+  **control** and a **treatment** from the same state: change only the suspected cause, and measure again.
+
+**Experimenter interventions** (only on the fork, always disclosed in the run log)
+- Impersonating the test address (all runs).
+- Replaying a **real historical transaction** from its **original sender** on a fork before it (Lido step 5).
+- **Providing capital** to the test address (Aave step 7).
+- Moving the fork's clock (`evm_increaseTime`, `evm_setNextBlockTimestamp`).
+- **Simulate before sending** (`eth_call`). Values that drift with time (e.g. a withdrawal cap) need a margin.
+
 ---
 
 ## Open questions (to decide later)
 
-- How is **recovery time** measured? (scripted agent, human, LLM agent?)
-- How is **capital exposed** calculated? (value behind 🟠/🔴 dependencies at the fork block?)
-- DefiLlama groups versions/products under one name (e.g. Aave V2 + V3, SparkLend + Spark Savings).
-  Which products/versions do we test for each protocol? → next step
+- How is **recovery time** reported? Each run records raw timings per step (queries/execution vs. analysis);
+  how to turn them into one number is still open.
+- **Capital exposed**, as used so far: if the exit is blocked by D4, the position token's `totalSupply()` at the fork
+  block (Lido); if no D4 dependency is found, none (Aave). The capital a test user needs for a full exit is reported
+  separately (§4). To be confirmed once more protocols are done.
 - Save the DefiLlama **.csv** export alongside the screenshot.
+
+**Resolved:** which product/version to test when DefiLlama groups several under one name → the protocol's largest
+product on Ethereum (§8).
