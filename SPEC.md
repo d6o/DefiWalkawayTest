@@ -43,6 +43,8 @@ the higher tiers are run.
 ## 4. What counts as success
 
 The user **finds every position in the protocol being tested** and **gets all the assets back to their wallet, rewards included**.
+The assets are **the ones the user deposited** (e.g. weETH deposited into Aave → weETH back). Converting them further
+(weETH → ETH) is another protocol's exit and isn't part of this test.
 
 A **partial exit** (e.g. principal recovered but rewards not) is recorded as its own result, not a pass.
 
@@ -99,12 +101,16 @@ Ethplorer's top-holders API (`api.ethplorer.io/getTopTokenHolders/<token>?apiKey
   Wallets with an EIP-7702 delegation count as plain wallets.
 - **Snapshot:** save the full holder list with the date and block in `data/selection/`.
 - If a protocol has **no position token**, define a fallback when we get to it.
+- If a protocol has **several position tokens** (e.g. one per deposited asset), the main one is the receipt token of the
+  **largest asset in DefiLlama's token breakdown** (default settings) for the protocol's **largest product on Ethereum**,
+  using the last DefiLlama data point before the fork block. Same source and settings as the protocol selection (§7).
 
 Picking the address is experiment setup. The walkaway test itself starts after this, from the user's point of view.
 
 | Protocol | Token | Address | Balance | Snapshot |
 |----------|-------|---------|---------|----------|
 | Lido | stETH | `0xde804e46f67ebeecbe4c0a54efe33143cb7ab9e2` | 5,084 stETH | `data/selection/2026-10-22-ethplorer-steth-top100.json` (~block 26,248,199) |
+| Aave | aEthweETH (`0xBdfa7b7893081B35Fb54027489e2Bc7A38275129`) | `0x462a336dcac6eaf544106266914caa5a18b831d0` | 456.48 aEthweETH | `data/selection/2026-10-22-ethplorer-aethweeth-top100.json`; product/token choice: `data/selection/2026-10-22-defillama-aave-v3.json` |
 
 ## 9. Naming functions at T0
 
