@@ -1,0 +1,65 @@
+[
+ [
+  4336880501.881758,
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "Savings USDS",
+  "USDS Stablecoin",
+  205
+ ],
+ [
+  166303060.51193604,
+  "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+  "Staked USDS",
+  "USDS Stablecoin",
+  10
+ ],
+ [
+  139127740.18502054,
+  "0x83f20f44975d03b1b09e64809b757c47f942beea",
+  "Savings Dai",
+  "Dai Stablecoin",
+  9
+ ],
+ [
+  58336650.09931433,
+  "0x23f5e9c35820f4bab695ac1f19c203cc3f8e1e11",
+  "sky.money USDT Savings",
+  "Tether USD",
+  2
+ ],
+ [
+  43835473.67639399,
+  "0xe15fcc81118895b67b6647bbd393182df44e11e0",
+  "sky.money USDS Flagship",
+  "USDS Stablecoin",
+  4
+ ],
+ [
+  1524664.9417626979,
+  "0x7a716da432531c0dcec0f4915d877631aa258fa3",
+  "USDS to USD yVault Convertor",
+  "USDS Stablecoin",
+  2
+ ],
+ [
+  1116395.300068288,
+  "0x07ecd7e0c348d526902258e3b1c4f2898057e611",
+  "Frax USDai Ecosystem",
+  "Frax USD",
+  2
+ ],
+ [
+  128.45423019373393,
+  "0x5e8a9acd00adced69b30d36929cbf7d4d4f9ae1f",
+  "Spark WETH/USDS (yvUSD) Lender Borrower",
+  "Wrapped Ether",
+  1
+ ],
+ [
+  5.80812020771e-07,
+  "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+  "USDC To sUSDS Depositor",
+  "USD Coin",
+  13
+ ]
+]

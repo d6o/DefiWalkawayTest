@@ -1,0 +1,968 @@
+[
+ {
+  "hash": "0xf9e64fa3cbb417cbf88056ffb43c5d02a4befcfef971ab4478c30dd8bfc2e95a",
+  "sender": "0x161225b6169308ccc9cc12fdf9f6a4ebe5b82525",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xba087652",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [],
+  "tokens_sent_by_sender": [],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x6c11c886bbd2a210f5cf8a1adbf3f48d08e8fd4b",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 3001213630077168794,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 3173875794238350444557,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x6c11c886bbd2a210f5cf8a1adbf3f48d08e8fd4b",
+    "amount_raw": 3340119782641167636,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0x161225b6169308ccc9cc12fdf9f6a4ebe5b82525",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xba087652"
+  }
+ },
+ {
+  "hash": "0x6c99e12b65acb4b17a8a5aa6b9968a688ccbf2d11a3995bd4e87fce15b78f2bc",
+  "sender": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xba087652",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+    "amount_raw": 1000000028383398229512387,
+    "token_id": null
+   }
+  ],
+  "tokens_sent_by_sender": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 898232769575584740281064,
+    "token_id": null
+   }
+  ],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 898232769575584740281064,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 140177427918773438878,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+    "amount_raw": 1000000028383398229512387,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xba087652"
+  }
+ },
+ {
+  "hash": "0xed524a50983574f28794c53b37ec1c4f5add8fb78368ce7cc7cea7ed3e211ba7",
+  "sender": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xba087652",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+    "amount_raw": 2505303975466827747895,
+    "token_id": null
+   }
+  ],
+  "tokens_sent_by_sender": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 2249562613617000000000,
+    "token_id": null
+   }
+  ],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 2249562613617000000000,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 4934615263933754355337,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+    "amount_raw": 2505303975466827747895,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xba087652",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xba087652"
+  }
+ },
+ {
+  "hash": "0xb6a4abdf9634e86b82d203327c6a109f6d9a5d091c232214796ef931e17214eb",
+  "sender": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xb460af94",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+    "amount_raw": 252019570755691276908866,
+    "token_id": null
+   }
+  ],
+  "tokens_sent_by_sender": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 226454080121909248155696,
+    "token_id": null
+   }
+  ],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 226454080121909248155696,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 630968835520246564128,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+    "amount_raw": 252019570755691276908866,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xb460af94"
+  }
+ },
+ {
+  "hash": "0x134b776b56eab1a7811ae8465c97acd70e976f3e6ee2baf9b07e807e8c76cbcc",
+  "sender": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xb460af94",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+    "amount_raw": 700000000000000000000000,
+    "token_id": null
+   }
+  ],
+  "tokens_sent_by_sender": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 628667137449926218002221,
+    "token_id": null
+   }
+  ],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 628667137449926218002221,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 4668163270522381644131,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+    "amount_raw": 700000000000000000000000,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xb460af94"
+  }
+ },
+ {
+  "hash": "0x10cfbaf84ebf692159bd4cc06d7b96c6093ab9f01fc6b4b944fb1680205570dd",
+  "sender": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+  "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "selector": "0xb460af94",
+  "status": "ok",
+  "eth_from_sender": 0.0,
+  "eth_to_sender": 0,
+  "tokens_received_by_sender": [
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+    "amount_raw": 5000000000000000000000,
+    "token_id": null
+   }
+  ],
+  "tokens_sent_by_sender": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 4489575159412425392921,
+    "token_id": null
+   }
+  ],
+  "all_token_transfers": [
+   {
+    "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "std": "ERC-20",
+    "from": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount_raw": 4489575159412425392921,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0x0000000000000000000000000000000000000000",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "amount_raw": 68545096876155093000,
+    "token_id": null
+   },
+   {
+    "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "std": "ERC-20",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+    "amount_raw": 5000000000000000000000,
+    "token_id": null
+   }
+  ],
+  "other_events": [
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xbb35783b00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "topic0": "0xf24e23eb00000000000000000000000000000000000000000000000000000000"
+   },
+   {
+    "emitter": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "topic0": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xad1e8a53178522eb68a9d94d862bf30c841f709d2115f743eb6b34528751c79f"
+   },
+   {
+    "emitter": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "topic0": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db"
+   }
+  ],
+  "calls": [
+   {
+    "depth": 0,
+    "type": "CALL",
+    "from": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+    "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 1,
+    "type": "DELEGATECALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "selector": "0xb460af94",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xf24e23eb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "selector": "0xef693bed",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+    "selector": "0xbb35783b",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "CALL",
+    "from": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 4,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0x40c10f19",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 2,
+    "type": "CALL",
+    "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+    "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   },
+   {
+    "depth": 3,
+    "type": "DELEGATECALL",
+    "from": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "to": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "selector": "0xa9059cbb",
+    "value_eth": 0.0,
+    "error": null
+   }
+  ],
+  "group": {
+   "to": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "selector": "0xb460af94"
+  }
+ }
+]

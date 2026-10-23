@@ -1,0 +1,13 @@
+{
+ "summary": {
+  "label": "sUSDS proxy",
+  "code_bytes": 170,
+  "push4_total": 0,
+  "dispatcher_selectors": 0,
+  "named_basic": 0,
+  "named_wordlist": 0,
+  "unnamed": 0,
+  "non_dispatcher_push4": 0
+ },
+ "selectors": []
+}

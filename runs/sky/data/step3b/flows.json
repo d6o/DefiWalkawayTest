@@ -1,0 +1,7343 @@
+{
+ "summary": {
+  "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+  "from_block": 26197800,
+  "to_block": 26248199,
+  "blocks": 50400,
+  "started": "2026-10-23T13:24:09+00:00",
+  "ended": "2026-10-23T13:24:19+00:00",
+  "seconds": 10.4,
+  "rpc": {
+   "queries": 1,
+   "splits": 0
+  },
+  "transfer_logs": 6169,
+  "distinct_txs": 2930,
+  "total_amount": 2563471513.487972,
+  "recipients": 410,
+  "recipient_contracts": 201,
+  "senders": 401,
+  "sender_contracts": 218,
+  "mints_to_users": {
+   "address": "0x0000000000000000000000000000000000000000",
+   "kind": "zero",
+   "code_bytes": 0,
+   "count": 1461,
+   "amount": 1059887249.6440202,
+   "distinct_recipients": 177,
+   "distinct_txs": 1331
+  },
+  "burns": {
+   "address": "0x0000000000000000000000000000000000000000",
+   "kind": "zero",
+   "code_bytes": 0,
+   "count": 1697,
+   "amount": 1161868153.0034637,
+   "distinct_senders": 148,
+   "distinct_txs": 1554
+  }
+ },
+ "recipients": [
+  {
+   "address": "0x0000000000000000000000000000000000000000",
+   "kind": "zero",
+   "code_bytes": 0,
+   "count": 1697,
+   "amount": 1161868153.0034637,
+   "distinct_senders": 148,
+   "distinct_txs": 1554
+  },
+  {
+   "address": "0x950fd558f47e234a2fde23b7d61f7ccdbcb4a86f",
+   "kind": "contract",
+   "code_bytes": 18725,
+   "count": 432,
+   "amount": 5110614.575902232,
+   "distinct_senders": 10,
+   "distinct_txs": 427
+  },
+  {
+   "address": "0x0e61d01b2c6495c69b6cce0bf13596c9fe69b6eb",
+   "kind": "contract",
+   "code_bytes": 6712,
+   "count": 304,
+   "amount": 3096170.1801057826,
+   "distinct_senders": 5,
+   "distinct_txs": 301
+  },
+  {
+   "address": "0x0858e2b0f9d75f7300b38d64482ac2c8df06a755",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 205,
+   "amount": 190280.03459008067,
+   "distinct_senders": 36,
+   "distinct_txs": 203
+  },
+  {
+   "address": "0x00836fe54625be242bcfa286207795405ca4fd10",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 173,
+   "amount": 6332.9191930208535,
+   "distinct_senders": 21,
+   "distinct_txs": 173
+  },
+  {
+   "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "kind": "contract",
+   "code_bytes": 13529,
+   "count": 135,
+   "amount": 4229006.829176132,
+   "distinct_senders": 23,
+   "distinct_txs": 134
+  },
+  {
+   "address": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
+   "kind": "contract",
+   "code_bytes": 24538,
+   "count": 131,
+   "amount": 1742399.7528213083,
+   "distinct_senders": 8,
+   "distinct_txs": 130
+  },
+  {
+   "address": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+   "kind": "contract",
+   "code_bytes": 2373,
+   "count": 116,
+   "amount": 31798020.640981525,
+   "distinct_senders": 1,
+   "distinct_txs": 116
+  },
+  {
+   "address": "0xf1feaa32ef38b9c8ffd9248584671d51679fe4a4",
+   "kind": "contract",
+   "code_bytes": 1744,
+   "count": 114,
+   "amount": 1675.4754288750605,
+   "distinct_senders": 2,
+   "distinct_txs": 114
+  },
+  {
+   "address": "0x81a2612f6dea269a6dd1f6deab45c5424ee2c4b7",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 103,
+   "amount": 773932.7489823491,
+   "distinct_senders": 29,
+   "distinct_txs": 94
+  },
+  {
+   "address": "0xd58d7406e9ce34c90cf849fc3eed3764eb3779b0",
+   "kind": "contract",
+   "code_bytes": 8313,
+   "count": 101,
+   "amount": 379021.40145699674,
+   "distinct_senders": 1,
+   "distinct_txs": 101
+  },
+  {
+   "address": "0xe6c5dc8508939b1c417f83b7fed3149ef22cf3ff",
+   "kind": "contract",
+   "code_bytes": 19372,
+   "count": 98,
+   "amount": 90208.87729025737,
+   "distinct_senders": 1,
+   "distinct_txs": 98
+  },
+  {
+   "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+   "kind": "contract",
+   "code_bytes": 15623,
+   "count": 79,
+   "amount": 137913359.66384208,
+   "distinct_senders": 14,
+   "distinct_txs": 69
+  },
+  {
+   "address": "0x76e4ad4a6b04d99e7ed47580007bd9382a380857",
+   "kind": "contract",
+   "code_bytes": 4400,
+   "count": 70,
+   "amount": 28532.469933715533,
+   "distinct_senders": 3,
+   "distinct_txs": 70
+  },
+  {
+   "address": "0xbe3d4ec488a0a042bb86f9176c24f8cd54018ba7",
+   "kind": "contract",
+   "code_bytes": 14966,
+   "count": 70,
+   "amount": 16043603.207352921,
+   "distinct_senders": 4,
+   "distinct_txs": 61
+  },
+  {
+   "address": "0xce4f2a6be6fc1f79a6050f3f580182e267612cfc",
+   "kind": "contract",
+   "code_bytes": 5122,
+   "count": 68,
+   "amount": 1106.4055967229735,
+   "distinct_senders": 2,
+   "distinct_txs": 68
+  },
+  {
+   "address": "0x888888888889758f76e7103c6cbf23abbf58f946",
+   "kind": "contract",
+   "code_bytes": 287,
+   "count": 68,
+   "amount": 11739770.097798891,
+   "distinct_senders": 14,
+   "distinct_txs": 68
+  },
+  {
+   "address": "0x0cef320d0c5793ade37964e2661a033771e53cd5",
+   "kind": "contract",
+   "code_bytes": 21478,
+   "count": 67,
+   "amount": 1948747.5846782723,
+   "distinct_senders": 24,
+   "distinct_txs": 67
+  },
+  {
+   "address": "0x21089cfe6bb83966fade3b35f9d6ee1bc1e36bba",
+   "kind": "contract",
+   "code_bytes": 7095,
+   "count": 66,
+   "amount": 19816.9571429402,
+   "distinct_senders": 4,
+   "distinct_txs": 36
+  },
+  {
+   "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+   "kind": "contract",
+   "code_bytes": 16165,
+   "count": 61,
+   "amount": 1974385.7635780186,
+   "distinct_senders": 21,
+   "distinct_txs": 61
+  },
+  {
+   "address": "0xd80e75faf4cc02f6447287d5b1ef195eac19ffd9",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 59,
+   "amount": 101860.11927261156,
+   "distinct_senders": 15,
+   "distinct_txs": 59
+  },
+  {
+   "address": "0xb82aac6aecc9a8edf12345a3b1ec874575da97d4",
+   "kind": "contract",
+   "code_bytes": 5361,
+   "count": 58,
+   "amount": 328036.20008192264,
+   "distinct_senders": 3,
+   "distinct_txs": 58
+  },
+  {
+   "address": "0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1",
+   "kind": "contract",
+   "code_bytes": 2304,
+   "count": 54,
+   "amount": 2472.483448870153,
+   "distinct_senders": 9,
+   "distinct_txs": 54
+  },
+  {
+   "address": "0x8feab81d36e7576107d5de0758c1b839be31b4f6",
+   "kind": "contract",
+   "code_bytes": 13322,
+   "count": 50,
+   "amount": 50690.77601309514,
+   "distinct_senders": 10,
+   "distinct_txs": 50
+  },
+  {
+   "address": "0x0c258a011da68c2be7d48316a9ba06a28a2af6c3",
+   "kind": "contract",
+   "code_bytes": 130,
+   "count": 47,
+   "amount": 43992.186420558,
+   "distinct_senders": 6,
+   "distinct_txs": 47
+  },
+  {
+   "address": "0x140022b7000081000001094700609300d2187dab",
+   "kind": "contract",
+   "code_bytes": 21818,
+   "count": 46,
+   "amount": 6561.2277233909535,
+   "distinct_senders": 6,
+   "distinct_txs": 46
+  },
+  {
+   "address": "0xd1c6aca7ea7ed44e1873dafa054c28ceb690c7eb",
+   "kind": "contract",
+   "code_bytes": 16445,
+   "count": 46,
+   "amount": 135509811.40438154,
+   "distinct_senders": 7,
+   "distinct_txs": 42
+  },
+  {
+   "address": "0x0000000000be226afde21672a5e4adc45692e69d",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 44,
+   "amount": 440714.7757338042,
+   "distinct_senders": 3,
+   "distinct_txs": 25
+  },
+  {
+   "address": "0xc60f6892973934c93ade915d5c249f10d4ece7b4",
+   "kind": "contract",
+   "code_bytes": 16400,
+   "count": 42,
+   "amount": 124644.7347737194,
+   "distinct_senders": 1,
+   "distinct_txs": 42
+  },
+  {
+   "address": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+   "kind": "contract",
+   "code_bytes": 163,
+   "count": 41,
+   "amount": 1579731.437710714,
+   "distinct_senders": 1,
+   "distinct_txs": 41
+  },
+  {
+   "address": "0x7f6874332c4629429d70d15f685a8230323f11f1",
+   "kind": "contract",
+   "code_bytes": 12652,
+   "count": 40,
+   "amount": 654.0672718729323,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa0f1c3ad83e07d97b5e7030e177718be175275ea",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 38,
+   "amount": 136875.84179480272,
+   "distinct_senders": 5,
+   "distinct_txs": 27
+  },
+  {
+   "address": "0x8b83c4aa949254895507d09365229bc3a8c7f710",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 37,
+   "amount": 309538.2250456634,
+   "distinct_senders": 19,
+   "distinct_txs": 37
+  },
+  {
+   "address": "0x81fe240438f0631da32aaf5aba35f8960d2e78c9",
+   "kind": "contract",
+   "code_bytes": 1440,
+   "count": 37,
+   "amount": 2765.7684935203392,
+   "distinct_senders": 2,
+   "distinct_txs": 37
+  },
+  {
+   "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "kind": "contract",
+   "code_bytes": 24009,
+   "count": 32,
+   "amount": 37779.45843468669,
+   "distinct_senders": 21,
+   "distinct_txs": 30
+  },
+  {
+   "address": "0x36f931bb1843a76e03c01341d1d0ce5589955c75",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 32,
+   "amount": 2182.6778926272527,
+   "distinct_senders": 11,
+   "distinct_txs": 32
+  },
+  {
+   "address": "0x00000000f7153fe2a5004a3b9362cc9a69aec360",
+   "kind": "contract",
+   "code_bytes": 23818,
+   "count": 31,
+   "amount": 72440.68444145139,
+   "distinct_senders": 4,
+   "distinct_txs": 26
+  },
+  {
+   "address": "0xa8687a15d4be32cc8f0a8a7b9704a4c3993d9613",
+   "kind": "contract",
+   "code_bytes": 5848,
+   "count": 30,
+   "amount": 240082.4786255197,
+   "distinct_senders": 1,
+   "distinct_txs": 30
+  },
+  {
+   "address": "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+   "kind": "contract",
+   "code_bytes": 15374,
+   "count": 30,
+   "amount": 831203.8192297493,
+   "distinct_senders": 1,
+   "distinct_txs": 30
+  },
+  {
+   "address": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+   "kind": "contract",
+   "code_bytes": 19577,
+   "count": 25,
+   "amount": 437978.3892742669,
+   "distinct_senders": 4,
+   "distinct_txs": 25
+  },
+  {
+   "address": "0x50d3865a63d52c0a54e4679949647ea752107390",
+   "kind": "contract",
+   "code_bytes": 11134,
+   "count": 23,
+   "amount": 23139.584438068774,
+   "distinct_senders": 5,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0x009a8dbad7000f0000009b002d050058ca881b57",
+   "kind": "contract",
+   "code_bytes": 13529,
+   "count": 23,
+   "amount": 617.0463368947317,
+   "distinct_senders": 4,
+   "distinct_txs": 23
+  },
+  {
+   "address": "0x84f0d8b402dac98d6c2fdc7a1b44b0d55679a5c3",
+   "kind": "contract",
+   "code_bytes": 15603,
+   "count": 23,
+   "amount": 734.0748329242657,
+   "distinct_senders": 1,
+   "distinct_txs": 23
+  },
+  {
+   "address": "0x22ec88b9ff78c6f2458ab1a7aa8bb99d84bd4b86",
+   "kind": "contract",
+   "code_bytes": 14140,
+   "count": 22,
+   "amount": 96706.94490042387,
+   "distinct_senders": 4,
+   "distinct_txs": 22
+  },
+  {
+   "address": "0xe08d97e151473a848c3d9ca3f323cb720472d015",
+   "kind": "contract",
+   "code_bytes": 6818,
+   "count": 22,
+   "amount": 4115.280795405289,
+   "distinct_senders": 6,
+   "distinct_txs": 16
+  },
+  {
+   "address": "0xe6eeda550918638529c6cf2ea14f9ea0572d6f88",
+   "kind": "contract",
+   "code_bytes": 18084,
+   "count": 22,
+   "amount": 17280.550945588566,
+   "distinct_senders": 4,
+   "distinct_txs": 22
+  },
+  {
+   "address": "0x006d0e0d006109f0020f3050000a713780b7b000",
+   "kind": "contract",
+   "code_bytes": 4814,
+   "count": 20,
+   "amount": 5795938.329823441,
+   "distinct_senders": 8,
+   "distinct_txs": 20
+  },
+  {
+   "address": "0xde0735e41a522b7acc181e18c71f78dfa500831c",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 18,
+   "amount": 53664.645857347365,
+   "distinct_senders": 2,
+   "distinct_txs": 18
+  },
+  {
+   "address": "0x50e55497617e35bc925b764ba064adc6c2e47acb",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 18,
+   "amount": 53664.1016287374,
+   "distinct_senders": 1,
+   "distinct_txs": 18
+  },
+  {
+   "address": "0x0c8c5891a41078cef36970932d5c05dc1de7288b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 16,
+   "amount": 4466.141569387929,
+   "distinct_senders": 6,
+   "distinct_txs": 15
+  },
+  {
+   "address": "0x7d8eb200c45c273e3bef1bc55c09f76805158e96",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 16,
+   "amount": 2.9328368262630695,
+   "distinct_senders": 12,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xf8f226da66244f89e70c5b5d1a5c5b0d505eb1d8",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 15,
+   "amount": 111875.39343739024,
+   "distinct_senders": 1,
+   "distinct_txs": 15
+  },
+  {
+   "address": "0x4fe93ebc4ce6ae4f81601cc7ce7139023919e003",
+   "kind": "contract",
+   "code_bytes": 5314,
+   "count": 15,
+   "amount": 190091.6072082676,
+   "distinct_senders": 3,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x3cef1afc0e8324b57293a6e7ce663781bbefbb79",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 14,
+   "amount": 8808.176720599266,
+   "distinct_senders": 6,
+   "distinct_txs": 14
+  },
+  {
+   "address": "0x111116058b9828cdcdd810c502b925c14f34ca11",
+   "kind": "contract",
+   "code_bytes": 22545,
+   "count": 14,
+   "amount": 6689.253723141428,
+   "distinct_senders": 7,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xfd1627e3f3469c8392c8c3a261d8f0677586e5e1",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 13,
+   "amount": 1884.3392493645213,
+   "distinct_senders": 9,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xea1709bc7a72716049c5b8abee258ca8bee54386",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 1228.4978401875978,
+   "distinct_senders": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0x9f5f1de5b772afcbc4eebca866fb8b9f745d3b4b",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 1228.4978401875978,
+   "distinct_senders": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xd858854753ae4814b9ca794001b74712d5053ccd",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 3418.9133404552636,
+   "distinct_senders": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xcf1447df3e39d7024edf1ad930b7bfa8eeac3e7d",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 3418.9133404552636,
+   "distinct_senders": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0x49e3d83b6360dcbd4861f73d2eb3feb06e29fd2e",
+   "kind": "contract",
+   "code_bytes": 1860,
+   "count": 12,
+   "amount": 10903.382578004836,
+   "distinct_senders": 8,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0xf7ed9c033f6bf5f9775d4850170db898d0d28cdc",
+   "kind": "contract",
+   "code_bytes": 7105,
+   "count": 12,
+   "amount": 92963.53149414096,
+   "distinct_senders": 1,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0x09ad820aac5779683b481c4674208a4e1b024afa",
+   "kind": "contract",
+   "code_bytes": 7570,
+   "count": 12,
+   "amount": 55590.24404326106,
+   "distinct_senders": 2,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x4a00d2e63732932d00f3005c006141fe85000000",
+   "kind": "contract",
+   "code_bytes": 12478,
+   "count": 12,
+   "amount": 9578.473484988675,
+   "distinct_senders": 5,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0xe2536231fc1512babc8c856ad7499830a936bdd9",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 12,
+   "amount": 6746.95176400582,
+   "distinct_senders": 3,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0xd7ae00b91ba0b8e0240b22cd75fe447d177c260f",
+   "kind": "contract",
+   "code_bytes": 23147,
+   "count": 11,
+   "amount": 2380.147061104555,
+   "distinct_senders": 11,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "kind": "contract",
+   "code_bytes": 4720,
+   "count": 11,
+   "amount": 2307.4667757133902,
+   "distinct_senders": 7,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0x3884cf9171f53f3cb29bbca1594af8a0efd5567e",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 11,
+   "amount": 3353.895046780244,
+   "distinct_senders": 3,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0x000000000000c9b3e2c3ec88b1b4c0cd853f4321",
+   "kind": "contract",
+   "code_bytes": 2938,
+   "count": 11,
+   "amount": 679829.8991944107,
+   "distinct_senders": 5,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0xa2bcd1a4efbd04b63cd03f5aff2561106ebcce00",
+   "kind": "contract",
+   "code_bytes": 8279,
+   "count": 10,
+   "amount": 70.50157618218654,
+   "distinct_senders": 4,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 10,
+   "amount": 12571569.387958784,
+   "distinct_senders": 2,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x88cc0800464fcef3e643a369e8a0532990995eee",
+   "kind": "contract",
+   "code_bytes": 1129,
+   "count": 10,
+   "amount": 318.9618208364253,
+   "distinct_senders": 1,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x65bc393d16381b292221a664a783812a89f11de6",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 9,
+   "amount": 58.06174476836385,
+   "distinct_senders": 2,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x38b0c12ab81976e9417d4ebfe2a34db6df22e6ad",
+   "kind": "contract",
+   "code_bytes": 18095,
+   "count": 9,
+   "amount": 1894285.7359674203,
+   "distinct_senders": 6,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae",
+   "kind": "contract",
+   "code_bytes": 5176,
+   "count": 9,
+   "amount": 69501.71257179714,
+   "distinct_senders": 6,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x688cc76d3b009d805ab6b4d0a1cbd228131b5cbf",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 9,
+   "amount": 940783274.9148302,
+   "distinct_senders": 1,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x00000f91109c4d0007e90000d9facad5298a0cac",
+   "kind": "contract",
+   "code_bytes": 2018,
+   "count": 9,
+   "amount": 1635.1119793738678,
+   "distinct_senders": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0xea40de595f099ca04695b0ca105499e50af77f92",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 9,
+   "amount": 335703.0650952683,
+   "distinct_senders": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x3f0bf2350a9d2c0e976ca0749d13b732202468a6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 9,
+   "amount": 344120.8850336289,
+   "distinct_senders": 1,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0xf820fb4680712cd7263a0d3d024d5b5aea82fd70",
+   "kind": "contract",
+   "code_bytes": 130,
+   "count": 9,
+   "amount": 344120.8850336289,
+   "distinct_senders": 1,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x271e35a8555a62f6ba76508e85dfd76d580b0692",
+   "kind": "contract",
+   "code_bytes": 10836,
+   "count": 8,
+   "amount": 7386.885288586749,
+   "distinct_senders": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0xd4f480965d2347d421f1bec7f545682e5ec2151d",
+   "kind": "contract",
+   "code_bytes": 225,
+   "count": 8,
+   "amount": 70342.80261167989,
+   "distinct_senders": 5,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x7cd01d5cad4ba0caeba02583a5c61d35b23e08eb",
+   "kind": "contract",
+   "code_bytes": 177,
+   "count": 8,
+   "amount": 1386360.5962710616,
+   "distinct_senders": 1,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x6331f479fb6cd1cdc651c441c2fdd37b7e5776e6",
+   "kind": "contract",
+   "code_bytes": 5210,
+   "count": 8,
+   "amount": 3034.195285700173,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x5be33ea07c0f55ad15b224a15ddfb6ea2a33b589",
+   "kind": "contract",
+   "code_bytes": 21465,
+   "count": 8,
+   "amount": 3034.195285700173,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x8d088c2fd4db8ad9e887166c51a6612ef1336671",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 7,
+   "amount": 3379.677093174207,
+   "distinct_senders": 2,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x7fc8fd8bb3192e2d62a3d8d97d9a7924d4bae58b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 7,
+   "amount": 0.06468720010494923,
+   "distinct_senders": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x082738d007001080a00099a000004f3006152085",
+   "kind": "contract",
+   "code_bytes": 5139,
+   "count": 7,
+   "amount": 211315.27440951116,
+   "distinct_senders": 6,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+   "kind": "contract",
+   "code_bytes": 23154,
+   "count": 7,
+   "amount": 181674.92313152668,
+   "distinct_senders": 5,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0xc64e86880846094f787c2687ce18fccc1d5b9a7b",
+   "kind": "contract",
+   "code_bytes": 22934,
+   "count": 7,
+   "amount": 6923.753278601434,
+   "distinct_senders": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x544b4b3328a94ffc8b1e5ca9ba4ec02df8b6ac66",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 7,
+   "amount": 1674127.0877111147,
+   "distinct_senders": 2,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x85eb57d5b837e6d919203935196d80d97eee5b1e",
+   "kind": "contract",
+   "code_bytes": 635,
+   "count": 7,
+   "amount": 13040.992222068104,
+   "distinct_senders": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x9373150d2c853edd31cb47966542b605c2f3fc06",
+   "kind": "contract",
+   "code_bytes": 6975,
+   "count": 7,
+   "amount": 334.3243322529819,
+   "distinct_senders": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0xf38521f130fccf29db1961597bc5d2b60f995f85",
+   "kind": "contract",
+   "code_bytes": 1990,
+   "count": 7,
+   "amount": 382.59691995072984,
+   "distinct_senders": 4,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xc0fc3ddfec95ca45a0d2393f518d3ea1ccf44f8b",
+   "kind": "contract",
+   "code_bytes": 6537,
+   "count": 7,
+   "amount": 70.39376287511882,
+   "distinct_senders": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x8be13f43f1693f98343bd0c3db6be705d57221a3",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 6,
+   "amount": 789.7859373741229,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x8de0d3ed331ce1f29c8df04726d424a015f38de9",
+   "kind": "contract",
+   "code_bytes": 15648,
+   "count": 6,
+   "amount": 103280.37136658504,
+   "distinct_senders": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x81463b0f960f247f704377661ec81c1fd65b5128",
+   "kind": "contract",
+   "code_bytes": 20273,
+   "count": 6,
+   "amount": 1151.1099008704116,
+   "distinct_senders": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0xa88e98bbd2af6ddd642407cb5455f956f0c553f0",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 6,
+   "amount": 0.10075200607734527,
+   "distinct_senders": 1,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 6,
+   "amount": 4107.090720395386,
+   "distinct_senders": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x6a000f20005980200259b80c5102003040001068",
+   "kind": "contract",
+   "code_bytes": 24562,
+   "count": 6,
+   "amount": 1343069.5767527516,
+   "distinct_senders": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x1a396f12e9f4bbfdfb35a010f94c1e700c6927af",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 6,
+   "amount": 28.02728051784773,
+   "distinct_senders": 6,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "kind": "contract",
+   "code_bytes": 180,
+   "count": 6,
+   "amount": 14693.27791133896,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x86ed29bbd44a0ff4d1f04ae70d783048b6f8394e",
+   "kind": "contract",
+   "code_bytes": 82,
+   "count": 5,
+   "amount": 62.917369911686826,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x5e9bf5c4498c480c6428a86efec64de71b2f21a3",
+   "kind": "contract",
+   "code_bytes": 23313,
+   "count": 5,
+   "amount": 90253.239420516,
+   "distinct_senders": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x45312ea0eff7e09c83cbe249fa1d7598c4c8cd4e",
+   "kind": "contract",
+   "code_bytes": 15254,
+   "count": 5,
+   "amount": 12058.485877957924,
+   "distinct_senders": 3,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x2192260fb299d429c2a543c028b3af96d62a762f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 35936.12341663493,
+   "distinct_senders": 2,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x7829590be30821472be6a3aaaf434d126f264d64",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 8988.526532600185,
+   "distinct_senders": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0xb8af67269a74c515bd3b22f26a7740e5a4aae65e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 8988.526532600185,
+   "distinct_senders": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x0643a5101dd97d091dc50eb4c4c0f6e4c1c72896",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 5,
+   "amount": 2224.417601137925,
+   "distinct_senders": 3,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x39ef3fc17b2d09b140c97533cd660fc690e11aba",
+   "kind": "contract",
+   "code_bytes": 14195,
+   "count": 5,
+   "amount": 6229.491146295632,
+   "distinct_senders": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x015cc48cc8bc37d80aaff4e43061dbaf94192308",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 4582158.979376184,
+   "distinct_senders": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0xd5cdc978e5cb16bbd13cd556d2a4139cfdcd3f36",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 19379.59677514398,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x16c6521dff6bab339122a0fe25a9116693265353",
+   "kind": "contract",
+   "code_bytes": 15552,
+   "count": 4,
+   "amount": 115169.4589938973,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x82fcfffe80d80365a5f2f42a6ea87d1e815bec4c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 107912.43212765171,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x16575aada6b1140f6c263f426764ffea08e3eda9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 4489.014239966982,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xc0b5b49a3949ec4b520ef21bacfe16e3695f3b5d",
+   "kind": "contract",
+   "code_bytes": 10857,
+   "count": 4,
+   "amount": 15000.0,
+   "distinct_senders": 4,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xde640f9d7502ab9e5ca4ea083de869012371d2d3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x9de0c570d73823916291412a380af50e5a3452f3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 26957.316581354007,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x0c32a1d460b02ecd9a7a9852ff05512af1e6d0e6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 14.639466667946477,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x89c6340b1a1f4b25d36cd8b063d49045caf3f818",
+   "kind": "contract",
+   "code_bytes": 8185,
+   "count": 4,
+   "amount": 65514.979799186425,
+   "distinct_senders": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x738f0e75ff08a1a365b5d06f9f42c2fed1b4ddf4",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 4,
+   "amount": 1721.9995855904183,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x51da6be1e244257dd6042d145afd4d768f78fa30",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 17968.061708317466,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x351802ba143d4de0bf3123267cadd6d082fefb29",
+   "kind": "contract",
+   "code_bytes": 1645,
+   "count": 4,
+   "amount": 4768.199406878038,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xd6024fab223dadf72af7f2a820fd10edbc77448d",
+   "kind": "contract",
+   "code_bytes": 19404,
+   "count": 4,
+   "amount": 10841.912016721744,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xa7c00000840eb345eb88b4282bf6926f5b67e81e",
+   "kind": "contract",
+   "code_bytes": 964,
+   "count": 4,
+   "amount": 34955.545669684136,
+   "distinct_senders": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+   "kind": "contract",
+   "code_bytes": 1163,
+   "count": 4,
+   "amount": 3302.4115787431588,
+   "distinct_senders": 4,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x7966319bab61f7d6473a64277897885893c2ee94",
+   "kind": "contract",
+   "code_bytes": 6382,
+   "count": 4,
+   "amount": 80.89042942474288,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x2b3e969d8fc1881461d44e79d77528eeb1996a86",
+   "kind": "contract",
+   "code_bytes": 4656,
+   "count": 4,
+   "amount": 616.5868382160677,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x637ff5c928648b50518335d7f9141e9cf7f9da36",
+   "kind": "contract",
+   "code_bytes": 4656,
+   "count": 4,
+   "amount": 2417.6084474841055,
+   "distinct_senders": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x55122fdca4ba43294677d96c12ce76dabc459a2b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 657160.4362341132,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xc66805deeeda63ff71addd92a56264f3f4bf3390",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 175616.84667113074,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xc10ee9031f2a0b84766a86b55a8d90f357910fb4",
+   "kind": "contract",
+   "code_bytes": 20486,
+   "count": 3,
+   "amount": 2.0347316065375014,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x9f72576615f2f625ba88cde407cfb665f5b908ac",
+   "kind": "contract",
+   "code_bytes": 2723,
+   "count": 3,
+   "amount": 47735.14603279389,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x670829e34ad135b2998bec9a7b39597d10ddbc85",
+   "kind": "contract",
+   "code_bytes": 24174,
+   "count": 3,
+   "amount": 22.36868208216312,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x9b47d63fd901fc03d0c1213431ac6ea0bd3f9137",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 3,
+   "amount": 4489.014239966982,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x9b47a0d5dbb339da58f2dd355b7413e444059137",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x83251be4f565f989d4bbf83a587716488c17bb08",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 89851.89571456074,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xde6464bbf20ae80562fae217ce5259c5822dd2d3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 89851.89571456074,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 2259076.1398360343,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6c9077902c49b0d75cd2f87d0d9eb8a9fc48f879",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 4931.994066550339,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xd0fe58375b9e05f1d6a278de5c035448cc0098ce",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 63.5146809999091,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x69a3136b94daa2dd4a76c5c1560e0d95dc9022ba",
+   "kind": "contract",
+   "code_bytes": 123,
+   "count": 3,
+   "amount": 32.510081115890564,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xb1350ae77f1f7d977fab077ea71c6011e74b9306",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 10068.933936746329,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xff555acce88b0e91ae689611eff0de1101a00d04",
+   "kind": "contract",
+   "code_bytes": 5667,
+   "count": 3,
+   "amount": 170696.04954433045,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xd36347187281dd254194fe2cbac4fd77110c130b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 994.7685300900517,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x1111110f0f73c0b2ef09ec012eae758b3e03a902",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 3,
+   "amount": 0.40152967849404386,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x2c0552e5dcb79b064fd23e358a86810bc5994244",
+   "kind": "contract",
+   "code_bytes": 11602,
+   "count": 3,
+   "amount": 12403.965059513625,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6acc9e6b93c86d5a4c0c59beab80615eba29867a",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 3,
+   "amount": 326216.1995976337,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6acc3e462c4dac81c4f69b1929b392f741b8867a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 0.0,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x564af80460f6d4eb1f243e7a4fcf5dfe1ec87faf",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 3,
+   "amount": 287.6036492003293,
+   "distinct_senders": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xd95ea698741e3a70d53536d748f1c105c8e52a1f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 235763.13389269824,
+   "distinct_senders": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x1644d2477f809cc2c71bccfd6dc9497e3f83210d",
+   "kind": "contract",
+   "code_bytes": 22390,
+   "count": 2,
+   "amount": 3212.603597244022,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x31b039aa0ce3bbdfe12327cc54fb9d0510531f7a",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 2,
+   "amount": 0.03656,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xbb62fca87a9613bfed29232eace1157a9ade2561",
+   "kind": "contract",
+   "code_bytes": 5597,
+   "count": 2,
+   "amount": 38627.544200637945,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x84f2da46443f97c7d7cc00ee662429d38ae535ba",
+   "kind": "contract",
+   "code_bytes": 17182,
+   "count": 2,
+   "amount": 7186.121660705064,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc1c6345e5fa4b281ecc6437ae2c5be34a257b5ab",
+   "kind": "contract",
+   "code_bytes": 283,
+   "count": 2,
+   "amount": 8985.062969438352,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x097dfa62bf7effb883b30e9ab11a78c01d0c0410",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 2,
+   "amount": 184.3120531437181,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x55e55c649895940826a852820d9e1a076ec47b09",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 0.9074483759387476,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x46ef4e0c99af23ae475b9e2da926d4def32d2b18",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 41795.10661146434,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x0c768b5839f87cf859898ef7017ee5013dcd3768",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 446.6746631301642,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xa8bfd01d918c7bab9321782c95ae7ff5cab1884b",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 2,
+   "amount": 23934.7979094312,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x51dae389b6ecb23759c09fd30374b665d886fa30",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x8cae7d674588fd93345cd21bb0eab0459477d9d3",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 2,
+   "amount": 61980.2622404561,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x0a251df99a88a20a93876205fb7f5faf2e85a481",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 494.81756740529016,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x11b734028610e4f3b4d7fdd971e52243470d0234",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 39.313802528578044,
+   "distinct_senders": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe5e9ffe707ee071998340972af6fb178f5c64ba6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 311011.87249812944,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x33050812f81e947d82ddbd548db4e352ca325e3a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1911.1118873090056,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x2f816ddb6677f84ffa7314b37465946f576b01c8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 500080.5090880242,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x9c804bde7f1c7dcca9d1c76157fc440fe07cf234",
+   "kind": "contract",
+   "code_bytes": 9326,
+   "count": 2,
+   "amount": 17966.470596348983,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x827840b79fe9781ef8f31b46cca8601c601cebb4",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 3.5587966770637105,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc06ebbefd94032b85424d51906e2a335efae264b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 0.000510345359395722,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x09c332364b7b83a93e72c8a4784fc768595a3ca5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 16.205535452143494,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xcaf0beadeaefc66fef60ac6526ab566d58c8647a",
+   "kind": "contract",
+   "code_bytes": 6931,
+   "count": 2,
+   "amount": 7.651400115888605,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc4a051c6dc4c61a84fb8ffdfb48ad19f3817cab1",
+   "kind": "contract",
+   "code_bytes": 2621,
+   "count": 2,
+   "amount": 1366.5045123794275,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+   "kind": "contract",
+   "code_bytes": 20772,
+   "count": 2,
+   "amount": 117.20384493780487,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xe061b733cfc13a2509c43b6a8df4c1f7baaa7069",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 22156.928057297944,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x5e7edebc40fed66644fc4f7d5ae3446f09c46f12",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 2784.5747438997405,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xad01c20d5886137e056775af56915de824c8fce5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 0.009208734651865844,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc0251e3da1e37d248c634c0b52dea2cc755a3aa2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 17964.309352593562,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xf310818d64068f8cee5fc5ded155f90e0970b801",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 53.7196410349052,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xa8f8296f4053fd65e89b245d6c7f983a70234c8b",
+   "kind": "contract",
+   "code_bytes": 21735,
+   "count": 2,
+   "amount": 26.58984052366959,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x34b136bff8d8c491f0118a53dd8d24ab9bd08945",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 2,
+   "amount": 0.01260415722765275,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x3eb576f858b20085419fd3f09dee38e2ca372cd6",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 0.026943324817742215,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xaf9b98d2acde5f13eaeaeb0101273cdfa86dcc95",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1032705.6997659075,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x67076ebe173b5689eeccc8c4f9dc820c1cb0959c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 67752.15768571875,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x8ec214a0f20da9e5ad97735eb4e561bc889ae345",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 273051.79281067895,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x7c9063122c01837fe83da2521056e10c9b6dd129",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 3385627.3696684777,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x90fff1dad57875e08df86df05bcebb3fd3514dfb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 634747.112009757,
+   "distinct_senders": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc49214ad1cf7f9c1f52de0887d67e28f23d6eaea",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 7346.63895566948,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x69460570c93f9de5e2edbc3052bf10125f0ca22d",
+   "kind": "contract",
+   "code_bytes": 5208,
+   "count": 2,
+   "amount": 7346.63895566948,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x22c1dda5e5be4c213fe8f7b9905409a05a1bfc52",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 2,
+   "amount": 116190.81903785515,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x9de0c6d4bec286239d700f0701710313483652f3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x157595f04c0da495d72ceb84390f444d469c3216",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2557.419973008412,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 210516.54769156387,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x16f19efd5e69e799296caa4dbf0540a8fa89dec7",
+   "kind": "contract",
+   "code_bytes": 4175,
+   "count": 1,
+   "amount": 89500.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6e13fd54ce5a3c4359492a1ad7f3a67b42518c79",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 23.867742336840806,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9135eb92dc77c34bf9da63ad0116ecb254002f03",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 53610.19404169865,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe069e0bf292a4bab43c4edc13f876983413c7303",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 898.1793995594455,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 42231894.70897962,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x50cfe7c1938db66a1a6d2e86d36f39fbef3d5c4a",
+   "kind": "contract",
+   "code_bytes": 6140,
+   "count": 1,
+   "amount": 90000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x654c939dccc5e3256c5083a740bc073bd45aa23f",
+   "kind": "contract",
+   "code_bytes": 261,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcdd37ada79f589c15bd4f8fd2083dc88e34a2af2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8503323dc2c24492c7776b4a283f73612e672814",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89780.60231709802,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa05e21550eb86462388783047da318d2de20bbda",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4286.157160897207,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x15024925c09d8be137a2e1fd843ace3aa59a6aed",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 90.2206280370614,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc27ced35588a5ae866b9a5578eb5b6c72dc52888",
+   "kind": "contract",
+   "code_bytes": 13893,
+   "count": 1,
+   "amount": 342.60778197385895,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1accd7935dce26d9993f33cd52d5703df9e8e791",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.8907882667066332,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4b0b3d40b0623f3a9eac09d2e01f592710ee59f0",
+   "kind": "contract",
+   "code_bytes": 177,
+   "count": 1,
+   "amount": 4218.819298410381,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x654c835a2ecd0451c1bd728648c2cabaa8efa23f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9f72d3044446d2cfdef4b655c9390853609b584e",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 5.668139974298575,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbc5b4b37d12248bc8ecc781877caae4697a270d1",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 17.973074659934383,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc6e48712e56f6e9548c54a0a983ebe992efa26bd",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc6e4fd704bc63c5bd2f3b56ae033890f93d326bd",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x975d7dd72d11f450c0924056957944d19ba5d610",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 63981.26698695588,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd3ce8589f7bbdfffc8a2ccec7c12387e207631ac",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3.608649492119478,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2de361134127481d6f3144a3a12d36cdd3e70024",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.44926744971852434,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x45c1cda3f71a444c376a539699bb2bd451f49c38",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.9703914533404441,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6b29db5474fd100c9f5510ef939364fe50137d76",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3123.64263244333,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe7384886fcd072660a7cc3ad81c5cd353fdc630d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 407592.21985392633,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdbb4333d6734caffa083ded0af38c4019d957074",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 407592.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdbb4e7090630820089055fbbbfa98d7bf20d7074",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x644d3851e4624cdc72a861f337cc54055f2c03fb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 58829.87681593943,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5ac9bc14376bf2727c6211960cf3cec1e2f295bd",
+   "kind": "contract",
+   "code_bytes": 16893,
+   "count": 1,
+   "amount": 37.80802973242245,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe9c0df9bd4607850d410c957fec11ec209de5ef6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 18966.688495394166,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4095f064b8d3c3548a3bebfd0bbfd04750e30077",
+   "kind": "contract",
+   "code_bytes": 15783,
+   "count": 1,
+   "amount": 18966.688495394166,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x36db8ded31515cb502314fd0f31376564471b78d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2785321.919760451,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0341ab2d783648be716fa78a48eedf13f151335e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 22.528272097005846,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x170519f69ef4bf7940eb8f9f16b1d60c50b92d79",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 413328.46234553563,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+   "kind": "contract",
+   "code_bytes": 19499,
+   "count": 1,
+   "amount": 707.2065714994809,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x596cdbb0d4b74cb5dcdf86613d8012e0cd3e522f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 2380.457161065837,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdf75673db3d58762d5b445a243088b1db9f9100a",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 4.4197492279335036,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcaab6ff98989fdd4f47e7db6152e6fb47994ec1e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2695.447351258882,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7e60c68538c967b76381db4f46010ef378977997",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.010607398147040408,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5862698334a8d3384e6e90815ff6fbcf256e605e",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 2.4591034847350133,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x11111605ef067242653c980b8f6f1ffe50305afe",
+   "kind": "contract",
+   "code_bytes": 21967,
+   "count": 1,
+   "amount": 1347.7188173493848,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x39d897f61e0763a65bdc270ae3e55261e476fb18",
+   "kind": "contract",
+   "code_bytes": 11293,
+   "count": 1,
+   "amount": 13.488463318026193,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xce16f69375520ab01377ce7b88f5ba8c48f8d666",
+   "kind": "contract",
+   "code_bytes": 1690,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa46c2b8d16482768a24553623da55f2b26455217",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2009ee808d6cfba70b8267a9719a82dbc34938a6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8986.29506790211,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2009023274426acab5f935d315336da4bd4638a6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+   "kind": "contract",
+   "code_bytes": 13835,
+   "count": 1,
+   "amount": 369.5915507065256,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3bcba50ec74d18c583e0a832dd19ae37e9348790",
+   "kind": "contract",
+   "code_bytes": 170,
+   "count": 1,
+   "amount": 161723.94915760367,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1236e1132faa97d16a008a15557f85317fa9d6da",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.005883207646489739,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2a691723fa94b2e38c1cda37dc64c7298f73378d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8984.152172954442,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4882113c6b02c29a8b96f5ed3fa2689a34d3250d",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 1008.0738323712551,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc3d6b65627189b5faa034be4f828b5310f910cee",
+   "kind": "contract",
+   "code_bytes": 44,
+   "count": 1,
+   "amount": 89748.33451667613,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x504a14a38f535a4df82b71a0b82849642407410a",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 13.487821541632131,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6d39aeee7b89b0601de4101632c89932f3ab920e",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 8.986449945662024,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x921ed6cae94499c0ef8f9ffe1a895c5f735da9d1",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 1397.318124857942,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3e8a40c40afb10ed216176b9401a183d4c34ec09",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.8984540798022955,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0ca6cadb6a8ca4199788b9a060c3285fe7b897fd",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 91229.59689003251,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbad71bf7a5124a3418a2f9549458aef57a8109c2",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 13.483804217645089,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x239baf7df918b2bc7b0e592b3fe01e3007a830fb",
+   "kind": "contract",
+   "code_bytes": 7517,
+   "count": 1,
+   "amount": 186.13891707722323,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x76ced4e1f52d55d5a9ca6c66cfe9cda590ee0a5d",
+   "kind": "contract",
+   "code_bytes": 21103,
+   "count": 1,
+   "amount": 16698.3011166949,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf235da095d794c4838e810c0924e214410bbe401",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 4.1081447933556205,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0038dfb2bbc353daa6ad22cb11ee1d78f41b59cd",
+   "kind": "contract",
+   "code_bytes": 6345,
+   "count": 1,
+   "amount": 224.6,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4920b6c05bdd7480c74c02ea40a21da898b43afb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 287.04872943146785,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1b199296c53d6edc4741c311d538e376fd9c54a0",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 4.653337429529399,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdc98fcd8e97a9e7c5f602c9a6b0b1f8ba295d339",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 5710.857921679315,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x26064c48707524987ff3891d909a92eeb0af9845",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 28366.943665019015,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6be98562a6b7fec4dcccf100d10bea40c7bf1a8c",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 25.456187977969368,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc0ba3c60b37959a4c9fb4863b3de9a81f53da807",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 22.429949612530315,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc0ba1f2b8cef2d77cd9fd11f9514ace86589a807",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7d5f3767a098f71e51ad351878ddb28c30d40923",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 13655.767690570658,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x53e0181432e2e0908c9f3ee09c6b9b26e452438a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 10.277774163362205,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4e5d2824e798e5862c1b200d5af3cf59281839a5",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3.017162330829129,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4e5d732ab50a89f6ad53d10d90a3f42ab37639a5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2daa6c1d521d97b22a876f88d9fe95f75795dc6e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 145881.8262273369,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x696f0b81080038ae5c26753a16109ab32edfdaaa",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 9100.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x696fdb544f27853d4811ad0b7347504bade3daaa",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf8ef851fa0bb610a61ba91005626609883e30102",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 6405.280050060192,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbb644327512fb2b2598b1006c221988a98adc0e3",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 19022.281021995746,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd78f798058837a975918a0be85ef8e3f4a362925",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 2733.1978528123664,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc0a0dd5de293ce2784b535c6b187a051e1608b0c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.2688683328747098,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb6aec98d3fe048f6add3b2d8f6e14e208fa144fe",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 9.328977291327805,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc5a7cb21e10db03a0e36aafa5a0e4a1b924381c2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 275800.5743805652,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x78da870186d117fd24aa21f2cc5195b0be8fbfe0",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 7845.457335919688,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.2131765,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf5ff310982d58ddc813c541a64b8c4f3f5035e58",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 6130.594892843318,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0da85e18853af467c4ad58a54f604b96d8c9d6c9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2594.3528031456112,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8b1fb4937bab5d02248a0825bf2564863237b00f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.3433484406837715,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xff6ff4a4f8b1f740ee9172b86103c1eae2e82f8f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 749.6817918270813,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x490f5f691f15a97113cb4df228367bc61034d80a",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 24198.89808938477,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x994db2e89a886a80c5495accfdb18e733b434a2b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 48558.752319907086,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc2f175d0568b7f7142c969ed418f5022b9392348",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 19264.871596278557,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe71e46a8dd85bb3818fbbdaf8179da50a12d7166",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.00575595640590012,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf62e88736b6f1842f5b1f7e237163ac507042dfa",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 89832.98976406328,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7be3726eb4fdbbdc305f9d69f2d7b739bb7e829b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.28356643867704945,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4ecef7bd1ed0c9f64a3a5c1a785a3bb39dc5df6a",
+   "kind": "contract",
+   "code_bytes": 11800,
+   "count": 1,
+   "amount": 772.0581617591625,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd226997439ecfbeff8e110c8c78c8a7eefd19f89",
+   "kind": "contract",
+   "code_bytes": 23183,
+   "count": 1,
+   "amount": 303.5746381951772,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc2fdb796f8392e22da431920b0fc24e2c7b5e18b",
+   "kind": "contract",
+   "code_bytes": 21388,
+   "count": 1,
+   "amount": 23.75264779016829,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8eecb2645812e213ef3bd644f47fed02f3b26789",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 9.349062694642038,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa08337d9fc3c1d0f71cd9a822ab2ee8fd90a29fd",
+   "kind": "contract",
+   "code_bytes": 22625,
+   "count": 1,
+   "amount": 379.28286870676357,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc60c07b518c53be0b39056c940babcf83e50b3a5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 457.5210734518327,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf208245aca1e94aea5cc9af0b0088a5f4916a6b8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1.9958817596849252,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x926d4d28f228f1e71cf087f50def6cb67aac7f8f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 239616.00029833548,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf99f08f69f45541222429aec99315630639bd81b",
+   "kind": "contract",
+   "code_bytes": 4192,
+   "count": 1,
+   "amount": 478.09362768978485,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x037da4f70ea2e62c3c7a962a3bce5fcc41509a02",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.007184571269571531,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbefee1fcbe9c7d6d74df2e793b3f2231d9ce51c2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 19123.933912339762,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x102c4deb248574017f7911c532ea9db2ae8bdd09",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 5389.731248378565,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe7093b80deb1d8b399326ddf9b142db97dd94deb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89828.60809893774,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x47dd54d42c3e633be5c49df452db3c2100107b8a",
+   "kind": "contract",
+   "code_bytes": 2807,
+   "count": 1,
+   "amount": 4737.703752171158,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x361042cb65a69efde49bf68ceca58e4f44d6ced1",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 141216.99194571155,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x155657053ae53e673ed00d42dcf64f26f2d6c247",
+   "kind": "contract",
+   "code_bytes": 24066,
+   "count": 1,
+   "amount": 188.62904252205433,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x330588fd82e84ebbf8161ffa04d40b05c21a5e3a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbe816f652406d20c5b7a42d42ad333590dec9e37",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2.510792727808119,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7a61c7c1a026e4f54ded9c3015179b18b63e78a9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 12.761295818789131,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf5c4f3dc02c3fb9279495a8fef7b0741da956157",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.4386715003213065,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x52b335fd4d229c4b4ffa6190526e4b5fb8e3fb09",
+   "kind": "contract",
+   "code_bytes": 7630,
+   "count": 1,
+   "amount": 9607.944417927933,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xaaa713678275fb04eac5a6d9bb20ddd57e63523a",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 9592.811030717909,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb666fd9b55572a3cf6d42b16fb550787670a000f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 15.13187387130292,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb8af10215fce482e4b1bc5124f104824fd1be65e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe061c5b9e8144611cb8e0395df1f0fa049b97069",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x06cff7088619c7178f5e14f0b119458d08d2f5ef",
+   "kind": "contract",
+   "code_bytes": 22777,
+   "count": 1,
+   "amount": 144.56555612465826,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4ee9775db5c1e73ea170678c109ef079b2ad4811",
+   "kind": "contract",
+   "code_bytes": 3575,
+   "count": 1,
+   "amount": 516.3588178827564,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7797c4a7f786f77dbce13d71d2c710310cb92aa3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.000498275591163004,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9e9031061f85d5203e1a96ece24f439498e7a171",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.000317085949579258,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0c947e5e0d14b7a0ae7a3038eb4f2d9e951d0510",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.9051419059506615,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x54d4863321982bf5fda35828a54abf3c2e3bedb0",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 887.0399084469842,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x51b0f4fa5918a37b5d8e7897704a9a1cfc7729e2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 6.0365719165651885,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7eaa9f47f256e46afc19199b850dca43d07d8983",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 18865.16888709571,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x36f57749bc80b60882b658560dee374709cefec4",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 8083.807310604539,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xeb08001bc4884ffd040be7c1364a3457ee8d3670",
+   "kind": "contract",
+   "code_bytes": 19400,
+   "count": 1,
+   "amount": 2183.1164739858,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xfe06e3476c5f7741ae7683a3ef0adf3db28aea66",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 8.992411557848042,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5aafc1f252d544f744d17a4e734afd6efc47ede4",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.002511990558947221,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa5d87aab3b1818ba74875db0e69ae91588de004f",
+   "kind": "contract",
+   "code_bytes": 1142,
+   "count": 1,
+   "amount": 323.7341604351357,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa0d5d65b700c058644166191d31c14019e00eb1c",
+   "kind": "contract",
+   "code_bytes": 17391,
+   "count": 1,
+   "amount": 364.0805535552386,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcffcc5d1957761adcd5ee0a9e13ff22d7a314792",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 178.90816089192575,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa9298e4ab79e68d69069039cb149c2c2ff3d6f0a",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 371.5078638437434,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc99db293fcb2e618fc8d89db90279a81e79b5d54",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1444770.0833371778,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x36675cb19cb6c796b02d3b842595c72e7da4aea8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3592.6914852395,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5085a4863f89ec9553f70187ee73b5aae0fd14b5",
+   "kind": "contract",
+   "code_bytes": 209,
+   "count": 1,
+   "amount": 3592.69148524,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x63e6cd9ff886cff198eaaab01cec2b707e7f5475",
+   "kind": "contract",
+   "code_bytes": 3185,
+   "count": 1,
+   "amount": 4.026633419689795,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd3b447c29e8d3f2a48461a48b510618c6a2318e7",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 22082.58148734959,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1d80090c31e4f8d7f2fa94ba351c0713854a2b81",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 11289.991656363538,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc04ee3ca4dc435cba69846ac1389b154e6c8fc2a",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 821.871154390114,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb15a9112143f89cd97e3a80c7fd99e121a3812a8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89815.01775877367,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb67f2c495f0430a23a13fef8e27f5946afc2f9af",
+   "kind": "contract",
+   "code_bytes": 2450,
+   "count": 1,
+   "amount": 2.408875553170474,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x492d255234c83f2ddc5aa904d8a9db6743e9f046",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 26.309766748471393,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x65b05f6b0472b1f36a2f6d90a14cd21900851609",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 1,
+   "amount": 828.3201691253125,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x99272130c53eee98af207efac77fab977c9de6ff",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe8dff544d4a1e501c28eb71e387ceb3428003fff",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 33816.921397428494,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb95380be44eabfe58c9146ce20f7e908f805c945",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89.81140731735346,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe6e49e792dc5727a1dd3450d9834c7058c6d72ce",
+   "kind": "contract",
+   "code_bytes": 20272,
+   "count": 1,
+   "amount": 2161.924870224663,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5c199a28e12f3b3203494900f633a844bb5d7a63",
+   "kind": "contract",
+   "code_bytes": 20133,
+   "count": 1,
+   "amount": 45.71572443568221,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdb07d108a508d3397ddfc358ed21b4ac00553d08",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 180189.97529015003,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdb0707e931c72e1221b41e4c5364fc8bd3293d08",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc8bf40263577a4d42c074bc060773e761a30709b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 9490.977507998216,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc8bf84e20c98c79898578be33fd6face3ad8709b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8ac947248088713b9bb15c13b8d75d94cd4440ee",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 0.8913066521060762,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x573d4e041a5926d95d57aafb05bddaaff023359b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2.408875553170474,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb360ad08445a47960d8ae031e4d3fb815b9d23ea",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 7129.165373239315,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0e7ae136c59b194f6411f42a32bbd5a861c77b50",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 91034.24822343462,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x321e53ea6d12c759df07a3e584a4d99922f53853",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 159080.12035432406,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xba9cde0f8c7934da49e98ac339c1ac61cef8d797",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 5.837550846713509,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1715a3e4a142d8b698131108995174f37aeba10d",
+   "kind": "contract",
+   "code_bytes": 1222,
+   "count": 1,
+   "amount": 26.854066611163198,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe8d3d6b85ea26eb69bfe0307b9566c004ce97f6b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3.1629540006487913,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x55edac952abac5435ed3402cd1b51d57ee423a44",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 11345.384477468997,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x126aca6db474221d36d27d79715033d3e09b88cb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 338.66042461474484,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x029cd954c38838b2731cb5618e5c950ed4766956",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 215619.1493371383,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf208b13968cf79db8ed788907e70c288a3169c0b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 558496.752030294,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6707a71b59fdcf4496f2e01bb73e13c7f7e0959c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad8bf9037834a6987ceab4763710971a8cfd11b7",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4513.5959367773485,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad8bdc7273ae57d979f333c50d58710df81811b7",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x95bc8ab0f33c3ceec2cb59104057b313b8ca5132",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 16471.741268904145,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x95bccf33a467c74bbc8632ca8da7591c00675132",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x826f277664a350addcd66ee6b7b3d1a522ab3cdf",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 835.9727597377877,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6cdbe6c352fee83f8f873be6f08a0d559c63d412",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 10951.22372332848,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6c44f21747fb98bd2eb15ca00184fa050db01913",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 46526.13001258802,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x995c9e7788214daed2c5e803bfcdd1d0e7ec99f3",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 118846.00742408304,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe07d7094266a1af9a69b7d2dca480d6267d9e661",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 4.4901056793380745,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6da51282ebb23407421a20ac8de5e138d241a23f",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 90100.98970802772,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb4d4067355e1f61f357a90cdb335b70872f27383",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 9090.199822576807,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4fb69c36f6cf2ab69809569a3de54750c94ff026",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 2837.843802838716,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x51eea791064b4f920ceb199aeab39a4db54629d6",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 1277.3362317671042,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x84601a79063a099f4412e01a97aeb4c17f7fedd3",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 493408.6068310093,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf5438dafc165b466f4a61ce57bd3aa59bcd5979e",
+   "kind": "contract",
+   "code_bytes": 10590,
+   "count": 1,
+   "amount": 176.74971989264,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4",
+   "kind": "contract",
+   "code_bytes": 3348,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x31dba9b97faad27cb6ddf86c92815652098afa01",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1795975.8234252138,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x259924e9b007e0cabff8de4e815a9adf0b2e8b12",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1795975.8234252138,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1efdbb85f65098e0e25d93c1863aaad0a9ef90e3",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 249005.85809141074,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x272c39c82ca9f10e5338a6ee75927cfe00c82e2c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8081.8590906626105,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x259908c68e0bd8968bbdd726d447582de8f08b12",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2dd69cab8dcaf3b720ab2ceaa9da7c66147c4ff8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1330.6189092409588,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa49fd918238b1a7003659138fb91f194306b595b",
+   "kind": "contract",
+   "code_bytes": 7967,
+   "count": 1,
+   "amount": 11.207332821597868,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x21925b1d0b2e6a165f1ce05bd88c8f037cb5762f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc693b4ffb338579467a541b2bf267b1955870920",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 22449.000071077393,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x40b4d49974a69fbfbb0c2344e82b4824f3f4181b",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 861.6022397164903,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x00acd5005200e7009beb000000e35e1e002b5565",
+   "kind": "contract",
+   "code_bytes": 21512,
+   "count": 1,
+   "amount": 8.203713041413623,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad3b67bca8935cb510c8d18bd45f0b94f54a968f",
+   "kind": "contract",
+   "code_bytes": 1167,
+   "count": 1,
+   "amount": 586.6299782347902,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7910adb636b3f31c67bc695ae4d03d4025ef84fd",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 7165.4054224200645,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x000000000696b47886f2cf46ef2a607d4b41b8de",
+   "kind": "contract",
+   "code_bytes": 2009,
+   "count": 1,
+   "amount": 42.69202688402529,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x413a41cbec08d1890557bf66903647c6db4cb70c",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd5fd6d3eeb669dcdd3d8bf78c2745fc920de39ba",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 207.06704482622342,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x155583c5a945b410f66f3ab0b9e334606c6e8390",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x15550ba75ba38627ec9c4e2ecd344ec235168390",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa60aff7d00ea9cd5e3d440a58e34569f82d5f725",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3454050.036142869,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x640a6bfa6d8f71bed50aa0c1aff31efa8b5a5885",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 1185.2509003861142,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xce7da13d4eb42a5a1430a791e9bd7582de5a95b4",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89792.98010711552,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc6e29db9a97a0e45eb5b2f1e0185305c408f013f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 852.026636298711,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+   "kind": "contract",
+   "code_bytes": 24294,
+   "count": 1,
+   "amount": 21.51350667631318,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x53eaab93ac34b7d95aca856f8c8c3b05dab0da21",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 21.51350667631318,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3794ab82cd6512d289b0d8d6787ef209cdbfddbb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 21.51350667631318,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbf8641831d15c2701ba122981c3d7a6a2533ea48",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3235.0060422699066,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3794d7c60d8c64f8886136a37a71151c3c98ddbb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.0,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2249.562613617,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x32afee2b62694e8e6513436777068c97a743bde9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 91607.19398771352,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1d8c68040aef3ad9a8512f25d110272e74fa3dec",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4489.578090289532,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8270400d528c34e1596ef367eedec99080a1b592",
+   "kind": "contract",
+   "code_bytes": 170,
+   "count": 1,
+   "amount": 0.5442286099617304,
+   "distinct_senders": 1,
+   "distinct_txs": 1
+  }
+ ],
+ "senders": [
+  {
+   "address": "0x0000000000000000000000000000000000000000",
+   "kind": "zero",
+   "code_bytes": 0,
+   "count": 1461,
+   "amount": 1059887249.6440202,
+   "distinct_recipients": 177,
+   "distinct_txs": 1331
+  },
+  {
+   "address": "0x950fd558f47e234a2fde23b7d61f7ccdbcb4a86f",
+   "kind": "contract",
+   "code_bytes": 18725,
+   "count": 433,
+   "amount": 5110614.575902232,
+   "distinct_recipients": 10,
+   "distinct_txs": 427
+  },
+  {
+   "address": "0x0e61d01b2c6495c69b6cce0bf13596c9fe69b6eb",
+   "kind": "contract",
+   "code_bytes": 6712,
+   "count": 304,
+   "amount": 3096170.1801057826,
+   "distinct_recipients": 1,
+   "distinct_txs": 301
+  },
+  {
+   "address": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+   "kind": "contract",
+   "code_bytes": 163,
+   "count": 231,
+   "amount": 4783910.193391788,
+   "distinct_recipients": 4,
+   "distinct_txs": 211
+  },
+  {
+   "address": "0x00836fe54625be242bcfa286207795405ca4fd10",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 176,
+   "amount": 6316.840175985221,
+   "distinct_recipients": 19,
+   "distinct_txs": 173
+  },
+  {
+   "address": "0x0858e2b0f9d75f7300b38d64482ac2c8df06a755",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 174,
+   "amount": 212581.64564401293,
+   "distinct_recipients": 37,
+   "distinct_txs": 169
+  },
+  {
+   "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "kind": "contract",
+   "code_bytes": 13529,
+   "count": 147,
+   "amount": 4229006.829176132,
+   "distinct_recipients": 23,
+   "distinct_txs": 134
+  },
+  {
+   "address": "0xd80e75faf4cc02f6447287d5b1ef195eac19ffd9",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 132,
+   "amount": 122963.34932849542,
+   "distinct_recipients": 24,
+   "distinct_txs": 130
+  },
+  {
+   "address": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
+   "kind": "contract",
+   "code_bytes": 24538,
+   "count": 131,
+   "amount": 1743094.3940596357,
+   "distinct_recipients": 6,
+   "distinct_txs": 130
+  },
+  {
+   "address": "0xf1feaa32ef38b9c8ffd9248584671d51679fe4a4",
+   "kind": "contract",
+   "code_bytes": 1744,
+   "count": 114,
+   "amount": 1675.4754288750605,
+   "distinct_recipients": 1,
+   "distinct_txs": 114
+  },
+  {
+   "address": "0xa8687a15d4be32cc8f0a8a7b9704a4c3993d9613",
+   "kind": "contract",
+   "code_bytes": 5848,
+   "count": 109,
+   "amount": 386408.2867455835,
+   "distinct_recipients": 2,
+   "distinct_txs": 108
+  },
+  {
+   "address": "0xd58d7406e9ce34c90cf849fc3eed3764eb3779b0",
+   "kind": "contract",
+   "code_bytes": 8313,
+   "count": 101,
+   "amount": 379021.40145699674,
+   "distinct_recipients": 1,
+   "distinct_txs": 101
+  },
+  {
+   "address": "0xbe3d4ec488a0a042bb86f9176c24f8cd54018ba7",
+   "kind": "contract",
+   "code_bytes": 14966,
+   "count": 101,
+   "amount": 17895457.479269356,
+   "distinct_recipients": 12,
+   "distinct_txs": 92
+  },
+  {
+   "address": "0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1",
+   "kind": "contract",
+   "code_bytes": 2304,
+   "count": 92,
+   "amount": 2324.841546247618,
+   "distinct_recipients": 8,
+   "distinct_txs": 92
+  },
+  {
+   "address": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+   "kind": "contract",
+   "code_bytes": 2373,
+   "count": 85,
+   "amount": 83504162.62044045,
+   "distinct_recipients": 1,
+   "distinct_txs": 85
+  },
+  {
+   "address": "0x0cef320d0c5793ade37964e2661a033771e53cd5",
+   "kind": "contract",
+   "code_bytes": 21478,
+   "count": 74,
+   "amount": 1948747.5846782723,
+   "distinct_recipients": 20,
+   "distinct_txs": 67
+  },
+  {
+   "address": "0x76e4ad4a6b04d99e7ed47580007bd9382a380857",
+   "kind": "contract",
+   "code_bytes": 4400,
+   "count": 70,
+   "amount": 28532.469933715533,
+   "distinct_recipients": 4,
+   "distinct_txs": 70
+  },
+  {
+   "address": "0xce4f2a6be6fc1f79a6050f3f580182e267612cfc",
+   "kind": "contract",
+   "code_bytes": 5122,
+   "count": 68,
+   "amount": 1106.4055967229735,
+   "distinct_recipients": 2,
+   "distinct_txs": 68
+  },
+  {
+   "address": "0x888888888889758f76e7103c6cbf23abbf58f946",
+   "kind": "contract",
+   "code_bytes": 287,
+   "count": 68,
+   "amount": 11739770.097798891,
+   "distinct_recipients": 8,
+   "distinct_txs": 68
+  },
+  {
+   "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+   "kind": "contract",
+   "code_bytes": 16165,
+   "count": 64,
+   "amount": 1974385.0366488951,
+   "distinct_recipients": 18,
+   "distinct_txs": 61
+  },
+  {
+   "address": "0x8feab81d36e7576107d5de0758c1b839be31b4f6",
+   "kind": "contract",
+   "code_bytes": 13322,
+   "count": 62,
+   "amount": 50690.77601309514,
+   "distinct_recipients": 13,
+   "distinct_txs": 50
+  },
+  {
+   "address": "0x6c1a58ff0751a645ab0243dd6967b0338b34f572",
+   "kind": "contract",
+   "code_bytes": 7321,
+   "count": 59,
+   "amount": 45805.07201579762,
+   "distinct_recipients": 1,
+   "distinct_txs": 58
+  },
+  {
+   "address": "0xb82aac6aecc9a8edf12345a3b1ec874575da97d4",
+   "kind": "contract",
+   "code_bytes": 5361,
+   "count": 58,
+   "amount": 328036.20008192264,
+   "distinct_recipients": 4,
+   "distinct_txs": 58
+  },
+  {
+   "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "kind": "contract",
+   "code_bytes": 24009,
+   "count": 50,
+   "amount": 46400.4083716064,
+   "distinct_recipients": 16,
+   "distinct_txs": 47
+  },
+  {
+   "address": "0x140022b7000081000001094700609300d2187dab",
+   "kind": "contract",
+   "code_bytes": 21818,
+   "count": 48,
+   "amount": 6490.289709156525,
+   "distinct_recipients": 9,
+   "distinct_txs": 48
+  },
+  {
+   "address": "0x0c258a011da68c2be7d48316a9ba06a28a2af6c3",
+   "kind": "contract",
+   "code_bytes": 130,
+   "count": 47,
+   "amount": 43992.186420558,
+   "distinct_recipients": 3,
+   "distinct_txs": 47
+  },
+  {
+   "address": "0xd1c6aca7ea7ed44e1873dafa054c28ceb690c7eb",
+   "kind": "contract",
+   "code_bytes": 16445,
+   "count": 45,
+   "amount": 135509811.40438154,
+   "distinct_recipients": 8,
+   "distinct_txs": 43
+  },
+  {
+   "address": "0x8b83c4aa949254895507d09365229bc3a8c7f710",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 42,
+   "amount": 261579.60905539643,
+   "distinct_recipients": 20,
+   "distinct_txs": 41
+  },
+  {
+   "address": "0x08eaafd8fbb12cf12d6765e80c5b0ff8490c232d",
+   "kind": "contract",
+   "code_bytes": 5555,
+   "count": 41,
+   "amount": 1294.4108857401427,
+   "distinct_recipients": 7,
+   "distinct_txs": 40
+  },
+  {
+   "address": "0x81a2612f6dea269a6dd1f6deab45c5424ee2c4b7",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 39,
+   "amount": 713416.9717520466,
+   "distinct_recipients": 15,
+   "distinct_txs": 37
+  },
+  {
+   "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+   "kind": "contract",
+   "code_bytes": 15623,
+   "count": 38,
+   "amount": 141351250.87869647,
+   "distinct_recipients": 12,
+   "distinct_txs": 32
+  },
+  {
+   "address": "0xf8f226da66244f89e70c5b5d1a5c5b0d505eb1d8",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 37,
+   "amount": 107671.18200180998,
+   "distinct_recipients": 1,
+   "distinct_txs": 36
+  },
+  {
+   "address": "0x21089cfe6bb83966fade3b35f9d6ee1bc1e36bba",
+   "kind": "contract",
+   "code_bytes": 7095,
+   "count": 37,
+   "amount": 19816.9571429402,
+   "distinct_recipients": 3,
+   "distinct_txs": 36
+  },
+  {
+   "address": "0x81fe240438f0631da32aaf5aba35f8960d2e78c9",
+   "kind": "contract",
+   "code_bytes": 1440,
+   "count": 37,
+   "amount": 2765.7684935203392,
+   "distinct_recipients": 2,
+   "distinct_txs": 37
+  },
+  {
+   "address": "0xa0f1c3ad83e07d97b5e7030e177718be175275ea",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 34,
+   "amount": 136875.84179480272,
+   "distinct_recipients": 3,
+   "distinct_txs": 27
+  },
+  {
+   "address": "0xfd1627e3f3469c8392c8c3a261d8f0677586e5e1",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 31,
+   "amount": 1598.079469311558,
+   "distinct_recipients": 11,
+   "distinct_txs": 31
+  },
+  {
+   "address": "0x00000000f7153fe2a5004a3b9362cc9a69aec360",
+   "kind": "contract",
+   "code_bytes": 23818,
+   "count": 27,
+   "amount": 72440.68444145139,
+   "distinct_recipients": 2,
+   "distinct_txs": 26
+  },
+  {
+   "address": "0x0000000000be226afde21672a5e4adc45692e69d",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 25,
+   "amount": 440714.7757338042,
+   "distinct_recipients": 2,
+   "distinct_txs": 25
+  },
+  {
+   "address": "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+   "kind": "contract",
+   "code_bytes": 15374,
+   "count": 25,
+   "amount": 687395.5162464812,
+   "distinct_recipients": 1,
+   "distinct_txs": 25
+  },
+  {
+   "address": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+   "kind": "contract",
+   "code_bytes": 19577,
+   "count": 25,
+   "amount": 437978.3892742669,
+   "distinct_recipients": 8,
+   "distinct_txs": 25
+  },
+  {
+   "address": "0x09ad820aac5779683b481c4674208a4e1b024afa",
+   "kind": "contract",
+   "code_bytes": 7570,
+   "count": 25,
+   "amount": 55590.24404326106,
+   "distinct_recipients": 4,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x50d3865a63d52c0a54e4679949647ea752107390",
+   "kind": "contract",
+   "code_bytes": 11134,
+   "count": 23,
+   "amount": 23139.584438068774,
+   "distinct_recipients": 4,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0x009a8dbad7000f0000009b002d050058ca881b57",
+   "kind": "contract",
+   "code_bytes": 13529,
+   "count": 23,
+   "amount": 617.0463368947317,
+   "distinct_recipients": 3,
+   "distinct_txs": 23
+  },
+  {
+   "address": "0x84f0d8b402dac98d6c2fdc7a1b44b0d55679a5c3",
+   "kind": "contract",
+   "code_bytes": 15603,
+   "count": 23,
+   "amount": 734.0748329242657,
+   "distinct_recipients": 1,
+   "distinct_txs": 23
+  },
+  {
+   "address": "0xe6eeda550918638529c6cf2ea14f9ea0572d6f88",
+   "kind": "contract",
+   "code_bytes": 18084,
+   "count": 23,
+   "amount": 17280.550945588566,
+   "distinct_recipients": 3,
+   "distinct_txs": 22
+  },
+  {
+   "address": "0x22ec88b9ff78c6f2458ab1a7aa8bb99d84bd4b86",
+   "kind": "contract",
+   "code_bytes": 14140,
+   "count": 22,
+   "amount": 96706.94490042387,
+   "distinct_recipients": 3,
+   "distinct_txs": 22
+  },
+  {
+   "address": "0xcb4e21eb404d80f3e1db781aad9ad6a1217fbbf2",
+   "kind": "contract",
+   "code_bytes": 22471,
+   "count": 21,
+   "amount": 457.23526192532734,
+   "distinct_recipients": 1,
+   "distinct_txs": 21
+  },
+  {
+   "address": "0x006d0e0d006109f0020f3050000a713780b7b000",
+   "kind": "contract",
+   "code_bytes": 4814,
+   "count": 20,
+   "amount": 5795938.329823441,
+   "distinct_recipients": 5,
+   "distinct_txs": 20
+  },
+  {
+   "address": "0xde0735e41a522b7acc181e18c71f78dfa500831c",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 19,
+   "amount": 53664.645857347365,
+   "distinct_recipients": 2,
+   "distinct_txs": 18
+  },
+  {
+   "address": "0x3ea79f12679061c02343cf89cbfe3309bc101860",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 18,
+   "amount": 23040.992222068104,
+   "distinct_recipients": 2,
+   "distinct_txs": 18
+  },
+  {
+   "address": "0xe08d97e151473a848c3d9ca3f323cb720472d015",
+   "kind": "contract",
+   "code_bytes": 6818,
+   "count": 18,
+   "amount": 4115.280795405289,
+   "distinct_recipients": 6,
+   "distinct_txs": 16
+  },
+  {
+   "address": "0x50e55497617e35bc925b764ba064adc6c2e47acb",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 18,
+   "amount": 53664.1016287374,
+   "distinct_recipients": 1,
+   "distinct_txs": 18
+  },
+  {
+   "address": "0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae",
+   "kind": "contract",
+   "code_bytes": 5176,
+   "count": 16,
+   "amount": 69501.71257179714,
+   "distinct_recipients": 10,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x4fe93ebc4ce6ae4f81601cc7ce7139023919e003",
+   "kind": "contract",
+   "code_bytes": 5314,
+   "count": 16,
+   "amount": 190091.6072082676,
+   "distinct_recipients": 4,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x0c8c5891a41078cef36970932d5c05dc1de7288b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 15,
+   "amount": 4466.141569387929,
+   "distinct_recipients": 4,
+   "distinct_txs": 15
+  },
+  {
+   "address": "0x111116058b9828cdcdd810c502b925c14f34ca11",
+   "kind": "contract",
+   "code_bytes": 22545,
+   "count": 14,
+   "amount": 6689.253723141428,
+   "distinct_recipients": 4,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xe6c5dc8508939b1c417f83b7fed3149ef22cf3ff",
+   "kind": "contract",
+   "code_bytes": 19372,
+   "count": 14,
+   "amount": 92973.93671534743,
+   "distinct_recipients": 2,
+   "distinct_txs": 14
+  },
+  {
+   "address": "0xa2bcd1a4efbd04b63cd03f5aff2561106ebcce00",
+   "kind": "contract",
+   "code_bytes": 8279,
+   "count": 14,
+   "amount": 70.54107960077629,
+   "distinct_recipients": 3,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0xc60f6892973934c93ade915d5c249f10d4ece7b4",
+   "kind": "contract",
+   "code_bytes": 16400,
+   "count": 13,
+   "amount": 125919.21221663652,
+   "distinct_recipients": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xea1709bc7a72716049c5b8abee258ca8bee54386",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 1228.4978401875978,
+   "distinct_recipients": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0x9f5f1de5b772afcbc4eebca866fb8b9f745d3b4b",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 1228.4978401875978,
+   "distinct_recipients": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xd858854753ae4814b9ca794001b74712d5053ccd",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 3418.9133404552636,
+   "distinct_recipients": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0xcf1447df3e39d7024edf1ad930b7bfa8eeac3e7d",
+   "kind": "contract",
+   "code_bytes": 438,
+   "count": 13,
+   "amount": 3418.9133404552636,
+   "distinct_recipients": 1,
+   "distinct_txs": 13
+  },
+  {
+   "address": "0x49e3d83b6360dcbd4861f73d2eb3feb06e29fd2e",
+   "kind": "contract",
+   "code_bytes": 1860,
+   "count": 12,
+   "amount": 10903.382578004836,
+   "distinct_recipients": 1,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0xf7ed9c033f6bf5f9775d4850170db898d0d28cdc",
+   "kind": "contract",
+   "code_bytes": 7105,
+   "count": 12,
+   "amount": 92963.53149414096,
+   "distinct_recipients": 2,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0xe2536231fc1512babc8c856ad7499830a936bdd9",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 12,
+   "amount": 6746.95176400582,
+   "distinct_recipients": 2,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0x3cef1afc0e8324b57293a6e7ce663781bbefbb79",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 12,
+   "amount": 3228.455670553507,
+   "distinct_recipients": 7,
+   "distinct_txs": 12
+  },
+  {
+   "address": "0x688cc76d3b009d805ab6b4d0a1cbd228131b5cbf",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 11,
+   "amount": 1022847615.7872006,
+   "distinct_recipients": 1,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0x7cd01d5cad4ba0caeba02583a5c61d35b23e08eb",
+   "kind": "contract",
+   "code_bytes": 177,
+   "count": 11,
+   "amount": 1778026.8486222322,
+   "distinct_recipients": 1,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "kind": "contract",
+   "code_bytes": 4720,
+   "count": 11,
+   "amount": 2307.4667757133902,
+   "distinct_recipients": 9,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0x3884cf9171f53f3cb29bbca1594af8a0efd5567e",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 11,
+   "amount": 3353.895046780244,
+   "distinct_recipients": 4,
+   "distinct_txs": 11
+  },
+  {
+   "address": "0x0a031d88732b13e855964bc11cf2f3747314ffdc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 10,
+   "amount": 12571569.387958784,
+   "distinct_recipients": 2,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x000000000000c9b3e2c3ec88b1b4c0cd853f4321",
+   "kind": "contract",
+   "code_bytes": 2938,
+   "count": 10,
+   "amount": 679829.8991944107,
+   "distinct_recipients": 1,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0xea40de595f099ca04695b0ca105499e50af77f92",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 10,
+   "amount": 335703.06511900696,
+   "distinct_recipients": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x88cc0800464fcef3e643a369e8a0532990995eee",
+   "kind": "contract",
+   "code_bytes": 1129,
+   "count": 10,
+   "amount": 318.9618208364253,
+   "distinct_recipients": 1,
+   "distinct_txs": 10
+  },
+  {
+   "address": "0x65bc393d16381b292221a664a783812a89f11de6",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 9,
+   "amount": 49.14180700297316,
+   "distinct_recipients": 3,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x3f0bf2350a9d2c0e976ca0749d13b732202468a6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 9,
+   "amount": 344120.8850336289,
+   "distinct_recipients": 1,
+   "distinct_txs": 9
+  },
+  {
+   "address": "0x5e9bf5c4498c480c6428a86efec64de71b2f21a3",
+   "kind": "contract",
+   "code_bytes": 23313,
+   "count": 8,
+   "amount": 90253.23192264797,
+   "distinct_recipients": 6,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x38b0c12ab81976e9417d4ebfe2a34db6df22e6ad",
+   "kind": "contract",
+   "code_bytes": 18095,
+   "count": 8,
+   "amount": 1894285.7359674203,
+   "distinct_recipients": 1,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0xd4f480965d2347d421f1bec7f545682e5ec2151d",
+   "kind": "contract",
+   "code_bytes": 225,
+   "count": 8,
+   "amount": 70342.80261167989,
+   "distinct_recipients": 4,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x544b4b3328a94ffc8b1e5ca9ba4ec02df8b6ac66",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 8,
+   "amount": 1674127.0877111147,
+   "distinct_recipients": 2,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x2192260fb299d429c2a543c028b3af96d62a762f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 8,
+   "amount": 35936.12341663493,
+   "distinct_recipients": 3,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0x9373150d2c853edd31cb47966542b605c2f3fc06",
+   "kind": "contract",
+   "code_bytes": 6975,
+   "count": 8,
+   "amount": 738.4635203914577,
+   "distinct_recipients": 1,
+   "distinct_txs": 8
+  },
+  {
+   "address": "0xa7c00000840eb345eb88b4282bf6926f5b67e81e",
+   "kind": "contract",
+   "code_bytes": 964,
+   "count": 8,
+   "amount": 34955.545669684136,
+   "distinct_recipients": 6,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x6331f479fb6cd1cdc651c441c2fdd37b7e5776e6",
+   "kind": "contract",
+   "code_bytes": 5210,
+   "count": 8,
+   "amount": 3034.195285700173,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x5be33ea07c0f55ad15b224a15ddfb6ea2a33b589",
+   "kind": "contract",
+   "code_bytes": 21465,
+   "count": 8,
+   "amount": 3034.195285700173,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x082738d007001080a00099a000004f3006152085",
+   "kind": "contract",
+   "code_bytes": 5139,
+   "count": 7,
+   "amount": 211315.27440951116,
+   "distinct_recipients": 4,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+   "kind": "contract",
+   "code_bytes": 23154,
+   "count": 7,
+   "amount": 181674.92313152668,
+   "distinct_recipients": 2,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0xc64e86880846094f787c2687ce18fccc1d5b9a7b",
+   "kind": "contract",
+   "code_bytes": 22934,
+   "count": 7,
+   "amount": 6923.753278601434,
+   "distinct_recipients": 4,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x271e35a8555a62f6ba76508e85dfd76d580b0692",
+   "kind": "contract",
+   "code_bytes": 10836,
+   "count": 7,
+   "amount": 7536.043230497344,
+   "distinct_recipients": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x83251be4f565f989d4bbf83a587716488c17bb08",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 7,
+   "amount": 89851.89571456074,
+   "distinct_recipients": 2,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x85eb57d5b837e6d919203935196d80d97eee5b1e",
+   "kind": "contract",
+   "code_bytes": 635,
+   "count": 7,
+   "amount": 13040.992222068104,
+   "distinct_recipients": 1,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x4a00d2e63732932d00f3005c006141fe85000000",
+   "kind": "contract",
+   "code_bytes": 12478,
+   "count": 7,
+   "amount": 9492.422169332725,
+   "distinct_recipients": 5,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x6c9077902c49b0d75cd2f87d0d9eb8a9fc48f879",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 7,
+   "amount": 3134.021407552555,
+   "distinct_recipients": 2,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x36f931bb1843a76e03c01341d1d0ce5589955c75",
+   "kind": "contract",
+   "code_bytes": 22142,
+   "count": 7,
+   "amount": 2488.9406885947446,
+   "distinct_recipients": 7,
+   "distinct_txs": 7
+  },
+  {
+   "address": "0x8be13f43f1693f98343bd0c3db6be705d57221a3",
+   "kind": "contract",
+   "code_bytes": 20154,
+   "count": 6,
+   "amount": 743.7216309995838,
+   "distinct_recipients": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x8de0d3ed331ce1f29c8df04726d424a015f38de9",
+   "kind": "contract",
+   "code_bytes": 15648,
+   "count": 6,
+   "amount": 103280.37136658504,
+   "distinct_recipients": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x16575aada6b1140f6c263f426764ffea08e3eda9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 6,
+   "amount": 4489.014239966982,
+   "distinct_recipients": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x81463b0f960f247f704377661ec81c1fd65b5128",
+   "kind": "contract",
+   "code_bytes": 20273,
+   "count": 6,
+   "amount": 1151.1099008704116,
+   "distinct_recipients": 4,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x55122fdca4ba43294677d96c12ce76dabc459a2b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 6,
+   "amount": 629200.8275367509,
+   "distinct_recipients": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x00000f91109c4d0007e90000d9facad5298a0cac",
+   "kind": "contract",
+   "code_bytes": 2018,
+   "count": 6,
+   "amount": 1635.1119793738678,
+   "distinct_recipients": 1,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x8eecb2645812e213ef3bd644f47fed02f3b26789",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 6,
+   "amount": 9.349062694642038,
+   "distinct_recipients": 3,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x7829590be30821472be6a3aaaf434d126f264d64",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 6,
+   "amount": 8988.526532600185,
+   "distinct_recipients": 2,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x6a000f20005980200259b80c5102003040001068",
+   "kind": "contract",
+   "code_bytes": 24562,
+   "count": 6,
+   "amount": 1343069.5767527516,
+   "distinct_recipients": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0xd95ea698741e3a70d53536d748f1c105c8e52a1f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 6,
+   "amount": 235763.13389269824,
+   "distinct_recipients": 3,
+   "distinct_txs": 6
+  },
+  {
+   "address": "0x86ed29bbd44a0ff4d1f04ae70d783048b6f8394e",
+   "kind": "contract",
+   "code_bytes": 82,
+   "count": 5,
+   "amount": 62.917369911686826,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x45312ea0eff7e09c83cbe249fa1d7598c4c8cd4e",
+   "kind": "contract",
+   "code_bytes": 15254,
+   "count": 5,
+   "amount": 12058.485877957924,
+   "distinct_recipients": 2,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x9de0c570d73823916291412a380af50e5a3452f3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 35943.61164925612,
+   "distinct_recipients": 3,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x0c32a1d460b02ecd9a7a9852ff05512af1e6d0e6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 12.5,
+   "distinct_recipients": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x2f816ddb6677f84ffa7314b37465946f576b01c8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 500080.5090880242,
+   "distinct_recipients": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x39ef3fc17b2d09b140c97533cd660fc690e11aba",
+   "kind": "contract",
+   "code_bytes": 14195,
+   "count": 5,
+   "amount": 6229.491146295632,
+   "distinct_recipients": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x015cc48cc8bc37d80aaff4e43061dbaf94192308",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 4582158.979376184,
+   "distinct_recipients": 2,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x3132e002cd82eb33f120b627e0f49ef5f97c7b90",
+   "kind": "contract",
+   "code_bytes": 242,
+   "count": 5,
+   "amount": 2393084.0565342023,
+   "distinct_recipients": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x2009ee808d6cfba70b8267a9719a82dbc34938a6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 17972.60046101089,
+   "distinct_recipients": 2,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x32198bbc6d51d1926da8432e7589ce2903bf3d5d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 5,
+   "amount": 267883.54961825645,
+   "distinct_recipients": 1,
+   "distinct_txs": 5
+  },
+  {
+   "address": "0x16c6521dff6bab339122a0fe25a9116693265353",
+   "kind": "contract",
+   "code_bytes": 15552,
+   "count": 4,
+   "amount": 115169.4589938973,
+   "distinct_recipients": 4,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x854fb3b69dc322a5625859fc38b2dd9a227dfe09",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 2792.894265985594,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x89c6340b1a1f4b25d36cd8b063d49045caf3f818",
+   "kind": "contract",
+   "code_bytes": 8185,
+   "count": 4,
+   "amount": 65514.979799186425,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x6be98562a6b7fec4dcccf100d10bea40c7bf1a8c",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 4,
+   "amount": 25.24661813990973,
+   "distinct_recipients": 4,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x351802ba143d4de0bf3123267cadd6d082fefb29",
+   "kind": "contract",
+   "code_bytes": 1645,
+   "count": 4,
+   "amount": 4768.199406878038,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xd5a9faef693f60b89f40e60be66d114c13a8746c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 1020015.3921113712,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xd6024fab223dadf72af7f2a820fd10edbc77448d",
+   "kind": "contract",
+   "code_bytes": 19404,
+   "count": 4,
+   "amount": 10841.912016721744,
+   "distinct_recipients": 3,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xf5ff310982d58ddc813c541a64b8c4f3f5035e58",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 95400.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+   "kind": "contract",
+   "code_bytes": 1163,
+   "count": 4,
+   "amount": 3302.4115787431588,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xa8f8296f4053fd65e89b245d6c7f983a70234c8b",
+   "kind": "contract",
+   "code_bytes": 21735,
+   "count": 4,
+   "amount": 26.58984052366959,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 4,
+   "amount": 2640.7731494971104,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x7966319bab61f7d6473a64277897885893c2ee94",
+   "kind": "contract",
+   "code_bytes": 6382,
+   "count": 4,
+   "amount": 80.89042942474288,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x2b3e969d8fc1881461d44e79d77528eeb1996a86",
+   "kind": "contract",
+   "code_bytes": 4656,
+   "count": 4,
+   "amount": 616.5868382160677,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x637ff5c928648b50518335d7f9141e9cf7f9da36",
+   "kind": "contract",
+   "code_bytes": 4656,
+   "count": 4,
+   "amount": 2417.6084474841055,
+   "distinct_recipients": 1,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "kind": "contract",
+   "code_bytes": 180,
+   "count": 4,
+   "amount": 14693.27791133896,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x51da6be1e244257dd6042d145afd4d768f78fa30",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 4,
+   "amount": 17968.061708317466,
+   "distinct_recipients": 2,
+   "distinct_txs": 4
+  },
+  {
+   "address": "0x670829e34ad135b2998bec9a7b39597d10ddbc85",
+   "kind": "contract",
+   "code_bytes": 24174,
+   "count": 3,
+   "amount": 48.168101950985516,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xc10ee9031f2a0b84766a86b55a8d90f357910fb4",
+   "kind": "contract",
+   "code_bytes": 20486,
+   "count": 3,
+   "amount": 2.0347316065375014,
+   "distinct_recipients": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x9f72576615f2f625ba88cde407cfb665f5b908ac",
+   "kind": "contract",
+   "code_bytes": 2723,
+   "count": 3,
+   "amount": 47735.14603279389,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 2259076.1398360343,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x1118809fe1ab8d093a86454b9bb582e2890bcdef",
+   "kind": "contract",
+   "code_bytes": 14654,
+   "count": 3,
+   "amount": 63.5146809999091,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xd0fe58375b9e05f1d6a278de5c035448cc0098ce",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 136.10289403784782,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xff555acce88b0e91ae689611eff0de1101a00d04",
+   "kind": "contract",
+   "code_bytes": 5667,
+   "count": 3,
+   "amount": 170696.04954433045,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x6acc9e6b93c86d5a4c0c59beab80615eba29867a",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 3,
+   "amount": 267644.6542750638,
+   "distinct_recipients": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xe5e9ffe707ee071998340972af6fb178f5c64ba6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 311011.8779485453,
+   "distinct_recipients": 3,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xff6ff4a4f8b1f740ee9172b86103c1eae2e82f8f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 1911.1118873090056,
+   "distinct_recipients": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x2daa6c1d521d97b22a876f88d9fe95f75795dc6e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 145881.8262273369,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x2c0552e5dcb79b064fd23e358a86810bc5994244",
+   "kind": "contract",
+   "code_bytes": 11602,
+   "count": 3,
+   "amount": 12403.965059513625,
+   "distinct_recipients": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x827840b79fe9781ef8f31b46cca8601c601cebb4",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 3,
+   "amount": 3.5587966770637105,
+   "distinct_recipients": 3,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x0643a5101dd97d091dc50eb4c4c0f6e4c1c72896",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 3,
+   "amount": 2224.417601137925,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x564af80460f6d4eb1f243e7a4fcf5dfe1ec87faf",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 3,
+   "amount": 287.6036492003293,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xa9cd9facea872c84b9a1925f322daef6d5e217fc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 1571.8633007997046,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x097dfa62bf7effb883b30e9ab11a78c01d0c0410",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 3,
+   "amount": 184.3120531437181,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc512d4690c5db4fda3109baeac6c75ef64fe3f96",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 67752.15768571875,
+   "distinct_recipients": 2,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x4a225f495c39921bf52f701d7ac5edd103b3007c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 3,
+   "amount": 12623.695664258761,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0xa830244e87b59f3e654594b976afa2dea0e59808",
+   "kind": "contract",
+   "code_bytes": 796,
+   "count": 3,
+   "amount": 449007.60626208025,
+   "distinct_recipients": 1,
+   "distinct_txs": 3
+  },
+  {
+   "address": "0x1644d2477f809cc2c71bccfd6dc9497e3f83210d",
+   "kind": "contract",
+   "code_bytes": 22390,
+   "count": 2,
+   "amount": 3212.603597244022,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x7206117d5d8788d5f996f9ebb588cbb6635c1eb8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 450.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3d3d4fa99762d65a15046e2c545a1bb89a9485d0",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 180000.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x288ecf61f1df061cee21ec280fa2484ec2b10aef",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 3000.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x15024925c09d8be137a2e1fd843ace3aa59a6aed",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 90.20708126159563,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x8cae7d674588fd93345cd21bb0eab0459477d9d3",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 2,
+   "amount": 38627.544200637945,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xbb62fca87a9613bfed29232eace1157a9ade2561",
+   "kind": "contract",
+   "code_bytes": 5597,
+   "count": 2,
+   "amount": 38627.544200637945,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x84f2da46443f97c7d7cc00ee662429d38ae535ba",
+   "kind": "contract",
+   "code_bytes": 17182,
+   "count": 2,
+   "amount": 7186.121660705064,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x345030e85ef77921978f63d1e70f24ae48b9e5b2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 3000.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xe7384886fcd072660a7cc3ad81c5cd353fdc630d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 407592.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xdf75673db3d58762d5b445a243088b1db9f9100a",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 4.4197492279335036,
+   "distinct_recipients": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf235da095d794c4838e810c0924e214410bbe401",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 4.1081447933556205,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xa8bfd01d918c7bab9321782c95ae7ff5cab1884b",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 2,
+   "amount": 23934.7979094312,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x82fcfffe80d80365a5f2f42a6ea87d1e815bec4c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 90059.84888468994,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x7264e24cd3f09555e3981114509a8f4eee312ed1",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 13805.862749760123,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x1b199296c53d6edc4741c311d538e376fd9c54a0",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 4.653337429529399,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xfc6adf5c51613ce775201dbe9fb7fb40473051cb",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 3.017162330829129,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xdaef18bdce1f96f51f90a23cb322f1689f201035",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 9100.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x696f0b81080038ae5c26753a16109ab32edfdaaa",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 9100.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xb1350ae77f1f7d977fab077ea71c6011e74b9306",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 914.8374888158754,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xd36347187281dd254194fe2cbac4fd77110c130b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1005.5030146580448,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x9c804bde7f1c7dcca9d1c76157fc440fe07cf234",
+   "kind": "contract",
+   "code_bytes": 9326,
+   "count": 2,
+   "amount": 17966.470596348983,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc60c07b518c53be0b39056c940babcf83e50b3a5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 457.5210734518327,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x46ef4e0c99af23ae475b9e2da926d4def32d2b18",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 85863.04323890484,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xcaf0beadeaefc66fef60ac6526ab566d58c8647a",
+   "kind": "contract",
+   "code_bytes": 6931,
+   "count": 2,
+   "amount": 7.651400115888605,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc4a051c6dc4c61a84fb8ffdfb48ad19f3817cab1",
+   "kind": "contract",
+   "code_bytes": 2621,
+   "count": 2,
+   "amount": 1366.5045123794275,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xbf8641831d15c2701ba122981c3d7a6a2533ea48",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1038.8952448252537,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+   "kind": "contract",
+   "code_bytes": 20772,
+   "count": 2,
+   "amount": 117.20372939239691,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x52b335fd4d229c4b4ffa6190526e4b5fb8e3fb09",
+   "kind": "contract",
+   "code_bytes": 7630,
+   "count": 2,
+   "amount": 9607.94290458921,
+   "distinct_recipients": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9b727ee6275bcc0fc927e12336006ac0e15c6436",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 22067.10131679171,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xf8ef851fa0bb610a61ba91005626609883e30102",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 7.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3d6991085ab1ae3926cb96f25684c40a364b6856",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 5.049567810187557,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x5e7edebc40fed66644fc4f7d5ae3446f09c46f12",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 2784.5747438997405,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc68eed4ed5e3edd8781633b5080c21f1fcbf750c",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 2874.1954908502407,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xf310818d64068f8cee5fc5ded155f90e0970b801",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 53.7196410349052,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x763a5bb96dd88821cfd4b5b1c9a554b980891a54",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 14855.695449605206,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xb928443631b74ef5de178a0034ecde65af61b609",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 180189.97529015003,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xbd022284f3186d8b91b4c5b567ac5d337facfaf5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 9490.977507998216,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x50c8955caee088c5e9e7d8672d8bbb9baee09ec9",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 7633.275369306272,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xaf9b98d2acde5f13eaeaeb0101273cdfa86dcc95",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1032705.6997659075,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x90fff1dad57875e08df86df05bcebb3fd3514dfb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 634747.112009757,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x19cf0dbf3a68bdc82f553fee607c349d7e2e3c1a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 4513.5959367773485,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xe3b1489f96d5a1889385b1b15b9dcfc2aef2e423",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 16471.741268904145,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x36139f642bef1df67d7b2818faf10be181012734",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1213810.5482923363,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xc49214ad1cf7f9c1f52de0887d67e28f23d6eaea",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 7346.63895566948,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x69460570c93f9de5e2edbc3052bf10125f0ca22d",
+   "kind": "contract",
+   "code_bytes": 5208,
+   "count": 2,
+   "amount": 7346.63895566948,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x361042cb65a69efde49bf68ceca58e4f44d6ced1",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 96317.145651195,
+   "distinct_recipients": 1,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x31dba9b97faad27cb6ddf86c92815652098afa01",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 1795975.8234252138,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0xad8c7d49966bc89a1fd8ffb4332d060389436759",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 2.0128765136577,
+   "distinct_recipients": 2,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x413a41cbec08d1890557bf66903647c6db4cb70c",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 2,
+   "amount": 3000.0,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x53eaab93ac34b7d95aca856f8c8c3b05dab0da21",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 2,
+   "amount": 21.51350667631318,
+   "distinct_recipients": 2,
+   "distinct_txs": 2
+  },
+  {
+   "address": "0x198a2e8b12bb4f12e7f7a0d154dced16c7967c07",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 226454.08012190924,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1578a50910f1850c046f66191818401d8be45fb5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89500.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x16f19efd5e69e799296caa4dbf0540a8fa89dec7",
+   "kind": "contract",
+   "code_bytes": 4175,
+   "count": 1,
+   "amount": 89500.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9135eb92dc77c34bf9da63ad0116ecb254002f03",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 53610.19404169865,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe069e0bf292a4bab43c4edc13f876983413c7303",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 898.1793995594455,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x50cfe7c1938db66a1a6d2e86d36f39fbef3d5c4a",
+   "kind": "contract",
+   "code_bytes": 6140,
+   "count": 1,
+   "amount": 90000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x654c939dccc5e3256c5083a740bc073bd45aa23f",
+   "kind": "contract",
+   "code_bytes": 261,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcdd37ada79f589c15bd4f8fd2083dc88e34a2af2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa05e21550eb86462388783047da318d2de20bbda",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4286.157160897207,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x32c802780396169b10cbecdcc52edd97ce8f4dee",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 342.60778197385895,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc27ced35588a5ae866b9a5578eb5b6c72dc52888",
+   "kind": "contract",
+   "code_bytes": 13893,
+   "count": 1,
+   "amount": 342.60778197385895,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe749d4fb70cfd75fa086a2b0dd7e49618a42da8d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 70907.9125480035,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2586412b78aed03c24d4a47f1a5aad9e8c0a13c3",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 47056.216313029385,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc445eaf203f5273e635e716c56b36447cc56a82c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1722.8016567788998,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x95b521b4f55a447db89f6a27f951713fc2035f3f",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 57506.25950275846,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6c11c886bbd2a210f5cf8a1adbf3f48d08e8fd4b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3.001213630077169,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc700a39e7a53d4c1c1bfaf92b815c6aff70342d2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2.2497213996687053,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6e13fd54ce5a3c4359492a1ad7f3a67b42518c79",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 23.867742336840806,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9f72d3044446d2cfdef4b655c9390853609b584e",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 5.668139974298575,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbc5b4b37d12248bc8ecc781877caae4697a270d1",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 17.973074659934383,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc6e48712e56f6e9548c54a0a983ebe992efa26bd",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdda5b8958493c6bea0122deceb619e91abe5bcf8",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 63981.26698695588,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd3ce8589f7bbdfffc8a2ccec7c12387e207631ac",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.19471436616721147,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad2b94441697a913d7997f939825bd87034a5c59",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 79.53964655782592,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x65b05f6b0472b1f36a2f6d90a14cd21900851609",
+   "kind": "contract",
+   "code_bytes": 23635,
+   "count": 1,
+   "amount": 1248.5892051784685,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x295eecd2cd099c7431ab5f0310ab230a3335f699",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89850.05186504155,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x644d3851e4624cdc72a861f337cc54055f2c03fb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 58829.87681593943,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5ac9bc14376bf2727c6211960cf3cec1e2f295bd",
+   "kind": "contract",
+   "code_bytes": 16893,
+   "count": 1,
+   "amount": 37.80802973242245,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2de361134127481d6f3144a3a12d36cdd3e70024",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.4488180258146077,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe9c0df9bd4607850d410c957fec11ec209de5ef6",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 18966.688495394166,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4095f064b8d3c3548a3bebfd0bbfd04750e30077",
+   "kind": "contract",
+   "code_bytes": 15783,
+   "count": 1,
+   "amount": 18966.688495394166,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+   "kind": "contract",
+   "code_bytes": 19499,
+   "count": 1,
+   "amount": 707.2065714994809,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcfd5bb4821a2b8e2d9779ce06da544d22f2f4113",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 449.36244796393584,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5bb5160c0a0dbaedff9e9aea61194479da0f84ba",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 9.832451186681357,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5862698334a8d3384e6e90815ff6fbcf256e605e",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.18220481994802087,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x11111605ef067242653c980b8f6f1ffe50305afe",
+   "kind": "contract",
+   "code_bytes": 21967,
+   "count": 1,
+   "amount": 1347.7188173493848,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4f4495243837681061c4743b74b3eedf548d56a5",
+   "kind": "contract",
+   "code_bytes": 1205,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xce16f69375520ab01377ce7b88f5ba8c48f8d666",
+   "kind": "contract",
+   "code_bytes": 1690,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+   "kind": "contract",
+   "code_bytes": 13835,
+   "count": 1,
+   "amount": 369.5915472016942,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x55897893c19e4b0c52731a3b7c689ec417005ad6",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 70978.89068854289,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4adaf01c11d1b01d2db4126b32c1dcf50caf9533",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 1.1766415292979477,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4882113c6b02c29a8b96f5ed3fa2689a34d3250d",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 1000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd31164a895fea7f4b381c0c4474de8a62cd45701",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 18.2675775074462,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc3d6b65627189b5faa034be4f828b5310f910cee",
+   "kind": "contract",
+   "code_bytes": 44,
+   "count": 1,
+   "amount": 89748.33451667613,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x504a14a38f535a4df82b71a0b82849642407410a",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 13.487821541632131,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6d39aeee7b89b0601de4101632c89932f3ab920e",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 8.986449945662024,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x921ed6cae94499c0ef8f9ffe1a895c5f735da9d1",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 1397.318124857942,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9fb688c5730fc3230ce05370a59943b6bf906a34",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89845.60433952686,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xaf8a1c6d69658cca0d50c684964b91a5d9a05dc8",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 160471.51259582126,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x31d8890ea0649dbe4c7e69a7f01610879f3813a0",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 317.376143965681,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x975d7dd72d11f450c0924056957944d19ba5d610",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 63981.26698695588,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0ca6cadb6a8ca4199788b9a060c3285fe7b897fd",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 91241.740736,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbad71bf7a5124a3418a2f9549458aef57a8109c2",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 13.483804217645089,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x239baf7df918b2bc7b0e592b3fe01e3007a830fb",
+   "kind": "contract",
+   "code_bytes": 7517,
+   "count": 1,
+   "amount": 186.13891707722323,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x76ced4e1f52d55d5a9ca6c66cfe9cda590ee0a5d",
+   "kind": "contract",
+   "code_bytes": 21103,
+   "count": 1,
+   "amount": 16698.3011166949,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0038dfb2bbc353daa6ad22cb11ee1d78f41b59cd",
+   "kind": "contract",
+   "code_bytes": 6345,
+   "count": 1,
+   "amount": 224.6,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x70b6ae69376cbbc8e671eeba32d2a90427fde45f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3593.712428905254,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdc98fcd8e97a9e7c5f602c9a6b0b1f8ba295d339",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 5710.857921679315,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x26064c48707524987ff3891d909a92eeb0af9845",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 28366.943665019015,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xde4ca1e38de15f1533df1f3660eef16c80152bdb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 31.34943365809965,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb8df6ec6377f8b2a44d2e3b63795519c8a83bd2e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 449.205026547254,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x39a581703ddcd0a804aeae8148dd8085a6348acc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 94.10258422403857,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4b0b3d40b0623f3a9eac09d2e01f592710ee59f0",
+   "kind": "contract",
+   "code_bytes": 177,
+   "count": 1,
+   "amount": 2966.831140601871,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4e5d2824e798e5862c1b200d5af3cf59281839a5",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3.017162330829129,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0a251df99a88a20a93876205fb7f5faf2e85a481",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 494.81756740529016,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbb644327512fb2b2598b1006c221988a98adc0e3",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 19022.281021995746,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x53e0181432e2e0908c9f3ee09c6b9b26e452438a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 482.0332368015306,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x11b734028610e4f3b4d7fdd971e52243470d0234",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 39.313802528578044,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc78234a241582841d4bb049217dbfe68abad1d3e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 5030534.289498721,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb6aec98d3fe048f6add3b2d8f6e14e208fa144fe",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 9.328977291327805,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x326f5ba309bd278527c4ce8b59052c72f8993257",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 314.8181901272336,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7a86d3e6894f9c5b5f25ffbdaae658cfc7569623",
+   "kind": "contract",
+   "code_bytes": 22596,
+   "count": 1,
+   "amount": 2594.3528031456112,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4aa42145aa6ebf72e164c9bbc74fbd3788045016",
+   "kind": "contract",
+   "code_bytes": 1137,
+   "count": 1,
+   "amount": 276909.4387604324,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x114430a2544b57c984edb22ae4fdf85c87d6f7ca",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 6631.963582038676,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc2f175d0568b7f7142c969ed418f5022b9392348",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 19264.871596278557,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4b48c675909aec8b5f6476c05e53ca7bde032ad1",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 13475.198216453373,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x239e71144d9a24241c64c3d237368c3a3508a0e8",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.00575595640590012,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7be3726eb4fdbbdc305f9d69f2d7b739bb7e829b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.12391317724405816,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4ecef7bd1ed0c9f64a3a5c1a785a3bb39dc5df6a",
+   "kind": "contract",
+   "code_bytes": 11800,
+   "count": 1,
+   "amount": 772.0581617591625,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd226997439ecfbeff8e110c8c78c8a7eefd19f89",
+   "kind": "contract",
+   "code_bytes": 23183,
+   "count": 1,
+   "amount": 303.5746381951772,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc2fdb796f8392e22da431920b0fc24e2c7b5e18b",
+   "kind": "contract",
+   "code_bytes": 21388,
+   "count": 1,
+   "amount": 23.752647440263544,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf38521f130fccf29db1961597bc5d2b60f995f85",
+   "kind": "contract",
+   "code_bytes": 1990,
+   "count": 1,
+   "amount": 379.28286870676357,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa08337d9fc3c1d0f71cd9a822ab2ee8fd90a29fd",
+   "kind": "contract",
+   "code_bytes": 22625,
+   "count": 1,
+   "amount": 379.28286870676357,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf208245aca1e94aea5cc9af0b0088a5f4916a6b8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1.9958817596849252,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x596cdbb0d4b74cb5dcdf86613d8012e0cd3e522f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 2380.457161065837,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd3fcade480b6e8d18d112c9dbb5bd1c4b873fa9e",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 898.2969935196534,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xbafb9b7f61c87c5c45cab9244faff1d6c31ab02a",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 478.09362768978485,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf99f08f69f45541222429aec99315630639bd81b",
+   "kind": "contract",
+   "code_bytes": 4192,
+   "count": 1,
+   "amount": 478.09362768978485,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x47dd54d42c3e633be5c49df452db3c2100107b8a",
+   "kind": "contract",
+   "code_bytes": 2807,
+   "count": 1,
+   "amount": 4737.703752171158,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x155657053ae53e673ed00d42dcf64f26f2d6c247",
+   "kind": "contract",
+   "code_bytes": 24066,
+   "count": 1,
+   "amount": 188.62904252205433,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9e236cb762f3715c1193cc1b9f2454d3fd0aba2a",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 397.6276400116508,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1ca03621265d9092dc0587e1b50ab529f744aacb",
+   "kind": "contract",
+   "code_bytes": 366,
+   "count": 1,
+   "amount": 12.761295818789131,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb666fd9b55572a3cf6d42b16fb550787670a000f",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 21.62602117777403,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc1c6345e5fa4b281ecc6437ae2c5be34a257b5ab",
+   "kind": "contract",
+   "code_bytes": 283,
+   "count": 1,
+   "amount": 899.0619985417526,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcfa90a103e4a2687d5671fbb9a77056046492f09",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 134.53836782678002,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x06cff7088619c7178f5e14f0b119458d08d2f5ef",
+   "kind": "contract",
+   "code_bytes": 22777,
+   "count": 1,
+   "amount": 144.56555612465826,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4ee9775db5c1e73ea170678c109ef079b2ad4811",
+   "kind": "contract",
+   "code_bytes": 3575,
+   "count": 1,
+   "amount": 516.3588178827564,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x54d4863321982bf5fda35828a54abf3c2e3bedb0",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 887.0399084469842,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7eaa9f47f256e46afc19199b850dca43d07d8983",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 18865.16888709571,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1715a3e4a142d8b698131108995174f37aeba10d",
+   "kind": "contract",
+   "code_bytes": 1222,
+   "count": 1,
+   "amount": 26.865574423742004,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf8b349da9244253288f6853835e6582955fd49c9",
+   "kind": "contract",
+   "code_bytes": 19162,
+   "count": 1,
+   "amount": 14.812918738490843,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc15e66ea086c82553859a2c62db47e5270a137ec",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 55688.66769863961,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb75e2fb01521bd7b6369f831414840a54a3c7234",
+   "kind": "contract",
+   "code_bytes": 170,
+   "count": 1,
+   "amount": 96396.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xeb08001bc4884ffd040be7c1364a3457ee8d3670",
+   "kind": "contract",
+   "code_bytes": 19400,
+   "count": 1,
+   "amount": 2183.1164739858,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x453d9adccc35dbd4b08dbcb67b046eef6cc14e35",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 30498.341317449293,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0d31a5087a7b395ccfabe313be6959becc56e0bc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1.8019379666220865,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xfe06e3476c5f7741ae7683a3ef0adf3db28aea66",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 8.992411557848042,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb78bc8149c012541d81fb17961a7a27238a7cfd9",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 0.26442005883654957,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa5d87aab3b1818ba74875db0e69ae91588de004f",
+   "kind": "contract",
+   "code_bytes": 1142,
+   "count": 1,
+   "amount": 323.7341604351357,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa0d5d65b700c058644166191d31c14019e00eb1c",
+   "kind": "contract",
+   "code_bytes": 17391,
+   "count": 1,
+   "amount": 364.0805535552386,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7947931ba0c6531fb1180b5f825e3c9df538cbb1",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 2795.142337862645,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdc3e1e07dc7f57f9bca42a6f521d5ebfdc8f93fa",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 178.90816089192575,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcffcc5d1957761adcd5ee0a9e13ff22d7a314792",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 178.90816089192575,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcd654003e2fb3d5c517329cf8dc84ccd78d0b2c7",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 371.5078638437434,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6abfd6139c7c3cc270ee2ce132e309f59caaf6a2",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 1444770.0833371778,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x36675cb19cb6c796b02d3b842595c72e7da4aea8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3592.69148524,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa9298e4ab79e68d69069039cb149c2c2ff3d6f0a",
+   "kind": "contract",
+   "code_bytes": 45,
+   "count": 1,
+   "amount": 371.5078638437434,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd7ae00b91ba0b8e0240b22cd75fe447d177c260f",
+   "kind": "contract",
+   "code_bytes": 23147,
+   "count": 1,
+   "amount": 4.026633419689795,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x63e6cd9ff886cff198eaaab01cec2b707e7f5475",
+   "kind": "contract",
+   "code_bytes": 3185,
+   "count": 1,
+   "amount": 4.026633419689795,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd3b447c29e8d3f2a48461a48b510618c6a2318e7",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 22082.58148734959,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1d80090c31e4f8d7f2fa94ba351c0713854a2b81",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 11289.991656363538,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x18b77678381550c4dcd2e6722fed557f36e48d7b",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 500.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa5f9970d615e8f6658f0f0570c1532e3fb6e4953",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3414.048458878942,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc04ee3ca4dc435cba69846ac1389b154e6c8fc2a",
+   "kind": "contract",
+   "code_bytes": 10648,
+   "count": 1,
+   "amount": 821.871154390114,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb15a9112143f89cd97e3a80c7fd99e121a3812a8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89815.01775877367,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8270400d528c34e1596ef367eedec99080a1b592",
+   "kind": "contract",
+   "code_bytes": 170,
+   "count": 1,
+   "amount": 2.408875553170474,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd5badb69910242660691934feadb3ab782bd1a38",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 2609.7244575844375,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x492d255234c83f2ddc5aa904d8a9db6743e9f046",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 26.309766748471393,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4e4f73f550c8632b1a0199ee0108beb7818c5fb8",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 2000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x99272130c53eee98af207efac77fab977c9de6ff",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2000.0000567667964,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x36f57749bc80b60882b658560dee374709cefec4",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 8000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe6e49e792dc5727a1dd3450d9834c7058c6d72ce",
+   "kind": "contract",
+   "code_bytes": 20272,
+   "count": 1,
+   "amount": 2161.924870224663,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5c199a28e12f3b3203494900f633a844bb5d7a63",
+   "kind": "contract",
+   "code_bytes": 20133,
+   "count": 1,
+   "amount": 45.71572443568221,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2f4c00e29000e646f7fec22e9a90a0dbab83322f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 58.14875333194092,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe8dff544d4a1e501c28eb71e387ceb3428003fff",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 33816.921397428494,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9745254a36d618e17cd1ae718a67b43e34965400",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.668333716103623,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdbbc678def7d8d94e1a682bd17e1b364bb380276",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.678489157306354,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb631c1b66e35082c6f95b56c5c4449f97e858aa2",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.669045831127928,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3290c04510520388e15bb0af43d84824fc11a948",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.669758109105389,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe3ba21cc9ac1d426a91d838b0499b386398c9630",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.671183154118703,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1e8f4d1d55965fb823e8aa9946f981381d0d3d62",
+   "kind": "contract",
+   "code_bytes": 2284,
+   "count": 1,
+   "amount": 4.670470550085733,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x61b4895cb972b5c6a8a0e0745a9b8c3b5f6ff422",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 628667.1374499262,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1fe97a3930721f39523f7e241f2dda3a735f72d8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 808.2852298383833,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x64a58283497f8bb0fc3be0811e9b4190e6e0f67c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2185.3441012324333,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8ac947248088713b9bb15c13b8d75d94cd4440ee",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 0.8913066521060762,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc99db293fcb2e618fc8d89db90279a81e79b5d54",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1444770.0833371778,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x7b6b3614adf5ea486d80a9aec9e1efc93cd7e77d",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 208021.03240395203,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb67f2c495f0430a23a13fef8e27f5946afc2f9af",
+   "kind": "contract",
+   "code_bytes": 2450,
+   "count": 1,
+   "amount": 2.408875553170474,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb360ad08445a47960d8ae031e4d3fb815b9d23ea",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 7129.165373239315,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x2339685d11da27615cf5faa2fc8bea7898896d10",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 148567.0959814278,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x170519f69ef4bf7940eb8f9f16b1d60c50b92d79",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 89.80865427441418,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xba9cde0f8c7934da49e98ac339c1ac61cef8d797",
+   "kind": "contract",
+   "code_bytes": 205,
+   "count": 1,
+   "amount": 5.837550846713509,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf130f741d4e3185b29412c65397363f8c23a0460",
+   "kind": "contract",
+   "code_bytes": 171,
+   "count": 1,
+   "amount": 109808.08158196842,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xe8d3d6b85ea26eb69bfe0307b9566c004ce97f6b",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 3.16,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x126aca6db474221d36d27d79715033d3e09b88cb",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 338.66042461474484,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad8bf9037834a6987ceab4763710971a8cfd11b7",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4513.5959367773485,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x95bc8ab0f33c3ceec2cb59104057b313b8ca5132",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 16471.741268904145,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x0e49ddbbb0c79863123fa34cbc3fcc8a949461c8",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3166.4986491184377,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xdc2da4e1a8058bc610e6bbead3eef5d81971e9b2",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 9.95803469656894,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa5312cd99202da612d918df5752940f6f1dbf054",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1840.9616168988548,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6c44f21747fb98bd2eb15ca00184fa050db01913",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 46526.13001258802,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x17e517f3494b2f9524f6bcb642a4eab3d45ed719",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 7.320152230632149,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x995c9e7788214daed2c5e803bfcdd1d0e7ec99f3",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 118846.00742408304,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x6da51282ebb23407421a20ac8de5e138d241a23f",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 90100.98970802772,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xb4d4067355e1f61f357a90cdb335b70872f27383",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 9090.199822576807,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x4fb69c36f6cf2ab69809569a3de54750c94ff026",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 2837.843802838716,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x51eea791064b4f920ceb199aeab39a4db54629d6",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 1277.3362317671042,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x5e0ef3ff9c681a42319ca2d33ba3f3eb4d79cf15",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 279.2792701119728,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcc9da823d76ec04abfecfa312dff6edcc2be2a2f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 8142.18026562548,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x84601a79063a099f4412e01a97aeb4c17f7fedd3",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 801398.6846545818,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf5438dafc165b466f4a61ce57bd3aa59bcd5979e",
+   "kind": "contract",
+   "code_bytes": 10590,
+   "count": 1,
+   "amount": 176.74971989264,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa46c2b8d16482768a24553623da55f2b26455217",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4",
+   "kind": "contract",
+   "code_bytes": 3348,
+   "count": 1,
+   "amount": 0.9184462699395839,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1efdbb85f65098e0e25d93c1863aaad0a9ef90e3",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 249005.85809141074,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x259924e9b007e0cabff8de4e815a9adf0b2e8b12",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 1795975.8234252138,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x272c39c82ca9f10e5338a6ee75927cfe00c82e2c",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8081.8590906626105,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xcc7f53e186d1518ed94118ae7ff7b5cac74c7cf7",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8099.742648365708,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xa49fd918238b1a7003659138fb91f194306b595b",
+   "kind": "contract",
+   "code_bytes": 7967,
+   "count": 1,
+   "amount": 11.207332821597868,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x700ff434ee5d8b4bc7878f4da4c45e6923bb6448",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 252421.42353344648,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x193cf2a0a1e2002b2b19ae05627cc3f72b9824f2",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 35100.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x09c332364b7b83a93e72c8a4784fc768595a3ca5",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 748.5183792632829,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x40b4d49974a69fbfbb0c2344e82b4824f3f4181b",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 861.6022397164903,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x8ec214a0f20da9e5ad97735eb4e561bc889ae345",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 273051.79281067895,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "kind": "contract",
+   "code_bytes": 4462,
+   "count": 1,
+   "amount": 8.203713041413623,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x00acd5005200e7009beb000000e35e1e002b5565",
+   "kind": "contract",
+   "code_bytes": 21512,
+   "count": 1,
+   "amount": 8.203713041413623,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xad3b67bca8935cb510c8d18bd45f0b94f54a968f",
+   "kind": "contract",
+   "code_bytes": 1167,
+   "count": 1,
+   "amount": 586.5068138851066,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x000000000696b47886f2cf46ef2a607d4b41b8de",
+   "kind": "contract",
+   "code_bytes": 2009,
+   "count": 1,
+   "amount": 42.69202688402529,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x78d8d0b90d38ff74c064dfe4b11b250860f686d1",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 8979.379694670624,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xd5fd6d3eeb669dcdd3d8bf78c2745fc920de39ba",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 207.06704392911675,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf23d552a1ed74f0d4485c989ee649e35c5d37400",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2709.15029293549,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x640a6bfa6d8f71bed50aa0c1aff31efa8b5a5885",
+   "kind": "contract",
+   "code_bytes": 8831,
+   "count": 1,
+   "amount": 1185.2509003861142,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xce7da13d4eb42a5a1430a791e9bd7582de5a95b4",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 118374.74643421252,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x155583c5a945b410f66f3ab0b9e334606c6e8390",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 3000.0,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xc6e29db9a97a0e45eb5b2f1e0185305c408f013f",
+   "kind": "EOA+7702",
+   "code_bytes": 23,
+   "count": 1,
+   "amount": 852.026636298711,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+   "kind": "contract",
+   "code_bytes": 24294,
+   "count": 1,
+   "amount": 21.51350667631318,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x3a6fc1187d8c06002162a99b60522ac5f5653670",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2249.562613617,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0xf84b688a9099d52d300b05446241fe982a0316bc",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 2249.562613617,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x1d8c68040aef3ad9a8512f25d110272e74fa3dec",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4489.579307305034,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  },
+  {
+   "address": "0x9002488a30917c370240cc0c25f70fbc0ca169db",
+   "kind": "EOA",
+   "code_bytes": 0,
+   "count": 1,
+   "amount": 4489.575159412426,
+   "distinct_recipients": 1,
+   "distinct_txs": 1
+  }
+ ]
+}

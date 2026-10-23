@@ -3,7 +3,7 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 4 protocols done (Lido, Aave V3, Spark, Morpho); Binance staked ETH paused; EigenCloud not started.
+**Status:** 5 protocols done (Lido, Aave V3, Spark, Morpho, Sky); Binance staked ETH paused; EigenCloud not started.
 Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morpho, then Sky and ether.fi), same method.
 
 ## Summary
@@ -16,6 +16,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morph
 | 4 | EigenCloud | — | — | ⏸ **Not started** | Test address can't be picked with SPEC §8 as written: **no position token** (deposits are recorded as internal shares). DefiLlama: one product; "WETH" $5.72B (89.4%), stETH $0.54B (8.5%). Fallback rule pending (see SPEC open questions) | — |
 | 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
 | 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing. Liquidity limit only: the USDC comes from `0xbbbb…ffcb` (127.6M held vs 110.9M vault total at the fork block) | None found on the path used |
+| 7 | [Sky (Savings USDS)](runs/sky/2026-10-22-T0-all-removed.md) | `0x03ba…2f96` | 1,844,122 sUSDS | ✅ **Exits cleanly**: one `redeem` → 2,053,783 USDS (+11.4% vs shares) | Nothing. The sUSDS contract holds ≈100% of what all shares are worth (4.83B USDS) | None found on the path used |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -83,6 +84,16 @@ word list could name, and it works in one step.
 - Selection note: Morpho's largest assets are collateral with no token, so the test used the largest USDC vault
   (new §8 sub-rules).
 
+## Sky (Savings USDS) — ✅ Exits cleanly
+
+- Same shape as Morpho: sUSDS is a proxy whose logic exposes the four nameable functions (`deposit`, `mint`,
+  `withdraw`, `redeem`); 1,697 burns by 148 holders in 7 days confirmed `redeem`/`withdraw` as the exit.
+- **One transaction:** `redeem(all shares, user, user)` → 2,053,783 USDS for 1,844,122 sUSDS (+11.4%).
+- The user had received their sUSDS by plain transfer (never deposited), so their own history gave no hint; the fixed
+  list and other holders' behavior were enough.
+- **Backing:** the sUSDS contract holds 4.83B USDS, ≈100% of what all 4.34B shares are worth; interest is minted during
+  the call. Drain test: a capital-type limit, no permission.
+
 ## Findings across protocols
 
 1. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
@@ -109,4 +120,5 @@ word list could name, and it works in one step.
 | Lido | ~8 min | ~55 min | 3h44m | Includes building the method and scripts |
 | Aave V3 | ~4 min | ~35 min | 34 min | Method and scripts reused |
 | Spark | ~9 min | ~22 min | 63 min | Includes a ~10 min hung query |
-| Morpho | ~1.5 min | ~8 min | 2 min | Vault selection (setup) took longer than the run |
+| Morpho | ~2.5 min | ~13 min | 2 min (+ step 5 later) | Vault selection (setup) took longer than the run |
+| Sky | ~2.5 min | ~11 min | 3 min | |
