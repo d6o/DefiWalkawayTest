@@ -15,7 +15,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morph
 | 3 | [Binance staked ETH](runs/binance-staked-eth/2026-10-22-T0-all-removed.md) | `0x066e…76bc` | 16.96 wBETH (user has 0 ETH, never sent a tx) | ⏸ **Paused** after step 3b | — (so far: 0 burns and 0.012 wBETH minted on-chain in 7 days; 99.2% of supply in 5 EOAs) | — |
 | 4 | EigenCloud | — | — | ⏸ **Not started** | Test address can't be picked with SPEC §8 as written: **no position token** (deposits are recorded as internal shares). DefiLlama: one product; "WETH" $5.72B (89.4%), stETH $0.54B (8.5%). Fallback rule pending (see SPEC open questions) | — |
 | 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
-| 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing | None found on the path used |
+| 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing. Liquidity limit only: the USDC comes from `0xbbbb…ffcb` (127.6M held vs 110.9M vault total at the fork block) | None found on the path used |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -77,6 +77,9 @@ word list could name, and it works in one step.
   only confirmed it.
 - **One transaction:** `redeem(all shares, user, user)` → 128,453 USDC for 123,530 shares (+4.0%). No debt, no limits.
 - Trap: passing 2²⁵⁶−1 as "everything" reverts with an arithmetic panic; the exact share balance is needed.
+- **Liquidity test:** the vault holds no USDC itself; it pulls it from `0xbbbb…ffcb`. Draining that contract on the fork
+  made large redemptions fail while small ones still worked: a capital-type limit, not a permission. At the fork block
+  it held more than the whole vault.
 - Selection note: Morpho's largest assets are collateral with no token, so the test used the largest USDC vault
   (new §8 sub-rules).
 

@@ -1,0 +1,22 @@
+{
+ "usdc_moves": [
+  [
+   "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+   "0xdf62f57ea333a842db200d4892c90f98204fa22f",
+   128453.458127
+  ],
+  [
+   "0xdf62f57ea333a842db200d4892c90f98204fa22f",
+   "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+   128453.458127
+  ],
+  [
+   "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+   "0x1c424df78d4fcc3b9635be62054fdab3f9b38a49",
+   128453.458127
+  ]
+ ],
+ "usdc_sources_to_vault": [
+  "0xdf62f57ea333a842db200d4892c90f98204fa22f"
+ ]
+}

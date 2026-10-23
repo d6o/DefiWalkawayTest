@@ -1,0 +1,35 @@
+{
+ "bbbb": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+ "df62": "0xdf62f57ea333a842db200d4892c90f98204fa22f",
+ "a870": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+ "usdc_in_bbbb": 127584927137162,
+ "usdc_in_df62": 0,
+ "vault_totalAssets": 110949262745166,
+ "snapshot_before_drain": "0x1",
+ "biggest_holder": {
+  "addr": "0x651fac183d2ac9753bec39f7530adf1b873f0314",
+  "shares": 6343839435016593113807915,
+  "sim_ok": true
+ },
+ "drain_test": {
+  "holder2": "0xf67db74dec758fe7c3fb521ab0db77e8df9c8178",
+  "shares": 3641222521955255376362870,
+  "tests": {
+   "all shares": [
+    false,
+    "0x08c379a000000000000000000000000000000000000000000000000000000000"
+   ],
+   "1 share": [
+    true,
+    1.039855
+   ],
+   "~900 USDC worth of shares": [
+    true,
+    899.87533
+   ]
+  },
+  "max_shares": 961671674871115101469,
+  "max_usdc": 1000000000,
+  "bbbb_usdc_after_drain": 1000000000
+ }
+}

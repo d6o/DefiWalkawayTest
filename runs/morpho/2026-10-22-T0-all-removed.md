@@ -135,6 +135,61 @@ from the vault's address. `0xd8b4…7b3c` is a **wrapper** around the vault; our
 - gtusdcp **123,530.0523 burned**; **USDC 128,453.458127 from the vault to the user.**
 - After: shares **0**, wallet USDC **128,453.46** (from 0), ETH 0.0409 (gas only).
 
+### Step 5: where does the USDC come from, and can it run out? (liquidity test)
+**Time:** 12:35:54Z → 13:19:07Z (queries ~1 min; the rest was reading and discussion).
+**Knowledge used:** `debug_traceTransaction` of our own redeem (step 4); `eth_getCode`; `balanceOf`; fork interventions.
+**Raw data:** `data/step5/trace_our_redeem.json`, `usdc_source.json`, `liquidity.json`.
+
+**Where the USDC came from** (trace of tx `0x178745ee…`):
+```
+USER -> vault redeem
+  vault -> 0xdf62…a22f (0x4e45f1ff)
+    0xdf62… -> 0xbbbb…ffcb (0x5c2bea49)
+      0xbbbb… -> 0x870a…00bc (0x9451fed4)
+      0xbbbb… -> USDC transfer          128,453.458127 → 0xdf62…
+  0xdf62… -> vault                        128,453.458127   (USDC transferFrom)
+  vault -> USER                           128,453.458127
+```
+The vault holds **0 USDC** itself. The USDC sits in **`0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb`** (15,623 bytes of code),
+which held **127,584,927 USDC** at the fork block, more than the vault's total (110,949,263 by its unnamed function
+`0x01e1d114`; see contamination note below).
+
+**Can it run out?** Fork experiment (snapshotted and reverted afterwards):
+
+| Step | Action (experimenter) | Result |
+|------|------------------------|--------|
+| 1 | Biggest EOA holder (`0x651f…`, 6,343,839 shares) simulates `redeem` of everything | ✅ 6,596,679 USDC |
+| 2 | **Drain:** impersonate `0xbbbb…` and move its USDC out, leaving **1,000 USDC** | tx status 1 |
+| 3 | Next EOA holder (`0xf67d…`, 3,641,223 shares) redeems everything | ❌ `Error(string)` revert |
+| 4 | Same holder redeems 1 share / ~900 USDC worth | ✅ / ✅ |
+| 5 | Binary search: max redeemable | **961.67 shares = 1,000.00 USDC = exactly what `0xbbbb…` holds** |
+
+**Findings:**
+1. **The clean exit depends on USDC being available in `0xbbbb…ffcb`.** When it isn't, `redeem` fails for amounts above
+   what's there; smaller amounts still work. That's a **liquidity (capital) limit**, not a permission: no privileged
+   actor was involved, and the limit tracks the balance exactly.
+2. At the fork block there was more USDC there (127.6M) than the whole vault (110.9M), so every holder could exit.
+   The 7-day window showed 196 successful burns.
+3. Not shown: who or what can move USDC out of `0xbbbb…` in real life (in the test, the experimenter did it by
+   impersonation). Whether that is users borrowing it, or a privileged actor, wasn't determined.
+
+**Contamination note:** the vault's total (`0x01e1d114`) was read from a selector Claude knows from memory. It's unnamed
+at T0 (step 3a). The figure is reported for context only and isn't used in the exit.
+
+### Capital exposed (fork block 26,248,199)
+- **No D4 dependency found.** The exit is limited only by USDC available in `0xbbbb…ffcb` (127.58M at the fork block,
+  vs 110.95M total in this vault).
+
+### Required infrastructure (this run)
+
+| Capability | Used in |
+|------------|---------|
+| `eth_getLogs` over all history (address and topic filters) | 2, 3b |
+| `eth_getTransactionByHash` for any past tx | 3b |
+| `eth_call` against the fork, with a chosen `from` | 3a, 4, 5 |
+| `debug_traceCall` / `debug_traceTransaction` (`callTracer`, `withLog`) | 3a, 3b, 5 |
+| Local simulation (fork, impersonation, snapshot/revert) | 4, 5 |
+
 ---
 
 ## Result: Morpho (Gauntlet USDC Prime vault), T0 — ✅ Exits cleanly
@@ -154,9 +209,9 @@ from the vault's address. `0xd8b4…7b3c` is a **wrapper** around the vault; our
    that minted 123,530 shares; +4.0%).
 3. Only trap found: "2²⁵⁶−1 = everything" doesn't work here (arithmetic panic); the user must pass their exact share balance.
 
-**Caveats (not tested):** the vault calls three other contracts on every deposit/redeem (`0x870a…00bc`, `0xbbbb…ffcb`,
-`0xdf62…a22f`); whether redemptions can be limited by liquidity in those (the vault held 0 USDC directly, so the USDC
-comes from elsewhere during the call) wasn't probed. The 7-day window showed 196 successful burns by 66 holders.
+**Liquidity (step 5):** the USDC comes from `0xbbbb…ffcb`, not the vault. If that balance is low, redemptions above it
+fail; smaller ones work. At the fork block it held more than the vault's total, so the result stands. This is a
+capital-type limit, not a permission. **Not tested:** who can move USDC out of `0xbbbb…` in practice.
 
 ### Timings (raw)
 
@@ -166,6 +221,7 @@ comes from elsewhere during the call) wasn't probed. The 7-day window showed 196
 | 3a | Proxy check + selectors | ~1s | ~1 min |
 | 3b | Flows, all 315 txs, 9 traces | ~30s | ~4 min |
 | 4 | Simulations + redeem | ~14s | ~1 min |
-| **Total** | | **~1.5 min** | **~8 min** |
+| 5 | USDC source + liquidity test | ~1 min | ~5 min |
+| **Total** | | **~2.5 min** | **~13 min** |
 
 Wall clock (run only): 12:25:20Z → 12:27:26Z (**2 min**). Setup (vault selection) took longer than the run.
