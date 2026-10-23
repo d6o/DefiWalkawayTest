@@ -390,6 +390,15 @@ That needs the redemptions (next step).
 - 322 burned claims were minted **before** the window, the oldest being id **1,283**. Very old claims are still being redeemed.
 - 273 claims minted in the window aren't burned yet. Ids above 139,310 haven't been processed by any batch.
 
+**Per-claim check of the batch ↔ burn link** (added 2026-10-23, same data, `data/step3c/raw_logs.json`):
+the counts don't match one-to-one, and aren't meant to. The 8 batches covered **619** claim IDs (138,692 → 139,310); the
+**665** burns split into **234** with IDs below 138,692 (older claims, covered by batches before the window) and **431**
+with IDs inside the window's batch ranges. Of the 619 covered IDs, **188** weren't redeemed yet by the fork block.
+- Each of the **431** burns came **after** the batch covering its ID (**0** before, **0** outside every batch range).
+- **101** claims minted above the last batch's range (139,310): **0** burned.
+So across 532 claims there's no exception to "redeemed only after a batch covered it". This is a correlation;
+the causal proof is step 5.
+
 **Contamination note:** `0xe3afe0a3` and `0xf8444436` were printed earlier in this session (during the deleted map's
 verification). Claude recognizes them. Not used here; the analysis relies only on counts, ids, and timing.
 
