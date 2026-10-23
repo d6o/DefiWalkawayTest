@@ -1,0 +1,722 @@
+[
+ [
+  1037970783.027568,
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+  "Syrup USDC",
+  20
+ ],
+ [
+  298385072.074355,
+  "0x28b3a8fb53b741a8fd78c0fb9a6b2393d896a43d",
+  "Spark Savings USDC",
+  17
+ ],
+ [
+  169315865.37486,
+  "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+  "Spark USDC Vault",
+  6
+ ],
+ [
+  134527013.41795,
+  "0x9fb7b4477576fe5b32be4c1843afb1e55f251b33",
+  "Fluid USD Coin",
+  37
+ ],
+ [
+  111077716.048174,
+  "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+  "Gauntlet USDC Prime",
+  14
+ ],
+ [
+  103294594.373965,
+  "0xbeef088055857739c12cd3765f20b7679def0f51",
+  "Steakhouse Prime USDC",
+  25
+ ],
+ [
+  68686346.527031,
+  "0xd4fa2d31b7968e448877f69a96de69f5de8cd23e",
+  "Wrapped Aave Ethereum USDC",
+  14
+ ],
+ [
+  66178516.371804,
+  "0xbeef01735c132ada46aa9aa4c54623caa92a64cb",
+  "Steakhouse USDC",
+  10
+ ],
+ [
+  63516720.166325,
+  "0xd2011d314acaa68e5401e7f5aec3be6d2c574dcf",
+  "Yield Bearing AAVE USDC",
+  8
+ ],
+ [
+  45072691.732467,
+  "0xa2eaad0d586cf9fd73bb2c09cf6a7e3e187d68cd",
+  "Wintermute USDC Select",
+  4
+ ],
+ [
+  43940442.725526,
+  "0xbeeff2c5bf38f90e3482a8b19f12e5a6d2fca757",
+  "Steakhouse High Yield USDC",
+  10
+ ],
+ [
+  42010025.476289,
+  "0x273da948aca9261043fbdb2a857bc255ecc29012",
+  "Fluid Lite USD Vault",
+  13
+ ],
+ [
+  40578682.325527,
+  "0xb9e62cb9b4ce8ec13c886fae67369da417ee2714",
+  "Yield Bearing Compound USDC",
+  4
+ ],
+ [
+  38040460.402621,
+  "0xd258029cf5a177e3306e09fbea63424543a505c0",
+  "Nest BlackOpal LiquidStone II Vault",
+  2
+ ],
+ [
+  35048410.216917,
+  "0xcf609f8327e68b42af54f9d529b9f65d68038435",
+  "Pendle Ecosystem High Yield USDC",
+  23
+ ],
+ [
+  33584445.830466,
+  "0xc207d3f66537d7f66456808379a0e560cf20da36",
+  "RockawayX Confidential RWA USDC",
+  1
+ ],
+ [
+  31200241.80446,
+  "0xbeef00a59b577423653a1526c7009bde103f542b",
+  "Steakhouse Confidential Prime USDC",
+  1
+ ],
+ [
+  30257959.210817,
+  "0x4ef53d2caa51c447fdfeeedee8f07fd1962c9ee6",
+  "KPK USDC Prime",
+  3
+ ],
+ [
+  29382039.421689,
+  "0x334f5d28a71432f8fc21c7b2b6f5dbbcd8b32a7b",
+  "Yield Bearing Steakhouse Morpho USDC",
+  6
+ ],
+ [
+  24619927.7482,
+  "0x3ed6aa32c930253fc990de58ff882b9186cd0072",
+  "cap USDC",
+  2
+ ],
+ [
+  24519735.920983,
+  "0x7d7f72d393f242da6e22d3b970491c06742984ff",
+  "Aave V3 USDC Lender",
+  2
+ ],
+ [
+  23909041.635416,
+  "0x55c1b6e461a6334b567baf0feb5d728715446f05",
+  "Pendle Ecosystem USDC",
+  15
+ ],
+ [
+  23807947.360866,
+  "0xdd0f28e19c1780eb6396170735d45153d261490d",
+  "Gauntlet USDC Prime",
+  5
+ ],
+ [
+  22712924.248602,
+  "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
+  "RockawayX USDC Yield",
+  8
+ ],
+ [
+  21776531.306926,
+  "0x9a1d6bd5b8642c41f25e0958129b85f8e1176f3e",
+  "Gauntlet USDC Frontier",
+  1
+ ],
+ [
+  21543309.152511,
+  "0xde6c23e561f3e55846207ec45a91b777e0f7c889",
+  "Trezor Steakhouse USDC Prime",
+  6
+ ],
+ [
+  19551831.192881,
+  "0xe05fadf242331808f504661bea65972594869826",
+  "3Jane Ecosystem Vault",
+  15
+ ],
+ [
+  18530290.952105,
+  "0xbe53a109b494e5c9f97b9cd39fe969be68bf6204",
+  "USDC-1 yVault",
+  24
+ ],
+ [
+  15781821.628958,
+  "0x36cfe1568461e499391ef0a555300f1ae2da2439",
+  "Api3 dCOMP USDC",
+  24
+ ],
+ [
+  15309551.502179,
+  "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+  "RockawayX f(x) Protocol Ecosystem USDC",
+  6
+ ],
+ [
+  15096904.111313,
+  "0xd5cce260e7a755ddf0fb9cdf06443d593aaeaa13",
+  "KPK USDC Yield",
+  1
+ ],
+ [
+  14883154.112025,
+  "0x974c8fbf4fd795f66b85b73ebc988a51f1a040a9",
+  "Hakutora USDC",
+  1
+ ],
+ [
+  14766997.622646,
+  "0x56a76b428244a50513ec81e225a293d128fd581d",
+  "Spark Blue Chip USDC Vault",
+  76
+ ],
+ [
+  13971472.073229,
+  "0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b",
+  "Wintermute USDC Prime",
+  2
+ ],
+ [
+  13682885.34092,
+  "0x3bd9adae6643ddcddd02746b8b60075e56df9478",
+  "RockawayX Tori Ecosystem",
+  1
+ ],
+ [
+  13072252.21779,
+  "0xbeeff047c03714965a54b671a37c18bef6b96210",
+  "Waterline Reservoir USDC",
+  2
+ ],
+ [
+  12615205.873909,
+  "0xbeefff209270748ddd194831b3fa287a5386f5bc",
+  "Smokehouse USDC",
+  16
+ ],
+ [
+  12523239.731785,
+  "0xe7bf38c635426caacfa95966c4c6064e7637fe0a",
+  "Trust Wallet AAVE v3 USDC",
+  3
+ ],
+ [
+  11808837.256436,
+  "0xa98b4a70e17e55045cde4972b95bc2e8cec22a0f",
+  "Agua Global Carry Vault",
+  1
+ ],
+ [
+  11761116.921252,
+  "0x696d02db93291651ed510704c9b286841d506987",
+  "USD yVault",
+  13
+ ],
+ [
+  11681546.053454,
+  "0xd17049ed25d8f99fe3bfd10cef2263da9995cfd8",
+  "Syntropia USDC",
+  1
+ ],
+ [
+  10278712.339611,
+  "0xf9bddd4a9b3a45f980e11fdde96e16364ddbec49",
+  "Yearn OG USDC",
+  3
+ ],
+ [
+  10148916.705638,
+  "0x3aed4dd0b5ba616156fa352274670c18d2ec2a81",
+  "Vesper Whitelisted Vault USDC",
+  2
+ ],
+ [
+  8913444.218714,
+  "0xbeefb9f61cc44895d8aec381373555a64191a9c4",
+  "Vault Bridge USDC",
+  4
+ ],
+ [
+  8891403.160026,
+  "0x04422053addbc9bb2759b248b574e3fca76bc145",
+  "Keyrock USDC",
+  1
+ ],
+ [
+  7943257.94526,
+  "0x30cacd22f178c9e57b0b010e1f9432881aa530c4",
+  "ByzPrime USD",
+  1
+ ],
+ [
+  7314083.368751,
+  "0xd1e9242e075db4bdd3f3c721d7d5fd4180a94a7e",
+  "Re Ecosystem Vault",
+  2
+ ],
+ [
+  7071669.48667,
+  "0x5b453493d2328e7f747eb2e66446efe707728be7",
+  "Uniswap USDC",
+  17
+ ],
+ [
+  6621401.49175,
+  "0x53e82abbb12638f09d9e624578ccb666217a765e",
+  "Vault Bridge USDC",
+  4
+ ],
+ [
+  6529804.985076,
+  "0x9c4e4c15d0532204186ef757b246253a65b4562d",
+  "Trust Wallet Morpho Steakhouse USDC",
+  2
+ ],
+ [
+  6025263.341825,
+  "0xf6ebea08a0dfd44825f67fa9963911c81be2a947",
+  "Flagship USDC SuperVault",
+  2
+ ],
+ [
+  5758181.727066,
+  "0xb195aebf42c93b50e768a97fd3087bb004b4187f",
+  "Plume Factor Vault",
+  1
+ ],
+ [
+  5622606.347599,
+  "0x5e2339bcb89b42782cee454b46c7c6f88c0e4f83",
+  "Aerie x Plume USDC Core",
+  6
+ ],
+ [
+  5608351.056761,
+  "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+  "9Summits flagship USDC",
+  1
+ ],
+ [
+  5322274.586722,
+  "0xbff755fac5e2fadd58155982046b2ebc0746a97f",
+  "Fx Hedge Fee Vault",
+  1
+ ],
+ [
+  5077788.724246,
+  "0x69a238ae7ebeb3c53ff3b544e48b96a2142fc284",
+  "Clearstar USDC Core",
+  3
+ ],
+ [
+  5000035.292915,
+  "0x195b3a57dd0480534c84a5607a52a92304fa81f2",
+  "RockawayX USPC ecosystem vault",
+  2
+ ],
+ [
+  4842057.043907,
+  "0x069662d2588fcac24b5c209456db965d151556f0",
+  "Apyx USDC",
+  1
+ ],
+ [
+  4560070.147142,
+  "0x5b8b9fa8e4145ee06025f642cadb1b47e5f39f04",
+  "OUSD Vault V1",
+  1
+ ],
+ [
+  4559712.073225,
+  "0xfb154c729a16802c4ad1e8f7ff539a8b9f49c960",
+  "OUSD Vault V2",
+  1
+ ],
+ [
+  4516567.067564,
+  "0x9651ae50a5763c6f9b883f9d50e8116281cfcab2",
+  "Lista USDC Savings Vault",
+  3
+ ],
+ [
+  4027591.535407,
+  "0x5fe86b1adee4b18f6a8c55ea0bdbb55e2e445159",
+  "",
+  2
+ ],
+ [
+  3484929.946512,
+  "0x8eb67a509616cd6a7c1b3c8c21d48ff57df3d458",
+  "Gauntlet USDC Core",
+  1
+ ],
+ [
+  3142327.422851,
+  "0xb885f6d448da7e2c642ec31190b629e40e87b069",
+  "Yearn OG USDC",
+  5
+ ],
+ [
+  2364622.032528,
+  "0x355a1c6a3f1946d4dbd7ce932492925ab9f261a7",
+  "YO Ecosystem Vault",
+  14
+ ],
+ [
+  2124305.206159,
+  "0x797dd80692c3b2dadabce8e30c07fde5307d48a9",
+  "EVK Vault eUSDC-2",
+  16
+ ],
+ [
+  1770561.635928,
+  "0x0000000f2eb9f69274678c76222b35eec7588a65",
+  "yoUSD",
+  3
+ ],
+ [
+  1454889.753367,
+  "0x54210d3f1a066413891af9e17210e787d5c6e3f4",
+  "Kabu USDC",
+  1
+ ],
+ [
+  1430310.473017,
+  "0xe275a69b93a5745e1560ee82d033205d323bfad9",
+  "tBRL USDC Vault",
+  1
+ ],
+ [
+  1407714.659981,
+  "0x62fe596d59fb077c2df736df212e0affb522dc78",
+  "Clearstar USDC Reactor",
+  1
+ ],
+ [
+  1399751.409811,
+  "0xc30c60de46dec551b96326cbd05592c9245773ef",
+  "9Summits Piku Ecosystem USDC",
+  5
+ ],
+ [
+  1300682.760662,
+  "0xbeef96b330ef1fe7ebe41ece0bd4a41a94bc03dc",
+  "Cronos USDC",
+  5
+ ],
+ [
+  1293347.060791,
+  "0xbeeff75262b2ec16a3c62a807f02ee7627654931",
+  "Waterline InfiniFi USDC",
+  7
+ ],
+ [
+  1291017.693781,
+  "0xf02030ab0d7385ce4cc2f7f64b7b44430fb44c89",
+  "Cross-chain USDC Lending",
+  2
+ ],
+ [
+  1184345.230088,
+  "0xf0358e8c3cd5fa238a29301d0bea3d63a17bedbe",
+  "FARM_USDC",
+  1
+ ],
+ [
+  1173919.35055,
+  "0xa99d875b78336cc2e5252b8a94463cfbb04a9120",
+  "NBA USDC VAULT",
+  2
+ ],
+ [
+  1054935.510246,
+  "0x7ad470ba664cfc15998db4d458699a4e76f2d0b6",
+  "Gauntlet USDC Prime",
+  1
+ ],
+ [
+  975829.397475,
+  "0x3e24e4ab1e097f35c910eb9242a8c1530ee9c482",
+  "POPT-V2 USDC LP on USDC/WETH 5bps",
+  3
+ ],
+ [
+  966788.834243,
+  "0xc441d0bd70dbcf711f4bba19aea3deff47ce1c48",
+  "Peapods Interest Bearing USDC - 24",
+  15
+ ],
+ [
+  872525.661857,
+  "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+  "USDC To sUSDS Depositor",
+  13
+ ],
+ [
+  798880.9083,
+  "0xf8f226da66244f89e70c5b5d1a5c5b0d505eb1d8",
+  "Bitcoin Dollar USDC",
+  1
+ ],
+ [
+  700341.808005,
+  "0x86daf835c84bc6d6c8367a9cd5d96a370c5470ce",
+  "Crypto.com Onchain Morpho Cronos USDC",
+  3
+ ],
+ [
+  589879.047961,
+  "0x4738386d69cf5a7ac088da2887fc0df02795c5e7",
+  "Nest FalconX CLO",
+  1
+ ],
+ [
+  497192.933919,
+  "0x58e0f0b81576f23c5f002d949b2bb11a5d2714d6",
+  "Morini USDC Emerging Yield",
+  1
+ ],
+ [
+  401242.48736,
+  "0xe3da4b83c9dd4c4d185ece42077462b3f35c454a",
+  "Vetro Vault USDC",
+  2
+ ],
+ [
+  327792.93401,
+  "0x2916dfb3324377645cac4c5e78dffce910a61393",
+  "AUTOfinance gpuUSD",
+  1
+ ],
+ [
+  247752.361742,
+  "0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7",
+  "yoUSD Edge",
+  2
+ ],
+ [
+  247237.855902,
+  "0x1abd0403591be494771115d74ed9e120530f356e",
+  "Anchorage/AUTOfinance anchrgUSD",
+  1
+ ],
+ [
+  202838.427361,
+  "0x3717e340140d30f3a077dd21fac39a86ace873aa",
+  "Peapods Metavault for USD Coin",
+  18
+ ],
+ [
+  135870.332701,
+  "0x244f46262d9ad408b746e74abdd010e9002fb7ee",
+  "UltraYield USDC Core",
+  2
+ ],
+ [
+  113913.52171,
+  "0x43f35fa72dcf93dad9843ab7b0e0587bf57d9643",
+  "Wrapped aUSDC",
+  3
+ ],
+ [
+  108317.944904,
+  "0x4ef75e307f7edbf0462c679192c1ff7e911c389a",
+  "f(x) Protocol - Leveraged ecosystem vault",
+  5
+ ],
+ [
+  100026.277191,
+  "0xd2386d8413c2ec4a761901da14c74a98ebe5054b",
+  "Flint USD",
+  4
+ ],
+ [
+  57913.533212,
+  "0x82fe329f4a9c4bcedc8a33f004337d51921d55e4",
+  "Peapods Interest Bearing USDC - 54",
+  1
+ ],
+ [
+  55370.666582,
+  "0xadfcfff962d7e22f15ada7fa089848f7672724c8",
+  "USDC/strUSD Market Vault",
+  3
+ ],
+ [
+  50120.13724,
+  "0x7c2b33b0aa1dc4545cea01ba106ed1b3c7b9c6fb",
+  "Ammalgam Deposited USDC",
+  17
+ ],
+ [
+  41819.052983,
+  "0x18e862e34938db06c9244966a93939e7892f5119",
+  "Gauntlet USDC RWA",
+  3
+ ],
+ [
+  30875.66395,
+  "0x05ed3da1deeaaa57c8e09986e95ac271572dcf89",
+  "Vectis UltraX Arb",
+  2
+ ],
+ [
+  30127.957678,
+  "0x2b5895b716311a1eac8f93fb88c56af9ec8c1a69",
+  "JUSD Credit Vault",
+  7
+ ],
+ [
+  15000.210444,
+  "0x99351baed3d8ab544ccb08af96a105910fda71e7",
+  "Morini FXArbUSDTRY",
+  1
+ ],
+ [
+  6813.515465,
+  "0x8f135bcfc4084ce6c8620e87b12c4ee82d165276",
+  "Peapods Interest Bearing USDC - 22",
+  1
+ ],
+ [
+  5000.005001,
+  "0xc3ac86c5117692367a01a281b3b8ad4df298762c",
+  "Ammalgam Deposited USDC",
+  1
+ ],
+ [
+  2126.995841,
+  "0x14794665d2f467a6e393e1a7210c49a1aa571d77",
+  "Peapods Interest Bearing USDC - 33",
+  1
+ ],
+ [
+  1366.717931,
+  "0x30df596b7a411d6479544ebec628fa99609d7c2f",
+  "Peapods Interest Bearing USDC - 43",
+  1
+ ],
+ [
+  799.025797,
+  "0xb93d4928f39fbcd6c89a7dfbf0a867e6344561be",
+  "EVK Vault eUSDC-1",
+  2
+ ],
+ [
+  501.225483,
+  "0x93f9b0478d8030f7968617b8c305bf3413f7f2a2",
+  "EVK Vault eUSDC-122",
+  2
+ ],
+ [
+  176.212143,
+  "0xa66957e58b60d6b92b850c8773a9ff9b0ba96a65",
+  "EVK Vault eUSDC-30",
+  1
+ ],
+ [
+  99.999999,
+  "0x909dadbca7955614a455d9e7447ad4adb4902c8e",
+  "Neutral Trade Autopilot",
+  1
+ ],
+ [
+  87.395891,
+  "0x4f95c5ba0c7c69fb2f9340e190ccee890b3bd87c",
+  "",
+  110
+ ],
+ [
+  42.263695,
+  "0x7554f663bceeca262518dd701d9ba78d29e4fe06",
+  "Ammalgam Deposited USDC",
+  3
+ ],
+ [
+  22.758917,
+  "0xa946d058c1d26a650ee0d147e28f2b1303a44d3c",
+  "Ammalgam Deposited USDC",
+  1
+ ],
+ [
+  13.0,
+  "0xe29d5f0e87f2a518943a108d636a9a16e5047760",
+  "Membrane GPU USDC",
+  1
+ ],
+ [
+  10.05362,
+  "0xa08ceb657d9a8035a44a1b44b8d4c42ec31dd4d4",
+  "EVK Vault eUSDC-2 Compounder",
+  1
+ ],
+ [
+  9.272419,
+  "0xda64d2440835494ea9a29709a2893f578cc49cc6",
+  "Billion USDC",
+  1
+ ],
+ [
+  1.150659,
+  "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+  "Hastra wYLDS",
+  9
+ ],
+ [
+  0.0,
+  "0xef312d033ed52e2796ba604fef12b4a56053b292",
+  "ARK Venture Fund",
+  1
+ ],
+ [
+  0.0,
+  "0x7019539286dfd18398a951d2775bf771fbb23e17",
+  "YT-request-12163",
+  1
+ ],
+ [
+  0,
+  "0x6da48c910610ea0cdaa41ee1953e508b8c2806f6",
+  "",
+  1
+ ],
+ [
+  0,
+  "0x3312c7b5edd63f4c16f1ce8f577b5b334021f586",
+  "",
+  1
+ ],
+ [
+  0.0,
+  "0x2bc03ae1d6cfafa6f4f840f2b39caa2359e41842",
+  "PT-request-12163",
+  1
+ ]
+]

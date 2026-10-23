@@ -120,6 +120,9 @@ Ethplorer's top-holders API (`api.ethplorer.io/getTopTokenHolders/<token>?apiKey
 - If a protocol has **several position tokens** (e.g. one per deposited asset), the main one is the receipt token of the
   **largest asset in DefiLlama's token breakdown** (default settings) for the protocol's **largest product on Ethereum**,
   using the last DefiLlama data point before the fork block. Same source and settings as the protocol selection (§7).
+  - If the largest asset has **no receipt token** (e.g. collateral held without a token), use the largest asset that has one.
+  - If that asset has **many receipt tokens** (e.g. one per vault), use the one with the largest on-chain `totalAssets()`
+    at the fork block, found by scanning standard ERC-4626 `Deposit` events (no protocol-specific addresses needed).
 
 Picking the address is experiment setup. The walkaway test itself starts after this, from the user's point of view.
 
@@ -127,6 +130,7 @@ Picking the address is experiment setup. The walkaway test itself starts after t
 |----------|-------|---------|---------|----------|
 | Lido | stETH | `0xde804e46f67ebeecbe4c0a54efe33143cb7ab9e2` | 5,084 stETH | `data/selection/2026-10-22-ethplorer-steth-top100.json` (~block 26,248,199) |
 | Binance staked ETH | wBETH (`0xa2E3356610840701BDf5611a53974510Ae27E2e1`), single product/asset on Ethereum | `0x066eb6929f18a72093c5afc9eba6dd476df876bc` | 16.96 wBETH | `data/selection/2026-10-22-ethplorer-wbeth-top100.json`; `data/selection/2026-10-22-defillama-binance-staked-eth.json` |
+| Morpho (Morpho Blue) | gtusdcp "Gauntlet USDC Prime" (`0x8c106eedad96553e64287a5a6839c3cc78afa3d0`). Largest product Morpho Blue ($5.05B). The largest assets in DefiLlama's breakdown are **collateral** (cbBTC, wstETH, kBTC), which has **no receipt token**; the largest asset **with** one is the loan asset USDC ($0.99B borrowed + $0.14B). Many USDC vaults exist; picked the largest by on-chain `totalAssets()` at the fork block (`data/selection/2026-10-22-morpho-usdc-vaults-onchain.json`) | `0x1c424df78d4fcc3b9635be62054fdab3f9b38a49` | 123,530 gtusdcp | `data/selection/2026-10-22-ethplorer-gtusdcp-top100.json`; `data/selection/2026-10-22-defillama-morpho-blue.json` |
 | Spark (SparkLend) | spwstETH (`0x12B54025C112Aa61fAce2CDB7118740875A566E9`); largest product SparkLend ($5.10B), largest asset wstETH ($3.55B, 67.9%) | `0x50e835c1088dd06747312c06ac0839ecc773cb42` (**#99**: #100 `0xbb73…17d6` is a contract) | 403.29 spwstETH | `data/selection/2026-10-22-ethplorer-spwsteth-top100.json`; `data/selection/2026-10-22-defillama-sparklend.json` |
 | Aave V3 | aEthweETH (`0xBdfa7b7893081B35Fb54027489e2Bc7A38275129`) | `0x462a336dcac6eaf544106266914caa5a18b831d0` | 456.48 aEthweETH | `data/selection/2026-10-22-ethplorer-aethweeth-top100.json`; product/token choice: `data/selection/2026-10-22-defillama-aave-v3.json` |
 

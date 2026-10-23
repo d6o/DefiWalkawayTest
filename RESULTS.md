@@ -3,7 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 3 of 5 protocols done (Lido, Aave V3, Spark); Binance staked ETH paused; EigenCloud not started.
+**Status:** 4 protocols done (Lido, Aave V3, Spark, Morpho); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morpho, then Sky and ether.fi), same method.
 
 ## Summary
 
@@ -14,6 +15,7 @@ Each row links to the full run log, where every claim is backed by a query, tran
 | 3 | [Binance staked ETH](runs/binance-staked-eth/2026-10-22-T0-all-removed.md) | `0x066e…76bc` | 16.96 wBETH (user has 0 ETH, never sent a tx) | ⏸ **Paused** after step 3b | — (so far: 0 burns and 0.012 wBETH minted on-chain in 7 days; 99.2% of supply in 5 EOAs) | — |
 | 4 | EigenCloud | — | — | ⏸ **Not started** | Test address can't be picked with SPEC §8 as written: **no position token** (deposits are recorded as internal shares). DefiLlama: one product; "WETH" $5.72B (89.4%), stETH $0.54B (8.5%). Fallback rule pending (see SPEC open questions) | — |
 | 5 | [Spark (SparkLend)](runs/spark/2026-10-22-T0-all-removed.md) | `0x50e8…cb42` | 403.29 spwstETH + 199.67 spweETH; debts: 155,818 DAI, 119,078 USDS, 138,109 USDT | ◐ **Partial exit**: all 403.29 wstETH + 5.29 weETH (2.65%) with own funds (the two deposits share one limit). Full exit possible (shown with ≈$412k of stablecoins), but **very hard to find without assistance** | The user's own debts cap withdrawals; no dependency on the paths used | None found on the paths used |
+| 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing | None found on the path used |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -68,6 +70,16 @@ word list could name, and it works in one step.
 - **Spam reaches protocol contracts too:** the spweETH contract held a 100-billion-unit airdrop token; "which token does
   this contract hold" has to be matched against its supply.
 
+## Morpho (Gauntlet USDC Prime vault) — ✅ Exits cleanly
+
+- **The position contract isn't a proxy, and the fixed word list names its exit functions directly**
+  (`withdraw(uint256,address,address)`, `redeem(uint256,address,address)`). Behavior (196 burns by 66 holders in 7 days)
+  only confirmed it.
+- **One transaction:** `redeem(all shares, user, user)` → 128,453 USDC for 123,530 shares (+4.0%). No debt, no limits.
+- Trap: passing 2²⁵⁶−1 as "everything" reverts with an arithmetic panic; the exact share balance is needed.
+- Selection note: Morpho's largest assets are collateral with no token, so the test used the largest USDC vault
+  (new §8 sub-rules).
+
 ## Findings across protocols
 
 1. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
@@ -94,3 +106,4 @@ word list could name, and it works in one step.
 | Lido | ~8 min | ~55 min | 3h44m | Includes building the method and scripts |
 | Aave V3 | ~4 min | ~35 min | 34 min | Method and scripts reused |
 | Spark | ~9 min | ~22 min | 63 min | Includes a ~10 min hung query |
+| Morpho | ~1.5 min | ~8 min | 2 min | Vault selection (setup) took longer than the run |
