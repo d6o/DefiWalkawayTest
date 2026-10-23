@@ -69,3 +69,34 @@ That's a funds limit (SPEC §4), not a dependency, but a real barrier.
 2. **The user never minted wBETH.** It was sent to them by two EOAs that have each sent **15–19 million transactions**
    (very high-volume operators), within ~100 blocks of each other.
 3. With no transactions of their own, the user's history gives **no hint** of how wBETH is created or redeemed.
+
+### Step 3b, part 1: where does wBETH go, and who creates or destroys it?
+**Time:** ~02:35Z (`scripts/flows.py`, a few seconds) plus reading (~3 min).
+**Window:** same 7 days as the other runs (blocks 26,197,800 → 26,248,199).
+**Raw data:** `data/step3b/raw_transfer_logs.json`, `flows.json`, `recipients.md`, `senders.md`.
+Also checked: the top 5 holders at the fork block (`eth_getCode`, nonce, `balanceOf`), and Ethplorer's holder count (setup-level source).
+
+| Evidence | Value |
+|----------|-------|
+| Top 5 holders (99.2% of supply) | **All EOAs.** #1 `0x5a52…efcb` 1,591,994 (nonce 5,599); #2 `0xf977…acec` **exactly 1,500,000** (nonce 20,762); #3 `0x28c6…1d60` 40,334 (nonce **18,819,855**, one of the two senders to our user); #4 9,418; #5 6,696 |
+| Holders (Ethplorer) | 7,413 |
+| Moved in 7 days | 1,801.83 wBETH (**0.06% of supply**), 438 transfers, 313 txs, 124 recipients, 105 senders |
+| **Mints** in 7 days | **2**, 0.0119 wBETH in total |
+| **Burns** in 7 days | **0** |
+| Volume involving a top-5 holder | 19.8% |
+
+**Contamination note:** both operators believe wBETH is mostly held inside Binance's custody (outside knowledge, and
+Claude recognizes the top addresses). The chain data above is **consistent** with that, but doesn't prove who controls
+these wallets.
+
+**Findings:**
+1. **Almost all wBETH sits in a few EOAs and barely moves**; on-chain activity is a few hundred small transfers.
+2. **Essentially no on-chain creation or redemption:** 0.012 wBETH minted and nothing burned in a week. If wBETH is
+   created and redeemed in volume, it isn't happening on Ethereum in a way these events show.
+3. **The method needs other users' redemptions to learn the exit from, and this window has none.**
+
+## Status: ⏸ Paused (2026-10-23)
+
+Paused after step 3b part 1, to come back later. **Next when resumed:** search the token's **entire history** for burns
+(transfers to `0x0`), and who sent them and what they called. If there are none, or only a few privileged senders,
+that is the result. Fork for this run: block 26,248,199, impersonating the test address (`scripts/fork.sh`).
