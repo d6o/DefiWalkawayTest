@@ -337,3 +337,88 @@ max withdrawable weETH again.
 4. **To withdraw everything, the user has to bring back what they received** (~5,762.76, sent through the same path).
    They hold 0.06 ETH and 61.67 weETH. That's a **capital** limit, not a dependency (D1–D5): the protocol path itself
    needed no frontend, API, indexer, or privileged actor.
+
+### Step 7: full exit, with the capital provided by the experimenter
+**Time:** 01:52:35Z → 01:53:03Z (~30s of execution) plus reading (~3 min).
+**Fork snapshot before this step:** `0x1`.
+**Experimenter intervention (disclosed):** `anvil_setBalance` gives the user **debt + 10 ETH**. This ETH didn't come from the
+user. The question here is "can the protocol be fully exited at T0, if the user has the capital?", not "does this user have it?"
+**Knowledge used:** everything from earlier steps: the user's own repay path (step 6), `withdraw` with 2²⁵⁶−1 (step 3b).
+**Raw data:** `data/step7/full_exit.json`.
+
+**Which token does aEthwstETH hold?** Balances held by each a-token contract, checked against candidate tokens from the
+user's own history (step 2):
+
+| Contract | Its totalSupply | Holds |
+|----------|-----------------|-------|
+| aEthwstETH `0x0b92…9371` | 775,286.40 | **756,167.63 wstETH** (`0x7f39…2ca0`, named "wstETH") and none of the other candidates |
+| aEthweETH `0xbdfa…5129` | 1,375,893.93 | **1,375,842.96 weETH** (`0xcd5f…b7ee`) and none of the other candidates |
+
+**Sequence (each its own block, +1s):**
+
+| # | Action | Tx | Status |
+|---|--------|----|--------|
+| 1 | Experimenter funds the user: +5,772.76 ETH | — | — |
+| 2 | Repay through the user's own path: `0xd016.0xbcc3c255(0x8787, 5,763.76e18, USER)` with 5,763.76 ETH (debt + 1 ETH margin) | `0x34a562a9…` | ✅ |
+| 3 | `withdraw(weETH, 2²⁵⁶−1, USER)` | `0x8ec1ebb0…` | ✅ |
+| 4 | `withdraw(wstETH, 2²⁵⁶−1, USER)` | `0xb8526d90…` | ✅ |
+
+| | Start | After funding | After repay | After withdraw weETH | After withdraw wstETH |
+|-|-------|---------------|-------------|----------------------|-----------------------|
+| ETH | 0.056529 | 5,772.816885 | 10.056507 | 10.056491 | 10.056478 |
+| weETH (wallet) | 61.6719 | 61.6719 | 61.6719 | **456.4827** | 456.4827 |
+| wstETH (wallet) | 0 | 0 | 0 | 0 | **4,515.3880** |
+| aEthweETH | 394.810835 | 394.810835 | 394.810835 | **0** | 0 |
+| aEthwstETH | 4,515.387973 | 4,515.387973 | 4,515.387973 | 4,515.387973 | **0** |
+| Debt-named | 5,762.760357 | 5,762.760357 | **0** | 0 | 0 |
+
+**Findings:**
+1. **Full exit achieved at T0:** every Aave-named balance is 0, and both deposited assets are in the wallet:
+   **456.48 weETH** (61.67 from step 4 + 394.81) and **4,515.39 wstETH**.
+2. **Capital needed: 5,762.76 ETH.** The 1 ETH margin sent above the debt came back (ETH after repay = 10.0565, not 9.0565).
+3. Each withdrawal burned the a-token and sent the underlying token from the a-token contract to the user, the same as other holders.
+4. **No frontend, API, indexer, or privileged actor was involved** at any point.
+
+---
+
+## Result: Aave, T0
+
+| Scenario | Result | Why |
+|----------|--------|-----|
+| All of D1–D5 removed, **user's own funds only** | **Partial exit** (SPEC §4) | Step 4: **61.67 weETH** (13.5% of the aEthweETH position) withdrawn; the rest is capped by the user's own debt (steps 5–6) |
+| All of D1–D5 removed, **user brings the capital** | ✅ **Full exit** | Step 7: repay 5,762.76 ETH, then withdraw everything, in 3 txs |
+| Each of D1, D2, D3, D5 removed individually | Same as above | The whole run never used any of them |
+| D4 (privileged actor) | **Not needed** on the paths used | No permissioned step was found on the repay or withdraw paths |
+
+**Why T1/T2 aren't run (SPEC §3):** T0 wasn't blocked by a permission check or by lack of information; the exit completed.
+Higher tiers would only speed up discovery. Example from this run: a hosted signature database would have named the
+revert reason at once (see the step 4 contamination note).
+
+**Capital exposed to D4:** none found on the observed paths.
+
+**Caveats (not tested):**
+- The repay went through `0xd016…5722`, the helper the user had used. Whether it can stop working, and whether repaying
+  directly at `0x8787` (`0x573ade81`, seen inside that path) works without it, wasn't tested.
+- The contracts are upgradeable proxies (EIP-1967). Who can upgrade them, or pause/freeze assets, isn't visible from the
+  standard admin slot and wasn't explored. Only the paths that other users' behavior revealed were tested.
+
+**What the user had to work out alone at T0:** their Aave-named positions beyond the one they knew (step 2), the exit
+contract and function (from other users' behavior, step 3b), why most of the deposit was locked (traces, bytecode search,
+their own history, a cause-and-effect test: steps 5–6), the time-drifting cap (step 4), and the repay path (step 6).
+
+### Timings (raw)
+
+| Step | What | Queries / execution | Analysis (approx.) |
+|------|------|---------------------|--------------------|
+| 1 | Basic account facts | ~1s | — |
+| 2 | Find every token contract | 50s | ~5 min |
+| 3a | aEthweETH proxy + selectors | ~3s | ~3 min |
+| 3b | Flows, all 86 txs, `0x8787` check, 6 traces | ~10s | ~10 min |
+| 4 | Withdraw simulation, binary search, partial withdrawal | ~1 min | ~5 min |
+| 5 | Link between the tokens (3 checks) | ~30s | ~3 min |
+| 6 | Cause-and-effect test | ~30s | ~3 min |
+| 7 | Full exit with capital | ~30s | ~3 min |
+| **Total** | | **~4 min** | **~35 min** |
+
+Wall clock: 2026-10-23 01:18:46Z → 01:53:03Z (34 min), including discussion. Unlike the Lido run, the method and scripts
+already existed.
