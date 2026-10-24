@@ -1,0 +1,47 @@
+[
+ [
+  942072959.958471,
+  "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+  "Staked USDe",
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+  "USDe",
+  "USDe",
+  76
+ ],
+ [
+  7304931.879763201,
+  "0x3d7d6fdf07ee548b939a80edbc9b2256d0cdc003",
+  "Strata Senior USDe",
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+  "USDe",
+  "USDe",
+  3
+ ],
+ [
+  4979125.164478808,
+  "0xc58d044404d8b14e953c115e67823784dea53d8f",
+  "Strata Junior USDe",
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+  "USDe",
+  "USDe",
+  1
+ ],
+ [
+  119885.00936773757,
+  "0xe70fc8ffb97f6d539e5d50f657f4aae69f01b87d",
+  "Stake DAO frxUSD/sUSDe Vault",
+  "0x47ab5f9d8c9c7d002a92320f23a696d348c56a7f",
+  "frxUSD/sUSDe",
+  "frxsUSDe",
+  2
+ ],
+ [
+  53.69199812764607,
+  "0x6e8a38e5bc082ec8b5b13797663e6bd5cd98898c",
+  "EVK Vault esrUSDe-3",
+  "0x3d7d6fdf07ee548b939a80edbc9b2256d0cdc003",
+  "Strata Senior USDe",
+  "srUSDe",
+  1
+ ]
+]

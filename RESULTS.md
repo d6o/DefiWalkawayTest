@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 6 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morpho, then Sky and ether.fi), same method.
+**Status:** 7 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena), same method.
 
 ## Summary
 
@@ -18,6 +18,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand (Morph
 | 6 | [Morpho (Gauntlet USDC Prime vault)](runs/morpho/2026-10-22-T0-all-removed.md) | `0x1c42…8a49` | 123,530 gtusdcp | ✅ **Exits cleanly**: one `redeem` → 128,453 USDC (+4.0% vs shares) | Nothing. Liquidity limit only: the USDC comes from `0xbbbb…ffcb` (127.6M held vs 110.9M vault total at the fork block) | None found on the path used |
 | 7 | [Sky (Savings USDS)](runs/sky/2026-10-22-T0-all-removed.md) | `0x03ba…2f96` | 1,844,122 sUSDS | ✅ **Exits cleanly**: one `redeem` → 2,053,783 USDS (+11.4% vs shares) | Nothing. The sUSDS contract holds ≈100% of what all shares are worth (4.83B USDS) | None found on the path used |
 | 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **all 3 of 3 permissioned EOAs** works (any one stopping blocks it) | 2,267,690 eETH (all of it) |
+| 9 | [Ethena (USDe)](runs/ethena/2026-10-22-T0-all-removed.md) | `0xa29e…4ff5` | 191,359 USDe | 🔴 **Blocked** | **D4:** redemption can only be submitted by holders of an access-control role (20 addresses that week); the USDe holder can't submit their own | 4,655,090,585 USDe (all of it) |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -111,10 +112,22 @@ word list could name, and it works in one step.
 - **The user's weETH** unwraps to eETH without any dependency, then hits the same block (second claim, #83,770).
 - **vs Lido:** Lido restricts who can *send* the batch; ether.fi restricts who can *approve* it. Same dependency.
 
+## Ethena (USDe) — 🔴 Blocked
+
+- **Every USDe mint and burn that week went through one contract** (`0xe349…62d3`). Redemptions are **orders**: the
+  holder is named inside the call, but someone else always sends the transaction.
+- **Caller test (fork):** the same redemption works from its sender and from each of the other 19 senders that week, and
+  fails for **the holder themself**, the recipient, and a random address: "AccessControl: … is missing role 0x44ac…".
+- **Our user** (191,359 USDe, received by transfer) can't redeem; `burn` just destroys USDe. Only selling remains (fallback).
+- **No queue, no claim:** unlike Lido and ether.fi, the exit itself can only be submitted by permissioned addresses.
+- **T0 discovery cost:** the test wallet is very busy (122,478 txs): 206,815 transfer logs, 2,102 token contracts,
+  ~18 minutes to find the one relevant token.
+
 ## Findings across protocols
 
-1. **Two withdrawal queues, two D4 dependencies.** Lido and ether.fi both fund withdrawals through batches that
-   only a few permissioned actors can produce (Lido: send; ether.fi: approve). Morpho and Sky exit in one call.
+1. **Three D4 dependencies, three designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
+   produce (Lido: send; ether.fi: approve, 3 of 3). Ethena has no queue: the redemption itself can only be submitted by
+   role holders. Morpho and Sky exit in one call.
 2. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
    without the permissioned batch. Aave V3 can be fully exited by anyone with the capital to repay, but our user,
    with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
@@ -142,3 +155,4 @@ word list could name, and it works in one step.
 | Morpho | ~2.5 min | ~13 min | 2 min (+ step 5 later) | Vault selection (setup) took longer than the run |
 | Sky | ~2.5 min | ~11 min | 3 min | |
 | ether.fi | ~9.5 min | ~26 min | 17 min (+ steps 6–7 later) | |
+| Ethena | ~20 min | ~11 min | 24 min | Discovery for a very busy wallet dominated |

@@ -1,0 +1,17 @@
+{
+ "own_redeem": [
+  false,
+  "Error(string): \"AccessControl: account 0xa29e963992597b21bcdcaa969d571984869c4ff5 is missing role 0x44ac9762eec3a11893fefb11d028bb3102560094137c3ed4518712475b2577cc\""
+ ],
+ "burn_1": {
+  "status": "0x1",
+  "transfers": [
+   {
+    "token": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+    "from": "0xa29e963992597b21bcdcaa969d571984869c4ff5",
+    "to": "0x0000000000000000000000000000000000000000",
+    "amount": 1000000000000000000
+   }
+  ]
+ }
+}

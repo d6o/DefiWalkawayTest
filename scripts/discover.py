@@ -11,7 +11,7 @@ Steps:
   2c. Write raw logs + a table of ALL contracts (matches are flagged, nothing is filtered out).
 
 Usage:
-  scripts/discover.py <address> <to_block> <outdir> [--match SYMBOL]
+  scripts/discover.py <address> <to_block> <outdir> [--match SYMBOL] [--reuse-logs]
 
 Env:
   LOGS_RPC_URL  RPC used for eth_getLogs (default: $ETH_RPC_URL)
@@ -95,7 +95,7 @@ def call(to, selector, block):
 
 
 def main():
-    args = sys.argv[1:]
+    args = [a for a in sys.argv[1:] if a != "--reuse-logs"]
     match = None
     if "--match" in args:
         i = args.index("--match"); match = args[i + 1]; del args[i:i + 2]
@@ -112,12 +112,18 @@ def main():
         "1155_batch_out": [TOPIC_1155_BATCH, None, pad(addr)],
     }
     raw, counts = {}, {}
-    for name, topics in queries.items():
-        logs = get_logs_split(topics, 0, to_block)
-        raw[name] = logs
-        counts[name] = len(logs)
-        print(f"  {name:16} {len(logs):6} logs", flush=True)
-    json.dump(raw, open(os.path.join(outdir, "raw_logs.json"), "w"), indent=1)
+    raw_path = os.path.join(outdir, "raw_logs.json")
+    if "--reuse-logs" in sys.argv and os.path.exists(raw_path):
+        raw = json.load(open(raw_path))
+        counts = {k: len(v) for k, v in raw.items()}
+        print(f"  reusing {raw_path}: {counts}", flush=True)
+    else:
+        for name, topics in queries.items():
+            logs = get_logs_split(topics, 0, to_block)
+            raw[name] = logs
+            counts[name] = len(logs)
+            print(f"  {name:16} {len(logs):6} logs", flush=True)
+        json.dump(raw, open(raw_path, "w"))
 
     # aggregate per contract
     c = defaultdict(lambda: {"in": 0, "out": 0, "standard": set(), "first_block": None, "last_block": None})
@@ -134,12 +140,39 @@ def main():
             d["first_block"] = b if d["first_block"] is None else min(d["first_block"], b)
             d["last_block"] = b if d["last_block"] is None else max(d["last_block"], b)
 
+    # batched eth_call (100 per request) for name/symbol/decimals/balanceOf of every contract
+    addrs = list(c)
+    meta = {}
+    sels = {"name": "0x06fdde03", "symbol": "0x95d89b41", "dec": "0x313ce567", "bal": "0x70a08231" + pad(addr)[2:]}
+    for i in range(0, len(addrs), 100):
+        chunk = addrs[i:i + 100]
+        reqs, idx = [], []
+        for a in chunk:
+            for k, sel in sels.items():
+                idx.append((a, k))
+                reqs.append({"jsonrpc": "2.0", "id": len(reqs), "method": "eth_call", "params": [{"to": a, "data": sel}, hex(to_block)]})
+        body = json.dumps(reqs).encode()
+        for attempt in range(5):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(CALL_RPC, body, {"Content-Type": "application/json"}), timeout=300) as r:
+                    resp = json.load(r)
+                break
+            except Exception:
+                time.sleep(2 * (attempt + 1))
+        else:
+            resp = []
+        for x in resp:
+            a, k = idx[x["id"]]
+            meta.setdefault(a, {})[k] = x.get("result")
+        if i % 1000 == 0:
+            print(f"  metadata {i + len(chunk)}/{len(addrs)}", flush=True)
     rows = []
     for a, d in c.items():
-        name = decode_string(call(a, "0x06fdde03", to_block))
-        symbol = decode_string(call(a, "0x95d89b41", to_block))
-        dec = call(a, "0x313ce567", to_block)
-        bal = call(a, "0x70a08231" + pad(addr)[2:], to_block)
+        m = meta.get(a, {})
+        name = decode_string(m.get("name"))
+        symbol = decode_string(m.get("symbol"))
+        dec = m.get("dec")
+        bal = m.get("bal")
         rows.append({
             "contract": a,
             "name": name, "symbol": symbol,
