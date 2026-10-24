@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 8 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple), same method.
+**Status:** 9 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap), same method.
 
 ## Summary
 
@@ -20,6 +20,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **all 3 of 3 permissioned EOAs** works (any one stopping blocks it) | 2,267,690 eETH (all of it) |
 | 9 | [Ethena (USDe)](runs/ethena/2026-10-22-T0-all-removed.md) | `0xa29e…4ff5` | 191,359 USDe | 🔴 **Blocked** | **D4:** redemption can only be submitted by holders of an access-control role (20 addresses that week); the USDe holder can't submit their own | 4,655,090,585 USDe (all of it) |
 | 10 | [Maple (Syrup USDC)](runs/maple/2026-10-22-T0-all-removed.md) | `0x90eb…9c8c` | 336,381 syrupUSDC | 🔴 **Blocked** | **D4:** withdrawals are requests that only a "redeemer" can process ("WM:NOT_REDEEMER"); one address processed all 152 that week | 872,764,779 syrupUSDC (all of it) |
+| 11 | [Uniswap (V3 positions)](runs/uniswap/2026-10-22-T0-all-removed.md) | `0xda94…8514` | 3 position NFTs (1 with liquidity) | 🟡 **Harder but possible**: full exit (3,666 PYUSD + 4,116 USDC; NFTs burned) | Nothing permissioned; the exit functions are unnamed and the amount had to be rebuilt from the position's event history | None found |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -134,6 +135,16 @@ word list could name, and it works in one step.
 - **Standard names, no standard exit:** the vault has `withdraw`/`redeem` (the functions that worked directly on Morpho
   and Sky), but here they answer "NOT_ENABLED" / "TOO_MANY_SHARES".
 
+## Uniswap (V3 positions) — 🟡 Harder but possible
+
+- **Position NFTs found by a log scan**; what each held came from tracing the user's own deposit txs.
+- **Exit = two unnamed calls**, learned from other holders' traces: release (`0x0c49ccbe`) then collect (`0xfc6f7865`).
+  The only nameable function is `burn(uint256)`.
+- **The amount to release was rebuilt from the position's full event history** (adds minus removals), exactly what an
+  indexer normally provides; a simulation confirmed it to the unit.
+- **Our user:** two positions already empty; the third returned 3,665.69 PYUSD + 4,115.86 USDC; all 3 NFTs burned.
+  No privileged actor anywhere.
+
 ## Findings across protocols
 
 1. **Four D4 dependencies, four designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
@@ -170,3 +181,4 @@ word list could name, and it works in one step.
 | ether.fi | ~9.5 min | ~26 min | 17 min (+ steps 6–7 later) | |
 | Ethena | ~20 min | ~11 min | 24 min | Discovery for a very busy wallet dominated |
 | Maple | ~1.5 min | ~10 min | 3 min | |
+| Uniswap | ~4.5 min | ~11 min | 5.5 min | |

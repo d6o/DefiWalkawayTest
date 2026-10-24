@@ -1,0 +1,610 @@
+{
+ "source": "https://api.ethplorer.io/getTopTokenHolders/0xc36442b4a4522e871399cd717abdd847ab11fe88?apiKey=freekey&limit=100",
+ "token": "UNI-V3-POS",
+ "token_address": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+ "fetched": "2026-10-24",
+ "fork_block": 26248199,
+ "note": "ERC-721: Ethplorer ranks by number of NFTs held",
+ "holders": [
+  {
+   "address": "0xc216bfa5da000965e820845c32e6fd88db275743",
+   "balance": 14896,
+   "share": 1.2,
+   "rawBalance": "14896"
+  },
+  {
+   "address": "0x3651a474027496aa25f8106ef3a8d6f1486a88a6",
+   "balance": 736,
+   "share": 0.06,
+   "rawBalance": "736"
+  },
+  {
+   "address": "0xc1f5d65a14d908df5585e21debaa51e6110a6d71",
+   "balance": 679,
+   "share": 0.05,
+   "rawBalance": "679"
+  },
+  {
+   "address": "0x47e8b01d30c407861f73ad510a366fb29e3d2557",
+   "balance": 533,
+   "share": 0.04,
+   "rawBalance": "533"
+  },
+  {
+   "address": "0x531bba95778dde94275311dafd979147767b94a7",
+   "balance": 500,
+   "share": 0.04,
+   "rawBalance": "500"
+  },
+  {
+   "address": "0x96c122e9c968e8246288c724838b1924410807fb",
+   "balance": 438,
+   "share": 0.04,
+   "rawBalance": "438"
+  },
+  {
+   "address": "0x72f002e3332ab46a90ea2ef6238a083938519083",
+   "balance": 412,
+   "share": 0.03,
+   "rawBalance": "412"
+  },
+  {
+   "address": "0xe09568554ba1820af4cf5dbacbc4db1575167452",
+   "balance": 282,
+   "share": 0.02,
+   "rawBalance": "282"
+  },
+  {
+   "address": "0xb36753cfcea9e753de2eaa040b06bc2734b37439",
+   "balance": 275,
+   "share": 0.02,
+   "rawBalance": "275"
+  },
+  {
+   "address": "0x1ad9feb1af22bed6e61fc9cea780fb0367a16cda",
+   "balance": 260,
+   "share": 0.02,
+   "rawBalance": "260"
+  },
+  {
+   "address": "0x742251aefc0961934342782f191d90f6061f8e27",
+   "balance": 229,
+   "share": 0.02,
+   "rawBalance": "229"
+  },
+  {
+   "address": "0xdff10261d03de342db79d67a25510cda86822974",
+   "balance": 213,
+   "share": 0.02,
+   "rawBalance": "213"
+  },
+  {
+   "address": "0xb5a3e73a3dc7c3e2b24ee370673ea7c50416b5b1",
+   "balance": 208,
+   "share": 0.02,
+   "rawBalance": "208"
+  },
+  {
+   "address": "0x1df2535cf0956abec21c4738534885d3849d6578",
+   "balance": 148,
+   "share": 0.01,
+   "rawBalance": "148"
+  },
+  {
+   "address": "0xf7f15c060c53ef137c8edcea795d0e278c93b45c",
+   "balance": 98,
+   "share": 0.01,
+   "rawBalance": "98"
+  },
+  {
+   "address": "0x865281fba7f14511d77674a02c2f01c019d19826",
+   "balance": 93,
+   "share": 0.01,
+   "rawBalance": "93"
+  },
+  {
+   "address": "0x377762b549e5126763cc2ef18a20b804b921c2c8",
+   "balance": 86,
+   "share": 0.01,
+   "rawBalance": "86"
+  },
+  {
+   "address": "0x326fe1da00e674bbfe0d156517eeb23d265a51c4",
+   "balance": 80,
+   "share": 0.01,
+   "rawBalance": "80"
+  },
+  {
+   "address": "0xfffa285b4ca6ead9e537279e6b0d6d233d5e56bb",
+   "balance": 69,
+   "share": 0.01,
+   "rawBalance": "69"
+  },
+  {
+   "address": "0xb3fbc1bdfc96e408e2d96a5b5827fa839316b4ce",
+   "balance": 68,
+   "share": 0.01,
+   "rawBalance": "68"
+  },
+  {
+   "address": "0xa1097367be4c8bbdef3d881e3c24e6260afef36e",
+   "balance": 64,
+   "share": 0.01,
+   "rawBalance": "64"
+  },
+  {
+   "address": "0x29375986550d89995357e340aac1fcb471645a8c",
+   "balance": 63,
+   "share": 0.01,
+   "rawBalance": "63"
+  },
+  {
+   "address": "0x203660a0eaedb6313c4f4e69b17f63d5cb9996e0",
+   "balance": 63,
+   "share": 0.01,
+   "rawBalance": "63"
+  },
+  {
+   "address": "0x45e494b95c33fcceec2480860764ab78ecd4bc33",
+   "balance": 60,
+   "share": 0,
+   "rawBalance": "60"
+  },
+  {
+   "address": "0xb5d4006e5898fd39e6b732cbdb9fe4e3038f7ddc",
+   "balance": 58,
+   "share": 0,
+   "rawBalance": "58"
+  },
+  {
+   "address": "0xdee79898de429a6c5b6f8343ca0a8093031c5f0a",
+   "balance": 54,
+   "share": 0,
+   "rawBalance": "54"
+  },
+  {
+   "address": "0xe3d120e3e553c8b140fd0e9f0c1034871b434ef3",
+   "balance": 54,
+   "share": 0,
+   "rawBalance": "54"
+  },
+  {
+   "address": "0x6ecf872b2206692fba6397b9172bb6d0ed80e746",
+   "balance": 53,
+   "share": 0,
+   "rawBalance": "53"
+  },
+  {
+   "address": "0xea43467683be1c70733fe667a507d800e441c201",
+   "balance": 49,
+   "share": 0,
+   "rawBalance": "49"
+  },
+  {
+   "address": "0xcb470dd050d929cb4dbf42f9dfe465e905d8453e",
+   "balance": 49,
+   "share": 0,
+   "rawBalance": "49"
+  },
+  {
+   "address": "0x94fda777d18b355872091e7516b25f594f204a99",
+   "balance": 45,
+   "share": 0,
+   "rawBalance": "45"
+  },
+  {
+   "address": "0x36fc316118fa4afc57a7d03c721f5803d2db053a",
+   "balance": 44,
+   "share": 0,
+   "rawBalance": "44"
+  },
+  {
+   "address": "0x814a67df7c5329cd4cd046d84d78ccddc12b04f7",
+   "balance": 42,
+   "share": 0,
+   "rawBalance": "42"
+  },
+  {
+   "address": "0xb9334ae03a5c232e836dae09791e99313428898a",
+   "balance": 38,
+   "share": 0,
+   "rawBalance": "38"
+  },
+  {
+   "address": "0xe13fa39f1b1f97a20f72005b0c427e74aa147925",
+   "balance": 38,
+   "share": 0,
+   "rawBalance": "38"
+  },
+  {
+   "address": "0x55f95ae0fefa3f7ed918cf354444c04c0230b548",
+   "balance": 36,
+   "share": 0,
+   "rawBalance": "36"
+  },
+  {
+   "address": "0x2173d70666d3247edae36fca9a72d39b0e894438",
+   "balance": 30,
+   "share": 0,
+   "rawBalance": "30"
+  },
+  {
+   "address": "0x0e7518b332f469a6a2f59e690f225cef5157cca9",
+   "balance": 28,
+   "share": 0,
+   "rawBalance": "28"
+  },
+  {
+   "address": "0xadbdd901d3e83d7166bc7f5bbe6816bcaa4b2335",
+   "balance": 28,
+   "share": 0,
+   "rawBalance": "28"
+  },
+  {
+   "address": "0x56e8eb8e159a0d13a2943d9a67fd90cd7766dddc",
+   "balance": 28,
+   "share": 0,
+   "rawBalance": "28"
+  },
+  {
+   "address": "0x6664f2410ac8b5c86b1924e24172d29364972488",
+   "balance": 27,
+   "share": 0,
+   "rawBalance": "27"
+  },
+  {
+   "address": "0xdb0280965e3cef39d74834073b77f3c7754b84b2",
+   "balance": 24,
+   "share": 0,
+   "rawBalance": "24"
+  },
+  {
+   "address": "0x47cabd083f00609ad9b2755a8cd4327e8c2d88a4",
+   "balance": 22,
+   "share": 0,
+   "rawBalance": "22"
+  },
+  {
+   "address": "0xfd2de244a74625adf4c5a20798b3755f7fd20b15",
+   "balance": 22,
+   "share": 0,
+   "rawBalance": "22"
+  },
+  {
+   "address": "0x0919b73c616ef1d818d5b926cb7c414071361441",
+   "balance": 21,
+   "share": 0,
+   "rawBalance": "21"
+  },
+  {
+   "address": "0xeb00ce77c4d4b32c836dbb76156002a7da79c2f0",
+   "balance": 20,
+   "share": 0,
+   "rawBalance": "20"
+  },
+  {
+   "address": "0x0386719e3f000b9600b73e3a4433d9821a8d1678",
+   "balance": 19,
+   "share": 0,
+   "rawBalance": "19"
+  },
+  {
+   "address": "0x8eab1448f99e102067b8d370b7f413d0f14e4b7d",
+   "balance": 19,
+   "share": 0,
+   "rawBalance": "19"
+  },
+  {
+   "address": "0xa84462cd05111f6716da0fd69192302ad8392873",
+   "balance": 18,
+   "share": 0,
+   "rawBalance": "18"
+  },
+  {
+   "address": "0x2907324285735be3512d1070a6b2b58240d4ba4c",
+   "balance": 18,
+   "share": 0,
+   "rawBalance": "18"
+  },
+  {
+   "address": "0x3352cc9280a91f562d56700e0299fd3dd198bff8",
+   "balance": 17,
+   "share": 0,
+   "rawBalance": "17"
+  },
+  {
+   "address": "0xf5cf12748d42181fc22667fed699cc642c3bec27",
+   "balance": 17,
+   "share": 0,
+   "rawBalance": "17"
+  },
+  {
+   "address": "0xe69c05597fcbb02f31d7489e44ae60e52496c871",
+   "balance": 17,
+   "share": 0,
+   "rawBalance": "17"
+  },
+  {
+   "address": "0x7fb73fd28af2f41f337c8870b34c6381c6afbe0a",
+   "balance": 15,
+   "share": 0,
+   "rawBalance": "15"
+  },
+  {
+   "address": "0xc21791ca3eb693d014d44815b6a483adf446d705",
+   "balance": 15,
+   "share": 0,
+   "rawBalance": "15"
+  },
+  {
+   "address": "0xe3ac1a4faeb2cc3f5511f248e183171951a6e180",
+   "balance": 15,
+   "share": 0,
+   "rawBalance": "15"
+  },
+  {
+   "address": "0x28274916e24a04f13134a5dd8a8348c87096aca6",
+   "balance": 15,
+   "share": 0,
+   "rawBalance": "15"
+  },
+  {
+   "address": "0xb47c72be8a2968dec42d3b9d8c6f464224605bfd",
+   "balance": 15,
+   "share": 0,
+   "rawBalance": "15"
+  },
+  {
+   "address": "0xc064d0f7bc98f6e08ab946454145f2b541d7b7d7",
+   "balance": 14,
+   "share": 0,
+   "rawBalance": "14"
+  },
+  {
+   "address": "0x6302ff569aa3a73738952f5b959d6fed47c2d30e",
+   "balance": 13,
+   "share": 0,
+   "rawBalance": "13"
+  },
+  {
+   "address": "0xe512e0df77d27826a1f57648072945cb2aede941",
+   "balance": 13,
+   "share": 0,
+   "rawBalance": "13"
+  },
+  {
+   "address": "0x3fe2d64acf30a3b78fee5a778f3c3c8c2cc6f279",
+   "balance": 12,
+   "share": 0,
+   "rawBalance": "12"
+  },
+  {
+   "address": "0xaff9b45286fef183d72858ea648e6afb586b8756",
+   "balance": 12,
+   "share": 0,
+   "rawBalance": "12"
+  },
+  {
+   "address": "0x03f341fd85e11bc5ec94964771453f9eb85b6962",
+   "balance": 11,
+   "share": 0,
+   "rawBalance": "11"
+  },
+  {
+   "address": "0x92579ff15537c52b7499c1489c663955118c47b1",
+   "balance": 10,
+   "share": 0,
+   "rawBalance": "10"
+  },
+  {
+   "address": "0x32e60bcf1ae23d0939d00c18a4b1a3d00b664a8f",
+   "balance": 10,
+   "share": 0,
+   "rawBalance": "10"
+  },
+  {
+   "address": "0x73264fef47769fbdf206e4c7476213ed753aba42",
+   "balance": 10,
+   "share": 0,
+   "rawBalance": "10"
+  },
+  {
+   "address": "0x100f650abef02cc1b90840f94a16523c07d3736f",
+   "balance": 10,
+   "share": 0,
+   "rawBalance": "10"
+  },
+  {
+   "address": "0x2a86057b3d06e8e1faafec90df375cc03651b7cd",
+   "balance": 10,
+   "share": 0,
+   "rawBalance": "10"
+  },
+  {
+   "address": "0xda6d0eb80629053cb3dc655925f6d73ada09d3c5",
+   "balance": 9,
+   "share": 0,
+   "rawBalance": "9"
+  },
+  {
+   "address": "0x3ae95b33f729bb0f21fe7fd31aa8ba912510f5b3",
+   "balance": 9,
+   "share": 0,
+   "rawBalance": "9"
+  },
+  {
+   "address": "0x7126b72a49a6d0fa07eb1115ab5b8bf4e1166366",
+   "balance": 9,
+   "share": 0,
+   "rawBalance": "9"
+  },
+  {
+   "address": "0x5bb2fbfc19b911eb76708835b3deabe3b9c8bf9a",
+   "balance": 9,
+   "share": 0,
+   "rawBalance": "9"
+  },
+  {
+   "address": "0x9bd0006c5d1de012391fe25cdee6dd16cd4c529f",
+   "balance": 9,
+   "share": 0,
+   "rawBalance": "9"
+  },
+  {
+   "address": "0x5c053c47f843bdb2ee6715aa4b8a6bfccb83d9bb",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0xd6154fd3628f5e1b482c992e3cb9668d6d807238",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0x47004fe25974ee101670274ded998e3792f18ef9",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0x2724c553b788f306e3a1e1fe0e8c0ef56ba6a2a4",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0x32a5fb05b9f5eb0c64f68affcd1c33ebbe763c26",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0x304872d26fc375f2b28ad0757b0b89ffbdbdf0bc",
+   "balance": 8,
+   "share": 0,
+   "rawBalance": "8"
+  },
+  {
+   "address": "0x14908edf270d2848d4d3f30d15c8c6a399097783",
+   "balance": 7,
+   "share": 0,
+   "rawBalance": "7"
+  },
+  {
+   "address": "0xe10982b4c713a6e38ae7df30fe16b6cc31012f99",
+   "balance": 7,
+   "share": 0,
+   "rawBalance": "7"
+  },
+  {
+   "address": "0xf543a7b6a9c7b3a61306fffa1d0f747de2a18996",
+   "balance": 7,
+   "share": 0,
+   "rawBalance": "7"
+  },
+  {
+   "address": "0xbe518419471a8f5ed23c251a5ef62505001e59c1",
+   "balance": 7,
+   "share": 0,
+   "rawBalance": "7"
+  },
+  {
+   "address": "0xf5db5638d35f462e30d9a75d5ae12d32ca4e6adb",
+   "balance": 6,
+   "share": 0,
+   "rawBalance": "6"
+  },
+  {
+   "address": "0xccc94e1e66cc2d3a4a6e799dab726b489331b606",
+   "balance": 6,
+   "share": 0,
+   "rawBalance": "6"
+  },
+  {
+   "address": "0x939263b4b95adcdd6751e75ae7ca79bc38647dd7",
+   "balance": 6,
+   "share": 0,
+   "rawBalance": "6"
+  },
+  {
+   "address": "0xd57e61775ca3abb409c41b57820f1261fe9ed80d",
+   "balance": 6,
+   "share": 0,
+   "rawBalance": "6"
+  },
+  {
+   "address": "0x59587635477f471672b9bb58e5bc2116a60c872e",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0xdec63e2fcb3abba06e2ac71bc973d024688b4d2d",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0xe4d987223639c717fcff05a107dd72c59ae395cd",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0x8f9ca300f53a7d8a0224d2d5f97457547d387fd9",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0xe894fa40889b4ed2be4a0de343fb31a35443ac9e",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0x3d1de687adef73ad0cd4a38ff44e2986674f8c1d",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0x257162c5b9e19ef9ece0a944454af17de6cb4547",
+   "balance": 5,
+   "share": 0,
+   "rawBalance": "5"
+  },
+  {
+   "address": "0x705f145bd400a58a307a45f1b19bbef1fc5a269d",
+   "balance": 4,
+   "share": 0,
+   "rawBalance": "4"
+  },
+  {
+   "address": "0xf1a5595ed25fc44dfd0699a62e75f9a3ea77177b",
+   "balance": 4,
+   "share": 0,
+   "rawBalance": "4"
+  },
+  {
+   "address": "0x31318fe9530e9412fd4fc99b4edd5f6d71de92f8",
+   "balance": 4,
+   "share": 0,
+   "rawBalance": "4"
+  },
+  {
+   "address": "0xab29866b96bc543746af21a91cb1d3362bf49cd7",
+   "balance": 4,
+   "share": 0,
+   "rawBalance": "4"
+  },
+  {
+   "address": "0xda9488177dee53e051b29648853ad1a3d7238514",
+   "balance": 3,
+   "share": 0,
+   "rawBalance": "3"
+  }
+ ]
+}

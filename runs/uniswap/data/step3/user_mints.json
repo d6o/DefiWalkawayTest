@@ -1,0 +1,50 @@
+{
+ "465526": {
+  "tx": "0xe5be031ad99c5ee7bdf6565bbcb9804b83b64c402bd513e8eb5e110412a51e22",
+  "to": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+  "selector": "0xac9650d8",
+  "eth_value": 2871861272198212181,
+  "moves": [
+   [
+    "LUSD",
+    "OUT of user",
+    3902.5795682220114,
+    "0x9663f2ca"
+   ]
+  ]
+ },
+ "1289822": {
+  "tx": "0x71e110ac6cfde20c57cf309c927489e83273786691a37c5acf786e7bfbc853ed",
+  "to": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+  "selector": "0xac9650d8",
+  "eth_value": 1778851258249980128,
+  "moves": [
+   [
+    "USDC",
+    "OUT of user",
+    4625.692497,
+    "0x88e6a0c2"
+   ]
+  ]
+ },
+ "1295351": {
+  "tx": "0xaf578404b4283a8a45cb13a7d719cd8e1a13604e2aaafea13783ca9b8c477c9e",
+  "to": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+  "selector": "0x88316456",
+  "eth_value": 0,
+  "moves": [
+   [
+    "PYUSD",
+    "OUT of user",
+    4995.566902,
+    "0x13394005"
+   ],
+   [
+    "USDC",
+    "OUT of user",
+    9048.234256,
+    "0x13394005"
+   ]
+  ]
+ }
+}

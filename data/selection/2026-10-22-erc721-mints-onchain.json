@@ -1,0 +1,228 @@
+{
+ "window": [
+  26247899,
+  26248199
+ ],
+ "collections": [
+  [
+   "0x3d74e1c8ce3cd108bef4db37b9d29a1b02a652b2",
+   "Sixth Society 2027",
+   2000
+  ],
+  [
+   "0x3f2ba6c00c386986686a429c52099aacd51b7e38",
+   "Balances",
+   1602
+  ],
+  [
+   "0xf4a8737ebc17ce7ba30b85f91629310473fba17a",
+   "Skeletoads",
+   80
+  ],
+  [
+   "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
+   "Uniswap v4 Positions NFT",
+   69
+  ],
+  [
+   "0x1b8227e0c698199a66db150cb8af548a21289d5f",
+   "Sixth Society Legacy 2027",
+   66
+  ],
+  [
+   "0x357b9d3a18f7516f8f3c36991af3140840f0f626",
+   "VLNS",
+   41
+  ],
+  [
+   "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+   "Uniswap V3 Positions NFT-V1",
+   24
+  ],
+  [
+   "0x0000000000696760e15f265e828db644a0c242eb",
+   "Wei Name Service",
+   21
+  ],
+  [
+   "0x4857db576ee0e45f10525ec59527bfd10beec60b",
+   "Slipstream V3 Deposit",
+   15
+  ],
+  [
+   "0x9e9fbde7c7a83c43913bddc8779158f1368f0413",
+   "Pandora",
+   8
+  ],
+  [
+   "0x29b763df6548920151a60116e502591c33f0241e",
+   "Optimum TurboCards",
+   6
+  ],
+  [
+   "0xf3af20e1d321fc9ee6cf9cffaae9e3766b79eb68",
+   "The Winds Will Remember",
+   6
+  ],
+  [
+   "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
+   "",
+   4
+  ],
+  [
+   "0xc5d5e2e8825580bb823c0d91a7ed1bbfd3f72905",
+   "Ryfinite Passport",
+   4
+  ],
+  [
+   "0xbae1e1f2a52ed69073bc44c4e2523c46fd0baa04",
+   "BETWEEN \u2014 Somewhere Between Chaos and Peace \ud83d\udda4",
+   4
+  ],
+  [
+   "0xa4091eb70ca2f98de7bdd44c716141b66922e84a",
+   "SOC TimeLock NFT",
+   3
+  ],
+  [
+   "0xc71d3528a7c4873e6a8648130497bcff36a0e041",
+   "OMG LO FI",
+   3
+  ],
+  [
+   "0x7fd7d61085e34ad9e404275afdd9f6c8d498c6a5",
+   "Legends of NFTs",
+   3
+  ],
+  [
+   "0xbea2154925227028a3323b4d83e5fa24c1973510",
+   "BEARISH",
+   3
+  ],
+  [
+   "0x10817324d6236ea91ef68ae919fc80ef36f44549",
+   "9m Onchain",
+   3
+  ],
+  [
+   "0x889edc2edab5f40e902b864ad4d7ade8e412f9b1",
+   "Lido: stETH Withdrawal NFT",
+   3
+  ],
+  [
+   "0xff31b2ab1939bf1df377c9080ca9d6d9e1daa767",
+   "Zest BTC Collateral",
+   1
+  ],
+  [
+   "0x324c5dc1fc42c7a4d43d92df1eba58a54d13bf2d",
+   "Fluid Vault",
+   1
+  ],
+  [
+   "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
+   "Pancake V3 Positions NFT-V1",
+   1
+  ],
+  [
+   "0xa3bb81d87478ea6c38e6c6f626a4bcda7d601441",
+   "Hollywood Hills Villas",
+   1
+  ],
+  [
+   "0x8d6fd650500f82c7d978a440348e5a9b886943bf",
+   "Kiln Exit Queue",
+   1
+  ],
+  [
+   "0xa99ac8b5053bc2ced4c4c83bb8c6153018f84fc8",
+   "Nocturnal | \u591c\u60f3",
+   1
+  ],
+  [
+   "0xb562404540ddfa86f2cb433c64523621a98345ad",
+   "process of touch and flow",
+   1
+  ],
+  [
+   "0x9d51d507bc7264d4fe8ad1cf7fe191933a0a81d6",
+   "Gwei Name Service",
+   1
+  ],
+  [
+   "0x1c70d0a86475cc707b48aa79f112857e7957274f",
+   "StakedSealsV2",
+   1
+  ],
+  [
+   "0x252dde55888a8dc0ca2de8b174a4fc822f7d1001",
+   "Lightfield Studies by Zach Lieberman",
+   1
+  ],
+  [
+   "0x7d5706f6ef3f89b3951e23e557cdfbc3239d4e2c",
+   "Withdraw Request NFT",
+   1
+  ],
+  [
+   "0x9c5f45d5e1382e4058d334d93c6c01442012a4d9",
+   "poidh claims v3",
+   1
+  ],
+  [
+   "0x00d2f915220d7c5e8e8d2481d62d397b5b3a7aa6",
+   "Whispers of the Hannya \u822c\u82e5",
+   1
+  ],
+  [
+   "0xe1d965bbae2c52e3dcd297fae0b893a0cf1ef983",
+   "170.06 USDT",
+   1
+  ],
+  [
+   "0xc9154424b823b10579895ccbe442d41b9abd96ed",
+   "Rarible",
+   1
+  ],
+  [
+   "0x1b402fc9c7eb6ace34c403b9850a08cf8f64c516",
+   "Satoshi Vision Pass 2026 Lite",
+   1
+  ],
+  [
+   "0xde45d5077a62207e85a7251352930a4bf62443ea",
+   "Whispers of the Wind by Reza Milani",
+   1
+  ],
+  [
+   "0x74f6a14d8ed1bfd77c116518d216f3989e1c01eb",
+   "ETH2015",
+   1
+  ],
+  [
+   "0xd9f8a3061bfcc72641a65a4b6e8d5c7a02b8c2eb",
+   "Motif",
+   1
+  ],
+  [
+   "0x5cb6a6ad98d02981198fc7a881fe4bc438ad146c",
+   "PixelZone",
+   1
+  ],
+  [
+   "0x705a379e5b559ec3a01a892438f55bbaeeb2aec1",
+   "Fleece",
+   1
+  ],
+  [
+   "0x3e64eeb97e5240431437fe8551f75f1edb29d013",
+   "A Place to Breathe",
+   1
+  ],
+  [
+   "0x02d9876a21af7545f8632c3af76ec90b5ad4b66d",
+   "Ekubo Positions",
+   1
+  ]
+ ]
+}
