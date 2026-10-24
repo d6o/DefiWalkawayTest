@@ -1,0 +1,110 @@
+[
+ {
+  "chain": "Ethereum",
+  "project": "maple",
+  "symbol": "USDC",
+  "tvlUsd": 2763375798,
+  "apyBase": 5.12799,
+  "apyReward": 0,
+  "apy": 5.12799,
+  "rewardTokens": null,
+  "pool": "43641cf5-a92e-416b-bce9-27113d3c0db6",
+  "apyPct1D": -0.01664,
+  "apyPct7D": -0.10594,
+  "apyPct30D": -0.03138,
+  "stablecoin": true,
+  "ilRisk": "no",
+  "exposure": "single",
+  "predictions": {
+   "predictedClass": "Down",
+   "predictedProbability": 63,
+   "binnedConfidence": 2
+  },
+  "poolMeta": "Syrup USDC",
+  "mu": 5.96301,
+  "sigma": 0.08249,
+  "count": 452,
+  "outlier": false,
+  "underlyingTokens": [
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  ],
+  "il7d": null,
+  "apyBase7d": null,
+  "apyMean30d": 5.18955,
+  "volumeUsd1d": null,
+  "volumeUsd7d": null,
+  "apyBaseInception": null
+ },
+ {
+  "chain": "Ethereum",
+  "project": "maple",
+  "symbol": "USDT",
+  "tvlUsd": 758544706,
+  "apyBase": 5.08265,
+  "apyReward": 0,
+  "apy": 5.08265,
+  "rewardTokens": null,
+  "pool": "8edfdf02-cdbb-43f7-bca6-954e5fe56813",
+  "apyPct1D": -0.05481,
+  "apyPct7D": -0.32062,
+  "apyPct30D": 0.29412,
+  "stablecoin": true,
+  "ilRisk": "no",
+  "exposure": "single",
+  "predictions": {
+   "predictedClass": "Down",
+   "predictedProbability": 71,
+   "binnedConfidence": 2
+  },
+  "poolMeta": "Syrup USDT",
+  "mu": 5.52107,
+  "sigma": 0.0864,
+  "count": 452,
+  "outlier": false,
+  "underlyingTokens": [
+   "0xdac17f958d2ee523a2206206994597c13d831ec7"
+  ],
+  "il7d": null,
+  "apyBase7d": null,
+  "apyMean30d": 5.31103,
+  "volumeUsd1d": null,
+  "volumeUsd7d": null,
+  "apyBaseInception": null
+ },
+ {
+  "chain": "Ethereum",
+  "project": "maple",
+  "symbol": "USDG",
+  "tvlUsd": 654931232,
+  "apyBase": 4.92307,
+  "apyReward": 0,
+  "apy": 4.92307,
+  "rewardTokens": null,
+  "pool": "4c004503-9587-46f2-a362-d23a80f4b691",
+  "apyPct1D": -0.038,
+  "apyPct7D": -0.09566,
+  "apyPct30D": -0.0729,
+  "stablecoin": true,
+  "ilRisk": "no",
+  "exposure": "single",
+  "predictions": {
+   "predictedClass": "Down",
+   "predictedProbability": 84,
+   "binnedConfidence": 3
+  },
+  "poolMeta": "syrupUSDG",
+  "mu": 4.33648,
+  "sigma": 0.08163,
+  "count": 133,
+  "outlier": false,
+  "underlyingTokens": [
+   "0xe343167631d89b6ffc58b88d6b7fb0228795491d"
+  ],
+  "il7d": null,
+  "apyBase7d": null,
+  "apyMean30d": 4.97795,
+  "volumeUsd1d": null,
+  "volumeUsd7d": null,
+  "apyBaseInception": null
+ }
+]

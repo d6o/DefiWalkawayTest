@@ -1,0 +1,25 @@
+{
+ "tx": "0x7c3c0c54cfd39a1531ef3888a1d47885e59599104ced04eaac67dfe54dfdbaab",
+ "fork_block": 26247887,
+ "results": {
+  "original processor": {
+   "from": "0xfb2c579c1d5f82c7b0f2a3479e5f9bc26bd22b62",
+   "ok": true,
+   "r": "ok"
+  },
+  "the requester themself": {
+   "from": "0xee01c2f5be9b09ae4cfcb33a80d91b253eab6e62",
+   "ok": false,
+   "r": "Error(string): \"WM:NOT_REDEEMER\""
+  },
+  "random address": {
+   "from": "0x1234567890abcdef1234567890abcdef12345678",
+   "ok": false,
+   "r": "Error(string): \"WM:NOT_REDEEMER\""
+  }
+ },
+ "processor_send": {
+  "status": "0x1",
+  "requester_usdc_delta": 100000035
+ }
+}

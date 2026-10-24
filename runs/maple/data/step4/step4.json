@@ -1,0 +1,32 @@
+{
+ "snapshot": "0x0",
+ "shares": 336380805520,
+ "redeem(all, user, user)": [
+  false,
+  "Error(string): \"WM:PE:TOO_MANY_SHARES\""
+ ],
+ "withdraw(1000 USDC, user, user)": [
+  false,
+  "Error(string): \"PM:PW:NOT_ENABLED\""
+ ],
+ "request": {
+  "tx": "0xaddd05d38a1daa43e4293dc428d6658d50ad4f8301128b8800ee4660c5b0166b",
+  "status": "0x1"
+ },
+ "self_process_now": [
+  false,
+  "Error(string): \"WM:NOT_REDEEMER\""
+ ],
+ "self_process_7d": [
+  false,
+  "Error(string): \"WM:NOT_REDEEMER\""
+ ],
+ "redeem after +7d": [
+  false,
+  "Error(string): \"WM:PE:TOO_MANY_SHARES\""
+ ],
+ "final": {
+  "shares": 0,
+  "usdc": 770901
+ }
+}

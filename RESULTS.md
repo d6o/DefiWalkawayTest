@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 7 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena), same method.
+**Status:** 8 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple), same method.
 
 ## Summary
 
@@ -19,6 +19,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 7 | [Sky (Savings USDS)](runs/sky/2026-10-22-T0-all-removed.md) | `0x03ba…2f96` | 1,844,122 sUSDS | ✅ **Exits cleanly**: one `redeem` → 2,053,783 USDS (+11.4% vs shares) | Nothing. The sUSDS contract holds ≈100% of what all shares are worth (4.83B USDS) | None found on the path used |
 | 8 | [ether.fi (eETH)](runs/etherfi/2026-10-22-T0-all-removed.md) | `0xd26d…aacf` | 43.64 eETH | 🔴 **Blocked** | **D4:** batches fund the claims; anyone can execute one, but only data approved by **all 3 of 3 permissioned EOAs** works (any one stopping blocks it) | 2,267,690 eETH (all of it) |
 | 9 | [Ethena (USDe)](runs/ethena/2026-10-22-T0-all-removed.md) | `0xa29e…4ff5` | 191,359 USDe | 🔴 **Blocked** | **D4:** redemption can only be submitted by holders of an access-control role (20 addresses that week); the USDe holder can't submit their own | 4,655,090,585 USDe (all of it) |
+| 10 | [Maple (Syrup USDC)](runs/maple/2026-10-22-T0-all-removed.md) | `0x90eb…9c8c` | 336,381 syrupUSDC | 🔴 **Blocked** | **D4:** withdrawals are requests that only a "redeemer" can process ("WM:NOT_REDEEMER"); one address processed all 152 that week | 872,764,779 syrupUSDC (all of it) |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -123,11 +124,23 @@ word list could name, and it works in one step.
 - **T0 discovery cost:** the test wallet is very busy (122,478 txs): 206,815 transfer logs, 2,102 token contracts,
   ~18 minutes to find the one relevant token.
 
+## Maple (Syrup USDC) — 🔴 Blocked
+
+- **A request-then-process queue:** holders call `0x107703ab(shares, owner)` on the vault; shares wait in an escrow
+  (`0x1bc4…`); **one address processed every request that week** (152 txs), paying ~1.19 USDC per share.
+- **Caller test (fork):** the processor's tx works; **the requester themself** and a random address get
+  "WM:NOT_REDEEMER". Sent for real by the processor, the requester received +100 USDC.
+- **Our user:** request ✅ (336,381 shares into the escrow) → self-processing ❌ now and after 7 days → **0 USDC**.
+- **Standard names, no standard exit:** the vault has `withdraw`/`redeem` (the functions that worked directly on Morpho
+  and Sky), but here they answer "NOT_ENABLED" / "TOO_MANY_SHARES".
+
 ## Findings across protocols
 
-1. **Three D4 dependencies, three designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
+1. **Four D4 dependencies, four designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
    produce (Lido: send; ether.fi: approve, 3 of 3). Ethena has no queue: the redemption itself can only be submitted by
-   role holders. Morpho and Sky exit in one call.
+   role holders. Maple queues requests that only one "redeemer" processes. Morpho and Sky exit in one call.
+   **A familiar interface isn't a permissionless exit:** Maple's vault has the same `withdraw`/`redeem` as Morpho and
+   Sky, but they're disabled.
 2. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
    without the permissioned batch. Aave V3 can be fully exited by anyone with the capital to repay, but our user,
    with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
@@ -156,3 +169,4 @@ word list could name, and it works in one step.
 | Sky | ~2.5 min | ~11 min | 3 min | |
 | ether.fi | ~9.5 min | ~26 min | 17 min (+ steps 6–7 later) | |
 | Ethena | ~20 min | ~11 min | 24 min | Discovery for a very busy wallet dominated |
+| Maple | ~1.5 min | ~10 min | 3 min | |
