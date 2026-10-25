@@ -110,6 +110,12 @@ named** (learned only from other users' traces) or the user must **rebuild state
 | 4 | EigenCloud | Restaking | $6.25B |
 | 5 | Spark | — | $6.09B |
 
+**Extension beyond the top 5 (2026-10-23 → 10-25):** to reach the talk's "15+", more protocols were added **in DefiLlama
+ranking order** (Ethereum TVL, products grouped under their parent), skipping only staking infrastructure that sits under
+other protocols (SSV, Obol) and vault curators (Sentora, Concrete): Sky, Ethena, Morpho, ether.fi, Maple, Uniswap,
+Falcon Finance, Compound, Curve, Rocket Pool, Kelp, Fluid, Pendle. Same method for every one (SPEC §1–§10). The ranking past
+#11 came from DefiLlama's API (`api.llama.fi/protocols`), which differs slightly from the website's default view.
+
 ## 8. Test address selection
 
 **Method:** the **100th largest holder** of the protocol's main position token, according to
@@ -209,9 +215,11 @@ Learned during the Lido and Aave runs, applied to every run from here on.
 
 - How is **recovery time** reported? Each run records raw timings per step (queries/execution vs. analysis);
   how to turn them into one number is still open.
-- **Capital exposed**, as used so far: if the exit is blocked by D4, the position token's `totalSupply()` at the fork
-  block (Lido); if no D4 dependency is found, none (Aave). The capital a test user needs for a full exit is reported
-  separately (§4). To be confirmed once more protocols are done.
+- **Capital exposed**, as applied to all 16 runs: if the exit is blocked by D4, the position token's `totalSupply()` at the
+  fork block; if no D4 dependency is found, none. Liquidity limits (Morpho, Sky, Rocket Pool, Compound) and the capital a
+  test user needs (Aave, Spark) are reported separately (§4).
+- **Binance staked ETH** is paused after step 3b (no on-chain redemptions in the 7-day window); next: search the token's
+  entire history for burns.
 - **EigenCloud has no position token**, so §8 can't pick its test address. Options discussed (2026-10-23), not decided:
   A. rank the largest asset's depositors from the protocol's own on-chain records (e.g. native-restaking pod owners by
   recorded amount at the fork block) and take the 100th; B. the same for stETH deposits (8.5% of TVL);

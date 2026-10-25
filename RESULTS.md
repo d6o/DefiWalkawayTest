@@ -3,7 +3,7 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 16 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid, Pendle); Binance staked ETH paused; EigenCloud not started.
+**Status (2026-10-25):** 16 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid, Pendle); Binance staked ETH paused; EigenCloud not started.
 Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid, Pendle), same method.
 
 ## Summary
@@ -30,6 +30,23 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 18 | [Pendle (PT-reUSD-10DEC2026)](runs/pendle/2026-10-22-T0-all-removed.md) | `0xc1de…b98e` | 103,889.86 PT | 🟡 **Harder but possible, time-locked**: nothing until 10 Dec 2026, then 93,709 reUSD | No permission, **only time** (49 days); unnamed multi-step exit with traps | None found |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
+
+## Totals (16 protocols)
+
+| Result | Count | Protocols |
+|--------|-------|-----------|
+| 🔴 **Blocked** (a privileged actor is needed, D4) | **6** | Lido, ether.fi, Ethena, Maple, Falcon Finance, Kelp |
+| ◐ **Partial exit** (user's own debt caps withdrawals; full exit with capital) | **2** | Aave V3, Spark |
+| 🟡 **Harder but possible** (permissionless, but unnamed or state must be rebuilt) | **3** | Uniswap, Curve, Pendle (time-locked until maturity) |
+| ✅ **Exits cleanly** (one named call by the holder; liquidity permitting) | **5** | Morpho, Sky, Rocket Pool, Compound, Fluid |
+| ⏸ Not finished | 2 | Binance staked ETH (paused), EigenCloud (no position token) |
+
+**Six D4 designs:** Lido (only specific callers send the batch), ether.fi (anyone executes; 3-of-3 signers approve),
+Ethena (redemptions submitted only by role holders), Maple (one "redeemer" processes requests), Falcon (no on-chain
+redemption; operator wallets), Kelp (operator contract unlocks, authorized by signed data).
+
+**Capital exposed to D4 at the fork block** (position token supply): Lido 9,661,657 stETH · ether.fi 2,267,690 eETH ·
+Ethena 4,655,090,585 USDe · Maple 872,764,779 syrupUSDC · Falcon 1,727,683,714 USDf · Kelp 367,430 rsETH.
 
 ## Lido
 
