@@ -1,0 +1,10 @@
+{
+ "weth_held": 13552268036453451810986,
+ "total_supply": 50794199557971581860471,
+ "largest_eoa": "0xce27283c276f4aa7a7e302b24bfea7668e264877",
+ "largest_eoa_balance": 29976850370621872967455,
+ "largest_withdraw_all": [
+  false,
+  "0x"
+ ]
+}

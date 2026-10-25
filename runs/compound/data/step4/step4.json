@@ -1,0 +1,22 @@
+{
+ "snapshot": "0x0",
+ "cweth": 10481104556483630021,
+ "sim_exact balance": [
+  true,
+  "ok"
+ ],
+ "sim_1 WETH": [
+  true,
+  "ok"
+ ],
+ "max": 10481104556483630021,
+ "withdraw": {
+  "tx": "0x01b457887a64255f75dc9c04f8d31e18d079bd9b465146403a5e2dc9cdd015c3",
+  "status": "0x1",
+  "gas": 78647
+ },
+ "after": {
+  "cweth": 4989990295,
+  "weth": 10481104656483630021
+ }
+}
