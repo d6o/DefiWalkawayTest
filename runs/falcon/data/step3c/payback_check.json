@@ -1,0 +1,47 @@
+{
+ "0x76470048eba92baf148590cd30d4470bb4bf9177": {
+  "sent": 21,
+  "received_within_3d": [
+   [
+    "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+    "0x501341f595ae91041a39400cbfde29fb6b744f52",
+    7
+   ],
+   [
+    "0xa3cdfc1178dcb45a80cdb869beafbc7445965242",
+    "0xa3cdfc1178dcb45a80cdb869beafbc7445965242",
+    1
+   ]
+  ]
+ },
+ "0x13163dbcbe907b4a2b7b9bea03fd09dda21204c2": {
+  "sent": 13,
+  "received_within_3d": [
+   [
+    "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+    "0x388dff84d76d9d95019bdb960cba23a45a3a67bc",
+    16
+   ],
+   [
+    "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+    "0xe8440b9d12129dbce154167bcb8d07936c54c184",
+    7
+   ]
+  ]
+ },
+ "0xbb202d9981eec1405f9428f8564107eeb80b122f": {
+  "sent": 8,
+  "received_within_3d": [
+   [
+    "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+    "0x401e7c76fc809b3b5cc69a5c41dbb97585f4cfbc",
+    20
+   ],
+   [
+    "0xa3cdfc1178dcb45a80cdb869beafbc7445965242",
+    "0xa3cdfc1178dcb45a80cdb869beafbc7445965242",
+    5
+   ]
+  ]
+ }
+}

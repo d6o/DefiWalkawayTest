@@ -1,0 +1,36 @@
+{
+ "summary": {
+  "address": "0xd3dbb6556a683f4c21e38ba6473d737d6f90417b",
+  "to_block": 26248199,
+  "match": "USDf",
+  "started": "2026-10-25T03:13:33+00:00",
+  "ended": "2026-10-25T03:13:37+00:00",
+  "seconds": 4.5,
+  "log_counts": {
+   "transfer_in": 1,
+   "transfer_out": 0,
+   "1155_single_in": 0,
+   "1155_single_out": 0,
+   "1155_batch_in": 0,
+   "1155_batch_out": 0
+  },
+  "contracts": 1,
+  "rpc_calls_note": "eth_getLogs via LOGS_RPC_URL; eth_call via CALL_RPC_URL (fork)"
+ },
+ "contracts": [
+  {
+   "contract": "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+   "name": "Falcon USD",
+   "symbol": "USDf",
+   "decimals": 18,
+   "balanceOf_raw": 36060310000000000000000,
+   "standard": "ERC-20",
+   "transfers_in": 1,
+   "transfers_out": 0,
+   "first_block": 24345496,
+   "last_block": 24345496,
+   "symbol_matches": true,
+   "symbol_contains": true
+  }
+ ]
+}

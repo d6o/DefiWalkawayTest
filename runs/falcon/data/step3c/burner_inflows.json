@@ -1,0 +1,22 @@
+{
+ "burner": "0x4873f9acff54bdfa97b5f4a7276627dce88c6fdd",
+ "user_burn_self": [
+  false,
+  "0xe2517d3f000000000000000000000000d3dbb6556a683f4c21e38ba6473d737d6f90417b3c11d16cbaffd01df69ce1c404f6340ee057498f5f00246190ea54220576a848"
+ ],
+ "inflow_count": 3,
+ "inflow_sources": [
+  [
+   "0x76ef4e84618785ae375ae66c58728cc6b3a6a0f4",
+   3
+  ]
+ ],
+ "inflow_calls": [
+  [
+   "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+   "0xa9059cbb",
+   true,
+   3
+  ]
+ ]
+}

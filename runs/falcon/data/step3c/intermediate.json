@@ -1,0 +1,146 @@
+{
+ "intermediate": "0x76ef4e84618785ae375ae66c58728cc6b3a6a0f4",
+ "inflows": 115,
+ "sources": [
+  [
+   "0x76470048eba92baf148590cd30d4470bb4bf9177",
+   21
+  ],
+  [
+   "0x13163dbcbe907b4a2b7b9bea03fd09dda21204c2",
+   13
+  ],
+  [
+   "0xbb202d9981eec1405f9428f8564107eeb80b122f",
+   8
+  ],
+  [
+   "0xd76fe1900cbcd5930c51ae7d4bf89dbbfcf25ae8",
+   5
+  ],
+  [
+   "0x162c156a29c17acc0c02ac0cc0ad9b97f1753a24",
+   3
+  ],
+  [
+   "0x6e5f7785b0839fd02a02f26a02b8620d42be657b",
+   2
+  ],
+  [
+   "0xa5c440e9533820c7c4a08e1265b76039ed1c7831",
+   2
+  ],
+  [
+   "0xb8e809afa399b4b7202dc3ef61f8eff17a6c6ab3",
+   2
+  ],
+  [
+   "0xc45c9e0d5e28325790bf10a8f121899a750b012f",
+   2
+  ],
+  [
+   "0x8986d12057d36fe490213807bbf88cb699782b5f",
+   2
+  ],
+  [
+   "0x59369e993f8f822969432a8da49ec287828ea922",
+   2
+  ],
+  [
+   "0xdd0bef00924a72a5901725e75d5b171d6bd7aa03",
+   2
+  ],
+  [
+   "0x4ad538419eb805e2bbc04ecfe6680110cf1e4053",
+   2
+  ],
+  [
+   "0x8ebedf67729e96deb06e7dbd64f6082252877919",
+   2
+  ],
+  [
+   "0x1bf58757f31af88b4c93e5cc9e1c43fdbb298bab",
+   1
+  ],
+  [
+   "0x624f16fa92336b3772cc4adf0e3db36dd431dcc7",
+   1
+  ],
+  [
+   "0xd3f0b60b3315b61b8dda8a1b5edca340255169f9",
+   1
+  ],
+  [
+   "0x5df8af0a92818f2e3d69754c561d84a73eef6547",
+   1
+  ],
+  [
+   "0xc4ff86ca96351c193c34d9bfa1324380a29b1199",
+   1
+  ],
+  [
+   "0x2d1bbb42d0fbb81c31f83248e3d9ff85a3cc6c6c",
+   1
+  ],
+  [
+   "0x0a6b59738f6cc693b9a65798d830664d7904462c",
+   1
+  ],
+  [
+   "0x6a70cbfbd4358aac6c98843995063ab21029acf6",
+   1
+  ],
+  [
+   "0x6d974632db5de0c75ba01e4e6a484c32b786a04f",
+   1
+  ],
+  [
+   "0x300c83ca767ed580aa27005f713e4d0b2d8d9914",
+   1
+  ],
+  [
+   "0xb216985b708047c233476e5434f9cfed1fa74330",
+   1
+  ],
+  [
+   "0xc165fe1646e1ae07a45c4685a98d13f150fe4d59",
+   1
+  ],
+  [
+   "0x2ced59a53785f8aca8531867330a8b86aab0b5d8",
+   1
+  ],
+  [
+   "0xdcd8b0355628dd2b68af6e7909fa4476a0408d87",
+   1
+  ],
+  [
+   "0x5dd3d7d48bc6beb1737c9f7e564a9f5a14b4c9b2",
+   1
+  ],
+  [
+   "0xae63ad93169b1bacf49225d58610b46735a52361",
+   1
+  ]
+ ],
+ "calls": [
+  [
+   "0xfa2b947e",
+   "0xa9059cbb",
+   true,
+   115
+  ]
+ ],
+ "payback": {
+  "USDC->0x76470048eba92baf148590cd30d4470bb4bf9177": [],
+  "USDC->0x13163dbcbe907b4a2b7b9bea03fd09dda21204c2": [],
+  "USDC->0xbb202d9981eec1405f9428f8564107eeb80b122f": [],
+  "USDC->0xd76fe1900cbcd5930c51ae7d4bf89dbbfcf25ae8": [],
+  "USDC->0x162c156a29c17acc0c02ac0cc0ad9b97f1753a24": [],
+  "USDT->0x76470048eba92baf148590cd30d4470bb4bf9177": [],
+  "USDT->0x13163dbcbe907b4a2b7b9bea03fd09dda21204c2": [],
+  "USDT->0xbb202d9981eec1405f9428f8564107eeb80b122f": [],
+  "USDT->0xd76fe1900cbcd5930c51ae7d4bf89dbbfcf25ae8": [],
+  "USDT->0x162c156a29c17acc0c02ac0cc0ad9b97f1753a24": []
+ }
+}
