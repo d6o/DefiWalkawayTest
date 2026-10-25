@@ -1,0 +1,300 @@
+{
+ "0xacbdfb124629aeeecf7144c3da9deaa70dba14b0521f1e43fccb54b60b7dd6e1": {
+  "group": "request 0xd3a86833",
+  "sender": "0x973ddb8ee2c9cc87e853c8d46253840c63951683",
+  "inner": [
+   [
+    "0x973ddb8e",
+    "0xd3a86833",
+    [
+     "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+     64,
+     66,
+     "0x3762346534633732326361346662393565363466"
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "stETH(name)",
+    "ESCROW",
+    "SENDER",
+    1999.393585
+   ]
+  ]
+ },
+ "0xd6cc0f8fb81306efa87e12f2fc6b0699617710b9f7398aaa14ecb51e76e810b8": {
+  "group": "request 0xd3a86833",
+  "sender": "0xfdd882b8d75e32aac06edc0fe577edd8039bcd8c",
+  "inner": [
+   [
+    "0xfdd882b8",
+    "0xd3a86833",
+    [
+     "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+     64,
+     66,
+     "0x3762346534633732326361346662393565363466"
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "stETH(name)",
+    "ESCROW",
+    "SENDER",
+    1.98356
+   ]
+  ]
+ },
+ "0x169ee0377b19f93f27f2b816c0932126aa60195c82dadc5e10404e9991beac8b": {
+  "group": "request 0xd3a86833",
+  "sender": "0xf7462251c14d2fb83c7ab96367a7985423c83010",
+  "inner": [
+   [
+    "0xf7462251",
+    "0xd3a86833",
+    [
+     "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+     64,
+     66,
+     "0x3762346534633732326361346662393565363466"
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "0xa35b",
+    "ESCROW",
+    "SENDER",
+    1447.069124
+   ]
+  ]
+ },
+ "0x4885bbf364289e2565bdf35441f91a693dacc9a8efd3a4a8865754913f6b8d50": {
+  "group": "claim 0xc5a67b01",
+  "sender": "0x973ddb8ee2c9cc87e853c8d46253840c63951683",
+  "inner": [
+   [
+    "0x973ddb8e",
+    "0xc5a67b01",
+    [
+     "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+     4080000000000000000000,
+     96,
+     66
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "SENDER",
+    "ESCROW",
+    4080.0
+   ]
+  ]
+ },
+ "0xa71bcffef181c17398a8392a5229e01318bd5bb0b5291fcf9041d13e02aa2f27": {
+  "group": "claim 0xc5a67b01",
+  "sender": "0x0f2afe97e96128d321edde4a0d23ab9c49630359",
+  "inner": [
+   [
+    "0x0f2afe97",
+    "0xc5a67b01",
+    [
+     "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+     750395274882835451,
+     96,
+     0
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "SENDER",
+    "ESCROW",
+    0.750395
+   ]
+  ]
+ },
+ "0x1544b57ec8b089ffc2c8946c404fc4a899aba9c3a034d8c18097729490836a87": {
+  "group": "claim 0xc5a67b01",
+  "sender": "0xda4c69826b9a7503c472cf4732cad1e00b7627ea",
+  "inner": [
+   [
+    "0xda4c6982",
+    "0xc5a67b01",
+    [
+     "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+     10954500000000000000,
+     96,
+     66
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "SENDER",
+    "ESCROW",
+    10.9545
+   ]
+  ]
+ },
+ "0x0b6974cfabde715eabced150a6b16babf08040fd08271138423130f30e797576": {
+  "group": "operator via 0xcbcd",
+  "sender": "0xe907915e674a347eb60dc0df2bb5a2b650b2cc9d",
+  "inner": [
+   [
+    "0xcbcdd778",
+    "0xa2ccd14f",
+    [
+     "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+     1858,
+     1099283001026708055,
+     1082072259837154371
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "ESCROW",
+    "0x00000000",
+    1260.3525
+   ],
+   [
+    "0xa35b",
+    "0xc66830e2",
+    "ESCROW",
+    1240.621796
+   ]
+  ]
+ },
+ "0x57f65b7acc301d2f59951dfdc2e9fec1a718d2daaa3e3a36bbc1c6ff92692514": {
+  "group": "operator via 0xcbcd",
+  "sender": "0xa85b57bd7433dcc4679d638b87d80f155a689fc1",
+  "inner": [
+   [
+    "0xcbcdd778",
+    "0xa2ccd14f",
+    [
+     "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+     7159,
+     999900000000000000,
+     1082340885221692138
+    ]
+   ],
+   [
+    "0xc66830e2",
+    "0xe7637288",
+    []
+   ],
+   [
+    "ETH",
+    "0xc66830e2",
+    "ESCROW",
+    4937.766758
+   ],
+   [
+    "ETH",
+    "ESCROW",
+    "0x0ecde3f4",
+    4937.766758
+   ],
+   [
+    "0x62de59c0",
+    "0x6f7cbd25",
+    [
+     4937766758449354677094
+    ]
+   ],
+   [
+    "ETH",
+    "ESCROW",
+    "0xd322a490",
+    4937.766758
+   ],
+   [
+    "ETH",
+    "0xd322a490",
+    "0xc02aaa39",
+    4937.766758
+   ],
+   [
+    "0xcbcdd778",
+    "0xa2ccd14f",
+    [
+     "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+     1362,
+     1099476218914980060,
+     1082340885221692138
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "ESCROW",
+    "0x00000000",
+    4565.791945
+   ],
+   [
+    "0xc02aaa39",
+    "0xd322a490",
+    "0x4d5f47fa",
+    4937.766758
+   ],
+   [
+    "0x4d5f47fa",
+    "0x00000000",
+    "ESCROW",
+    4937.789375
+   ],
+   [
+    "rsETH",
+    "ESCROW",
+    "0x00000000",
+    10.9142
+   ],
+   [
+    "0xa35b",
+    "0xc66830e2",
+    "ESCROW",
+    10.74314
+   ]
+  ]
+ },
+ "0x45447ebe02495116729c1366ee1ad391b485cdb4b558df4b2f246849c8124e30": {
+  "group": "operator via 0xcbcd",
+  "sender": "0xe907915e674a347eb60dc0df2bb5a2b650b2cc9d",
+  "inner": [
+   [
+    "0xcbcdd778",
+    "0xa2ccd14f",
+    [
+     "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+     1864,
+     1099671163596752233,
+     1082515574627425623
+    ]
+   ]
+  ],
+  "moves": [
+   [
+    "rsETH",
+    "ESCROW",
+    "0x00000000",
+    1480.9545
+   ],
+   [
+    "0xa35b",
+    "0xc66830e2",
+    "ESCROW",
+    1457.852743
+   ]
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "fork_block": 26247337,
+ "operator_tx": "0x45447ebe02495116729c1366ee1ad391b485cdb4b558df4b2f246849c8124e30",
+ "claim_tx": "0x169ee0377b19f93f27f2b816c0932126aa60195c82dadc5e10404e9991beac8b",
+ "holder": "0xf7462251c14d2fb83c7ab96367a7985423c83010",
+ "A": [
+  false,
+  "0x321116dc"
+ ],
+ "B_random": [
+  false,
+  "0xa178e9e5"
+ ],
+ "B_operator_contract": [
+  true,
+  "ok"
+ ],
+ "B_random_outer": [
+  true,
+  "ok"
+ ],
+ "C": "0x1",
+ "D": {
+  "status": "0x1",
+  "received": 1447069124359986455239
+ },
+ "tamper_test": {
+  "random_original": true,
+  "random_modified": [
+   false,
+   "Error(string): \"GS026\""
+  ],
+  "operator_modified": [
+   false,
+   "Error(string): \"GS026\""
+  ]
+ }
+}

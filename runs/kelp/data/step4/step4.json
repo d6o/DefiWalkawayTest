@@ -1,0 +1,20 @@
+{
+ "snapshot": "0x0",
+ "rseth": 10360754000000000000,
+ "request": {
+  "tx": "0x55673b61c4936fec3974735b2868d601e0bef957d7f602ba76180ce4045117a6",
+  "status": "0x1"
+ },
+ "claim_now": [
+  false,
+  "0x321116dc"
+ ],
+ "claim_7d": [
+  false,
+  "0x321116dc"
+ ],
+ "after": {
+  "rseth": 0,
+  "steth": 0
+ }
+}

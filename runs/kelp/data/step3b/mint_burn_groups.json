@@ -1,0 +1,127 @@
+[
+ {
+  "kind": "burn",
+  "to": "0xcbcdd778aa25476f203814214dd3e9b9c46829a1",
+  "selector": "0x6a761202",
+  "txs": [
+   "0x0b6974cfabde715eabced150a6b16babf08040fd08271138423130f30e797576",
+   "0x3c8e4e2fd8884233140be276737713b0d553f350488663797150a2855d0b95c4",
+   "0x45447ebe02495116729c1366ee1ad391b485cdb4b558df4b2f246849c8124e30",
+   "0x57f65b7acc301d2f59951dfdc2e9fec1a718d2daaa3e3a36bbc1c6ff92692514"
+  ],
+  "senders": [
+   "0xa85b57bd7433dcc4679d638b87d80f155a689fc1",
+   "0xe907915e674a347eb60dc0df2bb5a2b650b2cc9d"
+  ],
+  "holders": [
+   "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16"
+  ],
+  "amount": 8578.927645486936,
+  "self": 0
+ },
+ {
+  "kind": "mint",
+  "to": "0x349a73444b1a310bae67ef67973022020d70020d",
+  "selector": "0x51ce226a",
+  "txs": [
+   "0x08a89eed80002c268dc4e52b8678e9056b34a9ae7230dc7d2dcaf202fa2e09be",
+   "0x75d9351e1cd2dc719ebb0d53260148fc18b2571b6929cb0082c4d4d29c89aac9",
+   "0x9614651ecbb5becae2ded59a5e3d5ad7d4ae9454b53773105a52433db7a6e4cb",
+   "0xb5295262a713a798d2e3ffa055e1d61bd6d564ee949b39affa82472bb4ce78dd",
+   "0xbe5e4ffb11a9234078edb35c4d126ebbd01491ec76e1a7ebcd7a0efc015e1830",
+   "0xc99d8e589bb79a418bc0b7097407e5fbe46da2608393620411796562d6036c50",
+   "0xcbdaf5cd8cb15e0892755d2cce05fe8dca8678152e8b0b944bb736621a4fc430",
+   "0xdd18d77e4ccd14116e7db20e3aab4fe4c3de937d040ddcaefd85dece3eb3e70e"
+  ],
+  "senders": [
+   "0xf2099c4783921f44ac988b67e743daefd4a00efd"
+  ],
+  "holders": [
+   "0x322f2d4bfe8280eeb713b7c51eeba42590c36f78"
+  ],
+  "amount": 8.814880153653066,
+  "self": 0
+ },
+ {
+  "kind": "mint",
+  "to": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+  "selector": "0xe21fd0e9",
+  "txs": [
+   "0x2712ef3bd737e274cb0838c8bb53686d42bd3ad69e8b18ae0acd5737c1647722",
+   "0x67e1f3eb1e2c453197f31225e437b1f7a310bf0366759d312d2edd13527a7b22"
+  ],
+  "senders": [
+   "0xda4c69826b9a7503c472cf4732cad1e00b7627ea",
+   "0xf1c7e19a34cad5c49a79dcdea2406668fb1dcb8b"
+  ],
+  "holders": [
+   "0x8f10b468b06c6fd214b65f87778827f7d113f996"
+  ],
+  "amount": 15.248924436567382,
+  "self": 0
+ },
+ {
+  "kind": "mint",
+  "to": "0x50d3865a63d52c0a54e4679949647ea752107390",
+  "selector": "0x00000000",
+  "txs": [
+   "0x4f39dcb324fcf9e38a0503729f83215fda4aca13175a465175354e75e24f8a5d"
+  ],
+  "senders": [
+   "0x7bd7cae2d2ac926fda8fe0a7ed98e852e2b48730"
+  ],
+  "holders": [
+   "0x50d3865a63d52c0a54e4679949647ea752107390"
+  ],
+  "amount": 12.870440352770244,
+  "self": 0
+ },
+ {
+  "kind": "mint",
+  "to": "0x0341d2c2ce65b62af8887e905245b8cfea2a3b97",
+  "selector": "0x46f45b8d",
+  "txs": [
+   "0xc7809aed33230a4e44261ab834f3ea7d39f477ba9bda521b57d03fa070117d7f"
+  ],
+  "senders": [
+   "0x0d5398951592b55543319b5ecf9fef7aa1e3a6cc"
+  ],
+  "holders": [
+   "0xbf28c9fcb12a97441488f9c68faa49811a98688a"
+  ],
+  "amount": 0.008735558674466312,
+  "self": 0
+ },
+ {
+  "kind": "mint",
+  "to": "0x036676389e48133b63a802f8635ad39e752d375d",
+  "selector": "0xc3ae1766",
+  "txs": [
+   "0xa6b65878b60075b3b65932af239dc8444b89b6370b42f482290aabfa0a866b93"
+  ],
+  "senders": [
+   "0xd720f40d0856892c66177d81c9d46d4ad8eb0006"
+  ],
+  "holders": [
+   "0xd720f40d0856892c66177d81c9d46d4ad8eb0006"
+  ],
+  "amount": 0.000184751969549719,
+  "self": 1
+ },
+ {
+  "kind": "mint",
+  "to": "0x036676389e48133b63a802f8635ad39e752d375d",
+  "selector": "0x72c51c0b",
+  "txs": [
+   "0x3f86219c727a6e870c3abbeea396ccc38c836eb7db2274bd7f7787a9448935db"
+  ],
+  "senders": [
+   "0x8759432ab70e526870c4b96b68946cf0984c4af9"
+  ],
+  "holders": [
+   "0x8759432ab70e526870c4b96b68946cf0984c4af9"
+  ],
+  "amount": 0.007020035715462051,
+  "self": 1
+ }
+]
