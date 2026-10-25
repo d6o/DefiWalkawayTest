@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 15 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid), same method.
+**Status:** 16 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid, Pendle); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid, Pendle), same method.
 
 ## Summary
 
@@ -27,6 +27,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 15 | [Falcon Finance (USDf)](runs/falcon/2026-10-22-T0-all-removed.md) | `0xd3db…417b` | 36,060 USDf (0 ETH, never sent a tx) | 🔴 **Blocked** | **No on-chain exit:** holders can't burn (permission); every USDf ever burned (1.95B) was sent by plain transfer to an operator EOA and burned by another EOA; nothing visible comes back on-chain | 1,727,683,714 USDf (all of it) |
 | 16 | [Kelp (rsETH)](runs/kelp/2026-10-22-T0-all-removed.md) | `0xcbe6…1054` | 10.36 rsETH | 🔴 **Blocked** | **D4:** request → unlock → claim; only `0xcbcd…` can unlock, and only with data it has authorized (anyone can relay; changing one value fails for everyone) | 367,430 rsETH (all of it) |
 | 17 | [Fluid (fwstETH)](runs/fluid/2026-10-22-T0-all-removed.md) | `0xb7b8…aa9a` | 0.00796 fwstETH | ✅ **Exits cleanly**: one `redeem` → 0.00827 wstETH | Nothing; liquidity source held 42,455 wstETH | None found (test position tiny; Fluid's collateral side not tested) |
+| 18 | [Pendle (PT-reUSD-10DEC2026)](runs/pendle/2026-10-22-T0-all-removed.md) | `0xc1de…b98e` | 103,889.86 PT | 🟡 **Harder but possible, time-locked**: nothing until 10 Dec 2026, then 93,709 reUSD | No permission, **only time** (49 days); unnamed multi-step exit with traps | None found |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -203,6 +204,14 @@ word list could name, and it works in one step.
 - Our user: 0.00796 fwstETH → 0.00827 wstETH. The wstETH comes from a shared liquidity contract holding 42,455 wstETH.
 - Caveat: the rule picked a small vault (most of Fluid's wstETH is collateral elsewhere); the test position was tiny.
 
+## Pendle (PT-reUSD-10DEC2026) — 🟡 Harder but possible, time-locked
+
+- **A time lock, not a permission:** redeeming PT alone pays **0 until 10 Dec 2026** (day 48: 0; day 49: full), then
+  103,889.86 PT → 93,709.36 SY → 93,709.36 reUSD, all by the holder. Before maturity, every observed redemption paired PT with YT.
+- **Unnamed, multi-step, with traps:** the PT contract has no nameable function; each step is "send tokens to a contract,
+  then call it" (two txs for a plain wallet); a PT-only redeem before maturity **succeeds and pays nothing**; the final call
+  needs an exact 5th argument. All found by trial on the fork and recorded as corrections.
+
 ## Findings across protocols
 
 1. **Six D4 dependencies, six designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
@@ -213,10 +222,12 @@ word list could name, and it works in one step.
    holder burn for ETH directly.
    **A familiar interface isn't a permissionless exit:** Maple's vault has the same `withdraw`/`redeem` as Morpho and
    Sky, but they're disabled.
-2. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
+2. **A time lock is different from a permission.** Pendle's PT can't be redeemed alone before its maturity date, but
+   from that date on the holder exits without anyone else. Nothing can block it; nothing can speed it up.
+3. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
    without the permissioned batch. Aave V3 can be fully exited by anyone with the capital to repay, but our user,
    with their own funds, only gets a **partial exit**, and working that out was very hard without assistance.
-3. **Knowing what to do takes expert work at T0.** With only a node, users have to:
+4. **Knowing what to do takes expert work at T0.** With only a node, users have to:
    - find their positions in a log scan full of spam and address-poisoning tokens (77 of 78 contracts for the Lido user);
    - work without function names: the only nameable exit function across three protocols was `withdraw` (Aave, Spark);
    - learn the exit from **other users' behavior** (log analysis, call traces);
@@ -224,10 +235,10 @@ word list could name, and it works in one step.
 
    The chain had all the information, but a normal user couldn't realistically assemble it without expert tooling or
    AI assistance.
-4. **The user's node must be an archive node** with full log history, a complete tx index, and debug tracing.
-5. **Small traps a frontend normally hides:** Lido's 1,000 stETH per-claim limit (found only by probing), and Aave's
+5. **The user's node must be an archive node** with full log history, a complete tx index, and debug tracing.
+6. **Small traps a frontend normally hides:** Lido's 1,000 stETH per-claim limit (found only by probing), and Aave's
    withdrawal cap that shrinks every second (a simulated amount can fail moments later).
-6. **Hosted signature databases (T2) shortcut a lot:** in the Aave run, one leaked a revert reason instantly
+7. **Hosted signature databases (T2) shortcut a lot:** in the Aave run, one leaked a revert reason instantly
    (not used at T0).
 
 ## Effort per run (raw; SPEC open questions)
@@ -249,3 +260,4 @@ word list could name, and it works in one step.
 | Falcon | ~2.5 min | ~10 min | ~9 min | |
 | Kelp | ~5 min | ~14 min | ~20 min | |
 | Fluid | ~1 min | ~6 min | ~3 min | |
+| Pendle | ~4 min | ~15 min | ~12 min | Includes a fork restart after a wrong probe |

@@ -1,0 +1,212 @@
+[
+ [
+  271117634.908772,
+  "0xecfafdc7741323a945a163ed068b5a3c43483957",
+  "PT reUSD 10DEC2026",
+  "PT-reUSD-10DEC2026",
+  88
+ ],
+ [
+  271117634.908772,
+  "0xa8bd3b21291ace53927b35563fc80615919e63d7",
+  "YT reUSD 10DEC2026",
+  "YT-reUSD-10DEC2026",
+  88
+ ],
+ [
+  251511105.90298498,
+  "0x9487bd5a3b16ecb5f3184453e3ee75b800141648",
+  "SY reUSD",
+  "SY-reUSD",
+  184
+ ],
+ [
+  27267331.682412393,
+  "0x557ab1e003951a73c12d16f0fea8490e39c33c35",
+  "Savings reUSD",
+  "sreUSD",
+  3
+ ],
+ [
+  20895015.54454977,
+  "0xddc0f880ff6e4e22e4b74632fbb43ce4df6ccc5a",
+  "Re Protocol reUSDe",
+  "reUSDe",
+  8
+ ],
+ [
+  16847475.210001957,
+  "0xfd9aa51f530369ff5024bc3f6d6f3a00a789f94a",
+  "YT reUSDe 10DEC2026",
+  "YT-reUSDe-10DEC2026",
+  5
+ ],
+ [
+  16847475.210001957,
+  "0x2ae4f59e500b6ddeb88c480edf277eda54a00205",
+  "PT reUSDe 10DEC2026",
+  "PT-reUSDe-10DEC2026",
+  5
+ ],
+ [
+  15588584.382439144,
+  "0xc522a6606bba746d7960404f22a3db936b6f4f50",
+  "reUSD/scrvUSD",
+  "reusdscrv",
+  14
+ ],
+ [
+  15500196.05634896,
+  "0xaf01d68714e7ea67f43f08b5947e367126b889b1",
+  "Curve.fi reusdscrv Gauge Deposit",
+  "reusdscrv-gauge",
+  9
+ ],
+ [
+  12415430.09146722,
+  "0x47dfd0c8eee949748c1d5cb6b695a4aba5fe7379",
+  "SY reUSDe",
+  "SY-reUSDe",
+  14
+ ],
+ [
+  9621228.898876179,
+  "0x20f1c81b123ffcd19b5469f0eb2c4fd37983dbbc",
+  "reUSD/scrvUSD Convex Deposit",
+  "cvxreusdscrv",
+  9
+ ],
+ [
+  8019366.842085667,
+  "0xc5f79c63715cc7f3d65818b6b7b585eb5b00aa74",
+  "Stake DAO reUSD/scrvUSD Vault",
+  "sd-reusdscrv-vault",
+  2
+ ],
+ [
+  6977272.800698424,
+  "0x48d670d189b4b48757992d36897bca6e3f889040",
+  "reUSD/sDola",
+  "reusdsdola",
+  5
+ ],
+ [
+  6972753.538925111,
+  "0xcb25249bfa8cdb6012a75070e5c2885151368bef",
+  "Curve.fi reusdsdola Gauge Deposit",
+  "reusdsdola-gauge",
+  3
+ ],
+ [
+  3725511.6962695764,
+  "0xde380abfb5a7117b92a868ebe828e560bebd1ecc",
+  "Stake DAO reUSD/sDola Vault",
+  "sd-reusdsdola-vault",
+  1
+ ],
+ [
+  3066925.209149383,
+  "0x4a8cf354f7cd3c51ffad5d90b8d14ef3a007fd6f",
+  "reUSD/sDola Convex Deposit",
+  "cvxreusdsdola",
+  2
+ ],
+ [
+  2915936.74837721,
+  "0xed785af60bed688baa8990cd5c4166221599a441",
+  "reUSD/sfrxUSD",
+  "reusdsfrx",
+  3
+ ],
+ [
+  2913290.2646045773,
+  "0x5c0b03914f68f2717d779a0211fd98c2cc45a4dd",
+  "Curve.fi reusdsfrx Gauge Deposit",
+  "reusdsfrx-gauge",
+  5
+ ],
+ [
+  2403833.1638284214,
+  "0x7c439df9ade8831180ea4d546c1e910d4ba71a86",
+  "Curve reUSD-sDOLA Factory yVault",
+  "yvCurve-reUSD-sDOLA-f",
+  2
+ ],
+ [
+  2022083.6448205756,
+  "0xb0ef04ace97d350e24efa5139d2590d26a61a8dc",
+  "reUSD/fxUSD",
+  "reusdfxusd",
+  2
+ ],
+ [
+  2022062.5869923767,
+  "0xf84657ca6db485ea38c63ca96dc396c2b3c6fdcc",
+  "Curve.fi reusdfxusd Gauge Deposit",
+  "reusdfxusd-gauge",
+  10
+ ],
+ [
+  2004262.619619799,
+  "0xbb4259ce230ffa2858528796b3ee46cb5c0c9ed8",
+  "reUSD/fxUSD Convex Deposit",
+  "cvxreusdfxusd",
+  10
+ ],
+ [
+  2004260.2229019392,
+  "0x8d9186fa822624bad50a5cb2545048cb26b4e65e",
+  "reUSD/fxUSD Gauge",
+  "reusdfxusd-gauge",
+  10
+ ],
+ [
+  1860667.6935004662,
+  "0x47fdb72ccc93bc9568a82917dff767fdbb4f2f5f",
+  "reUSD/sfrxUSD Convex Deposit",
+  "cvxreusdsfrx",
+  3
+ ],
+ [
+  954392.8731875339,
+  "0x77cef0efec7c62b9979b1f5eaf289591c213dcc5",
+  "Stake DAO reUSD/sfrxUSD Vault",
+  "sd-reusdsfrx-vault",
+  1
+ ],
+ [
+  916554.1253437874,
+  "0xc6ac08424ee6d1373f03611b96f5da849594b6d8",
+  "sUSG/reUSD",
+  "sUSDreUSD",
+  2
+ ],
+ [
+  874803.0776673142,
+  "0xc58fb163359b8e53c628868ba6c9335d1a6fd16b",
+  "Curve.fi sUSDreUSD Gauge Deposit",
+  "sUSDreUSD-gauge",
+  2
+ ],
+ [
+  789056.5835246095,
+  "0xd4f41ef4127f07335024278433f928b6bab023d4",
+  "Stake DAO sUSG/reUSD Vault",
+  "sd-sUSDreUSD-vault",
+  1
+ ],
+ [
+  623172.5964685148,
+  "0x4abe78c1a7486be1dd849c46facaa884dfbb69bb",
+  "sUSG/reUSD Convex Deposit",
+  "cvxsUSDreUSD",
+  1
+ ],
+ [
+  18.759780611025565,
+  "0x01fe8a0d76d056393d24cc1402f7f852cdafbad0",
+  "Senior reUSDe",
+  "sr-reUSDe",
+  2
+ ]
+]

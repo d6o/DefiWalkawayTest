@@ -1,0 +1,120 @@
+{
+ "note": "first attempt (step 4 v1) measured call success, not output: redeem returned 0 SY and left the PT inside the YT contract; fork restarted",
+ "pt": 103889856165,
+ "day0": [
+  true,
+  0
+ ],
+ "probes": [
+  [
+   7,
+   "2026-10-29",
+   true,
+   0
+  ],
+  [
+   14,
+   "2026-11-05",
+   true,
+   0
+  ],
+  [
+   21,
+   "2026-11-12",
+   true,
+   0
+  ],
+  [
+   28,
+   "2026-11-19",
+   true,
+   0
+  ],
+  [
+   35,
+   "2026-11-26",
+   true,
+   0
+  ],
+  [
+   42,
+   "2026-12-03",
+   true,
+   0
+  ],
+  [
+   49,
+   "2026-12-10",
+   true,
+   93709364513606322707391
+  ],
+  [
+   56,
+   "2026-12-17",
+   true,
+   93709364513606322707391
+  ],
+  [
+   63,
+   "2026-12-24",
+   true,
+   93709364513606322707391
+  ],
+  [
+   70,
+   "2026-12-31",
+   true,
+   93709364513606322707391
+  ],
+  [
+   77,
+   "2027-01-07",
+   true,
+   93709364513606322707391
+  ],
+  [
+   84,
+   "2027-01-14",
+   true,
+   93709364513606322707391
+  ]
+ ],
+ "first_week_with_payout": 49,
+ "first_day": 49,
+ "first_date": "2026-12-10",
+ "exit": {
+  "date": "2026-12-10",
+  "send_pt": [
+   "0x49d66d6f57c82aec3b9200ec8a8691e9eb1c48806955097f36e74ee9849ce8f0",
+   "0x1"
+  ],
+  "redeem": [
+   "0x03a3006ff0c168f53bcc658a9fa779d2fefd8cc25331cdc88756008c56cb88ec",
+   "0x1"
+  ],
+  "sy": 93709364513606322707391,
+  "sy_to_underlying": {
+   "send_sy": [
+    "0x72253c4d50735d3424857ce46dfdd7182075d9681c665a59455027b3fa38e385",
+    "0x1"
+   ],
+   "redeem": [
+    "0x4fbd6f6a558907dfa620be623c6c98560ee0e2de30e07be2c187d2b5ea5b5310",
+    "0x0"
+   ],
+   "received": 0,
+   "symbol": "reUSD"
+  },
+  "underlying": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+  "underlying_symbol": "reUSD",
+  "received": 0,
+  "sy_to_underlying_fixed": {
+   "tx": "0x94dd1c50e20e43b7bb9a95514788d62a514999dc42b0c147df9c27f1272bc9de",
+   "status": "0x1",
+   "received": 93709364513606322707391,
+   "symbol": "reUSD",
+   "note": "4-arg call reverted (missing 5th arg); 5th arg = 1 as in the observed traces"
+  }
+ },
+ "first_sy_redeem_attempt": "direct 0x769f8e5d without sending SY first: reverted (no data)"
+}
