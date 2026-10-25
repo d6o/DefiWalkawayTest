@@ -1,0 +1,18 @@
+{
+ "holder": "0x5313b39bf226ced2332c81eb97bb28c6fd50d1a3",
+ "reth": 5670459773069714024394,
+ "reth_contract_eth": 3138737067622703154258,
+ "burn_all": [
+  false,
+  "Error(string): \"Insufficient ETH balance for exchange\""
+ ],
+ "max_burn": 2672957742840508667454,
+ "max_plus1": "Error(string): \"Insufficient ETH balance for exchange\"",
+ "big_burn_eth_moves": [
+  [
+   "0xae78736c",
+   "0x5313b39b",
+   3138.7371
+  ]
+ ]
+}

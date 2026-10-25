@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 9 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap), same method.
+**Status:** 10 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool), same method.
 
 ## Summary
 
@@ -21,6 +21,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 9 | [Ethena (USDe)](runs/ethena/2026-10-22-T0-all-removed.md) | `0xa29e…4ff5` | 191,359 USDe | 🔴 **Blocked** | **D4:** redemption can only be submitted by holders of an access-control role (20 addresses that week); the USDe holder can't submit their own | 4,655,090,585 USDe (all of it) |
 | 10 | [Maple (Syrup USDC)](runs/maple/2026-10-22-T0-all-removed.md) | `0x90eb…9c8c` | 336,381 syrupUSDC | 🔴 **Blocked** | **D4:** withdrawals are requests that only a "redeemer" can process ("WM:NOT_REDEEMER"); one address processed all 152 that week | 872,764,779 syrupUSDC (all of it) |
 | 11 | [Uniswap (V3 positions)](runs/uniswap/2026-10-22-T0-all-removed.md) | `0xda94…8514` | 3 position NFTs (1 with liquidity) | 🟡 **Harder but possible**: full exit (3,666 PYUSD + 4,116 USDC; NFTs burned) | Nothing permissioned; the exit functions are unnamed and the amount had to be rebuilt from the position's event history | None found |
+| 12 | [Rocket Pool (rETH)](runs/rocketpool/2026-10-22-T0-all-removed.md) | `0x85f3…d5ce` | 419.29 rETH | ✅ **Exits cleanly**: one `burn` → 492.36 ETH, sent by the holder | Nothing permissioned. Liquidity limit: only the ETH in the rETH contract (3,631 ETH ≈ 1.2% of supply at the fork block) | None found |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -145,11 +146,24 @@ word list could name, and it works in one step.
 - **Our user:** two positions already empty; the third returned 3,665.69 PYUSD + 4,115.86 USDC; all 3 NFTs burned.
   No privileged actor anywhere.
 
+## Rocket Pool (rETH) — ✅ Exits cleanly
+
+- **One call, by the holder:** `burn(uint256)` on rETH (named by the fixed list) → ETH from the rETH contract, ~1.174 ETH
+  per rETH. 44 holders did exactly this in the observed week. Our user: 419.29 rETH → 492.36 ETH.
+- **Liquidity-limited:** a burn can only take the ETH the rETH contract holds (3,631 ETH at the fork block, ~1.2% of the
+  309k rETH supply). The largest wallet holder could burn only ~47% of their rETH ("Insufficient ETH balance for
+  exchange"). A capital-type limit, not a permission.
+- **The staking contrast:** Lido and ether.fi pay out only after permissioned batches; Rocket Pool lets any holder exit in
+  one call, as far as the ETH on hand goes.
+- 8 phishing tokens imitating "Rocket Pool" sat in this single wallet's history.
+
 ## Findings across protocols
 
 1. **Four D4 dependencies, four designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
    produce (Lido: send; ether.fi: approve, 3 of 3). Ethena has no queue: the redemption itself can only be submitted by
-   role holders. Maple queues requests that only one "redeemer" processes. Morpho and Sky exit in one call.
+   role holders. Maple queues requests that only one "redeemer" processes. Morpho, Sky, and Rocket Pool exit in one call (liquidity permitting).
+   **Three liquid staking tokens, two designs:** Lido and ether.fi need permissioned batches; Rocket Pool lets any
+   holder burn for ETH directly.
    **A familiar interface isn't a permissionless exit:** Maple's vault has the same `withdraw`/`redeem` as Morpho and
    Sky, but they're disabled.
 2. **A dependency is different from a capital limit.** Lido can't be exited by anyone, with any amount of money,
@@ -182,3 +196,4 @@ word list could name, and it works in one step.
 | Ethena | ~20 min | ~11 min | 24 min | Discovery for a very busy wallet dominated |
 | Maple | ~1.5 min | ~10 min | 3 min | |
 | Uniswap | ~4.5 min | ~11 min | 5.5 min | |
+| Rocket Pool | ~2 min | ~10 min | 3.5 min | |

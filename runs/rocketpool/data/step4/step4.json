@@ -1,0 +1,20 @@
+{
+ "reth": 419292407534986490214,
+ "sim_all": [
+  true,
+  "ok"
+ ],
+ "sim_1 rETH": [
+  true,
+  "ok"
+ ],
+ "max_burn": 419292407534986490214,
+ "snapshot": "0x0",
+ "burn": {
+  "tx": "0x77e431e59c2b1a7eb0de12c5a8dc5ed511ac7083a860a32e56a23a6f053ff898",
+  "status": "0x1",
+  "eth_received": 492356688102477617500,
+  "gas_cost": 22502583425745,
+  "reth_after": 0
+ }
+}
