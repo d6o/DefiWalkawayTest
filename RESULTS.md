@@ -3,8 +3,8 @@
 Fork block **26,248,199** (2026-10-22 12:37:23 UTC) for every protocol. Method: [`SPEC.md`](SPEC.md).
 Each row links to the full run log, where every claim is backed by a query, transaction, or trace.
 
-**Status:** 14 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp); Binance staked ETH paused; EigenCloud not started.
-Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp), same method.
+**Status:** 15 protocols done (Lido, Aave V3, Spark, Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid); Binance staked ETH paused; EigenCloud not started.
+Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in DefiLlama-ranking order (Morpho, Sky, ether.fi, Ethena, Maple, Uniswap, Rocket Pool, Compound, Curve, Falcon, Kelp, Fluid), same method.
 
 ## Summary
 
@@ -26,6 +26,7 @@ Protocols #6+ are beyond the top-5 rule (SPEC §7) and were added by hand in Def
 | 14 | [Curve (crvUSD/USDT pool)](runs/curve/2026-10-22-T0-all-removed.md) | `0x1e18…4604` | 0.00195 LP (dust; ~83% of LP sits in two contracts) | 🟡 **Harder but possible**: one call → USDT + crvUSD; same call works at 95–13,890 LP | Nothing permissioned; the exit function can't be named at T0 (learned from traces) | None found |
 | 15 | [Falcon Finance (USDf)](runs/falcon/2026-10-22-T0-all-removed.md) | `0xd3db…417b` | 36,060 USDf (0 ETH, never sent a tx) | 🔴 **Blocked** | **No on-chain exit:** holders can't burn (permission); every USDf ever burned (1.95B) was sent by plain transfer to an operator EOA and burned by another EOA; nothing visible comes back on-chain | 1,727,683,714 USDf (all of it) |
 | 16 | [Kelp (rsETH)](runs/kelp/2026-10-22-T0-all-removed.md) | `0xcbe6…1054` | 10.36 rsETH | 🔴 **Blocked** | **D4:** request → unlock → claim; only `0xcbcd…` can unlock, and only with data it has authorized (anyone can relay; changing one value fails for everyone) | 367,430 rsETH (all of it) |
+| 17 | [Fluid (fwstETH)](runs/fluid/2026-10-22-T0-all-removed.md) | `0xb7b8…aa9a` | 0.00796 fwstETH | ✅ **Exits cleanly**: one `redeem` → 0.00827 wstETH | Nothing; liquidity source held 42,455 wstETH | None found (test position tiny; Fluid's collateral side not tested) |
 
 Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes nothing in either run: neither T0 run used them.
 
@@ -196,12 +197,18 @@ word list could name, and it works in one step.
   **relay** the operator's tx, but changing one value fails for everyone ("GS026") → authorization is **signed data**.
 - **Our user:** request ✅ (10.36 rsETH in), claim ❌ now and after 7 days → 0 rsETH, 0 stETH.
 
+## Fluid (fwstETH) — ✅ Exits cleanly
+
+- ERC-4626 vault, not a proxy; the fixed list names `redeem`/`withdraw`; holders exit in one call themselves.
+- Our user: 0.00796 fwstETH → 0.00827 wstETH. The wstETH comes from a shared liquidity contract holding 42,455 wstETH.
+- Caveat: the rule picked a small vault (most of Fluid's wstETH is collateral elsewhere); the test position was tiny.
+
 ## Findings across protocols
 
 1. **Six D4 dependencies, six designs.** Lido and ether.fi fund withdrawals through batches only a few actors can
    produce (Lido: send; ether.fi: approve, 3 of 3). Ethena has no queue: the redemption itself can only be submitted by
    role holders. Maple queues requests that only one "redeemer" processes. Falcon has no on-chain redemption at all: holders
-   send USDf to an operator wallet. Kelp unlocks claims only with data signed for an operator contract. Morpho, Sky, Rocket Pool, and Compound exit in one call (liquidity permitting).
+   send USDf to an operator wallet. Kelp unlocks claims only with data signed for an operator contract. Morpho, Sky, Rocket Pool, Compound, and Fluid exit in one call (liquidity permitting).
    **Three liquid staking tokens, two designs:** Lido and ether.fi need permissioned batches; Rocket Pool lets any
    holder burn for ETH directly.
    **A familiar interface isn't a permissionless exit:** Maple's vault has the same `withdraw`/`redeem` as Morpho and
@@ -241,3 +248,4 @@ word list could name, and it works in one step.
 | Curve | ~30s | ~8 min | 2 min | |
 | Falcon | ~2.5 min | ~10 min | ~9 min | |
 | Kelp | ~5 min | ~14 min | ~20 min | |
+| Fluid | ~1 min | ~6 min | ~3 min | |

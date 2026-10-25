@@ -1,0 +1,12 @@
+{
+ "snapshot": "0x0",
+ "shares": 7963872662638098,
+ "redeem": {
+  "tx": "0xcdbbf9238a1cc3bc226b9fbc9acb55577b552b5962991255927a9d8c349c2cf8",
+  "status": "0x1"
+ },
+ "after": {
+  "shares": 0,
+  "wsteth": 8270513532059471
+ }
+}

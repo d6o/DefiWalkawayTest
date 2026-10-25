@@ -1,0 +1,58 @@
+[
+ [
+  "Fluid Tether USD",
+  "fUSDT",
+  "0x5c20b550819128074fd538edf79791733ccedd18",
+  "USDT",
+  130510963.459634,
+  57
+ ],
+ [
+  "Fluid USD Coin",
+  "fUSDC",
+  "0x9fb7b4477576fe5b32be4c1843afb1e55f251b33",
+  "USDC",
+  134527013.41795,
+  240
+ ],
+ [
+  "Fluid Lite USD Vault",
+  "fLiteUSD",
+  "0x273da948aca9261043fbdb2a857bc255ecc29012",
+  "USDC",
+  42010025.476289,
+  66
+ ],
+ [
+  "Fluid Wrapped Ether",
+  "fWETH",
+  "0x90551c1795392094fe6d29b758eccd233cfaa260",
+  "WETH",
+  778.6472104175181,
+  19
+ ],
+ [
+  "Fluid Wrapped liquid staked Ether 2.0",
+  "fwstETH",
+  "0x2411802d8bea09be0af8fd8d08314a63e706b29c",
+  "wstETH",
+  753.3479745005177,
+  4
+ ],
+ [
+  "Fluid Gho Token",
+  "fGHO",
+  "0x6a29a46e21c730dca1d8b23d637c101cec605c5b",
+  "GHO",
+  24148904.81203051,
+  17
+ ],
+ [
+  "Fluid USDtb",
+  "fUSDtb",
+  "0x15e8c742614b5d8db4083a41df1a14f5d2bfb400",
+  "USDtb",
+  1568728.0256598562,
+  4
+ ]
+]
