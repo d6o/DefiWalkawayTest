@@ -1,0 +1,15 @@
+{
+ "snapshot": "0x0",
+ "gas_funding": "user had 0.0000002 ETH; experimenter set 0.01 ETH for gas",
+ "lp": 1954057686996578,
+ "exit": {
+  "tx": "0x367b03133e378aaa88a7bdbf7442452f5ada39c5c94381f56f2b053a8e9d9006",
+  "status": "0x1",
+  "gas": 128648
+ },
+ "after": {
+  "lp": 0,
+  "usdt_raw": 1019,
+  "crvusd_raw": 988149862240364
+ }
+}
