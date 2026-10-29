@@ -83,3 +83,37 @@ If an exit needs a keeper, an operator, or a signer to act first, it doesn't cou
 requirement rather than a removal: privileged actors stay on-chain; the test is whether the exit needs them.)*
 
 **Time:** 1:00
+
+---
+
+## Slide 7 — How a run works
+
+**On the slide** (two columns):
+
+> **Who**
+> - Top Ethereum protocols by TVL (DefiLlama)
+> - 100th-largest holder of the main token
+>   - Per Ethplorer's top-holders list
+>   - Nearest plain wallet if it's a contract
+> - Mainnet fork, same block for all
+
+> **How**
+> 1. Find the position
+> 2. Find the protocol's contracts
+> 3. Learn the exit from other users' transactions
+> 4. Try it on the fork, as that wallet
+> 5. Prove what blocks it (change one thing, compare)
+
+**Speaker notes:**
+"For each protocol, I took the 100th-largest holder of its main token: a real address, not a whale and not dust. Then I
+forked mainnet at the same block for every protocol and played that user. First, find your position with nothing but
+logs. Then find the protocol's contracts. Since you have no docs and can't even read function names, you learn the exit
+by watching what other users do on-chain: which contract they call, and what comes back. Then you try it yourself on the
+fork. And when something blocks you, you prove why: same state, change one thing, compare. For example, the same
+transaction sent from a different address. Everything comes from the chain: no docs, no memory, and every claim is in
+the open repo."
+
+*(If asked "why the 100th?": it's the deepest Ethplorer's free API goes, and it gives a real user rather than an
+exchange, a whale, or dust. For Uniswap, NFT positions are ranked by count, not value.)*
+
+**Time:** 1:30
