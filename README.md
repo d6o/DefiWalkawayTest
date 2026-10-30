@@ -57,3 +57,17 @@ results are recorded in the run logs and `runs/<protocol>/data/`.
 
 1. Start the fork: `scripts/fork.sh 26248199 <test address from SPEC §8>`
 2. Follow the steps in that protocol's run log; each step lists the exact script call or RPC calls and the expected output.
+
+## License
+
+- **Code** (`scripts/`): [MIT](LICENSE).
+- **Method, results, run write-ups and talk material** (`SPEC.md`, `RESULTS.md`, `runs/`, `protocols/`, `talk/`, and the
+  data we produced under `data/` and `runs/*/data/`): [CC BY 4.0](LICENSE-CC-BY-4.0.txt). Reuse freely; credit
+  "Diego Siqueira, The DeFi Walkaway Test" with a link to this repo.
+
+**Not covered by either license:**
+- **Protocol logos** in `talk/logos/` (and on the slides in `talk/deck.pdf`) are trademarks of their owners, included
+  only to identify the protocols tested.
+- **Third-party API snapshots** (DefiLlama and Ethplorer responses under `data/selection/`) remain subject to those
+  providers' terms. They are kept so the protocol and address selection can be checked.
+- **Blockchain data** (logs, traces, receipts) is public Ethereum data and is included as evidence.
