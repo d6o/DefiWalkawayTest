@@ -36,10 +36,15 @@ Removing the frontend, API, indexer, or default RPC (D1, D2, D3, D5) changes not
 | Result | Count | Protocols |
 |--------|-------|-----------|
 | 🔴 **Blocked** (a privileged actor is needed, D4) | **6** | Lido, ether.fi, Ethena, Maple, Falcon Finance, Kelp |
-| ◐ **Partial exit** (user's own debt caps withdrawals; full exit with capital) | **2** | Aave V3, Spark |
-| 🟡 **Harder but possible** (permissionless, but unnamed or state must be rebuilt) | **3** | Uniswap, Curve, Pendle (time-locked until maturity) |
+| ◐ **Partial exit** (user's own debt caps withdrawals; full exit with capital) | **2** | Aave V3\*, Spark\* |
+| 🟡 **Harder but possible** (permissionless, but unnamed or state must be rebuilt) | **3 (+2)** | Uniswap, Curve, Pendle (time-locked until maturity); also Aave V3\*, Spark\* |
 | ✅ **Exits cleanly** (one named call by the holder; liquidity permitting) | **5** | Morpho, Sky, Rocket Pool, Compound, Fluid |
 | ⏸ Not finished | 2 | Binance staked ETH (paused), EigenCloud (no position token) |
+
+\* **Aave V3 and Spark appear in two categories** (as in the talk): with the user's own funds, only the "free" part of the
+position comes out (◐); a full exit is possible once the debt is repaid, but finding out why most of the position is locked
+and how to repay was very hard without assistance (traces, bytecode searches, the user's own history, cause-and-effect
+tests; for Spark, the repay path was only visible inside other users' smart-wallet transactions) (🟡).
 
 **Six D4 designs:** Lido (only specific callers send the batch), ether.fi (anyone executes; 3-of-3 signers approve),
 Ethena (redemptions submitted only by role holders), Maple (one "redeemer" processes requests), Falcon (no on-chain
