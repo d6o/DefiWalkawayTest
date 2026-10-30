@@ -1,0 +1,82 @@
+{
+ "Lido": {
+  "url": "https://icons.llamao.fi/icons/protocols/lido",
+  "file": "talk/logos/raw/lido.webp",
+  "bytes": 94788
+ },
+ "Aave": {
+  "url": "https://icons.llamao.fi/icons/protocols/aave-v3",
+  "file": "talk/logos/raw/aave.webp",
+  "bytes": 2586
+ },
+ "Spark": {
+  "url": "https://icons.llamao.fi/icons/protocols/sparklend",
+  "file": "talk/logos/raw/spark.webp",
+  "bytes": 24374
+ },
+ "Morpho": {
+  "url": "https://icons.llamao.fi/icons/protocols/morpho-blue",
+  "file": "talk/logos/raw/morpho.webp",
+  "bytes": 7896
+ },
+ "Sky": {
+  "url": "https://icons.llamao.fi/icons/protocols/sky-lending",
+  "file": "talk/logos/raw/sky.webp",
+  "bytes": 92150
+ },
+ "ether.fi": {
+  "url": "https://icons.llamao.fi/icons/protocols/ether.fi",
+  "file": "talk/logos/raw/etherfi.webp",
+  "bytes": 35688
+ },
+ "Ethena": {
+  "url": "https://icons.llamao.fi/icons/protocols/ethena-usde",
+  "file": "talk/logos/raw/ethena.webp",
+  "bytes": 2182
+ },
+ "Maple": {
+  "url": "https://icons.llamao.fi/icons/protocols/maple",
+  "file": "talk/logos/raw/maple.webp",
+  "bytes": 7370
+ },
+ "Uniswap": {
+  "url": "https://icons.llamao.fi/icons/protocols/uniswap-v3",
+  "file": "talk/logos/raw/uniswap.webp",
+  "bytes": 18504
+ },
+ "Rocket Pool": {
+  "url": "https://icons.llamao.fi/icons/protocols/rocket-pool",
+  "file": "talk/logos/raw/rocket-pool.webp",
+  "bytes": 99124
+ },
+ "Compound": {
+  "url": "https://icons.llamao.fi/icons/protocols/compound-v3",
+  "file": "talk/logos/raw/compound.webp",
+  "bytes": 3044
+ },
+ "Curve": {
+  "url": "https://icons.llamao.fi/icons/protocols/curve",
+  "file": "talk/logos/raw/curve.webp",
+  "bytes": 15506
+ },
+ "Falcon Finance": {
+  "url": "https://icons.llamao.fi/icons/protocols/falcon-finance",
+  "file": "talk/logos/raw/falcon-finance.webp",
+  "bytes": 5746
+ },
+ "Kelp": {
+  "url": "https://icons.llamao.fi/icons/protocols/kelp",
+  "file": "talk/logos/raw/kelp.webp",
+  "bytes": 312
+ },
+ "Fluid": {
+  "url": "https://icons.llamao.fi/icons/protocols/fluid-lending",
+  "file": "talk/logos/raw/fluid.webp",
+  "bytes": 3224
+ },
+ "Pendle": {
+  "url": "https://icons.llamao.fi/icons/protocols/pendle-v2",
+  "file": "talk/logos/raw/pendle.webp",
+  "bytes": 24192
+ }
+}
