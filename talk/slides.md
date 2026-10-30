@@ -120,10 +120,10 @@ exchange, a whale, or dust. For Uniswap, NFT positions are ranked by count, not 
 
 ---
 
-## Final deck (2026-10-29)
+## Final deck (2026-10-30)
 
-The deck as presented is saved as [`deck-2026-10-29.pdf`](deck-2026-10-29.pdf) (27 slides). Slides 1–7 follow the drafts
-above (with Diego's wording); the rest:
+The deck as presented is saved as [`deck.pdf`](deck.pdf) (29 slides; earlier versions are in git history). Slides 1–7
+follow the drafts above (with Diego's wording); the rest:
 
 | # | Slide | Content |
 |---|-------|---------|
@@ -131,14 +131,12 @@ above (with Diego's wording); the rest:
 | 9 | Meet the user | `0xde80…b9e2`, 5,084 stETH, plain wallet, deposited 5,000 ETH in Feb 2026; block 26,248,199; a developer who knows Ethereum standards, no protocol knowledge |
 | 10–12 | Step 1: gather information | balance, nonce, code; `eth_getLogs` transfers to/from the address; `name`/`symbol`/`decimals`/`balanceOf`; 78 contracts, address poisoning; the user's own 5,000 ETH deposit identifies the real stETH |
 | 13 | Step 1: the contract | `debug_traceCall` → proxy; logic `0x028271e3…cdb0`; selectors: 86 candidates, 9 ERC-20, no fixed-list match |
-| 14–19 | Step 2: watch others | 7-day stETH flows; `0x889e…f9b1` (most senders); `0xacf41e4d` → numbered NFT; all events of `0x889e`; `0xe3afe0a3` burns the NFT and pays ETH |
-| 20–22 | Step 3: try it, as that user | example flow (1 stETH; the full run in the repo hands in all 5,084); claim fails (`0x4ae50228`); the daily batches table |
-| 23 | Blocked | "So close, yet so far": privileged batch senders; ~1 hour of expert work to get here |
-| 24 | Full results | Blocked: Lido, ether.fi, Ethena, Maple, Falcon Finance, Kelp · Partial exit: Aave V3, Spark · Hard but possible: Aave V3, Uniswap V3, Curve, Pendle · Full exit: Morpho, Sky, Rocket Pool, Compound, Fluid · repo link |
-| 25 | Recommendations | permissionless fallback for every privileged step; standard exit functions that work; one call, no traps; run the walkaway test before launch |
-| 26 | For users | who has to act before I can leave; liquidity on hand, not TVL; keep your deposit tx; beware scam tokens; an archive node with tracing |
-| 27 | Thank you | |
-
-**Open suggestions (not yet in the deck):** slide 22 → "Step 4: Prove it" with the proof-fork results (random sender
-rejected, original sender replays, claim pays 1:1); slide 24 → Spark also under "Hard but possible", with an asterisk and
-footnote on both Aave V3 and Spark.
+| 14–19 | Step 2: watch others | 7-day stETH flows (stETH: 1,352 mints, 0 burns); `0x889e…f9b1` (most senders); `0xacf41e4d` → numbered NFT; all events of `0x889e`; `0xe3afe0a3` burns the NFT and pays ETH |
+| 20–21 | Step 3: try it, as that user | example flow (1 stETH; the full run in the repo hands in all 5,084 as claims 139,412–139,417); cashing the claim fails (`0x4ae50228`) |
+| 22–23 | Step 4: why it fails | batch events (`0x197874c7`, `0x6bd5c950`) carry a claim-ID range; one batch a day ~12:22 UTC; the last covered up to #139,310, ours is #139,412 |
+| 24 | Step 4: prove it | at block 26,248,128 (one block before the 10-22 batch): cash #139,267 ❌; random address sends the batch ❌ (`0x1db3b859`); usual sender ✅; cash after the batch ✅. Screenshot: `cast call … --from 0x1234…7890 --block 26248128` (plain `eth_call` on the archive node). The full fork replay that paid 1:1 is step 5 of the Lido run |
+| 25 | Blocked | "So close, yet so far": privileged batch senders; ~1 hour of expert work to get here |
+| 26 | Full results | Blocked: Lido, ether.fi, Ethena, Maple, Falcon Finance, Kelp · Partial exit: Aave V3\*, Spark\* · Hard but possible: Aave V3, Spark, Uniswap V3, Curve, Pendle · Full exit: Morpho, Sky, Rocket Pool, Compound, Fluid · repo link. \* said aloud: partial with your own funds; a full exit is possible but very hard to discover without assistance |
+| 27 | Recommendations | permissionless fallback for every privileged step; standard exit functions that work; one call, no traps; run the walkaway test before launch |
+| 28 | For users | who has to act before I can leave; liquidity on hand, not TVL; keep your deposit tx; beware scam tokens; an archive node with tracing |
+| 29 | Thank you | |
